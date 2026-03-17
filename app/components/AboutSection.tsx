@@ -49,17 +49,21 @@ export default function AboutSection() {
               className="relative z-10 w-64 h-80 lg:w-90 lg:h-130 rounded-2xl overflow-hidden shadow-2xl"
               style={{ marginLeft: "0" }}
             >
-              <div className="w-full h-full bg-linear-to-br from-gray-700 to-gray-900 flex items-center justify-center text-8xl">
-                🖨️
-              </div>
+              <img
+                src="https://images.unsplash.com/photo-1562654501-a0ccc0fc3fb1?auto=format&fit=crop&q=80&w=800"
+                alt="Industrial printing"
+                className="w-full h-full object-cover"
+              />
             </div>
             {/* Overlapping second image */}
             <div
               className="absolute bottom-25 right-20 z-20 w-48 h-52 lg:w-60 lg:h-80 rounded-2xl overflow-hidden shadow-2xl border-4 border-white"
             >
-              <div className="w-full h-full bg-linear-to-br from-yellow-400 to-orange-500 flex items-center justify-center text-7xl">
-                🎨
-              </div>
+              <img
+                src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&q=80&w=800"
+                alt="Creative tools"
+                className="w-full h-full object-cover"
+              />
             </div>
             {/* Years of experience badge */}
             {/* <div
@@ -118,7 +122,7 @@ export default function AboutSection() {
               See Our Products
             </Link>
           </div>
-        </div>   
+        </div>
       </div>
     </section>
   );

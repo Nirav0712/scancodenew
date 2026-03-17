@@ -6,25 +6,25 @@ const team = [
   {
     name: "Marvin McKinney",
     role: "Web Designer",
-    image: "/images/team/team1.jpg",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400",
     className: "w-[260px] h-[380px]", // 🔹 Small
   },
   {
     name: "Kathryn Murphy",
     role: "Medical Assistant",
-    image: "/images/team/team2.jpg",
+    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=400",
     className: "w-[270px] h-[430px]", // 🔹 Bigger
   },
   {
     name: "Annette Black",
     role: "Dog Trainer",
-    image: "/images/team/team3.jpg",
+    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=400",
     className: "w-[270px] h-[480px]", // 🔹 Medium
   },
   {
     name: "Albert Kayle",
     role: "President Sales",
-    image: "/images/team/team4.jpg",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400",
     className: "w-[280px] h-[530px]", // 🔹 Biggest
   },
 ];
@@ -48,7 +48,7 @@ export default function NodeJS() {
           </h2>
 
           <button className="mt-8 px-8 py-3 rounded-full text-white font-medium
-          bg-gradient-to-r from-purple-500 to-cyan-400 shadow-lg hover:scale-105 transition">
+          bg-linear-to-r from-purple-500 to-cyan-400 shadow-lg hover:scale-105 transition">
             View More
           </button>
         </div>

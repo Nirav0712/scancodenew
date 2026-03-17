@@ -6,23 +6,23 @@ import Link from "next/link";
 const categories = [
   {
     label: "Hoodies",
-    image: "/images/categoryimg-1.webp",
+    image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&q=80&w=500",
   },
   {
     label: "Tote Bags",
-    image: "/images/categoryimg-1.webp",
+    image: "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&q=80&w=500",
   },
   {
     label: "T-Shirts",
-    image: "/images/categoryimg-1.webp",
+    image: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&q=80&w=500",
   },
   {
     label: "Business Card",
-    image: "/images/categoryimg-1.webp",
+    image: "https://images.unsplash.com/photo-1589118949245-7d38baf380d6?auto=format&fit=crop&q=80&w=500",
   },
   {
     label: "Branded Items",
-    image: "/images/categoryimg-1.webp",
+    image: "https://images.unsplash.com/photo-1572021335469-31706a17aaef?auto=format&fit=crop&q=80&w=500",
   },
 ];
 

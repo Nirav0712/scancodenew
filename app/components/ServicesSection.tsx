@@ -152,21 +152,21 @@ interface Service {
 
 const services: Service[] = [
   {
-    image: "/images/servicesection/service-1.jpeg",
+    image: "https://images.unsplash.com/photo-1626285861696-9f0bf5a49c6d?auto=format&fit=crop&q=80&w=800",
     title: "Printing Service",
     number: "SERVICES_01",
     imagePosition: "center",
     arrowBg: "linear-gradient(135deg, #7b61ff 0%, #22d3c5 100%)",
   },
   {
-    image: "/images/servicesection/service-2.jpeg",
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800",
     title: "Printing Service",
     number: "SERVICES_02",
     imagePosition: "center",
     arrowBg: "linear-gradient(135deg, #7b61ff 0%, #22d3c5 100%)",
   },
   {
-    image: "/images/servicesection/service-3.jpeg",
+    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800",
     title: "Printing Service",
     number: "SERVICES_03",
     imagePosition: "center",
@@ -176,7 +176,7 @@ const services: Service[] = [
 
 export default function ServicesSection() {
   return (
-    <section className="py-24 bg-[#fff]">
+    <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-6 mb-14">
           <div>
