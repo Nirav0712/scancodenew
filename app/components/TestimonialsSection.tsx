@@ -13,7 +13,7 @@ export default function TestimonialsSlider() {
         "I recently placed a bulk order for custom T-shirt printing for our company's annual event, and I couldn't be happier with the results. From start to finish, the team was incredibly helpful through the process, suggested material and printing options, and ensured that everything was completed well before the deadline.",
       author: "Arlene McCoy",
       designation: "Web Designer",
-      image: "/images/feedback/f1.jpg",
+      image: "/images/image.png",
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ export default function TestimonialsSlider() {
         "Amazing experience! The prints were vibrant and the team was very helpful throughout the process.",
       author: "Sarah Johnson",
       designation: "Marketing Director",
-      image: "/images/feedback/f2.jpg",
+      image: "/images/image.png",
     },
   ];
 

@@ -177,20 +177,32 @@ export default function Header() {
                   {/* LEFT COLUMN */}
                   <div className="border-r border-gray-600">
 
-                    <div className="bg-[#f58220] px-5 py-3 font-semibold flex justify-between items-center">
+                    <Link href="/products" className="bg-[#f58220] px-5 py-3 font-semibold flex justify-between items-center hover:bg-[#e07010] transition-colors cursor-pointer">
                       Printing Scanning Solutions
                       <ChevronRight size={16} />
-                    </div>
+                    </Link>
 
                     <ul className="p-4 space-y-3 text-sm">
                       <li className="hover:text-orange-400 cursor-pointer">
-                        Labels
+                        <Link href="/products/labels" className="block w-full font-bold">Labels</Link>
+                      </li>
+                      <li className="hover:text-orange-400 cursor-pointer pl-4">
+                        <Link href="/products/labels/plain-labels" className="block w-full">Plain Labels</Link>
+                      </li>
+                      <li className="hover:text-orange-400 cursor-pointer pl-4">
+                        <Link href="/products/labels/pre-printed-labels" className="block w-full">Pre Printed Labels</Link>
+                      </li>
+                      <li className="hover:text-orange-400 cursor-pointer pl-4">
+                        <Link href="/products/labels/shrink-sleeves" className="block w-full">Shrink Sleeves</Link>
+                      </li>
+                      <li className="hover:text-orange-400 cursor-pointer pl-4">
+                        <Link href="/products/labels/in-mold-labels" className="block w-full">In Mold Labels</Link>
                       </li>
                       <li className="hover:text-orange-400 cursor-pointer">
-                        Thermal Transfer Ribbons
+                        <Link href="/products/thermal-transfer-ribbons" className="block w-full">Thermal Transfer Ribbons</Link>
                       </li>
                       <li className="hover:text-orange-400 cursor-pointer">
-                        RFID Solutions
+                        <Link href="/products/rfid-solutions" className="block w-full">RFID Solutions</Link>
                       </li>
                     </ul>
 
@@ -199,21 +211,21 @@ export default function Header() {
                   {/* RIGHT COLUMN */}
                   <div className="p-5 space-y-4 text-sm">
 
-                    <p className="hover:text-orange-400 cursor-pointer">
+                    <Link href="/products/barcode-label-printer" className="hover:text-orange-400 cursor-pointer block">
                       Barcode Label Printer
-                    </p>
+                    </Link>
 
-                    <p className="hover:text-orange-400 cursor-pointer">
+                    <Link href="/products/print-engine" className="hover:text-orange-400 cursor-pointer block">
                       Print Engine
-                    </p>
+                    </Link>
 
-                    <p className="hover:text-orange-400 cursor-pointer">
+                    <Link href="/products/barcode-scanner" className="hover:text-orange-400 cursor-pointer block">
                       Barcode Scanner
-                    </p>
+                    </Link>
 
-                    <p className="hover:text-orange-400 cursor-pointer">
+                    <Link href="/products/mobile-computers" className="hover:text-orange-400 cursor-pointer block">
                       Mobile Computers & Tablets
-                    </p>
+                    </Link>
 
                   </div>
 
