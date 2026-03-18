@@ -9,15 +9,56 @@ import PageHero from "../../../components/PageHero";
 
 const MobileComputersPage = () => {
    const brands = [
-      { name: 'TSC', description: 'Leading Manufacturer', logo: '/brands/tsc.png' },
-      { name: 'ZEBRA', description: 'Leading Manufacturer', logo: '/brands/zebra.png' },
-      { name: 'AZTAY', description: 'Powered On Site', logo: '/brands/aztay.png' },
-      { name: 'CITIZEN', description: 'Premium Equipment', logo: '/brands/citizen.png' },
-      { name: 'ARGOX', description: 'Leading Manufacturer', logo: '/brands/argox.png' },
-      { name: 'Honeywell', description: 'Industrial Grade', logo: '/brands/honeywell.png' },
-      { name: 'PRINTRONIX AUTO ID', description: 'Enterprise Solutions', logo: '/brands/printronix.png' },
-      { name: 'TOSHIBA', description: 'Leading Innovation', logo: '/brands/toshiba.png' },
-   ];
+      {
+      name: "TSC",
+      description: "Leading Manufacturer",
+      logo: "/images/brands/tsc.webp",
+      img: "/images/brands/tsc.webp",
+    },
+    {
+      name: "ZEBRA",
+      description: "Leading Manufacturer",
+      logo: "/brands/zebra.png",
+      img: "/images/brands/zebra.webp",
+    },
+    {
+      name: "AZTAY",
+      description: "Powered On Site",
+      logo: "/brands/aztay.png",
+      img: "/images/brands/sato.webp",
+    },
+    {
+      name: "CITIZEN",
+      description: "Premium Equipment",
+      logo: "/brands/citizen.png",
+      img: "/images/brands/citizen.webp",
+    },
+    {
+      name: "ARGOX",
+      description: "Leading Manufacturer",
+      logo: "/brands/argox.png",
+      img: "/images/brands/argox.webp",
+    },
+    {
+      name: "Honeywell",
+      description: "Industrial Grade",
+      logo: "/brands/honeywell.png",
+      img: "/images/brands/6.webp",
+    },
+    {
+      name: "PRINTRONIX AUTO ID",
+      description: "Enterprise Solutions",
+      logo: "/brands/printronix.png",
+      img: "/images/brands/printronix.webp",
+    },
+    {
+      name: "TOSHIBA",
+      description: "Leading Innovation",
+      logo: "/brands/toshiba.png",
+      img: "/images/brands/toshiba.webp",
+    },
+  ];
+
 
    const benefits = [
       {
@@ -137,36 +178,43 @@ const MobileComputersPage = () => {
             </section>
 
             {/* Brands Section */}
-            <section className="py-16 bg-gray-50">
-               <div className="container mx-auto px-4">
-                  <h2 className="text-4xl font-bold text-center text-gray-800 mb-4">
-                     Featuring Products from <span className="text-[#ef7f1a]">Renowned Brands</span>
-                  </h2>
-                  <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-                     Partnering with industry leaders to bring you the best labeling solutions
-                  </p>
+              <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center ">
+              Featuring Products fro <span className="text-[#EF7F1A]"> Renowned Brands </span>
+            </p>
+            <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+              Partnering with industry leaders to bring you the best labeling
+              solutions
+            </p>
 
-                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-                     {brands.map((brand, index) => (
-                        <div
-                           key={index}
-                           className="group bg-white rounded-xl p-6 shadow-md hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-blue-200"
-                        >
-                           <div className="h-16 flex items-center justify-center mb-3">
-                              {/* Placeholder for brand logo - replace with actual Image component when you have logos */}
-                              <div className="w-16 h-16 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center">
-                                 <span className="text-blue-800 font-bold text-xl">
-                                    {brand.name.charAt(0)}
-                                 </span>
-                              </div>
-                           </div>
-                           <h3 className="font-bold text-gray-800 text-center text-lg">{brand.name}</h3>
-                           <p className="text-sm text-gray-600 text-center mt-1">{brand.description}</p>
-                        </div>
-                     ))}
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+              {brands.map((brand, index) => (
+                <div
+                  key={index}
+                  className="group bg-white rounded-xl p-15 shadow-md hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-blue-200"
+                >
+                  <div className="h-16 flex items-center justify-center mb-3">
+                    {/* Placeholder for brand logo - replace with actual Image component when you have logos */}
+                    <div className="w-25 h-25 mb-4 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center">
+                      <img
+                        src={brand.img}
+                        alt="brand"
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
                   </div>
-               </div>
-            </section>
+                  <h3 className="font-bold text-gray-800 text-center text-lg">
+                    {brand.name}
+                  </h3>
+                  <p className="text-sm text-gray-600 text-center mt-1">
+                    {brand.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
 
 
          </div>

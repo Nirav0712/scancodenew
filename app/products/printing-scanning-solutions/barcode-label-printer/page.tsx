@@ -25,36 +25,50 @@ const BarcodePrintersPage = () => {
       name: "ZEBRA",
       description: "Leading Manufacturer",
       logo: "/brands/zebra.png",
+      img: "/images/brands/zebra.webp",
+      
     },
     {
       name: "AZTAY",
       description: "Powered On Site",
       logo: "/brands/aztay.png",
+      img: "/images/brands/sato.webp",
+      
     },
     {
       name: "CITIZEN",
       description: "Premium Equipment",
       logo: "/brands/citizen.png",
+      img: "/images/brands/citizen.webp",
+
     },
     {
       name: "ARGOX",
       description: "Leading Manufacturer",
       logo: "/brands/argox.png",
+      img: "/images/brands/argox.webp",
+      
     },
     {
       name: "Honeywell",
       description: "Industrial Grade",
       logo: "/brands/honeywell.png",
+      img: "/images/brands/6.webp",
+
     },
     {
       name: "PRINTRONIX AUTO ID",
       description: "Enterprise Solutions",
       logo: "/brands/printronix.png",
+      img: "/images/brands/printronix.webp",
+
     },
     {
       name: "TOSHIBA",
       description: "Leading Innovation",
       logo: "/brands/toshiba.png",
+      img: "/images/brands/toshiba.webp",
+
     },
   ];
 
@@ -136,10 +150,7 @@ const BarcodePrintersPage = () => {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4 hover:border-blue-200">
             <p className="text-2xl font-bold text-gray-800 leading-relaxed mb-6 text-center hover:border-blue-200">
-              Key Benefits of
-              <span className="text-[#EF7F1A] hover:text-gray-800 transition duration-300">
-                Barcode Label Printers
-              </span>
+              Key Benefits of <span className="text-[#EF7F1A]"> Barcode Label Printers </span>
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
               {benefits.map((benefit, index) => (
@@ -224,11 +235,8 @@ const BarcodePrintersPage = () => {
         {/* Brands Section */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
-            <p className="text-2xl font-bold text-gray-800 leading-relaxed mb-6 text-center ">
-              Featuring Products from
-              <span className="text-[#EF7F1A] hover:text-gray-800 transition duration-300">
-                Renowned Brands
-              </span>
+            <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center ">
+              Featuring Products fro <span className="text-[#EF7F1A]"> Renowned Brands </span>
             </p>
             <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
               Partnering with industry leaders to bring you the best labeling
