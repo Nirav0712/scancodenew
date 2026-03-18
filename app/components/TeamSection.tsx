@@ -36,9 +36,7 @@ export default function NodeJS() {
 
         {/* Header */}
         <div className="">
-          <p className="text-sm text-blue-500 font-semibold tracking-widest mb-2">
-            // MEET OUR STAFF //
-          </p>
+          <p className="text-sm text-blue-500 font-semibold tracking-widest mb-2">{"// MEET OUR STAFF  //"}</p>
 
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
             Our Dedicated Printing <br />

@@ -15,7 +15,7 @@ export default function CustomPrintServices() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left — content */}
           <div>
-            <p className="section-label">// WHAT WE DO //</p>
+            <p className="section-label">{"// WHAT WE DO  //"}</p>
             <h2 className="section-heading mb-6">
               Custom Print Services{" "}
               <span className="highlight">We Offer</span>

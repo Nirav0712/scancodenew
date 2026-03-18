@@ -16,7 +16,7 @@ export default function PartnersSection() {
     <section className="py-20" style={{ background: "#f7f9fc" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <p className="section-label">// OUR PARTNERS //</p>
+          <p className="section-label">{"// OUR PARTNERS  //"}</p>
           <h2 className="section-heading">
             Trusted by 250+ Global IP Firms{" "}
             <br className="hidden lg:block" />

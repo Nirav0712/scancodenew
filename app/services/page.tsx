@@ -86,7 +86,7 @@ export default function ServicesPage() {
       {/* How it Works / FAQ */}
       <section className="py-24 bg-section-bg pb-32">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <p className="section-label">// THE PROCESS //</p>
+          <p className="section-label">{"// THE PROCESS  //"}</p>
           <h2 className="section-heading mb-16">
             How It <span className="highlight">Works</span>
           </h2>

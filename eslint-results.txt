@@ -1,0 +1,102 @@
+﻿
+D:\om majithiya\scancodeweb2\scancodeweb\app\about\page.tsx
+   45:42  error  Comments inside children section of tag should be placed inside braces  react/jsx-no-comment-textnodes
+   77:40  error  Comments inside children section of tag should be placed inside braces  react/jsx-no-comment-textnodes
+  120:16  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`         react/no-unescaped-entities
+
+D:\om majithiya\scancodeweb2\scancodeweb\app\components\AboutSection.tsx
+  52:15  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  62:15  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  82:42  error    Comments inside children section of tag should be placed inside braces                                                                                                                                                                                                                   react/jsx-no-comment-textnodes
+
+D:\om majithiya\scancodeweb2\scancodeweb\app\components\CategoriesSection.tsx
+  36:68  error  Comments inside children section of tag should be placed inside braces  react/jsx-no-comment-textnodes
+
+D:\om majithiya\scancodeweb2\scancodeweb\app\components\CustomPrintServices.tsx
+  18:42  error  Comments inside children section of tag should be placed inside braces  react/jsx-no-comment-textnodes
+
+D:\om majithiya\scancodeweb2\scancodeweb\app\components\FeaturesFan.tsx
+  231:40  error  Comments inside children section of tag should be placed inside braces  react/jsx-no-comment-textnodes
+  402:40  error  Comments inside children section of tag should be placed inside braces  react/jsx-no-comment-textnodes
+
+D:\om majithiya\scancodeweb2\scancodeweb\app\components\Footer.tsx
+   13:3   warning  'FaMapMarkerAlt' is defined but never used                                                                                                                                                                                                                                               @typescript-eslint/no-unused-vars
+  216:11  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+D:\om majithiya\scancodeweb2\scancodeweb\app\components\PartnersSection.tsx
+  19:40  error  Comments inside children section of tag should be placed inside braces  react/jsx-no-comment-textnodes
+
+D:\om majithiya\scancodeweb2\scancodeweb\app\components\ServicesSection.tsx
+  183:97  error  Comments inside children section of tag should be placed inside braces  react/jsx-no-comment-textnodes
+
+D:\om majithiya\scancodeweb2\scancodeweb\app\components\TeamSection.tsx
+  39:83  error  Comments inside children section of tag should be placed inside braces  react/jsx-no-comment-textnodes
+
+D:\om majithiya\scancodeweb2\scancodeweb\app\components\TestimonialsSection.tsx
+  37:6   warning  React Hook useEffect has a missing dependency: 'testimonials.length'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+  59:83  error    Comments inside children section of tag should be placed inside braces                                                  react/jsx-no-comment-textnodes
+  60:22  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                         react/no-unescaped-entities
+  96:15  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`                                                         react/no-unescaped-entities
+  96:33  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`                                                         react/no-unescaped-entities
+
+D:\om majithiya\scancodeweb2\scancodeweb\app\components\WhyChooseUs.tsx
+  43:69  error  Comments inside children section of tag should be placed inside braces  react/jsx-no-comment-textnodes
+
+D:\om majithiya\scancodeweb2\scancodeweb\app\contact\page.tsx
+  21:44  error  Comments inside children section of tag should be placed inside braces  react/jsx-no-comment-textnodes
+  22:72  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`         react/no-unescaped-entities
+  24:97  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`         react/no-unescaped-entities
+
+D:\om majithiya\scancodeweb2\scancodeweb\app\page.tsx
+   1:8  warning  'Header' is defined but never used  @typescript-eslint/no-unused-vars
+  13:8  warning  'Footer' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\om majithiya\scancodeweb2\scancodeweb\app\products\barcode-label-printer\page.tsx
+  4:39  warning  'ArrowRight' is defined but never used  @typescript-eslint/no-unused-vars
+  5:8   warning  'Image' is defined but never used       @typescript-eslint/no-unused-vars
+  6:8   warning  'Link' is defined but never used        @typescript-eslint/no-unused-vars
+
+D:\om majithiya\scancodeweb2\scancodeweb\app\products\barcode-scanner\page.tsx
+  30:42  error  Comments inside children section of tag should be placed inside braces  react/jsx-no-comment-textnodes
+
+D:\om majithiya\scancodeweb2\scancodeweb\app\products\labels\in-mold-labels\page.tsx
+  21:42  error  Comments inside children section of tag should be placed inside braces  react/jsx-no-comment-textnodes
+
+D:\om majithiya\scancodeweb2\scancodeweb\app\products\labels\page.tsx
+  32:42  error  Comments inside children section of tag should be placed inside braces  react/jsx-no-comment-textnodes
+
+D:\om majithiya\scancodeweb2\scancodeweb\app\products\labels\plain-labels\page.tsx
+  30:42  error  Comments inside children section of tag should be placed inside braces  react/jsx-no-comment-textnodes
+
+D:\om majithiya\scancodeweb2\scancodeweb\app\products\labels\pre-printed-labels\page.tsx
+  29:42  error  Comments inside children section of tag should be placed inside braces  react/jsx-no-comment-textnodes
+
+D:\om majithiya\scancodeweb2\scancodeweb\app\products\labels\shrink-sleeves\page.tsx
+  19:40  error  Comments inside children section of tag should be placed inside braces  react/jsx-no-comment-textnodes
+
+D:\om majithiya\scancodeweb2\scancodeweb\app\products\mobile-computers\page.tsx
+  29:43  error  Comments inside children section of tag should be placed inside braces  react/jsx-no-comment-textnodes
+
+D:\om majithiya\scancodeweb2\scancodeweb\app\products\page.tsx
+  72:40  error  Comments inside children section of tag should be placed inside braces  react/jsx-no-comment-textnodes
+
+D:\om majithiya\scancodeweb2\scancodeweb\app\products\print-engine\page.tsx
+  19:40  error  Comments inside children section of tag should be placed inside braces  react/jsx-no-comment-textnodes
+
+D:\om majithiya\scancodeweb2\scancodeweb\app\products\rfid-solutions\page.tsx
+   6:8   warning  'Image' is defined but never used                                       @typescript-eslint/no-unused-vars
+  19:40  error    Comments inside children section of tag should be placed inside braces  react/jsx-no-comment-textnodes
+
+D:\om majithiya\scancodeweb2\scancodeweb\app\products\thermal-transfer-ribbons\page.tsx
+  30:42  error  Comments inside children section of tag should be placed inside braces  react/jsx-no-comment-textnodes
+
+D:\om majithiya\scancodeweb2\scancodeweb\app\services\page.tsx
+  58:32  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`         react/no-unescaped-entities
+  89:40  error  Comments inside children section of tag should be placed inside braces  react/jsx-no-comment-textnodes
+
+D:\om majithiya\scancodeweb2\scancodeweb\app\solutions\page.tsx
+  20:40  error  Comments inside children section of tag should be placed inside braces  react/jsx-no-comment-textnodes
+  25:26  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`         react/no-unescaped-entities
+
+Γ£û 45 problems (34 errors, 11 warnings)
+

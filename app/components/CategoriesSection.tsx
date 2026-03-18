@@ -33,9 +33,7 @@ export default function CategoriesSection() {
 
         {/* Header */}
         <div className="text-center mb-16">
-          <p className="text-blue-500 font-medium tracking-widest">
-            // TOP CATEGORIES //
-          </p>
+          <p className="text-blue-500 font-medium tracking-widest">{"// TOP CATEGORIES  //"}</p>
 
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-4">
             Explore Our Print{" "}

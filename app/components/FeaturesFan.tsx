@@ -228,7 +228,7 @@ export default function FeaturesFan() {
       >
         {/* Section header */}
         <div className="text-center pt-10 pb-4 z-20 relative">
-          <p className="section-label">// OUR FEATURES //</p>
+          <p className="section-label">{"// OUR FEATURES  //"}</p>
           <h2 className="section-heading">
             Top-Notch Tools For{" "}
             <span className="highlight">Custom Prints</span>
@@ -399,7 +399,7 @@ export default function FeaturesFan() {
         style={{ background: "#eef1f8" }}
       >
         <div className="text-center mb-12">
-          <p className="section-label">// OUR FEATURES //</p>
+          <p className="section-label">{"// OUR FEATURES  //"}</p>
           <h2 className="section-heading">
             Top-Notch Tools For{" "}
             <span className="highlight">Custom Prints</span>

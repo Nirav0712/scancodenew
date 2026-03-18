@@ -11,7 +11,7 @@ export default function Header() {
   const [isSearchOpen, setIsSearchOpen] = useState<boolean>(false);
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
   const [open, setOpen] = useState(false);
-
+  const [activeCategory, setActiveCategory] = useState<string>('hardware');
 
   // ✅ Proper scroll listener for Next.js + TypeScript
   useEffect(() => {
@@ -157,7 +157,7 @@ export default function Header() {
               Home
             </Link>
 
-            <Link href="/about" className="nav-link hover:underline hover:text-orange-400">
+            <Link href="/about-us" className="nav-link hover:underline hover:text-orange-400">
               About Us
             </Link>
 
@@ -172,61 +172,120 @@ export default function Header() {
               </button>
 
               {open && (
-                <div className="absolute left-1/2 -translate-x-1/2 w-130 bg-[#2b2b2b] text-white shadow-xl rounded-md overflow-hidden grid grid-cols-2">
+                <div className="absolute left-1/2 -translate-x-1/2 w-[600px] bg-[#2b2b2b] text-white shadow-xl rounded-md overflow-hidden grid grid-cols-2">
 
                   {/* LEFT COLUMN */}
-                  <div className="border-r border-gray-600">
+                  <div className="border-r border-gray-600 relative">
 
-                    <Link href="/products" className="bg-[#f58220] px-5 py-3 font-semibold flex justify-between items-center hover:bg-[#e07010] transition-colors cursor-pointer">
-                      Printing Scanning Solutions
-                      <ChevronRight size={16} />
+                    <Link
+                      href="/products/printing-scanning-solutions"
+                      onMouseEnter={() => setActiveCategory('hardware')}
+                      className={`px-5 py-3 font-semibold flex justify-between items-center transition-colors cursor-pointer ${activeCategory === 'hardware' ? 'bg-[#f58220]' : 'hover:bg-[#3d3d3d]'}`}
+                    >
+                      <span className="flex items-center justify-between w-full">
+                        Printing Scanning Solutions
+                        <ChevronRight size={16} />
+                      </span>
+                    </Link>
+
+                    <Link
+                      href="/products/labels"
+                      onMouseEnter={() => setActiveCategory('labels')}
+                      className={`px-5 py-3 font-semibold flex justify-between items-center transition-colors cursor-pointer ${activeCategory === 'labels' ? 'bg-[#f58220]' : 'hover:bg-[#3d3d3d]'}`}
+                    >
+                      <span className="flex items-center justify-between w-full">
+                        Labels <ChevronRight size={14} className="opacity-50" />
+                      </span>
                     </Link>
 
                     <ul className="p-4 space-y-3 text-sm">
-                      <li className="hover:text-orange-400 cursor-pointer">
-                        <Link href="/products/labels" className="block w-full font-bold">Labels</Link>
+                      {/* <li
+                        className="cursor-pointer"
+                        onMouseEnter={() => setActiveCategory('labels')}
+                      >
+                        <Link href="/products/labels" className={`flex justify-between items-center w-full transition-colors ${activeCategory === 'labels' ? 'text-orange-400' : 'hover:text-orange-400'}`}>
+                          Labels <ChevronRight size={14} className="opacity-50" />
+                        </Link>
+
+                      </li> */}
+
+                      <li
+                        className="cursor-pointer"
+                        onMouseEnter={() => setActiveCategory('ribbons')}
+                      >
+                        <Link href="/products/thermal-transfer-ribbons" className={`flex justify-between items-center w-full transition-colors ${activeCategory === 'ribbons' ? 'text-orange-400' : 'hover:text-orange-400'}`}>
+                          Thermal Transfer Ribbons <ChevronRight size={14} className="opacity-50" />
+                        </Link>
                       </li>
-                      <li className="hover:text-orange-400 cursor-pointer pl-4">
-                        <Link href="/products/labels/plain-labels" className="block w-full">Plain Labels</Link>
-                      </li>
-                      <li className="hover:text-orange-400 cursor-pointer pl-4">
-                        <Link href="/products/labels/pre-printed-labels" className="block w-full">Pre Printed Labels</Link>
-                      </li>
-                      <li className="hover:text-orange-400 cursor-pointer pl-4">
-                        <Link href="/products/labels/shrink-sleeves" className="block w-full">Shrink Sleeves</Link>
-                      </li>
-                      <li className="hover:text-orange-400 cursor-pointer pl-4">
-                        <Link href="/products/labels/in-mold-labels" className="block w-full">In Mold Labels</Link>
-                      </li>
-                      <li className="hover:text-orange-400 cursor-pointer">
-                        <Link href="/products/thermal-transfer-ribbons" className="block w-full">Thermal Transfer Ribbons</Link>
-                      </li>
-                      <li className="hover:text-orange-400 cursor-pointer">
-                        <Link href="/products/rfid-solutions" className="block w-full">RFID Solutions</Link>
+
+                      <li
+                        className="cursor-pointer"
+                        onMouseEnter={() => setActiveCategory('rfid')}
+                      >
+                        <Link href="/products/rfid-solutions" className={`flex justify-between items-center w-full transition-colors ${activeCategory === 'rfid' ? 'text-orange-400' : 'hover:text-orange-400'}`}>
+                          RFID Solutions <ChevronRight size={14} className="opacity-50" />
+                        </Link>
                       </li>
                     </ul>
-
                   </div>
 
-                  {/* RIGHT COLUMN */}
-                  <div className="p-5 space-y-4 text-sm">
+                  {/* RIGHT COLUMN (FEED) */}
+                  <div className="p-5 space-y-4 text-sm bg-[#2b2b2b]">
+                    {activeCategory === 'hardware' && (
+                      <div className="animate-fade-in space-y-4">
+                        <Link href="/products/printing-scanning-solutions/barcode-label-printer" className="hover:text-orange-400 cursor-pointer block transition-colors">
+                          Barcode Label Printer
+                        </Link>
+                        <Link href="/products/printing-scanning-solutions/print-engine" className="hover:text-orange-400 cursor-pointer block transition-colors">
+                          Print Engine
+                        </Link>
+                        <Link href="/products/printing-scanning-solutions/barcode-scanner" className="hover:text-orange-400 cursor-pointer block transition-colors">
+                          Barcode Scanner
+                        </Link>
+                        <Link href="/products/printing-scanning-solutions/mobile-computers" className="hover:text-orange-400 cursor-pointer block transition-colors">
+                          Mobile Computers & Tablets
+                        </Link>
+                      </div>
+                    )}
 
-                    <Link href="/products/barcode-label-printer" className="hover:text-orange-400 cursor-pointer block">
-                      Barcode Label Printer
-                    </Link>
+                    {activeCategory === 'labels' && (
+                      <div className="animate-fade-in space-y-4">
+                        <Link href="/products/labels/plain-labels" className="hover:text-orange-400 cursor-pointer block transition-colors">
+                          Plain Labels
+                        </Link>
+                        <Link href="/products/labels/pre-printed-labels" className="hover:text-orange-400 cursor-pointer block transition-colors">
+                          Pre Printed Labels
+                        </Link>
+                        <Link href="/products/labels/shrink-sleeves" className="hover:text-orange-400 cursor-pointer block transition-colors">
+                          Shrink Sleeves
+                        </Link>
+                        <Link href="/products/labels/in-mold-labels" className="hover:text-orange-400 cursor-pointer block transition-colors">
+                          In Mold Labels
+                        </Link>
+                      </div>
+                    )}
 
-                    <Link href="/products/print-engine" className="hover:text-orange-400 cursor-pointer block">
-                      Print Engine
-                    </Link>
+                    {activeCategory === 'ribbons' && (
+                      <div className="animate-fade-in flex flex-col items-center justify-center h-full text-center p-4">
+                        <p className="text-gray-400 italic mb-4">
+                          Explore our premium wax, wax-resin, and resin ribbons perfectly matched for your print applications.
+                        </p>
+                        <Link href="/products/thermal-transfer-ribbons" className="text-orange-400 hover:underline">
+                          View Ribbons
+                        </Link>
+                      </div>
+                    )}
 
-                    <Link href="/products/barcode-scanner" className="hover:text-orange-400 cursor-pointer block">
-                      Barcode Scanner
-                    </Link>
-
-                    <Link href="/products/mobile-computers" className="hover:text-orange-400 cursor-pointer block">
-                      Mobile Computers & Tablets
-                    </Link>
-
+                    {activeCategory === 'rfid' && (
+                      <div className="animate-fade-in flex flex-col items-center justify-center h-full text-center p-4">
+                        <p className="text-gray-400 italic mb-4">
+                          Discover advanced UHF, HF, and NFC tags and encoding solutions for unparalleled asset tracking.
+                        </p>
+                        <Link href="/products/rfid-solutions" className="text-orange-400 hover:underline">
+                          View RFID
+                        </Link>
+                      </div>
+                    )}
                   </div>
 
                 </div>

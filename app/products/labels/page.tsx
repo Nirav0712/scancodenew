@@ -11,12 +11,12 @@ export default function LabelsPage() {
       <PageHero
         title="Custom Labels"
         description="High-quality, durable barcode and product labels for every application, from freezing warehouse environments to pristine retail displays."
-        backgroundImage="https://images.unsplash.com/photo-1589118949245-7d38baf380d6?auto=format&fit=crop&q=80&w=1920" 
+        backgroundImage="https://images.unsplash.com/photo-1589118949245-7d38baf380d6?auto=format&fit=crop&q=80&w=1920"
       />
 
       <section className="py-24 max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          
+
           {/* Image */}
           <div className="relative aspect-square md:aspect-4/3 rounded-3xl overflow-hidden shadow-2xl">
             <Image
@@ -29,12 +29,12 @@ export default function LabelsPage() {
 
           {/* Details */}
           <div>
-            <p className="section-label">// PREMIUM STOCK //</p>
+            <p className="section-label">{"// PREMIUM STOCK  //"}</p>
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Built for Durability & Clarity</h2>
             <p className="text-lg text-gray-600 leading-relaxed mb-8">
               Whether you need direct thermal labels for fast-moving shipping or rugged thermal transfer labels for outdoor equipment, we supply materials engineered to stick and stay readable.
             </p>
-            
+
             <div className="space-y-6 mb-10">
               <div className="flex gap-4">
                 <div className="w-12 h-12 bg-blue-50 text-primary rounded-xl flex items-center justify-center shrink-0">🌡️</div>
@@ -63,7 +63,7 @@ export default function LabelsPage() {
               Request Samples
             </Link>
           </div>
-          
+
         </div>
       </section>
     </main>

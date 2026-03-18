@@ -40,9 +40,7 @@ export default function WhyChooseUs() {
     >
       {/* Header */}
       <div className="text-center">
-        <p className="text-sm tracking-widest uppercase opacity-80">
-          // WHY CHOOSE US //
-        </p>
+        <p className="text-sm tracking-widest uppercase opacity-80">{"// WHY CHOOSE US  //"}</p>
 
         <h2 className="text-4xl lg:text-5xl font-bold mt-3">
           Why Clients Love Working <br />

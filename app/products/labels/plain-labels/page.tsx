@@ -27,8 +27,8 @@ export default function PlainLabelsPage() {
           </div>
 
           <div>
-            <p className="section-label">// ESSENTIAL SUPPLIES //</p>
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Reliable Blank Stock</h2>
+            <p className="section-label">{"// ESSENTIAL SUPPLIES  //"}</p>
+            <h2 className="text-3xl lg:text-4xl font-medium text-gray-900 mb-6">Reliable Blank Stock</h2>
             <p className="text-lg text-gray-600 leading-relaxed mb-8">
               Keep your logistics, shipping, and inventory lines moving. Our plain labels are precision-die-cut to prevent printer jams and coated for crisp barcode scannability.
             </p>

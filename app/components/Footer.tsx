@@ -57,7 +57,7 @@ export default function Footer() {
   return (
     <>
       {/* mt-48 */}
-      <footer className="relative pt-90 ">
+      <footer className="relative pt-10 ">
 
         {/* <div className="bg-white"></div> */}
         {/* Newsletter */}
@@ -213,7 +213,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <img className="absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat top-30 h-auto w-full" src="/images/footer/Frame1.png" alt="Frame1.png" />
+          <img className="absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat -top-25 h-auto w-full" src="/images/footer/Frame4.png" alt="Frame4.png" />
         </div>
 
         <div className="relative pt-40 pb-8 overflow-hidden text-white-800">

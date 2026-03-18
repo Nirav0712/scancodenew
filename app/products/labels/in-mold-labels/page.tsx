@@ -18,7 +18,7 @@ export default function InMoldLabelsPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center flex-col-reverse justify-between">
 
           <div>
-            <p className="section-label">// SEAMLESS INTEGRATION //</p>
+            <p className="section-label">{"// SEAMLESS INTEGRATION  //"}</p>
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Become One with the Container</h2>
             <p className="text-lg text-gray-600 leading-relaxed mb-8">
               In-Mold Labeling (IML) is a revolutionary process where a pre-printed polypropylene label is placed into the packaging mold. When the plastic is injected, the label fuses with the container, becoming an integral part of the wall.

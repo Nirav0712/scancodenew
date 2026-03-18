@@ -18,7 +18,7 @@ export default function ContactPage() {
           {/* Contact Information (Left Column) */}
           <div className="lg:col-span-5 space-y-12">
             <div>
-              <p className="section-label">// CONTACT US //</p>
+              <p className="section-label">{"// CONTACT US  //"}</p>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">Let's start a <span className="highlight">conversation</span></h2>
               <p className="text-gray-600 leading-relaxed text-lg">
                 Fill out the form and our print experts will get back to you within 24 hours. We're excited to hear about your next project.

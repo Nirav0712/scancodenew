@@ -46,13 +46,11 @@
 //             </p>
 
 //             <h2 className="text-[42px] md:text-[56px] leading-none font-semibold text-black">
-//               <span className="relative inline-block">
-//                 Print Solutions
-//                 <span className="absolute left-0 bottom-1 w-full h-[2px] bg-white" />
+//               <span className="relative inline-block">{"// Print Solutions
+ //"}<span className="absolute left-0 bottom-1 w-full h-[2px] bg-white" />
 //               </span>
-//               <br />
-//               for Every Need
-//             </h2>
+//               <br />{"// for Every Need
+ //"}</h2>
 //           </div>
 
 //           <div className="flex flex-col items-start lg:items-end gap-4">
@@ -180,9 +178,7 @@ export default function ServicesSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-6 mb-14">
           <div>
-            <p className="text-sm font-semibold tracking-[0.18em] text-gray-500 uppercase mb-3">
-              // OUR SERVICES //
-            </p>
+            <p className="text-sm font-semibold tracking-[0.18em] text-gray-500 uppercase mb-3">{"// OUR SERVICES  //"}</p>
 
             <h2 className="text-[42px] md:text-[56px] leading-none font-semibold text-black">
               <span className="relative inline-block">

@@ -79,7 +79,7 @@ export default function AboutSection() {
 
           {/* RIGHT — Content */}
           <div>
-            <p className="section-label">// ABOUT PRINTING //</p>
+            <p className="section-label">{"// ABOUT PRINTING  //"}</p>
             <h2 className="section-heading mb-6">
               Quality Prints Backed by{" "}
               <span className="highlight">Experience</span>

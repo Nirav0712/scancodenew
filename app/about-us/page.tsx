@@ -42,7 +42,7 @@ export default function AboutPage() {
 
           {/* Right: Text Content */}
           <div>
-            <p className="section-label">// OUR STORY //</p>
+            <p className="section-label">{"// OUR STORY  //"}</p>
             <h2 className="section-heading mb-6">
               A Legacy of <span className="highlight">Craftsmanship</span>
             </h2>
@@ -74,7 +74,7 @@ export default function AboutPage() {
       {/* Our Mission / Values */}
       <section className="py-24 bg-section-bg2">
         <div className="max-w-7xl mx-auto px-6 text-center">
-          <p className="section-label">// OUR VALUES //</p>
+          <p className="section-label">{"// OUR VALUES  //"}</p>
           <h2 className="section-heading mb-16">
             What Drives <span className="highlight">Us</span>
           </h2>

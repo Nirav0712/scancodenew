@@ -17,7 +17,7 @@ export default function SolutionsPage() {
       <section className="py-24 max-w-7xl mx-auto px-6 lg:px-8">
         
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <p className="section-label">// ENTERPRISE SCANNING //</p>
+          <p className="section-label">{"// ENTERPRISE SCANNING  //"}</p>
           <h2 className="section-heading mb-6">
             Efficiency at <span className="highlight">Scale</span>
           </h2>

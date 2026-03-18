@@ -16,7 +16,7 @@ export default function ShrinkSleevesPage() {
 
       <section className="py-24 max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <p className="section-label">// FULL COVERAGE //</p>
+          <p className="section-label">{"// FULL COVERAGE  //"}</p>
           <h2 className="section-heading mb-6">Shape-Shifting <span className="highlight">Branding</span></h2>
           <p className="text-gray-600 text-lg">
             Unlike traditional flat labels, shrink sleeves conform perfectly to the unique contours of your bottles and cans, maximizing your real estate for graphics and nutritional information.

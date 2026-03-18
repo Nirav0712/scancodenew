@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import PageHero from "../components/PageHero";
+import PageHero from "../../components/PageHero";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -67,9 +67,9 @@ export default function ProductsPage() {
       />
 
       <section className="py-24 max-w-7xl mx-auto px-6 lg:px-8">
-        
+
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <p className="section-label">// HARDWARE & CONSUMABLES //</p>
+          <p className="section-label">{"// HARDWARE & CONSUMABLES  //"}</p>
           <h2 className="section-heading mb-6">
             Everything You Need to <span className="highlight">Track & Print</span>
           </h2>
@@ -80,12 +80,12 @@ export default function ProductsPage() {
 
         <div className="space-y-32">
           {PRODUCT_CATEGORIES.map((category, index) => (
-            <div 
-              key={category.id} 
-              id={category.id} 
+            <div
+              key={category.id}
+              id={category.id}
               className={`flex flex-col gap-12 lg:gap-20 items-center scroll-mt-32 ${index % 2 !== 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'}`}
             >
-              
+
               {/* Image Side */}
               <div className="w-full lg:w-1/2">
                 <div className="relative aspect-4/3 rounded-3xl overflow-hidden shadow-2xl group">
@@ -108,7 +108,7 @@ export default function ProductsPage() {
                 <p className="text-lg text-gray-600 leading-relaxed mb-8">
                   {category.description}
                 </p>
-                
+
                 <h4 className="font-bold text-gray-900 mb-4 uppercase tracking-wider text-sm">Key Capabilities</h4>
                 <ul className="space-y-3 mb-10">
                   {category.features.map((feature, i) => (
@@ -136,14 +136,14 @@ export default function ProductsPage() {
         </div>
 
       </section>
-      
+
       {/* Footer CTA overlay for this specific page */}
       <section className="bg-section-bg2 py-20 mt-10">
-         <div className="max-w-4xl mx-auto px-6 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Need a fully integrated system?</h2>
-            <p className="text-xl text-gray-600 mb-10">Our solutions engineers can build a custom package combining hardware, software, and consumables perfectly tailored to your workflow.</p>
-            <Link href="/solutions" className="pill-btn pill-btn-gradient text-lg px-8 py-4">Explore Custom Solutions</Link>
-         </div>
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Need a fully integrated system?</h2>
+          <p className="text-xl text-gray-600 mb-10">Our solutions engineers can build a custom package combining hardware, software, and consumables perfectly tailored to your workflow.</p>
+          <Link href="/solutions" className="pill-btn pill-btn-gradient text-lg px-8 py-4">Explore Custom Solutions</Link>
+        </div>
       </section>
 
     </main>
