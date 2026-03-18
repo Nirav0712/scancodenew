@@ -11,6 +11,7 @@ import PartnersSection from "./components/PartnersSection";
 import TeamSection from "./components/TeamSection";
 import TestimonialsSection from "./components/TestimonialsSection";
 import Footer from "./components/Footer";
+import Cardsscroll from "./components/Cardsscroll";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <PartnersSection />
       <TeamSection />
       <TestimonialsSection />
+      {/* <Cardsscroll /> */}
     </>
   );
 }

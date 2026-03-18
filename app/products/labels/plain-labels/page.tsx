@@ -12,6 +12,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import PageHero from "../../../components/PageHero";
+import Cardsscroll from "../../../components/Cardsscroll";
 
 const PlainLabelsPage = () => {
   const brands = [
@@ -229,6 +230,7 @@ const PlainLabelsPage = () => {
           </div>
         </section>
 
+        <Cardsscroll />
         {/* paper labels Section */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
