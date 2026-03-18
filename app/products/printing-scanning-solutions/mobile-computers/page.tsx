@@ -1,67 +1,177 @@
 "use client";
 
-import React from "react";
+// app/products/barcode-printers/page.tsx
+import { Printer, Zap, Shield, Users, ArrowRight, CheckCircle } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
 import PageHero from "../../../components/PageHero";
-import Link from "next/link";
-import Image from "next/image";
 
-export default function MobileComputersPage() {
+
+const MobileComputersPage = () => {
+   const brands = [
+      { name: 'TSC', description: 'Leading Manufacturer', logo: '/brands/tsc.png' },
+      { name: 'ZEBRA', description: 'Leading Manufacturer', logo: '/brands/zebra.png' },
+      { name: 'AZTAY', description: 'Powered On Site', logo: '/brands/aztay.png' },
+      { name: 'CITIZEN', description: 'Premium Equipment', logo: '/brands/citizen.png' },
+      { name: 'ARGOX', description: 'Leading Manufacturer', logo: '/brands/argox.png' },
+      { name: 'Honeywell', description: 'Industrial Grade', logo: '/brands/honeywell.png' },
+      { name: 'PRINTRONIX AUTO ID', description: 'Enterprise Solutions', logo: '/brands/printronix.png' },
+      { name: 'TOSHIBA', description: 'Leading Innovation', logo: '/brands/toshiba.png' },
+   ];
+
+   const benefits = [
+      {
+         icon: <Zap className="w-8 h-8 text-blue-600" />,
+         title: 'Powerful Performance',
+         description: 'Enjoy robust processing capabilities for smooth multitasking and application use.',
+      },
+      {
+         icon: <Printer className="w-8 h-8 text-blue-600" />,
+         title: 'Portability On-the-Go Access',
+         description: 'Lightweight and compact design allows effortless mobility in various environments.',
+      },
+      {
+         icon: <Users className="w-8 h-8 text-blue-600" />,
+         title: 'Rugged and Durable Build',
+         description: 'Built to endure tough conditions, ensuring reliability in demanding settings.',
+      },
+      {
+         icon: <Shield className="w-8 h-8 text-blue-600" />,
+         title: 'Consistent Connectivity',
+         description: 'Features Wi-Fi, Bluetooth, and cellular options for reliable data access.',
+      },
+   ];
+
    return (
       <main className="bg-white">
          <PageHero
             title="Mobile Computers & Tablets"
-            description="Empower your workforce with enterprise-grade mobile computers and tablets that combine consumer-style design with industrial durability."
-            backgroundImage="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&q=80&w=1920"
+            description="High-performance print engines designed for mission-critical automated print-and-apply systems in manufacturing and logistics."
+            backgroundImage="https://images.unsplash.com/photo-1580983546051-fb1f2c2777df?auto=format&fit=crop&q=80&w=1920"
          />
 
-         <section className="py-24 max-w-7xl mx-auto px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center flex-col-reverse lg:flex-row-reverse">
-               <div className="relative aspect-4/3 rounded-3xl overflow-hidden shadow-2xl">
-                  <Image
-                     src="https://images.unsplash.com/photo-1512446733611-9099a758e236?auto=format&fit=crop&q=80&w=800"
-                     alt="Enterprise Tablet"
-                     fill
-                     className="object-cover"
-                  />
-               </div>
+         <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
 
-               <div>
-                  <p className="section-label">{"// ENTERPRISE MOBILITY  //"}</p>
-                  <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Intelligence at the Edge</h3>
-                  <p className="text-lg text-gray-600 leading-relaxed mb-8">
-                     Consumer smartphones fail in demanding environments. Our Android and Windows rugged devices offer integrated high-performance scanners, long-life swappable batteries, and military-grade durability.
+
+            {/* Introduction Section */}
+            <section className="py-16 container mx-auto px-4">
+               <div className="max-w-4xl mx-auto">
+                  <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+                     <h2 className="text-2xl text-center md:text-3xl font-bold mb-6"><span className="text-[#ef7f1a]">Mobile Computers & Tablets</span> for Enhanced Productivity</h2>
+                     <p className="text-gray-700 text-lg leading-relaxed mb-6">
+                        Mobile Computers & Tablets from Scancode Auto ID are designed to boost productivity in various industries, including retail, logistics, and field service. These versatile devices combine powerful computing capabilities with portability, allowing your workforce to access real-time data and applications on the go.
+                     </p>
+                     <p className="text-gray-700 text-lg leading-relaxed">
+                        Equipped with advanced technology, our mobile computers and tablets ensure seamless connectivity, high-performance processing, and user-friendly interfaces. Their rugged designs withstand challenging environments, making them ideal for both indoor and outdoor use. By integrating these devices into your operations, you empower your team to make informed decisions quickly, ultimately improving efficiency and customer satisfaction.
+                     </p>
+                  </div>
+               </div>
+            </section>
+
+            {/* Benefits Grid */}
+            <section className="py-16 bg-gray-50">
+               <div className="container mx-auto px-4">
+                  <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
+                     Key Benefits of <span className="text-[#ef7f1a]">Mobile Computers & Tablets</span>
+                  </h2>
+                  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                     {benefits.map((benefit, index) => (
+                        <div
+                           key={index}
+                           className="group bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 border border-gray-100"
+                        >
+                           <div className="bg-blue-50 rounded-lg w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-blue-100 transition-colors">
+                              {benefit.icon}
+                           </div>
+                           <h3 className="text-xl font-bold text-gray-800 mb-2">{benefit.title}</h3>
+                           <p className="text-gray-600">{benefit.description}</p>
+                        </div>
+                     ))}
+                  </div>
+               </div>
+            </section>
+
+            {/* Why Choose Us Section */}
+            <section className="py-16 container mx-auto px-4">
+               <div className="max-w-4xl mx-auto bg-gradient-to-r from-blue-600 to-blue-800 rounded-3xl shadow-2xl overflow-hidden">
+                  <div className="p-8 md:p-12 text-white">
+                     <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                        Why Choose Ransolar Label Printers?
+                     </h2>
+                     <div className="grid md:grid-cols-2 gap-6">
+                        <div className="space-y-4">
+                           <div className="flex items-start gap-3">
+                              <CheckCircle className="w-6 h-6 flex-shrink-0 text-blue-200" />
+                              <div>
+                                 <h3 className="font-semibold text-lg">Enhanced Efficiency</h3>
+                                 <p className="text-blue-100">Maximum productivity with minimal downtime</p>
+                              </div>
+                           </div>
+                           <div className="flex items-start gap-3">
+                              <CheckCircle className="w-6 h-6 flex-shrink-0 text-blue-200" />
+                              <div>
+                                 <h3 className="font-semibold text-lg">Superior Print Quality</h3>
+                                 <p className="text-blue-100">State-of-the-art printing technologies</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div className="space-y-4">
+                           <div className="flex items-start gap-3">
+                              <CheckCircle className="w-6 h-6 flex-shrink-0 text-blue-200" />
+                              <div>
+                                 <h3 className="font-semibold text-lg">User-Friendly Design</h3>
+                                 <p className="text-blue-100">Easy to operate and maintain</p>
+                              </div>
+                           </div>
+                           <div className="flex items-start gap-3">
+                              <CheckCircle className="w-6 h-6 flex-shrink-0 text-blue-200" />
+                              <div>
+                                 <h3 className="font-semibold text-lg">Durability & Reliability</h3>
+                                 <p className="text-blue-100">Built to withstand harsh environments</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+
+            {/* Brands Section */}
+            <section className="py-16 bg-gray-50">
+               <div className="container mx-auto px-4">
+                  <h2 className="text-4xl font-bold text-center text-gray-800 mb-4">
+                     Featuring Products from <span className="text-[#ef7f1a]">Renowned Brands</span>
+                  </h2>
+                  <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                     Partnering with industry leaders to bring you the best labeling solutions
                   </p>
 
-                  <div className="space-y-6 mb-12">
-                     <div className="flex gap-5 p-4 border border-gray-100 rounded-2xl bg-white shadow-sm">
-                        <div className="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center text-xl shrink-0">📱</div>
-                        <div>
-                           <h4 className="font-bold mb-1 text-gray-900">Handheld Computers</h4>
-                           <p className="text-gray-600 text-sm">Form factors ranging from sleek retail devices to gun-grip warehouse computers for intensive picking.</p>
+                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                     {brands.map((brand, index) => (
+                        <div
+                           key={index}
+                           className="group bg-white rounded-xl p-6 shadow-md hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-blue-200"
+                        >
+                           <div className="h-16 flex items-center justify-center mb-3">
+                              {/* Placeholder for brand logo - replace with actual Image component when you have logos */}
+                              <div className="w-16 h-16 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center">
+                                 <span className="text-blue-800 font-bold text-xl">
+                                    {brand.name.charAt(0)}
+                                 </span>
+                              </div>
+                           </div>
+                           <h3 className="font-bold text-gray-800 text-center text-lg">{brand.name}</h3>
+                           <p className="text-sm text-gray-600 text-center mt-1">{brand.description}</p>
                         </div>
-                     </div>
-                     <div className="flex gap-5 p-4 border border-gray-100 rounded-2xl bg-white shadow-sm">
-                        <div className="w-12 h-12 rounded-full bg-purple-50 text-purple-600 flex items-center justify-center text-xl shrink-0">💻</div>
-                        <div>
-                           <h4 className="font-bold mb-1 text-gray-900">Rugged Tablets</h4>
-                           <p className="text-gray-600 text-sm">8 to 12-inch screens designed for field service, forklift mounting, and manufacturing floors.</p>
-                        </div>
-                     </div>
-                     <div className="flex gap-5 p-4 border border-gray-100 rounded-2xl bg-white shadow-sm">
-                        <div className="w-12 h-12 rounded-full bg-green-50 text-green-600 flex items-center justify-center text-xl shrink-0">🔒</div>
-                        <div>
-                           <h4 className="font-bold mb-1 text-gray-900">Device Management</h4>
-                           <p className="text-gray-600 text-sm">Solutions like SOTI MobiControl to secure, track, and manage your entire device fleet remotely.</p>
-                        </div>
-                     </div>
-                  </div>
-
-                  <div className="mt-8 flex gap-4">
-                     <Link href="/contact" className="pill-btn pill-btn-gradient px-8 py-3">Talk to Sales</Link>
+                     ))}
                   </div>
                </div>
-            </div>
-         </section>
-      </main>
+            </section>
+
+
+         </div>
+      </main >
    );
-}
+};
+
+export default MobileComputersPage;
