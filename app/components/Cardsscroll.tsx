@@ -2,52 +2,52 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Card = () => {
-    return (
-        <StyledWrapper className='flex justify-center items-center my-24'>
-            <div className="card-3d">
-                <div className="bg-[url('/images/cards/packings.jpg')]">
-                    {/* <img src="/images/cards/packings.jpg" alt=""></img> */}
-                    <span>Pharmaceuticals</span>
-                </div>
-                <div >
-                    <img src="" alt=""></img>
-                    <span>Automotive</span>
-                </div>
-                <div >
-                    <img src="" alt=""></img>
-                    <span>Healthcare</span>
-                </div>
-                <div >
-                    <img src="" alt=""></img>
-                    <span>Agrochemicals</span>
-                </div>
-                <div >
-                    <img src="" alt=""></img>
-                    <span>Food & Beverages</span>
-                </div>
-                <div >
-                    <img src="" alt=""></img>
-                    <span>FMCG</span>
-                </div>
-                <div >
-                    <img src="" alt=""></img>
-                    <span>Chemicals</span>
-                </div>
-                <div >
-                    <img src="" alt=""></img>
-                    <span>Cosmetics</span>
-                </div>
-                <div >
-                    <img src="" alt=""></img>
-                    <span>Electronics</span>
-                </div>
-                <div>
-                    <img src="" alt=""></img>
-                    <span>Textiles</span>
-                </div>
-            </div>
-        </StyledWrapper>
-    );
+  return (
+    <>
+    <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center">Industry-Specific 
+                <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Solutions
+                  <span className="absolute bottom-0 left-0 w-full h-3 bg-[#EF7F1A]/20 z-3 transform -rotate-1" />
+
+                </span>
+              </p>
+    <StyledWrapper className='flex justify-center items-center my-24'>
+      
+      <div className="card-3d">
+        <div className="bg-[url('/images/cards/packings.jpg')]">
+          <span className="text-sm font-serif font-extrabold text-black bg-gray-100 px-2 py-1 rounded-md shadow-md inline-block">
+            Pharmaceuticals
+          </span>                </div>
+        <div className="bg-[url('/images/cards/automotive.jpg.jpeg')]">
+          <span className='text-sm font-serif font-extrabold text-black bg-gray-100 px-2 py-1 rounded-md shadow-md inline-block'>Automotive</span>
+        </div>
+        <div className="bg-[url('/images/cards/Healthcare.jpg.jpeg')]">
+          <span className='text-sm font-serif font-extrabold text-black bg-gray-100 px-2 py-1 rounded-md shadow-md inline-block'>Healthcare</span>
+        </div>
+        <div className="bg-[url('/images/cards/Agrochemicals.jpg.jpeg')]">
+          <span className='text-sm font-serif font-extrabold text-black bg-gray-100 px-2 py-1 rounded-md shadow-md inline-block'>Agrochemicals</span>
+        </div>
+        <div className="bg-[url('/images/cards/Food-Beverages.jpg.jpeg')]">
+          <span className='text-sm font-serif font-extrabold text-black bg-gray-100 px-2 py-1 rounded-md shadow-md inline-block'>Food & Beverages</span>
+        </div>
+        <div className="bg-[url('/images/cards/FMCG.jpg.jpeg')]">
+          <span className='text-sm font-serif font-extrabold text-black bg-gray-100 px-2 py-1 rounded-md shadow-md inline-block'>FMCG</span>
+        </div>
+        <div className="bg-[url('/images/cards/Chemicals.jpg.jpeg')]">
+          <span className='text-sm font-serif font-extrabold text-black bg-gray-100 px-2 py-1 rounded-md shadow-md inline-block'>Chemicals</span>
+        </div>
+        <div className="bg-[url('/images/cards/Cosmetics.jpg.jpeg')]">
+          <span className='text-sm font-serif font-extrabold text-black bg-gray-100 px-2 py-1 rounded-md shadow-md inline-block'>Cosmetics</span>
+        </div>
+        <div className="bg-[url('/images/cards/Electronics.jpg.jpeg')]">
+          <span className='text-sm font-serif font-extrabold text-black bg-gray-100 px-2 py-1 rounded-md shadow-md inline-block'>Electronics</span>
+        </div>
+        <div className="bg-[url('/images/cards/Textiles.jpg.jpeg')]">
+          <span className='text-sm font-serif font-extrabold text-black bg-gray-100 px-2 py-1 rounded-md shadow-md inline-block'>Textiles</span>
+        </div>
+      </div>
+    </StyledWrapper>
+    </>
+  );
 }
 
 const StyledWrapper = styled.div`

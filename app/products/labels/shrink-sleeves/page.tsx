@@ -8,73 +8,18 @@ import {
   Users,
   ArrowRight,
   CheckCircle,
+  Star,
+  Cpu,
+  Briefcase,
+  Award,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import PageHero from "../../../components/PageHero";
+import Cardsscroll from "../../../components/Cardsscroll";
+import { Activity } from "react";
 
-const PlainLabelsPage = () => {
-  const brands = [
-    {
-      name: "Coated Chromo Labels",
-      img: "/images/lables/coated-chromo-labels.webp",
-    },
-    {
-      name: "TT2C Labels",
-      img: "/images/lables/tt2c-labels.webp",
-    },
-    {
-      name: "Direct Thermal Labels",
-      img: "/images/lables/direct-thermal-labels.webp",
-    },
-    {
-      name: "Removable Labels",
-      img: "/images/lables/pet-labels.webp",
-    },
-    {
-      name: "Mirror Coat Labels",
-      img: "/images/lables/pp-labels.webp",
-    },
-    {
-      name: "Pharma Grade Labels",
-      img: "/images/lables/pvc-labels.webp",
-    },
-    {
-      name: "Piggy Back Labels",
-      img: "/images/lables/piggy-back-labels.webp",
-    },
-    {
-      name: "FSC Certified Labels",
-      img: "/images/lables/synthetic-labels.webp",
-    },
-    {
-      name: "FSC Certified Labels",
-      img: "/images/lables/tamper-evident-labels.webp",
-    },
-  ];
-  const polysterlabel = [
-    {
-      name: "P.P Labels",
-      img: "/images/lables/coated-chromo-labels.webp",
-    },
-    {
-      name: "PET Labels",
-      img: "/images/lables/pet-labels.webp",
-    },
-    {
-      name: "PE Labels",
-      img: "/images/lables/direct-thermal-labels.webp",
-    },
-    {
-      name: "Synthetic Labels",
-      img: "/images/lables/pet-labels.webp",
-    },
-    {
-      name: "Security Labels",
-      img: "/images/lables/pp-labels.webp",
-    },
-  ];
-
+const ShrinkSleevesPage = () => {
   const benefits = [
     {
       icon: <Zap className="w-8 h-8 text-blue-600" />,
@@ -100,27 +45,26 @@ const PlainLabelsPage = () => {
       description:
         "We offer recyclable shrink sleeves, helping brands reduce their environmental impact without sacrificing quality.",
     },
-
     {
-      icon: <Zap className="w-8 h-8 text-blue-600" />,
+      icon: <Award className="w-8 h-8 text-blue-600" />,
       title: "Durability & Resistance",
       description:
         "Resistant to moisture, UV, and temperature, our sleeves ensure your label stays intact through any conditions.",
     },
     {
-      icon: <Printer className="w-8 h-8 text-blue-600" />,
+      icon: <Cpu className="w-8 h-8 text-blue-600" />,
       title: "Tailored Custom Solutions",
       description:
         "Our team customizes each shrink sleeve to suit your product’s unique design, enhancing its shelf appeal.",
     },
     {
-      icon: <Users className="w-8 h-8 text-blue-600" />,
+      icon: <Star className="w-8 h-8 text-blue-600" />,
       title: "Flexible Application",
       description:
         "Suitable for all container shapes—round, square, or irregular—our sleeves create a seamless product fit.",
     },
     {
-      icon: <Shield className="w-8 h-8 text-blue-600" />,
+      icon: <Briefcase className="w-8 h-8 text-blue-600" />,
       title: "Enhanced Shelf Appeal",
       description:
         "Our shrink sleeves are designed to make your products stand out, boosting shelf visibility and customer interest.",
@@ -130,59 +74,101 @@ const PlainLabelsPage = () => {
   return (
     <main className="bg-white">
       <PageHero
-        title="Plain Labels"
-        description="Our plain labels are available in two high-quality, versatile materials."
+        title="Shrink Sleeves"
+        description="Our shrink sleeves deliver a 360-degree branding solution that wraps around your product, creating a striking, all-around display that maximizes visibility on crowded shelves."
         backgroundImage="https://images.unsplash.com/photo-1580983546051-fb1f2c2777df?auto=format&fit=crop&q=80&w=1920"
       />
 
-      <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+      <div className="min-h-screen bg-linear-to-b from-gray-50 to-white">
+
         {/* Introduction Section */}
-        <section className="py-16 container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
-              <p className="text-2xl font-bold text-gray-800 leading-relaxed mb-6 text-center">
-                Custom <span className="text-[#EF7F1A]">Shrink Sleeves </span>{" "}
-                for Superior Branding and Protections
-              </p>
-              <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                At Scancode Auto ID Technology Pvt Ltd, we specialize in
-                producing high-quality shrink sleeves tailored to the diverse
-                packaging demands of industries like food and beverages,
-                pharmaceuticals, cosmetics, and more. Our shrink sleeves deliver
-                a 360-degree branding solution that wraps around your product,
-                creating a striking, all-around display that maximizes
-                visibility on crowded shelves. Crafted to conform to various
-                shapes, these sleeves provide a seamless, vibrant look that
-                enhances brand appeal and product differentiation.
-              </p>
-              <p className="text-gray-700 text-lg leading-relaxed mb-6">
-               Using advanced, high-definition printing techniques, we ensure that every detail—from colors to text—is sharp and vivid, making your brand stand out. Beyond aesthetics, our shrink sleeves are built for durability, offering reliable protection against moisture, UV exposure, and handling. We also provide customizable options such as tamper-evident features and eco-friendly materials, helping brands not only capture attention but also prioritize product security and sustainability. Scancode’s shrink sleeves offer a comprehensive packaging solution that combines visual impact with functional excellence.
-              </p>
+        <section className="py-20 bg-linear-to-br from-gray-50 to-white">
+          <div className="container mx-auto px-4 max-w-7xl">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+              {/* Text Content - Left Side */}
+              <div className="lg:p-14">
+                <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 leading-tight mb-8">
+                  Custom
+                  <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default block mt-2">Shrink Sleeves
+                    <span className="absolute bottom-0 left-0 w-80 h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" />
+
+                  </span>
+                  <span className="text-2xl lg:text-3xl font-medium text-gray-600 block mt-4">
+                    Superior Branding and Protection
+                  </span>
+                </h2>
+
+                <div className="space-y-6">
+                  <p className="text-gray-700 text-lg leading-relaxed border-l-4 border-[#EF7F1A] pl-4">
+                    At Scancode Auto ID Technology Pvt Ltd, we specialize in producing high-quality
+                    shrink sleeves tailored to the diverse packaging demands of industries like
+                    food and beverages, pharmaceuticals, cosmetics, and more. Our shrink sleeves
+                    deliver a 360-degree branding solution that wraps around your product, creating
+                    a striking, all-around display that maximizes visibility on crowded shelves.
+                    Crafted to conform to various shapes, these sleeves provide a seamless, vibrant
+                    look that enhances brand appeal and product differentiation.
+                  </p>
+                </div>
+              </div>
+
+              {/* Image Content - Right Side */}
+              <div className="relative h-full">
+                {/* Main Image Container */}
+                <div className="relative rounded-3xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
+                  <img
+                    src="/images/lables/coated-chromo-labels.webp"
+                    alt="Shrink Sleeve Packaging Solutions"
+                    className="w-full h-full object-cover"
+                  />
+
+                  {/* Overlay Gradient */}
+                  <div className="absolute inset-0 bg-linear-to-t from-black/50 via-transparent to-transparent"></div>
+
+                  {/* Image Caption */}
+                  <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                    <p className="text-2xl font-bold mb-2">360° Branding Solution</p>
+                    <p className="text-lg opacity-90">Full-wrap coverage for maximum shelf impact</p>
+                  </div>
+                </div>
+
+                {/* Floating Feature Cards */}
+                <div className="absolute -top-6 -right-6 bg-white rounded-2xl shadow-xl p-4 max-w-50 transform rotate-3 hover:rotate-0 transition-transform">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 bg-[#EF7F1A]/10 rounded-full flex items-center justify-center">
+                      <span className="text-[#EF7F1A] text-xl">✓</span>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-800">Premium Quality</p>
+                      <p className="text-sm text-gray-600">High-definition print</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
+        {/* cardscroller section  */}
+        <Cardsscroll />
+
         {/* Benefits Grid */}
-        <section className="py-20 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+        <section className="py-20 bg-linear-to-b from-gray-50 to-white relative overflow-hidden">
           {/* Decorative background elements */}
-          <div className="absolute inset-0 bg-grid-gray-900/[0.02] bg-[size:50px_50px]" />
+          <div className="absolute inset-0 bg-grid-gray-900/[0.02] bg-size-[50px_50px]" />
           <div className="absolute top-0 left-0 w-96 h-96 bg-[#EF7F1A]/5 rounded-full blur-3xl" />
           <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl" />
 
           <div className="container mx-auto px-4 relative z-10">
             {/* Section Header with animated underline */}
-            <div className="text-center mb-16">
-              <p className="text-4xl md:text-5xl font-bold text-gray-800 leading-relaxed mb-4">
-             Why Choose Our
-                <span className="relative inline-block ml-3">
-                  <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default">
-             Shrink Sleeves
-                  </span>?
-                  <span className="absolute bottom-2 left-0 w-full h-3 bg-[#EF7F1A]/20 -z-0 transform -rotate-1" />
-                </span>
+            <div className="max-w-4xl mx-auto">
+              <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center">Why Choose Our
+                <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Shrink Sleeves
+                  <span className="absolute bottom-0 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" />
+                </span>?
               </p>
-              <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-           Our shrink sleeves provide full 360-degree branding, vibrant high-quality prints, and durable protection, tailored to meet the unique needs of your product. With options for tamper-evident features and eco-friendly materials, we offer a complete packaging solution designed to elevate and secure your brand.
+              <p className="text-gray-700 text-lg text-center leading-relaxed mb-6">
+                Our shrink sleeves provide full 360-degree branding, vibrant high-quality prints, and durable protection, tailored to meet the unique needs of your product. With options for tamper-evident features and eco-friendly materials, we offer a complete packaging solution designed to elevate and secure your brand.
               </p>
             </div>
 
@@ -194,10 +180,10 @@ const PlainLabelsPage = () => {
                   className="group relative bg-white rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-500 overflow-hidden"
                 >
                   {/* Animated gradient background on hover */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#EF7F1A]/0 via-[#EF7F1A]/0 to-blue-500/0 group-hover:from-[#EF7F1A]/5 group-hover:via-[#EF7F1A]/5 group-hover:to-blue-500/5 transition-all duration-700" />
+                  <div className="absolute inset-0 bg-linear-to-br from-[#EF7F1A]/0 via-[#EF7F1A]/0 to-blue-500/0 group-hover:from-[#EF7F1A]/5 group-hover:via-[#EF7F1A]/5 group-hover:to-blue-500/5 transition-all duration-700" />
 
                   {/* Top accent bar with animation */}
-                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#EF7F1A] to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left" />
+                  <div className="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-[#EF7F1A] to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left" />
 
                   {/* Corner decorations */}
                   <div className="absolute top-4 left-4 w-8 h-8 border-t-2 border-l-2 border-[#EF7F1A]/0 group-hover:border-[#EF7F1A]/30 transition-all duration-500 rounded-tl-lg" />
@@ -213,7 +199,7 @@ const PlainLabelsPage = () => {
                       <div className="absolute inset-0 bg-[#EF7F1A]/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 scale-75 group-hover:scale-100" />
 
                       {/* Icon background with gradient */}
-                      <div className="relative w-20 h-20 bg-gradient-to-br from-[#EF7F1A]/10 to-blue-500/10 rounded-2xl flex items-center justify-center transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
+                      <div className="relative w-20 h-20 bg-linear-to-br from-[#EF7F1A]/10 to-blue-500/10 rounded-2xl flex items-center justify-center transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
                         <div className="w-16 h-16 bg-white rounded-xl shadow-md group-hover:shadow-xl flex items-center justify-center transform group-hover:-rotate-3 transition-all duration-500">
                           <div className="text-[#EF7F1A] group-hover:text-blue-600 transition-colors duration-300">
                             {benefit.icon}
@@ -223,7 +209,7 @@ const PlainLabelsPage = () => {
                     </div>
 
                     {/* Title with hover effect */}
-                    <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#EF7F1A] group-hover:to-blue-600 transition-all duration-300">
+                    <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-linear-to-r group-hover:from-[#EF7F1A] group-hover:to-blue-600 transition-all duration-300">
                       {benefit.title}
                     </h3>
 
@@ -235,168 +221,35 @@ const PlainLabelsPage = () => {
                     )}
 
                     {/* Bottom decorative element */}
-                    <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 w-12 h-0.5 bg-gradient-to-r from-[#EF7F1A] to-blue-500 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500 group-hover:w-16" />
+                    <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 w-12 h-0.5 bg-linear-to-r from-[#EF7F1A] to-blue-500 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500 group-hover:w-16" />
                   </div>
                 </div>
               ))}
             </div>
-
-            {/* Optional CTA Button */}
-            <div className="text-center mt-16">
-              <button className="px-8 py-3 bg-gradient-to-r from-[#EF7F1A] to-blue-600 text-white rounded-full font-semibold hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
-                Learn More About Our Labels
-              </button>
-            </div>
           </div>
         </section>
 
+        {/* why choose us */}
         <section className="py-16 container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <p className="text-2xl font-bold text-gray-800 leading-relaxed mb-6 text-center">
-              Explore Our Range of
-              <span className="text-[#EF7F1A]"> Plain Label Types</span>
-            </p>
-            <p className="text-gray-700 text-lg text-center leading-relaxed mb-6">
-              Our plain labels are available in two high-quality, versatile
-              materials: Paper Labels and Polyester Labels. Crafted to meet
-              diverse industry needs, each label type offers unique advantages
-              that support reliable, professional labeling for a range of
-              applications. Whether you need cost-effective labels for everyday
-              use or durable options that withstand challenging environments,
-              our plain labels provide consistent performance, adaptability, and
-              clarity across various settings.
-            </p>
-          </div>
-        </section>
+          <div className="max-w-7xl mx-auto">
+            <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center">What Makes
+              <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Scancode <span className="absolute bottom-0 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" /></span>the Right Choice for<span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Shrink Sleeves
+                <span className="absolute bottom-0 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" />
 
-        {/* paper labels Section */}
-        <section className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center ">
-              Paper
-              <span className="text-[#EF7F1A] hover:text-gray-800 transition duration-300">
-                {" "}
-                Labels
               </span>
             </p>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
-              {brands.map((brand, index) => (
-                <div
-                  key={index}
-                  className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-blue-200 hover:scale-105"
-                >
-                  <div className="p-8 flex flex-col items-center">
-                    {/* Image container that expands significantly on hover */}
-                    <div className="relative mb-6 w-full flex justify-center">
-                      <div className="w-36 h-36 group-hover:w-52 group-hover:h-52 transition-all duration-500 ease-out">
-                        <div className="relative w-full h-full">
-                          {/* Background glow effect */}
-                          <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-400 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500" />
-
-                          {/* Image background */}
-                          <div className="relative w-full h-full p-4 bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-md group-hover:shadow-xl">
-                            <img
-                              src={brand.img}
-                              alt={brand.name}
-                              className="w-full h-full object-contain transform group-hover:scale-125 transition-transform duration-500"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Brand name with animation */}
-                    <h3 className="font-bold text-lg text-gray-800 text-center group-hover:text-blue-600 group-hover:scale-110 transition-all duration-300">
-                      {brand.name}
-                    </h3>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* polyster labels section */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4">
-            <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center ">
-              Polyester
-              <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default">
-                {" "}
-                Labels
-                <span className="absolute -bottom-1 left-2 w-full h-3 bg-[#EF7F1A]/20 -z-0 transform -rotate-1" />
-              </span>
+            <p className="text-gray-700 text-lg leading-relaxed mb-6 text-center">
+              At Scancode Auto ID Technology Pvt Ltd, we bring together years of industry expertise, cutting-edge printing technology, and a dedication to quality that makes our shrink sleeves the ideal choice for a wide range of packaging needs. Our shrink sleeves are meticulously designed to not only enhance your product's shelf appeal with vibrant colors and sharp details but also to provide robust protection against environmental factors like moisture and UV light. This ensures that your products remain visually striking and intact from the moment they're packaged to when they reach the consumer.
             </p>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
-              {polysterlabel.map((polysterlabel, index) => (
-                <div
-                  key={index}
-                  className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-blue-200 hover:scale-105"
-                >
-                  <div className="p-8 flex flex-col items-center">
-                    {/* Image container that expands significantly on hover */}
-                    <div className="relative mb-6 w-full flex justify-center">
-                      <div className="w-36 h-36 group-hover:w-52 group-hover:h-52 transition-all duration-500 ease-out">
-                        <div className="relative w-full h-full">
-                          {/* Background glow effect */}
-                          <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-400 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500" />
-
-                          {/* Image background */}
-                          <div className="relative w-full h-full p-4 bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-md group-hover:shadow-xl">
-                            <img
-                              src={polysterlabel.img}
-                              alt={polysterlabel.name}
-                              className="w-full h-full object-contain transform group-hover:scale-125 transition-transform duration-500"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Brand name with animation */}
-                    <h3 className="font-bold text-lg text-gray-800 text-center group-hover:text-blue-600 group-hover:scale-110 transition-all duration-300">
-                      {polysterlabel.name}
-                    </h3>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Benefits Grid */}
-        <section className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4 hover:border-blue-200">
-            <p className="text-3xl font-bold text-gray-800 leading-relaxed mb-6 text-center hover:border-blue-200">
-              Core Benefits of
-              <span className="text-[#EF7F1A] hover:text-gray-800 transition duration-300">
-                {" "}
-                Plain Labels
-              </span>
+            <p className="text-gray-700 text-lg leading-relaxed mb-6 text-center">
+              In addition to aesthetics and durability, we prioritize compliance with industry regulations, providing options like tamper-evident features that reinforce product security, especially for sensitive sectors like food, pharmaceuticals, and cosmetics. Scancode's solutions also cater to eco-conscious brands with sustainable, recyclable shrink sleeve options that help reduce environmental impact. With a focus on customization, we work closely with each client to create a shrink sleeve that truly reflects their brand identity, allowing for a seamless fit on various container shapes and sizes. Trust Scancode to provide a packaging solution that combines visual impact, protection, and compliance for unmatched product presentation.
             </p>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-              {benefits.map((benefit, index) => (
-                <div
-                  key={index}
-                  className="group bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 border border-gray-100"
-                >
-                  <div className="bg-blue-50 rounded-lg w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-blue-100 transition-colors">
-                    {benefit.icon}
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">
-                    {benefit.title}
-                  </h3>
-                  <p className="text-gray-600">{benefit.description}</p>
-                </div>
-              ))}
-            </div>
           </div>
         </section>
+
       </div>
     </main>
   );
 };
 
-export default PlainLabelsPage;
+export default ShrinkSleevesPage;

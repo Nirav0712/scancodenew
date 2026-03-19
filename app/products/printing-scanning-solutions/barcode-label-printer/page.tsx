@@ -107,7 +107,7 @@ const BarcodePrintersPage = () => {
         backgroundImage="https://images.unsplash.com/photo-1580983546051-fb1f2c2777df?auto=format&fit=crop&q=80&w=1920"
       />
 
-      <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+      <div className="min-h-screen bg-linear-to-b from-gray-50 to-white">
         {/* Introduction Section */}
         <section className="py-16 container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
@@ -173,7 +173,7 @@ const BarcodePrintersPage = () => {
 
         {/* Why Choose Us Section */}
         <section className="py-16 container mx-auto px-4">
-          <div className="max-w-4xl mx-auto bg-gradient-to-r from-blue-600 to-blue-800 rounded-3xl shadow-2xl overflow-hidden">
+          <div className="max-w-4xl mx-auto bg-linear-to-r from-blue-600 to-blue-800 rounded-3xl shadow-2xl overflow-hidden">
             <div className="p-8 md:p-12 text-white">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
                 Why Choose Ransolar Label Printers?
@@ -181,7 +181,7 @@ const BarcodePrintersPage = () => {
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 flex-shrink-0 text-blue-200" />
+                    <CheckCircle className="w-6 h-6 shrink-0 text-blue-200" />
                     <div>
                       <h3 className="font-semibold text-lg">
                         Enhanced Efficiency
@@ -192,7 +192,7 @@ const BarcodePrintersPage = () => {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 flex-shrink-0 text-blue-200" />
+                    <CheckCircle className="w-6 h-6 shrink-0 text-blue-200" />
                     <div>
                       <h3 className="font-semibold text-lg">
                         Superior Print Quality
@@ -205,7 +205,7 @@ const BarcodePrintersPage = () => {
                 </div>
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 flex-shrink-0 text-blue-200" />
+                    <CheckCircle className="w-6 h-6 shrink-0 text-blue-200" />
                     <div>
                       <h3 className="font-semibold text-lg">
                         User-Friendly Design
@@ -216,7 +216,7 @@ const BarcodePrintersPage = () => {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 flex-shrink-0 text-blue-200" />
+                    <CheckCircle className="w-6 h-6 shrink-0 text-blue-200" />
                     <div>
                       <h3 className="font-semibold text-lg">
                         Durability & Reliability
@@ -251,7 +251,7 @@ const BarcodePrintersPage = () => {
                 >
                   <div className="h-16 flex items-center justify-center mb-3">
                     {/* Placeholder for brand logo - replace with actual Image component when you have logos */}
-                    <div className="w-25 h-25 mb-4 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center">
+                    <div className="w-25 h-25 mb-4 bg-linear-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center">
                       <img
                         src={brand.img}
                         alt="brand"

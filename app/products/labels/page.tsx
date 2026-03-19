@@ -4,66 +4,188 @@ import React from "react";
 import PageHero from "../../components/PageHero";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
-export default function LabelsPage() {
+
+const PRODUCT_CATEGORIES = [
+  {
+  id: "plain-labels",
+    title: "Plain Labels",
+    description: "Versatile blank label stocks perfect for variable printing, compatible with thermal transfer, direct thermal, and laser printers.",
+    image: "https://images.unsplash.com/photo-1586075010923-2dd4570fb338?auto=format&fit=crop&q=80&w=800",
+    features: ["Multiple material options", "Various adhesive strengths", "Sizes from 1\" x 1\" to 8\" x 10\""],
+    buttonText: "Shop Plain Labels",
+    pagePath: "/products/labels/plain-labels"
+  },
+  {
+    id: "pre-printed-labels",
+    title: "Pre Printed Labels",
+    description: "Custom pre-printed labels with your logo, branding, and fixed information, ready to use with no on-site printing required.",
+    image: "https://images.unsplash.com/photo-1586339949916-3e9457bef6d3?auto=format&fit=crop&q=80&w=800",
+    features: ["Full color printing", "Custom die-cut shapes", "Sequential numbering available"],
+    buttonText: "View Pre Printed Labels",
+    pagePath: "/products/labels/pre-printed-labels"
+  },
+  {
+    id: "shrink-sleeves",
+    title: "Shrink Sleeves",
+    description: "High-impact 360-degree shrink sleeve labels for full-surface branding on containers, bottles, and unique packaging shapes.",
+    image: "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&q=80&w=800",
+    features: ["360-degree branding", "Tamper-evident options", "Available in PVC, PET, and OPS"],
+    buttonText: "Explore Shrink Sleeves",
+    pagePath: "/products/labels/shrink-sleeves"
+  },
+  {
+    id: "in-mold-labels",
+    title: "In Mold Labels",
+    description: "In-mold labeling (IML) solutions that become a permanent part of the container during the molding process for durable, high-quality graphics.",
+    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=800",
+    features: ["Seamless integration", "Fade and scratch resistant", "Single or multi-color printing"],
+    buttonText: "View In Mold Labels",
+    pagePath: "/products/labels/in-mold-labels"
+  }
+];
+
+export default function ProductsPage() {
+  const router = useRouter();
+
+  const handleCategoryClick = (pagePath: string, categoryTitle: string) => {
+      // Navigate to the existing page
+  router.push(pagePath);
+    
+    // Optional: Track analytics
+    console.log(`Navigating to ${categoryTitle} page at ${pagePath}`);
+  };
+
   return (
     <main className="bg-white">
       <PageHero
-        title="Custom Labels"
-        description="High-quality, durable barcode and product labels for every application, from freezing warehouse environments to pristine retail displays."
-        backgroundImage="https://images.unsplash.com/photo-1589118949245-7d38baf380d6?auto=format&fit=crop&q=80&w=1920"
+        title="Printing & Scanning Solutions"
+        description="Explore our comprehensive range of Auto ID hardware, consumables, and software designed to streamline your business operations."
+        backgroundImage="https://images.unsplash.com/photo-1516322311718-4a1bfbfa11bb?auto=format&fit=crop&q=80&w=1920"
       />
 
       <section className="py-24 max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="text-center max-w-3xl mx-auto mb-20">
+          <p className="section-label">{"// HARDWARE & CONSUMABLES  //"}</p>
+          <h2 className="section-heading mb-6">
+            Everything You Need to <span className="highlight">Track & Print</span>
+          </h2>
+          <p className="text-gray-600 text-lg">
+            From the warehouse floor to the retail checkout, our premium product lineup ensures accuracy, efficiency, and reliability.
+          </p>
+        </div>
 
-          {/* Image */}
-          <div className="relative aspect-square md:aspect-4/3 rounded-3xl overflow-hidden shadow-2xl">
-            <Image
-              src="https://images.unsplash.com/photo-1603533867307-e4359dcbd215?auto=format&fit=crop&q=80&w=800"
-              alt="Roll of printed labels"
-              fill
-              className="object-cover"
-            />
-          </div>
-
-          {/* Details */}
-          <div>
-            <p className="section-label">{"// PREMIUM STOCK  //"}</p>
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Built for Durability & Clarity</h2>
-            <p className="text-lg text-gray-600 leading-relaxed mb-8">
-              Whether you need direct thermal labels for fast-moving shipping or rugged thermal transfer labels for outdoor equipment, we supply materials engineered to stick and stay readable.
-            </p>
-
-            <div className="space-y-6 mb-10">
-              <div className="flex gap-4">
-                <div className="w-12 h-12 bg-blue-50 text-primary rounded-xl flex items-center justify-center shrink-0">🌡️</div>
-                <div>
-                  <h4 className="font-bold text-gray-900 text-lg">Direct Thermal Labels</h4>
-                  <p className="text-gray-600">Perfect for shipping, receipts, and short-term tracking without needing a ribbon.</p>
+        <div className="space-y-32">
+          {PRODUCT_CATEGORIES.map((category, index) => (
+            <div
+              key={category.id}
+              id={category.id}
+              className={`flex flex-col gap-12 lg:gap-20 items-center scroll-mt-32 ${index % 2 !== 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'}`}
+            >
+              {/* Image Side - Clickable to navigate to the page */}
+              <div className="w-full lg:w-1/2">
+                <div 
+                  onClick={() => handleCategoryClick(category.pagePath, category.title)}
+                  className="relative aspect-4/3 rounded-3xl overflow-hidden shadow-2xl group cursor-pointer"
+                >
+                  <Image
+                    src={category.image}
+                    alt={category.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 border-4 border-white/20 rounded-3xl z-10 pointer-events-none"></div>
+                  
+                  {/* Hover Overlay with "View Details" */}
+                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span className="bg-white text-gray-900 px-6 py-3 rounded-full font-semibold transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                      Click to View {category.title}
+                    </span>
+                  </div>
                 </div>
               </div>
-              <div className="flex gap-4">
-                <div className="w-12 h-12 bg-purple-50 text-purple-600 rounded-xl flex items-center justify-center shrink-0">🛡️</div>
-                <div>
-                  <h4 className="font-bold text-gray-900 text-lg">Thermal Transfer Labels</h4>
-                  <p className="text-gray-600">Requires a ribbon but offers superior longevity against scratching, fading, and chemicals.</p>
+
+              {/* Text Side */}
+              <div className="w-full lg:w-1/2 lg:px-8">
+                <div className="inline-block px-4 py-1.5 bg-gray-100 text-gray-600 rounded-full text-sm font-bold tracking-wider mb-6">
+                  {String(index + 1).padStart(2, '0')}
                 </div>
-              </div>
-              <div className="flex gap-4">
-                <div className="w-12 h-12 bg-orange-50 text-orange-600 rounded-xl flex items-center justify-center shrink-0">🎨</div>
-                <div>
-                  <h4 className="font-bold text-gray-900 text-lg">Custom Pre-Printed</h4>
-                  <p className="text-gray-600">Full-color branding with blank areas left for your variable barcode data printing.</p>
+                
+                {/* Category Title with Link */}
+                <Link 
+                  href={category.pagePath}
+                  className="group inline-block"
+                >
+                  <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6 hover:text-primary transition-colors">
+                    {category.title}
+                    <span className="inline-block ml-3 opacity-0 group-hover:opacity-100 transition-all group-hover:translate-x-2 transform">
+                      <svg className="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                      </svg>
+                    </span>
+                  </h3>
+                </Link>
+                
+                <p className="text-lg text-gray-600 leading-relaxed mb-8">
+                  {category.description}
+                </p>
+
+                <h4 className="font-bold text-gray-900 mb-4 uppercase tracking-wider text-sm">Key Capabilities</h4>
+                <ul className="space-y-3 mb-10">
+                  {category.features.map((feature, i) => (
+                    <li key={i} className="flex items-center gap-3 text-gray-700">
+                      <div className="w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0">
+                        <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                      </div>
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+
+                {/* Dynamic Button based on category */}
+                <div className="flex flex-wrap gap-4 items-center">
+                  <Link 
+                    href={category.pagePath}
+                    className="pill-btn pill-btn-dark hover:shadow-xl inline-flex group"
+                  >
+                    {category.buttonText}
+                    <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                  </Link>
+                  
+                  <Link 
+                    href={`/contact?product=${encodeURIComponent(category.title)}`}
+                    className="text-gray-600 hover:text-primary transition-colors underline underline-offset-4"
+                  >
+                    Request Quote
+                  </Link>
+                </div>
+
+                {/* Quick Navigation Hint */}
+                <div className="mt-6 pt-6 border-t border-gray-100">
+                  <p className="text-sm text-gray-500 flex items-center gap-2">
+                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    Click on the image or title to view the complete {category.title} collection
+                  </p>
                 </div>
               </div>
             </div>
+          ))}
+        </div>
+      </section>
 
-            <Link href="/contact" className="pill-btn pill-btn-dark shadow-xl hover:-translate-y-1 inline-flex items-center gap-2">
-              Request Samples
-            </Link>
-          </div>
-
+      {/* Footer CTA overlay for this specific page */}
+      <section className="bg-section-bg2 py-20 mt-10">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Need a fully integrated system?</h2>
+          <p className="text-xl text-gray-600 mb-10">Our solutions engineers can build a custom package combining hardware, software, and consumables perfectly tailored to your workflow.</p>
+          <Link href="/solutions" className="pill-btn pill-btn-gradient text-lg px-8 py-4">Explore Custom Solutions</Link>
         </div>
       </section>
     </main>
