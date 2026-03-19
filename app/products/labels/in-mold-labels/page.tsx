@@ -79,27 +79,51 @@ const PlainLabelsPage = () => {
   const benefits = [
     {
       icon: <Zap className="w-8 h-8 text-blue-600" />,
-      title: "Customizable Versatility",
+      title: "Seamless Integration",
       description:
-        "Easily tailored to specific business needs, offering flexibility for a wide range of applications.",
+        "Directly fused to the container, our labels stay flawless without peeling or fading.",
     },
     {
       icon: <Printer className="w-8 h-8 text-blue-600" />,
-      title: "Clear Print Compatibility",
+      title: "Durable & Resistant",
       description:
-        "Compatible with thermal printers, delivering sharp, readable prints for professional presentation.",
+        "Scratch, water, and UV-resistant, our labels keep products looking sharp indoors and out.",
     },
     {
       icon: <Users className="w-8 h-8 text-blue-600" />,
-      title: "Durability for Handling",
+      title: "Superior Print Quality",
       description:
-        "Made from robust materials that withstand frequent handling and storage conditions.",
+        "Vibrant colors and clear details make your branding stand out with premium appeal.",
     },
     {
       icon: <Shield className="w-8 h-8 text-blue-600" />,
       title: "Cost-Effective Solution",
       description:
-        "Provides an economical labeling option without compromising on quality or performance.",
+        "Integrated labeling reduces production steps, saving time and costs for high-volume runs.",
+    },
+    {
+      icon: <Zap className="w-8 h-8 text-blue-600" />,
+      title: "Environmentally Friendly",
+      description:
+        "Made from recyclable materials, our labels help reduce environmental impact.",
+    },
+    {
+      icon: <Printer className="w-8 h-8 text-blue-600" />,
+      title: "Customizable Designs",
+      description:
+        "Tailored to fit any container shape or size, our labels support unique brand designs.",
+    },
+    {
+      icon: <Users className="w-8 h-8 text-blue-600" />,
+      title: "Product Longevity",
+      description:
+        "Long-lasting protection ensures labels stay fresh and attractive over time.",
+    },
+    {
+      icon: <Shield className="w-8 h-8 text-blue-600" />,
+      title: "Tamper-Evident Features",
+      description:
+        "Optional security features prevent tampering, ideal for sensitive products.",
     },
   ];
 
@@ -117,14 +141,12 @@ const PlainLabelsPage = () => {
           <div className="max-w-4xl mx-auto">
             <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
               <p className="text-2xl font-bold text-gray-800 leading-relaxed mb-6 text-center">
-                <span className="text-[#EF7F1A]">Plain Labels </span>for Versatile Business Applications
+                What Are <span className="text-[#EF7F1A]"> In-Mold Labels </span> ?
               </p>
               <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                Plain Labels from Scancode ID are essential for businesses requiring a reliable, adaptable solution for various labeling needs. These blank, unprinted labels provide the flexibility to be customized according to specific requirements, making them ideal for applications in retail, logistics, manufacturing, and healthcare. Scancode ID’s plain labels ensure high-quality print clarity and compatibility with most thermal printers, giving your business the confidence of consistent, professional labeling.
+                In-Mold Labels are a revolutionary labelling solution where the label becomes an integral part of the product’s packaging during the moulding process. This technique is most commonly used in injection moulding, blow moulding, or thermoforming processes. As the plastic product is formed, the pre-printed label is placed inside the mold and fuses with the surface, resulting in a fully integrated label that is both durable and aesthetically pleasing.
               </p>
-              <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                Designed to meet a range of industry demands, our plain labels are made from durable materials that withstand handling, shipping, and storage, all while delivering cost-effectiveness and quality. Scancode ID’s plain labels support efficient workflows, allowing you to enhance organization and traceability across your operations.
-              </p>
+              
             </div>
           </div>
         </section>
@@ -139,17 +161,17 @@ const PlainLabelsPage = () => {
           <div className="container mx-auto px-4 relative z-10">
             {/* Section Header with animated underline */}
             <div className="text-center mb-16">
-              <p className="text-4xl md:text-5xl font-bold text-gray-800 leading-relaxed mb-4">
-                Core Benefits of
+              <p className="text-3xl md:text-5xl font-bold text-gray-800 leading-relaxed mb-4">
+          Why Choose Our
                 <span className="relative inline-block ml-3">
                   <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default">
-                    Plain Labels
-                  </span>
+                    In-Mold Labels
+                  </span> ?
                   <span className="absolute bottom-2 left-0 w-full h-3 bg-[#EF7F1A]/20 -z-0 transform -rotate-1" />
                 </span>
               </p>
               <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-                Discover why businesses choose our plain labels for their superior quality and performance
+              At Scancode Auto ID Technology Pvt Ltd, we specialize in delivering premium In-Mold Labels (IML) that serve diverse industries, including Food & Beverages, Pharmaceuticals, Household Goods, and more. Our in-mold labels are designed to seamlessly integrate with your plastic containers during the moulding process, creating a durable, peel-proof label that feels like part of the product. This fusion not only offers a sleek and professional appearance but also adds functional resilience, making our IML solutions ideal for products that require long-lasting and vibrant branding.
               </p>
             </div>
 
