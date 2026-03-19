@@ -444,9 +444,6 @@ const RFIDPage = () => {
       </div>
     </main>
   );
-
-
-
-};
+}
 
 export default RFIDPage;
