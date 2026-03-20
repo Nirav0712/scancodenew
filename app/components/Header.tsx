@@ -292,7 +292,7 @@ export default function Header() {
               )}
             </div>
 
-            <Link href="/solutions" className="nav-link hover:underline hover:text-orange-400">
+            <Link href="/AutoIdSolution" className="nav-link hover:underline hover:text-orange-400">
               Auto ID Solutions
             </Link>
 
