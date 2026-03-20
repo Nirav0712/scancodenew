@@ -8,164 +8,163 @@ import {
   Users,
   ArrowRight,
   CheckCircle,
+  Star,
+  Cpu,
+  Briefcase,
+  Award,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import PageHero from "../components/PageHero";
+import Cardsscroll from "../components/Cardsscroll";
 
-
-const PlainLabelsPage = () => {
+const BarcodePrintersPage = () => {
   const brands = [
     {
-      name: "Coated Chromo Labels",
-      img: "/images/lables/coated-chromo-labels.webp",
+      name: "TSC",
+      description: "Leading Manufacturer",
+      logo: "/images/brands/tsc.webp",
+      img: "/images/brands/tsc.webp",
     },
     {
-      name: "TT2C Labels",
-      img: "/images/lables/tt2c-labels.webp",
+      name: "ZEBRA",
+      description: "Leading Manufacturer",
+      logo: "/brands/zebra.png",
+      img: "/images/brands/zebra.webp",
+      
     },
     {
-      name: "Direct Thermal Labels",
-      img: "/images/lables/direct-thermal-labels.webp",
+      name: "AZTAY",
+      description: "Powered On Site",
+      logo: "/brands/aztay.png",
+      img: "/images/brands/sato.webp",
+      
     },
     {
-      name: "Removable Labels",
-      img: "/images/lables/removable-labels.webp",
-    },
-    {
-      name: "Mirror Coat Labels",
-      img: "/images/lables/mirror-coat-labels.webp",
-    },
-    {
-      name: "Pharma Grade Labels",
-      img: "/images/lables/pharma-grade-labels.webp",
-    },
-    {
-      name: "Piggy Back Labels",
-      img: "/images/lables/piggy-back-labels.webp",
-    },
-    {
-      name: "FSC Certified Labels",
-      img: "/images/lables/synthetic-labels.webp",
-    },
-    {
-      name: "FSC Certified Labels",
-      img: "/images/lables/tamper-evident-labels.webp",
-    },
+      name: "CITIZEN",
+      description: "Premium Equipment",
+      logo: "/brands/citizen.png",
+      img: "/images/brands/citizen.webp",
 
-  ];
-  const polysterlabel = [
-    {
-      name: "P.P Labels",
-      img: "/images/lables/coated-chromo-labels.webp",
     },
     {
-      name: "PET Labels",
-      img: "/images/lables/pet-labels.webp",
+      name: "ARGOX",
+      description: "Leading Manufacturer",
+      logo: "/brands/argox.png",
+      img: "/images/brands/argox.webp",
+      
     },
     {
-      name: "PE Labels",
-      img: "/images/lables/direct-thermal-labels.webp",
+      name: "Honeywell",
+      description: "Industrial Grade",
+      logo: "/brands/honeywell.png",
+      img: "/images/brands/6.webp",
+
     },
     {
-      name: "Synthetic Labels",
-      img: "/images/lables/pet-labels.webp",
+      name: "PRINTRONIX AUTO ID",
+      description: "Enterprise Solutions",
+      logo: "/brands/printronix.png",
+      img: "/images/brands/printronix.webp",
+
     },
     {
-      name: "Security Labels",
-      img: "/images/lables/pp-labels.webp",
+      name: "TOSHIBA",
+      description: "Leading Innovation",
+      logo: "/brands/toshiba.png",
+      img: "/images/brands/toshiba.webp",
+
     },
   ];
 
+ 
   const benefits = [
     {
       icon: <Zap className="w-8 h-8 text-blue-600" />,
-      title: "Customizable Versatility",
+      title: "360-Degree Branding",
       description:
-        "Easily tailored to specific business needs, offering flexibility for a wide range of applications.",
+        "Our sleeves cover all angles, offering full branding space for standout product visibility from every perspective.",
     },
     {
       icon: <Printer className="w-8 h-8 text-blue-600" />,
-      title: "Clear Print Compatibility",
+      title: "High-Quality Printing",
       description:
-        "Compatible with thermal printers, delivering sharp, readable prints for professional presentation.",
+        "Advanced printing delivers vibrant colors and crisp details, elevating your brand’s appearance on every shelf.",
     },
     {
       icon: <Users className="w-8 h-8 text-blue-600" />,
-      title: "Durability for Handling",
+      title: "Tamper-Evident Security",
       description:
-        "Made from robust materials that withstand frequent handling and storage conditions.",
+        "Designed with tamper-evident seals, our shrink sleeves enhance security and maintain product integrity.",
     },
     {
       icon: <Shield className="w-8 h-8 text-blue-600" />,
-      title: "Cost-Effective Solution",
+      title: "Eco-Friendly Materials",
       description:
-        "Provides an economical labeling option without compromising on quality or performance.",
+        "We offer recyclable shrink sleeves, helping brands reduce their environmental impact without sacrificing quality.",
+    },
+    {
+      icon: <Award className="w-8 h-8 text-blue-600" />,
+      title: "Durability & Resistance",
+      description:
+        "Resistant to moisture, UV, and temperature, our sleeves ensure your label stays intact through any conditions.",
+    },
+    {
+      icon: <Cpu className="w-8 h-8 text-blue-600" />,
+      title: "Tailored Custom Solutions",
+      description:
+        "Our team customizes each shrink sleeve to suit your product's unique design, enhancing its shelf appeal.",
+    },
+    {
+      icon: <Star className="w-8 h-8 text-blue-600" />,
+      title: "Flexible Application",
+      description:
+        "Suitable for all container shapes—round, square, or irregular—our sleeves create a seamless product fit.",
+    },
+    {
+      icon: <Briefcase className="w-8 h-8 text-blue-600" />,
+      title: "Enhanced Shelf Appeal",
+      description:
+        "Our shrink sleeves are designed to make your products stand out, boosting shelf visibility and customer interest.",
     },
   ];
 
   return (
     <main className="bg-white">
-    
+      <PageHero
+        title="Auto Id Solution"
+        description="Reliable industrial and desktop printers from top manufacturers, built to keep your operations running smoothly with minimal downtime."
+        backgroundImage="https://images.unsplash.com/photo-1580983546051-fb1f2c2777df?auto=format&fit=crop&q=80&w=1920"
+      />
 
       <div className="min-h-screen bg-linear-to-b from-gray-50 to-white">
         {/* Introduction Section */}
-        <section className="py-20 bg-linear-to-br from-gray-50 to-white">
-          <div className="container mx-auto px-4 max-w-7xl">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-
-              {/* Text Content - Left Side */}
-              <div className="lg:p-14">
-                <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 leading-tight mb-8">
-                  <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default block mt-2">Plain Labels
-                  <span className="absolute bottom-0 left-0 w-70 h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" />
-                    </span>for Versatile Business Applications
-                </h2>
-
-                <div className="space-y-6">
-                  <p className="text-gray-700 text-lg leading-relaxed border-l-4 border-[#EF7F1A] pl-4">
-                    In-Mold Labels are a revolutionary labelling solution where the label becomes an integral part of the product’s packaging during the moulding process. This technique is most commonly used in injection moulding, blow moulding, or thermoforming processes. As the plastic product is formed, the pre-printed label is placed inside the mold and fuses with the surface, resulting in a fully integrated label that is both durable and aesthetically pleasing.
-                  </p>
-                </div>
-              </div>
-
-              {/* Image Content - Right Side */}
-              <div className="relative h-full">
-                {/* Main Image Container */}
-                <div className="relative rounded-3xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
-                  <img
-                    src="/images/lables/coated-chromo-labels.webp"
-                    alt="Shrink Sleeve Packaging Solutions"
-                    className="w-full h-full object-cover"
-                  />
-
-                  {/* Overlay Gradient */}
-                  <div className="absolute inset-0 bg-linear-to-t from-black/50 via-transparent to-transparent"></div>
-
-                  {/* Image Caption */}
-                  <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                    <p className="text-2xl font-bold mb-2">360° Branding Solution</p>
-                    <p className="text-lg opacity-90">Full-wrap coverage for maximum shelf impact</p>
-                  </div>
-                </div>
-
-                {/* Floating Feature Cards */}
-                <div className="absolute -top-6 -right-6 bg-white rounded-2xl shadow-xl p-4 max-w-50 transform rotate-3 hover:rotate-0 transition-transform">
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-[#EF7F1A]/10 rounded-full flex items-center justify-center">
-                      <span className="text-[#EF7F1A] text-xl">✓</span>
-                    </div>
-                    <div>
-                      <p className="font-semibold text-gray-800">Premium Quality</p>
-                      <p className="text-sm text-gray-600">High-definition print</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <section className="py-16 container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+              <p className="text-2xl font-bold text-gray-800 leading-relaxed mb-6 text-center">
+               Focused on Comprehensive <span className="text-[#EF7F1A]"> Auto ID Solutions</span>
+              </p>
+              <p className="text-gray-700 text-lg leading-relaxed mb-6">
+               Scancode Auto ID Technology Pvt Ltd is dedicated to driving operational excellence through advanced Auto ID solutions. Our tailored applications are crafted to meet the unique demands of each industry, transforming complex processes into streamlined, efficient workflows. We empower businesses across sectors—whether pharmaceutical, automotive, FMCG, or food and beverage—with innovative technology that enhances accuracy, accelerates productivity, and reduces errors.
+              </p>
+              <p className="text-gray-700 text-lg leading-relaxed mb-6">
+           Our team of experts works closely with clients to develop solutions that seamlessly integrate with existing systems, providing full-scale customization to fit industry-specific requirements. From asset tracking and inventory management to regulatory compliance and product identification, Scancode Auto ID delivers product and reliability, setting the standard for excellence in Auto ID solutions.
+              </p>
+              {/* <p className="text-gray-700 text-lg leading-relaxed">
+                By choosing Scancode Auto ID, you’re investing in reliable
+                printing technology that simplifies labeling processes,
+                minimizes errors, and enhances workflow. Whether you’re in
+                retail, manufacturing, healthcare, or logistics, our barcode
+                label printers offer the perfect balance of speed, accuracy, and
+                durability to keep your operations running smoothly.
+              </p> */}
             </div>
           </div>
         </section>
 
-       
+        {/* cardscroller section  */}
+        <Cardsscroll />
 
         {/* Benefits Grid */}
         <section className="py-20 bg-linear-to-b from-gray-50 to-white relative overflow-hidden">
@@ -176,18 +175,14 @@ const PlainLabelsPage = () => {
 
           <div className="container mx-auto px-4 relative z-10">
             {/* Section Header with animated underline */}
-            <div className="text-center mb-16">
-              <p className="text-4xl md:text-5xl font-bold text-gray-800 leading-relaxed mb-4">
-                Core Benefits of
-                <span className="relative inline-block ml-3">
-                  <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default">
-                    Plain Labels
-                  </span>
-                  <span className="absolute bottom-2 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" />
-                </span>
+            <div className="max-w-4xl mx-auto">
+              <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center">Why
+                <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Auto ID Technology Matters
+                  <span className="absolute bottom-0 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" />
+                </span>?
               </p>
-              <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-                Discover why businesses choose our plain labels for their superior quality and performance
+              <p className="text-gray-700 text-lg text-center leading-relaxed mb-6">
+               In today’s fast-paced business world, managing data and inventory with speed and product is crucial. Auto ID technology simplifies complex identification tasks, making data capture, tracking, and product labeling more reliable and efficient. From barcodes and RFID to QR codes, these solutions are essential for businesses aiming to improve operational accuracy, maintain compliance, and stay competitive in their industries. At Scancode, we empower organizations to leverage these technologies effectively, transforming everyday processes and driving business growth.
               </p>
             </div>
 
@@ -248,113 +243,108 @@ const PlainLabelsPage = () => {
           </div>
         </section>
 
-
+        {/* Why Choose Us Section */}
         <section className="py-16 container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center">Explore Our Range of
-              <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Plain Label Types  
-                <span className="absolute -bottom-1 left-2 w-full h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" /></span>
-            </p>
-            <p className="text-gray-700 text-lg text-center leading-relaxed mb-6">
-              Our plain labels are available in two high-quality, versatile materials: Paper Labels and Polyester Labels. Crafted to meet diverse industry needs, each label type offers unique advantages that support reliable, professional labeling for a range of applications. Whether you need cost-effective labels for everyday use or durable options that withstand challenging environments, our plain labels provide consistent performance, adaptability, and clarity across various settings.
-            </p>
+          <div className="max-w-4xl mx-auto bg-linear-to-r from-blue-600 to-blue-800 rounded-3xl shadow-2xl overflow-hidden">
+            <div className="p-8 md:p-12 text-white">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Why Choose Ransolar Label Printers?
+              </h2>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 shrink-0 text-blue-200" />
+                    <div>
+                      <h3 className="font-semibold text-lg">
+                        Enhanced Efficiency
+                      </h3>
+                      <p className="text-blue-100">
+                        Maximum productivity with minimal downtime
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 shrink-0 text-blue-200" />
+                    <div>
+                      <h3 className="font-semibold text-lg">
+                        Superior Print Quality
+                      </h3>
+                      <p className="text-blue-100">
+                        State-of-the-art printing technologies
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 shrink-0 text-blue-200" />
+                    <div>
+                      <h3 className="font-semibold text-lg">
+                        User-Friendly Design
+                      </h3>
+                      <p className="text-blue-100">
+                        Easy to operate and maintain
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 shrink-0 text-blue-200" />
+                    <div>
+                      <h3 className="font-semibold text-lg">
+                        Durability & Reliability
+                      </h3>
+                      <p className="text-blue-100">
+                        Built to withstand harsh environments
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
-       
-        {/* paper labels Section */}
+        {/* Brands Section */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
-            <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center ">Paper<span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Labels
-              <span className="absolute -bottom-1 left-2 w-full h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" />
-            </span>
+            <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center ">
+              Featuring Products fro <span className="text-[#EF7F1A]"> Renowned Brands </span>
+            </p>
+            <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+              Partnering with industry leaders to bring you the best labeling
+              solutions
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
               {brands.map((brand, index) => (
                 <div
                   key={index}
-                  className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-blue-200 hover:scale-105"
+                  className="group bg-white rounded-xl p-15 shadow-md hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-blue-200"
                 >
-                  <div className="p-8 flex flex-col items-center">
-                    {/* Image container that expands significantly on hover */}
-                    <div className="relative mb-6 w-full flex justify-center">
-                      <div className="w-36 h-36 group-hover:w-52 group-hover:h-52 transition-all duration-500 ease-out">
-                        <div className="relative w-full h-full">
-                          {/* Background glow effect */}
-                          <div className="absolute inset-0 bg-linear-to-br from-blue-400 to-purple-400 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500" />
-
-                          {/* Image background */}
-                          <div className="relative w-full h-full p-4 bg-linear-to-br from-gray-50 to-white rounded-2xl shadow-md group-hover:shadow-xl">
-                            <img
-                              src={brand.img}
-                              alt={brand.name}
-                              className="w-full h-full object-contain transform group-hover:scale-125 transition-transform duration-500"
-                            />
-                          </div>
-                        </div>
-                      </div>
+                  <div className="h-16 flex items-center justify-center mb-3">
+                    {/* Placeholder for brand logo - replace with actual Image component when you have logos */}
+                    <div className="w-25 h-25 mb-4 bg-linear-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center">
+                      <img
+                        src={brand.img}
+                        alt="brand"
+                        className="w-full h-full object-contain"
+                      />
                     </div>
-
-                    {/* Brand name with animation */}
-                    <h3 className="font-bold text-lg text-gray-800 text-center group-hover:text-blue-600 group-hover:scale-110 transition-all duration-300">
-                      {brand.name}
-                    </h3>
                   </div>
-                </div>
-              ))}
-            </div>
-
-          </div>
-        </section>
-
-        {/* polyster labels section */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4">
-            <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center ">Polyester<span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Labels
-              <span className="absolute -bottom-1 left-2 w-full h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" />
-            </span></p>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
-              {polysterlabel.map((polysterlabel, index) => (
-                <div
-                  key={index}
-                  className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-blue-200 hover:scale-105"
-                >
-                  <div className="p-8 flex flex-col items-center">
-                    {/* Image container that expands significantly on hover */}
-                    <div className="relative mb-6 w-full flex justify-center">
-                      <div className="w-36 h-36 group-hover:w-52 group-hover:h-52 transition-all duration-500 ease-out">
-                        <div className="relative w-full h-full">
-                          {/* Background glow effect */}
-                          <div className="absolute inset-0 bg-linear-to-br from-blue-400 to-purple-400 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500" />
-
-                          {/* Image background */}
-                          <div className="relative w-full h-full p-4 bg-linear-to-br from-gray-50 to-white rounded-2xl shadow-md group-hover:shadow-xl">
-                            <img
-                              src={polysterlabel.img}
-                              alt={polysterlabel.name}
-                              className="w-full h-full object-contain transform group-hover:scale-125 transition-transform duration-500"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Brand name with animation */}
-                    <h3 className="font-bold text-lg text-gray-800 text-center group-hover:text-blue-600 group-hover:scale-110 transition-all duration-300">
-                      {polysterlabel.name}
-                    </h3>
-                  </div>
+                  <h3 className="font-bold text-gray-800 text-center text-lg">
+                    {brand.name}
+                  </h3>
+                  <p className="text-sm text-gray-600 text-center mt-1">
+                    {brand.description}
+                  </p>
                 </div>
               ))}
             </div>
           </div>
         </section>
-
       </div>
     </main>
   );
 };
 
-export default PlainLabelsPage;
+export default BarcodePrintersPage;
