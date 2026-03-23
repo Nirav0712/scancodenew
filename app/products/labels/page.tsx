@@ -9,7 +9,7 @@ import { useRouter } from "next/navigation";
 
 const PRODUCT_CATEGORIES = [
   {
-  id: "plain-labels",
+    id: "plain-labels",
     title: "Plain Labels",
     description: "Versatile blank label stocks perfect for variable printing, compatible with thermal transfer, direct thermal, and laser printers.",
     image: "https://images.unsplash.com/photo-1586075010923-2dd4570fb338?auto=format&fit=crop&q=80&w=800",
@@ -50,9 +50,9 @@ export default function ProductsPage() {
   const router = useRouter();
 
   const handleCategoryClick = (pagePath: string, categoryTitle: string) => {
-      // Navigate to the existing page
-  router.push(pagePath);
-    
+    // Navigate to the existing page
+    router.push(pagePath);
+
     // Optional: Track analytics
     console.log(`Navigating to ${categoryTitle} page at ${pagePath}`);
   };
@@ -64,6 +64,23 @@ export default function ProductsPage() {
         description="Explore our comprehensive range of Auto ID hardware, consumables, and software designed to streamline your business operations."
         backgroundImage="https://images.unsplash.com/photo-1516322311718-4a1bfbfa11bb?auto=format&fit=crop&q=80&w=1920"
       />
+      {/* <PageHero
+        title="Welcome to Our Platform"
+        description="Experience the future of digital innovation with our cutting-edge solutions designed to transform your business."
+        backgroundImage="/images/hero-bg.jpg"
+        badge="✨ New Release"
+        overlayOpacity={0.5}
+        height="large"
+        withAnimation={true}
+        primaryButton={{
+          text: "Get Started",
+          onClick: () => console.log("Get started clicked")
+        }}
+        secondaryButton={{
+          text: "Learn More",
+          onClick: () => console.log("Learn more clicked")
+        }}
+      /> */}
 
       <section className="py-24 max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-20">
@@ -85,7 +102,7 @@ export default function ProductsPage() {
             >
               {/* Image Side - Clickable to navigate to the page */}
               <div className="w-full lg:w-1/2">
-                <div 
+                <div
                   onClick={() => handleCategoryClick(category.pagePath, category.title)}
                   className="relative aspect-4/3 rounded-3xl overflow-hidden shadow-2xl group cursor-pointer"
                 >
@@ -96,7 +113,7 @@ export default function ProductsPage() {
                     className="object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 border-4 border-white/20 rounded-3xl z-10 pointer-events-none"></div>
-                  
+
                   {/* Hover Overlay with "View Details" */}
                   <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                     <span className="bg-white text-gray-900 px-6 py-3 rounded-full font-semibold transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
@@ -111,9 +128,9 @@ export default function ProductsPage() {
                 <div className="inline-block px-4 py-1.5 bg-gray-100 text-gray-600 rounded-full text-sm font-bold tracking-wider mb-6">
                   {String(index + 1).padStart(2, '0')}
                 </div>
-                
+
                 {/* Category Title with Link */}
-                <Link 
+                <Link
                   href={category.pagePath}
                   className="group inline-block"
                 >
@@ -126,7 +143,7 @@ export default function ProductsPage() {
                     </span>
                   </h3>
                 </Link>
-                
+
                 <p className="text-lg text-gray-600 leading-relaxed mb-8">
                   {category.description}
                 </p>
@@ -147,7 +164,7 @@ export default function ProductsPage() {
 
                 {/* Dynamic Button based on category */}
                 <div className="flex flex-wrap gap-4 items-center">
-                  <Link 
+                  <Link
                     href={category.pagePath}
                     className="pill-btn pill-btn-dark hover:shadow-xl inline-flex group"
                   >
@@ -156,8 +173,8 @@ export default function ProductsPage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                     </svg>
                   </Link>
-                  
-                  <Link 
+
+                  <Link
                     href={`/contact?product=${encodeURIComponent(category.title)}`}
                     className="text-gray-600 hover:text-primary transition-colors underline underline-offset-4"
                   >
