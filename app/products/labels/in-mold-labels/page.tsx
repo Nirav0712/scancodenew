@@ -92,7 +92,7 @@ const InMoldPage = () => {
                   What Are
                   <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default block mt-2">In-Mold Labels
                     <span className="absolute bottom-0 left-0 w-85 h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" />
-</span>?
+                  </span>?
                 </h2>
 
                 <div className="space-y-6">
@@ -107,7 +107,7 @@ const InMoldPage = () => {
                 {/* Main Image Container */}
                 <div className="relative rounded-3xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
                   <img
-                    src="/images/lables/coated-chromo-labels.webp"
+                    src="/images/lable-design/in-mold.jpg"
                     alt="Shrink Sleeve Packaging Solutions"
                     className="w-full h-full object-cover"
                   />
@@ -117,8 +117,8 @@ const InMoldPage = () => {
 
                   {/* Image Caption */}
                   <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                    <p className="text-2xl font-bold mb-2">360° Branding Solution</p>
-                    <p className="text-lg opacity-90">Full-wrap coverage for maximum shelf impact</p>
+                    <p className="text-2xl font-bold mb-2">Complete 360° product sleeving</p>
+                    <p className="text-lg opacity-90">Capture attention from every angle.</p>
                   </div>
                 </div>
 
@@ -129,8 +129,8 @@ const InMoldPage = () => {
                       <span className="text-[#EF7F1A] text-xl">✓</span>
                     </div>
                     <div>
-                      <p className="font-semibold text-gray-800">Premium Quality</p>
-                      <p className="text-sm text-gray-600">High-definition print</p>
+                      <p className="font-semibold text-gray-800">High-End Finish</p>
+                      <p className="text-sm text-gray-600">Crisp, high-resolution print</p>
                     </div>
                   </div>
                 </div>
@@ -138,9 +138,6 @@ const InMoldPage = () => {
             </div>
           </div>
         </section>
-
-        {/* cardscroller section  */}
-        <Cardsscroll />
 
         {/* Benefits Grid */}
         <section className="py-20 bg-linear-to-b from-gray-50 to-white relative overflow-hidden">
@@ -155,7 +152,7 @@ const InMoldPage = () => {
               <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center">Why Choose Our
                 <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> In-Mold Labels
                   <span className="absolute bottom-0 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" />
-                  </span>?
+                </span>?
               </p>
               <p className="text-gray-700 text-lg text-center leading-relaxed mb-6">
                 At Scancode Auto ID Technology Pvt Ltd, we specialize in delivering premium In-Mold Labels (IML) that serve diverse industries, including Food & Beverages, Pharmaceuticals, Household Goods, and more. Our in-mold labels are designed to seamlessly integrate with your plastic containers during the moulding process, creating a durable, peel-proof label that feels like part of the product. This fusion not only offers a sleek and professional appearance but also adds functional resilience, making our IML solutions ideal for products that require long-lasting and vibrant branding.
@@ -219,16 +216,18 @@ const InMoldPage = () => {
           </div>
         </section>
 
+        {/* cardscroller section  */}
+        <Cardsscroll />
 
         <section className="py-16 container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
             <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center">What Makes
               <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Scancode <span className="absolute bottom-0 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" />
-                </span>
-                the Right Choice for
-                <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> In-Mold Labels
-                  <span className="absolute bottom-0 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" />
-                </span>
+              </span>
+              the Right Choice for
+              <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> In-Mold Labels
+                <span className="absolute bottom-0 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" />
+              </span>
             </p>
             <p className="text-gray-700 text-lg leading-relaxed mb-6 text-center">
               At Scancode Auto ID Technology Pvt Ltd, we leverage cutting-edge printing technology and high-quality materials to produce in-mold labels that offer superior durability and unmatched visual appeal. Our in-mold labels are designed to seamlessly fuse with the container during the molding process, eliminating the risk of peeling or fading over time. This results in a label that becomes a permanent part of the product, ensuring long-lasting brand visibility and a professional finish. Whether you’re in the food and beverage industry, pharmaceuticals, or consumer goods, our labels provide a seamless solution for your packaging needs.

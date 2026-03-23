@@ -117,7 +117,7 @@ const ShrinkSleevesPage = () => {
                 {/* Main Image Container */}
                 <div className="relative rounded-3xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
                   <img
-                    src="/images/lables/coated-chromo-labels.webp"
+                    src="/images/lable-design/shrink-label.jpg"
                     alt="Shrink Sleeve Packaging Solutions"
                     className="w-full h-full object-cover"
                   />
@@ -139,8 +139,8 @@ const ShrinkSleevesPage = () => {
                       <span className="text-[#EF7F1A] text-xl">✓</span>
                     </div>
                     <div>
-                      <p className="font-semibold text-gray-800">Premium Quality</p>
-                      <p className="text-sm text-gray-600">High-definition print</p>
+                      <p className="font-semibold text-gray-800">Fine Quality</p>
+                      <p className="text-sm text-gray-600">Sharp print output</p>
                     </div>
                   </div>
                 </div>
@@ -148,9 +148,6 @@ const ShrinkSleevesPage = () => {
             </div>
           </div>
         </section>
-
-        {/* cardscroller section  */}
-        <Cardsscroll />
 
         {/* Benefits Grid */}
         <section className="py-20 bg-linear-to-b from-gray-50 to-white relative overflow-hidden">
@@ -228,6 +225,9 @@ const ShrinkSleevesPage = () => {
             </div>
           </div>
         </section>
+
+        {/* cardscroller section  */}
+        <Cardsscroll />
 
         {/* why choose us */}
         <section className="py-16 container mx-auto px-4">

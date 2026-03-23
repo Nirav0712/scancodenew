@@ -138,7 +138,7 @@ const RFIDPage = () => {
                 {/* Main Image Container */}
                 <div className="relative rounded-3xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
                   <img
-                    src="/images/lables/coated-chromo-labels.webp"
+                    src="/images/lable-design/rfid-solutions.jpg"
                     alt="Shrink Sleeve Packaging Solutions"
                     className="w-full h-full object-cover"
                   />
@@ -169,9 +169,6 @@ const RFIDPage = () => {
             </div>
           </div>
         </section>
-
-        {/* cardscroller section  */}
-        <Cardsscroll />
 
         {/* Benefits Grid */}
         <section className="py-20 bg-linear-to-b from-gray-50 to-white relative overflow-hidden">
@@ -245,11 +242,14 @@ const RFIDPage = () => {
                     <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 w-12 h-0.5 bg-linear-to-r from-[#EF7F1A] to-blue-500 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500 group-hover:w-16" />
                   </div>
                 </div>
+
               ))}
             </div>
           </div>
-
         </section>
+
+        {/* cardscroller section  */}
+        <Cardsscroll />
 
         {/* paper labels Section */}
         <section className="py-16 bg-gray-50">
@@ -303,7 +303,7 @@ const RFIDPage = () => {
           {/* benefits odf rfid technologies */}
           <section className="py-16 bg-gray-50">
             <div className="container mx-auto px-4">
-              <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center ">Benifits of 
+              <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center ">Benifits of
                 <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default">  RFID Technology <span className="absolute bottom-0 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" /></span>for Your<span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default">  Business<span className="absolute bottom-0 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" /></span>
               </p>
               <p className="text-gray-700 text-lg text-center leading-relaxed mb-10">
@@ -374,7 +374,7 @@ const RFIDPage = () => {
           {/* Why Choose Us */}
           <section className="py-16 bg-gray-50">
             <div className="container mx-auto px-4">
-              <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center ">Why Choose Us 
+              <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center ">Why Choose Us
                 <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default">  ScanCode Auto ID<span className="absolute bottom-0 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" /></span>?
               </p>
 
@@ -416,7 +416,7 @@ const RFIDPage = () => {
                       </div>
                     </div>
                     <h3 className="text-lg font-semibold text-gray-800 mb-2 transition-all duration-300 transform group-hover:scale-90 group-hover:text-[#EF7F1A]">
-                      Trusted RFID Expertise 
+                      Trusted RFID Expertise
                     </h3>
                     <p className="text-gray-500 text-sm leading-relaxed">Relied upon by industries for reliable, effective RFID solutions.</p>
                   </div>
