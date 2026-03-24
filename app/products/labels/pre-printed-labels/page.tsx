@@ -101,7 +101,7 @@ const PrePrintedPage = () => {
                 <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 leading-tight mb-8">
                   <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default block mt-2">Pre-Printed Labels
                     <span className="absolute bottom-0 left-0 w-105 h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" />
-                    </span>for Ready-to-Use Product
+                  </span>for Ready-to-Use Product
                 </h2>
 
                 <div className="space-y-6">
@@ -116,7 +116,7 @@ const PrePrintedPage = () => {
                 {/* Main Image Container */}
                 <div className="relative rounded-3xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
                   <img
-                    src="/images/lables/coated-chromo-labels.webp"
+                    src="/images/lable-design/pre-printed.jpg"
                     alt="Shrink Sleeve Packaging Solutions"
                     className="w-full h-full object-cover"
                   />
@@ -126,8 +126,8 @@ const PrePrintedPage = () => {
 
                   {/* Image Caption */}
                   <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                    <p className="text-2xl font-bold mb-2">360° Branding Solution</p>
-                    <p className="text-lg opacity-90">Full-wrap coverage for maximum shelf impact</p>
+                    <p className="text-2xl font-bold mb-2">Panoramic packaging graphics</p>
+                    <p className="text-lg opacity-90">Capture attention from every angle.</p>
                   </div>
                 </div>
 
@@ -138,8 +138,8 @@ const PrePrintedPage = () => {
                       <span className="text-[#EF7F1A] text-xl">✓</span>
                     </div>
                     <div>
-                      <p className="font-semibold text-gray-800">Premium Quality</p>
-                      <p className="text-sm text-gray-600">High-definition print</p>
+                      <p className="font-semibold text-gray-800">Exceptional Quality</p>
+                      <p className="text-sm text-gray-600">Ultra-clear print detail</p>
                     </div>
                   </div>
                 </div>
@@ -147,9 +147,6 @@ const PrePrintedPage = () => {
             </div>
           </div>
         </section>
-
-        {/* cardscroller section  */}
-         <Cardsscroll />
 
         {/* Benefits Grid */}
         <section className="py-20 bg-linear-to-b from-gray-50 to-white relative overflow-hidden">
@@ -160,16 +157,16 @@ const PrePrintedPage = () => {
 
           <div className="container mx-auto px-4 relative z-10">
             {/* Section Header with animated underline */}
-           <div className="max-w-4xl mx-auto">
-            <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center">Why Choose Our
-              <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Pre-Printed Labels
-                <span className="absolute bottom-0 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" />
-              </span>
-            </p>
-            <p className="text-gray-700 text-lg text-center leading-relaxed mb-6">
-             Our Pre-Printed Labels offer a ready-made solution tailored to fit your business needs. Designed with product, these labels provide consistent, professional appearance across your products, making them ideal for branding, identification, and compliance in various industries.
-            </p>
-          </div>
+            <div className="max-w-4xl mx-auto">
+              <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center">Why Choose Our
+                <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Pre-Printed Labels
+                  <span className="absolute bottom-0 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" />
+                </span>
+              </p>
+              <p className="text-gray-700 text-lg text-center leading-relaxed mb-6">
+                Our Pre-Printed Labels offer a ready-made solution tailored to fit your business needs. Designed with product, these labels provide consistent, professional appearance across your products, making them ideal for branding, identification, and compliance in various industries.
+              </p>
+            </div>
 
             {/* Cards Grid */}
             <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
@@ -227,16 +224,20 @@ const PrePrintedPage = () => {
             </div>
           </div>
         </section>
-       
+
+        {/* cardscroller section  */}
+        <Cardsscroll />
+
+
         {/* paper labels Section */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center ">Explore Our Range of
               <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Pre-Printed Labels<span className="absolute bottom-0 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" />
-</span>
+              </span>
             </p>
             <p className="text-gray-700 text-lg text-center leading-relaxed mb-10">
-             At Scancode Auto ID Technology Pvt Ltd, we specialize in offering premium Pre-Printed Labels designed to meet the branding and operational needs of various industries. Our labels are produced using high-quality materials and advanced printing technologies, ensuring excellent durability, clarity, and compliance with industry standards.
+              At Scancode Auto ID Technology Pvt Ltd, we specialize in offering premium Pre-Printed Labels designed to meet the branding and operational needs of various industries. Our labels are produced using high-quality materials and advanced printing technologies, ensuring excellent durability, clarity, and compliance with industry standards.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-8">

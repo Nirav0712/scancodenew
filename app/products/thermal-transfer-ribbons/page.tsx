@@ -125,7 +125,7 @@ const RibbonsPage = () => {
                 {/* Main Image Container */}
                 <div className="relative rounded-3xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
                   <img
-                    src="/images/lables/coated-chromo-labels.webp"
+                    src="/images/lable-design/thermal-ribbons.jpg"
                     alt="Shrink Sleeve Packaging Solutions"
                     className="w-full h-full object-cover"
                   />
@@ -156,9 +156,6 @@ const RibbonsPage = () => {
             </div>
           </div>
         </section>
-
-        {/* cardscroller section  */}
-        <Cardsscroll />
 
         {/* Benefits Grid */}
         <section className="py-20 bg-linear-to-b from-gray-50 to-white relative overflow-hidden">
@@ -236,6 +233,9 @@ const RibbonsPage = () => {
             </div>
           </div>
         </section>
+
+        {/* cardscroller section  */}
+        <Cardsscroll />
 
         {/* paper labels Section */}
         <section className="py-16 bg-gray-50">

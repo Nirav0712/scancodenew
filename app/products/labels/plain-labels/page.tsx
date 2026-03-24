@@ -122,8 +122,8 @@ const PlainLabelsPage = () => {
               <div className="lg:p-14">
                 <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 leading-tight mb-8">
                   <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default block mt-2">Plain Labels
-                  <span className="absolute bottom-0 left-0 w-70 h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" />
-                    </span>for Versatile Business Applications
+                    <span className="absolute bottom-0 left-0 w-70 h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" />
+                  </span>for Versatile Business Applications
                 </h2>
 
                 <div className="space-y-6">
@@ -138,7 +138,7 @@ const PlainLabelsPage = () => {
                 {/* Main Image Container */}
                 <div className="relative rounded-3xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
                   <img
-                    src="/images/lables/coated-chromo-labels.webp"
+                    src="/images/lable-design/plain-labels.jpg"
                     alt="Shrink Sleeve Packaging Solutions"
                     className="w-full h-full object-cover"
                   />
@@ -169,9 +169,6 @@ const PlainLabelsPage = () => {
             </div>
           </div>
         </section>
-
-        {/* cardscroller section  */}
-         <Cardsscroll />
 
         {/* Benefits Grid */}
         <section className="py-20 bg-linear-to-b from-gray-50 to-white relative overflow-hidden">
@@ -254,11 +251,15 @@ const PlainLabelsPage = () => {
           </div>
         </section>
 
+        {/* cardscroller section  */}
+        <Cardsscroll />
+
+
 
         <section className="py-16 container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center">Explore Our Range of
-              <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Plain Label Types  
+              <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Plain Label Types
                 <span className="absolute -bottom-1 left-2 w-full h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" /></span>
             </p>
             <p className="text-gray-700 text-lg text-center leading-relaxed mb-6">
@@ -267,7 +268,7 @@ const PlainLabelsPage = () => {
           </div>
         </section>
 
-       
+
         {/* paper labels Section */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
