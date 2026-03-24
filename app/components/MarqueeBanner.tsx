@@ -3,14 +3,14 @@
 import React from "react";
 
 const words = [
-  "Brand T-Shirts",
-  "Scaling",
-  "Trendy",
-  "Printing",
-  "Custom T-Shirts",
-  "Wear Your Brand",
-  "Quality Prints",
-  "Fast Delivery",
+  "Flexo Printing",
+  "In-Mold Labels",
+  "Digital Printing",
+  "Plain Labels",
+  "Gravure Printing",
+  "Barcode Solution",
+  "Pre-Printed Labels",
+  "RFID Solution",
 ];
 
 const text = words.join(" / ") + " / ";

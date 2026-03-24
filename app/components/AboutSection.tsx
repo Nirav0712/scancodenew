@@ -35,7 +35,7 @@ export default function AboutSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
           {/* LEFT — Images collage */}
-          <div className="relative">
+          <div className="relative mb-10">
             {/* Dot pattern background */}
             <div
               className="absolute inset-0 opacity-20"
@@ -50,7 +50,7 @@ export default function AboutSection() {
               style={{ marginLeft: "0" }}
             >
               <img
-                src="https://images.unsplash.com/photo-1562654501-a0ccc0fc3fb1?auto=format&fit=crop&q=80&w=800"
+                src="/images/lables/pharma-grade-labels.webp"
                 alt="Industrial printing"
                 className="w-full h-full object-cover"
               />
@@ -60,7 +60,7 @@ export default function AboutSection() {
               className="absolute bottom-25 right-20 z-20 w-48 h-52 lg:w-60 lg:h-80 rounded-2xl overflow-hidden shadow-2xl border-4 border-white"
             >
               <img
-                src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&q=80&w=800"
+                src="/images/lables/tt2c-Labels.webp"
                 alt="Creative tools"
                 className="w-full h-full object-cover"
               />
@@ -79,28 +79,42 @@ export default function AboutSection() {
 
           {/* RIGHT — Content */}
           <div>
-            <p className="section-label">{"// ABOUT PRINTING  //"}</p>
+            <p className="section-label">{"// PLAIN LABELS  //"}</p>
+
             <h2 className="section-heading mb-6">
-              Quality Prints Backed by{" "}
-              <span className="highlight">Experience</span>
+              Flexible & Reliable{" "}
+              <span className="text-[#EF7F1A]">Plain Labels</span>
             </h2>
+
             <p className="text-gray-600 text-base mb-8 leading-relaxed">
-              We deliver reliable, high-quality print solutions backed by years of industry
-              expertise and customer satisfaction.
+              Scancode ID offers dependable and versatile plain labels designed to meet
+              diverse business needs. These blank labels can be customized for various
+              applications, ensuring clear, consistent, and professional printing across
+              industries.
             </p>
 
             {/* Feature list */}
             <div className="space-y-6 mb-10">
               {[
                 {
-                  icon: "🛍️",
-                  title: "Vast Product Range",
-                  desc: "Explore a wide variety of print solutions, flyers, t-shirts, and packaging.",
+                  icon: "🏷️",
+                  title: "Customizable & Versatile",
+                  desc: "Easily adaptable for retail, logistics, manufacturing, and healthcare applications.",
                 },
                 {
-                  icon: "🤝",
-                  title: "Trusted by Businesses",
-                  desc: "From individuals to businesses, our satisfied clients trust us for consistent quality.",
+                  icon: "🖨️",
+                  title: "High Print Compatibility",
+                  desc: "Ensures excellent print clarity and smooth performance with most thermal printers.",
+                },
+                {
+                  icon: "📦",
+                  title: "Durable & Cost-Effective",
+                  desc: "Made with strong materials to withstand handling, storage, and shipping conditions.",
+                },
+                {
+                  icon: "⚙️",
+                  title: "Improved Workflow Efficiency",
+                  desc: "Enhances organization, traceability, and operational efficiency across business processes.",
                 },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-4">
@@ -111,15 +125,27 @@ export default function AboutSection() {
                     {item.icon}
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-900 text-lg mb-1">{item.title}</h4>
-                    <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
+                    <h4 className="font-bold text-gray-900 text-lg mb-1">
+                      {item.title}
+                    </h4>
+                    <p className="text-gray-500 text-sm leading-relaxed">
+                      {item.desc}
+                    </p>
                   </div>
                 </div>
               ))}
             </div>
 
-            <Link href="/shop" className="pill-btn pill-btn-gradient text-base shadow-lg shadow-purple-500/30">
-              See Our Products
+            <Link
+              href="/products/labels/plain-labels"
+              className="relative inline-block group"
+            >
+              <span className="absolute inset-0 rounded-full border-2 border-teal-400 translate-x-2 translate-y-2 transition-all duration-300 group-hover:translate-x-0 group-hover:translate-y-0"></span>
+
+            {/* button */}
+            <span className="relative px-8 py-3 rounded-full text-white font-semibold bg-linear-to-r from-purple-500 to-teal-400 shadow-lg block">
+             Explore Labels
+            </span>
             </Link>
           </div>
         </div>

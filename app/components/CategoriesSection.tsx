@@ -5,24 +5,24 @@ import Link from "next/link";
 
 const categories = [
   {
-    label: "Hoodies",
-    image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&q=80&w=500",
+    label: "In-Mold Labels",
+    image: "/images/lable-design/in-mold.jpg",
   },
   {
-    label: "Tote Bags",
-    image: "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&q=80&w=500",
+    label: "Plain Labels",
+    image: "/images/lable-design/plain-labels.jpg",
   },
   {
-    label: "T-Shirts",
-    image: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&q=80&w=500",
+    label: "Pre-printed Labels",
+    image: "/images/lable-design/pre-printed.jpg",
   },
   {
-    label: "Business Card",
-    image: "https://images.unsplash.com/photo-1589118949245-7d38baf380d6?auto=format&fit=crop&q=80&w=500",
+    label: "Shrink-Sleeve Labels",
+    image: "/images/lable-design/shrink-label.jpg",
   },
   {
-    label: "Branded Items",
-    image: "https://images.unsplash.com/photo-1572021335469-31706a17aaef?auto=format&fit=crop&q=80&w=500",
+    label: "Tamper-Evident Labels",
+    image: "/images/lable-design/labelsbg.jpg",
   },
 ];
 
@@ -36,9 +36,8 @@ export default function CategoriesSection() {
           <p className="text-blue-500 font-medium tracking-widest">{"// TOP CATEGORIES  //"}</p>
 
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-4">
-            Explore Our Print{" "}
-            <span className="text-red-400 border-b-4 border-red-400">
-              Categories
+            Explore Our Label Print{" "}
+            <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default block mt-2">Categories
             </span>
           </h2>
         </div>
@@ -73,7 +72,7 @@ export default function CategoriesSection() {
                     </div>
 
                     {/* Text */}
-                    <span className="font-semibold">{cat.label}</span>
+                    <span className="font-semibold text-center">{cat.label}</span>
                   </div>
                 </div>
 
@@ -83,20 +82,20 @@ export default function CategoriesSection() {
 
         </div>
 
-        
+
         <div className="text-center mt-16">
-  <Link href="/shop" className="relative inline-block group">
-    
-    {/* border layer */}
-    <span className="absolute inset-0 rounded-full border-2 border-teal-400 translate-x-2 translate-y-2 transition-all duration-300 group-hover:translate-x-0 group-hover:translate-y-0"></span>
+          <Link href="/products/labels" className="relative inline-block group  ">
 
-    {/* button */}
-    <span className="relative px-8 py-3 rounded-full text-white font-semibold bg-linear-to-r from-purple-500 to-teal-400 shadow-lg block">
-      View More
-    </span>
+            {/* offset border layer */}
+            <span className="absolute inset-0 -top-4 -left-4 w-40 h-16 rounded-full border-2 border-teal-400 translate-x-2 translate-y-2 transition-all duration-300"></span>
 
-  </Link>
-</div>{/* Button */}
+            {/* button */}
+            <span className="relative z-10 px-8 py-3 rounded-full text-white font-semibold bg-linear-to-r from-purple-500 to-teal-400 shadow-lg block group-hover:scale-y-123 group-hover:scale-x-111">
+              View More
+            </span>
+
+          </Link>
+        </div>{/* Button */}
 
         {/* <div className="text-center mt-16">
           <Link
