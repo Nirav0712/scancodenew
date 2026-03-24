@@ -329,7 +329,7 @@ export default function FeaturesFan() {
 
           {/* ── Cards orbiting the arc ─────────────────────────────────────── */}
           <div
-            className="absolute bottom-60 right-265"
+            className="absolute bottom-60 right-290"
             style={{ transform: "translateX(-50%)" }}
           >
             {CARDS.map((card, i) => (

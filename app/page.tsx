@@ -10,11 +10,13 @@ import PartnersSection from "./components/PartnersSection";
 // import TeamSection from "./components/TeamSection";
 import TestimonialsSection from "./components/TestimonialsSection";
 // import Cardsscroll from "./components/Cardsscroll";
+import FancySlider from "./components/FancySlider";
 
 export default function Home() {
   return (
     <>
-      <HeroSection />
+      <FancySlider />
+      {/* <HeroSection /> */}
       <CategoriesSection />
       <AboutSection />
       <ServicesSection />
@@ -22,7 +24,7 @@ export default function Home() {
       <WhyChooseUs />
       <FeaturesFan />
       <CustomPrintServices />
-      <PartnersSection />
+      {/* <PartnersSection /> */}
       {/* <TeamSection /> */}
       <TestimonialsSection />
       {/* <Cardsscroll /> */}

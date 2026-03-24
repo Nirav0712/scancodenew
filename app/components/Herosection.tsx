@@ -76,7 +76,7 @@ export default function HeroSection() {
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-10">
+            {/* <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-10">
               <Link
                 href="/shop"
                 className="pill-btn pill-btn-dark text-lg shadow-xl shadow-black/30 hover:shadow-black/50 transition-all duration-300"
@@ -89,27 +89,26 @@ export default function HeroSection() {
               >
                 How it Works <span className="text-xl">→</span>
               </Link>
-            </div>
+            </div> */}
 
             {/* Social proof + stats */}
-            <div className="flex items-center justify-center lg:justify-start gap-4">
-              {/* Avatar stack */}
-              <div className="flex -space-x-3">
-                {["🧑‍🦱", "👩‍🦱", "🧔"].map((emoji, i) => (
-                  <div
-                    key={i}
-                    className="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center text-lg"
-                    style={{ background: ["#f97316", "#ec4899", "#3b82f6"][i] }}
-                  >
-                    {emoji}
-                  </div>
-                ))}
-              </div>
-              <div>
-                <span className="text-2xl font-black" style={{ color: "#f97060" }}>1.5k+</span>
-                <p className="text-blue-200 text-sm">Orders shipped in 2025</p>
-              </div>
+            {/* <div className="flex items-center justify-center lg:justify-start gap-4">
+            <div className="flex -space-x-3">
+              {["🧑‍🦱", "👩‍🦱", "🧔"].map((emoji, i) => (
+                <div
+                  key={i}
+                  className="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center text-lg"
+                  style={{ background: ["#f97316", "#ec4899", "#3b82f6"][i] }}
+                >
+                  {emoji}
+                </div>
+              ))}
             </div>
+            <div>
+              <span className="text-2xl font-black" style={{ color: "#f97060" }}>1.5k+</span>
+              <p className="text-blue-200 text-sm">Orders shipped in 2025</p>
+            </div>
+          </div> */}
           </div>
 
           {/* RIGHT — Model Image */}
@@ -151,7 +150,7 @@ export default function HeroSection() {
       </div>
 
       {/* BOTTOM FEATURE BOX — overlapping into next section */}
-      <div className="absolute bottom-30 left-1/2 -translate-x-1/2 w-full max-w-4xl px-4 translate-y-1/2 z-20">
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 w-full max-w-4xl px-4 translate-y-1/2 z-20 p-20">
         <div
           className="rounded-3xl p-8 lg:p-10 flex flex-col sm:flex-row gap-8 items-start relative overflow-hidden shadow-2xl"
           style={{ background: "#f97060" }}
@@ -180,6 +179,8 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-    </section>
+
+
+    </section >
   );
 }
