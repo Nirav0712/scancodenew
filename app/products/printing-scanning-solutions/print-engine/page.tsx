@@ -110,9 +110,9 @@ const PrintEnginePage = () => {
               <div className="lg:p-14">
                 <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 leading-tight mb-8">
                   <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default block mt-2">Print Engine
-                    <span className="absolute bottom-0 left-0 w-70 h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" />
+                    <span className="absolute bottom-0 left-0 w-70 h-3 bg-[#EF7F1A]/20 z-0 transform" />
                   </span>for Unmatched<span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default block mt-2"> Printing Performance
-                    <span className="absolute bottom-0 left-0 w-122 h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" />
+                    <span className="absolute bottom-0 left-0 w-122 h-3 bg-[#EF7F1A]/20 z-0 transform" />
                   </span>
                 </h2>
               </div>
@@ -137,7 +137,7 @@ const PrintEnginePage = () => {
                 </div>
 
                 {/* Floating Feature Cards */}
-                <div className="absolute -top-6 -right-6 bg-white rounded-2xl shadow-xl p-4 max-w-50 transform rotate-3 hover:rotate-0 transition-transform">
+                <div className="absolute -top-6 -right-6 bg-white rounded-2xl shadow-xl p-4 max-w-50 transform hover:rotate-0 transition-transform">
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 bg-[#EF7F1A]/10 rounded-full flex items-center justify-center">
                       <span className="text-[#EF7F1A] text-xl">✓</span>

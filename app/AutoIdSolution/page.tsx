@@ -89,7 +89,7 @@ const BarcodePrintersPage = () => {
       icon: <Printer className="w-8 h-8 text-blue-600" />,
       title: "High-Quality Printing",
       description:
-        "Advanced printing delivers vibrant colors and crisp details, elevating your brand’s appearance on every shelf.",
+        "Advanced printing delivers vibrant colors and crisp details, elevating your brand's appearance on every shelf.",
     },
     {
       icon: <Users className="w-8 h-8 text-blue-600" />,
@@ -146,10 +146,11 @@ const BarcodePrintersPage = () => {
                Focused on Comprehensive <span className="text-[#EF7F1A]"> Auto ID Solutions</span>
               </p>
               <p className="text-gray-700 text-lg leading-relaxed mb-6">
-               Scancode Auto ID Technology Pvt Ltd is dedicated to driving operational excellence through advanced Auto ID solutions. Our tailored applications are crafted to meet the unique demands of each industry, transforming complex processes into streamlined, efficient workflows. We empower businesses across sectors—whether pharmaceutical, automotive, FMCG, or food and beverage—with innovative technology that enhances accuracy, accelerates productivity, and reduces errors.
+               Scancode Auto ID Technology Pvt Ltd focuses on redefining efficiency through innovative label printing solutions. Our expertly developed labeling systems are tailored to suit the specific needs of diverse industries, simplifying even the most complex labeling tasks into smooth and reliable processes. From pharmaceutical and automotive to FMCG and food & beverage sectors, we support businesses with premium-quality labels that ensure precision, strengthen product identification, enhance operational speed, and significantly reduce the chances of errors.
               </p>
               <p className="text-gray-700 text-lg leading-relaxed mb-6">
-           Our team of experts works closely with clients to develop solutions that seamlessly integrate with existing systems, providing full-scale customization to fit industry-specific requirements. From asset tracking and inventory management to regulatory compliance and product identification, Scancode Auto ID delivers product and reliability, setting the standard for excellence in Auto ID solutions.
+     Our team of experts collaborates closely with clients to develop label printing solutions that integrate seamlessly with existing systems, offering complete customization to meet industry-specific requirements. From barcode labeling and product packaging to compliance labels and brand identification, Scancode Auto ID delivers high-quality printing and consistent reliability, setting new benchmarks for excellence in label printing solutions.
+
               </p>
               {/* <p className="text-gray-700 text-lg leading-relaxed">
                 By choosing Scancode Auto ID, you’re investing in reliable
@@ -178,7 +179,7 @@ const BarcodePrintersPage = () => {
             <div className="max-w-4xl mx-auto">
               <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center">Why
                 <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Auto ID Technology Matters
-                  <span className="absolute bottom-0 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" />
+                  <span className="absolute bottom-0 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform" />
                 </span>?
               </p>
               <p className="text-gray-700 text-lg text-center leading-relaxed mb-6">

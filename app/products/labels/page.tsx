@@ -12,7 +12,7 @@ const PRODUCT_CATEGORIES = [
     id: "plain-labels",
     title: "Plain Labels",
     description: "Plain labels are versatile blank label stocks designed for flexible and on-demand printing. They are compatible with thermal transfer, direct thermal, and laser printers, making them ideal for various industries. These labels provide a reliable solution for businesses that require customizable information such as barcodes, pricing, and product details.making them ideal for various industries while providing a reliable solution for customizable information such as barcodes, pricing, and product details.",
-    image: "https://images.unsplash.com/photo-1586075010923-2dd4570fb338?auto=format&fit=crop&q=80&w=800",
+    image: "/images/lables/coated-chromo-labels.webp",
     // hoverImage: "/barcode-printer-hover.png",
     features: ["Multiple material options", "Various adhesive strengths", "Sizes from 1\" x 1\" to 8\" x 10\""],
     buttonText: "Shop Plain Labels",
@@ -22,7 +22,7 @@ const PRODUCT_CATEGORIES = [
     id: "pre-printed-labels",
     title: "Pre Printed Labels",
     description: "Pre-printed labels are customized with your brand logo, design, and fixed information, ensuring consistency and professional presentation. They are ready to use without requiring additional printing, saving time and reducing operational effort. These labels are ideal for businesses looking to maintain brand identity while improving efficiency.professional presentation, and they are ready to use without requiring additional printing, helping save time and reduce operational effort while maintaining strong brand identity.",
-    image: "https://images.unsplash.com/photo-1586339949916-3e9457bef6d3?auto=format&fit=crop&q=80&w=800",
+    image: "/images/lables/preprintedlabel.jpeg",
     features: ["Full color printing", "Custom die-cut shapes", "Sequential numbering available"],
     buttonText: "View Pre Printed Labels",
     pagePath: "/products/labels/pre-printed-labels"
@@ -31,7 +31,7 @@ const PRODUCT_CATEGORIES = [
     id: "shrink-sleeves",
     title: "Shrink Sleeves",
     description: "Shrink sleeves provide a high-impact 360-degree labeling solution that covers the entire surface of a product. They are perfect for enhancing product visibility and branding on bottles, containers, and uniquely shaped packaging. With vibrant print quality and durability, shrink sleeves help products stand out on shelves.making them perfect for enhancing branding and visibility on bottles, containers, and uniquely shaped packaging with vibrant print quality and durability.",
-    image: "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&q=80&w=800",
+    image: "/images/lables/shrink-sleeve.webp",
     features: ["360-degree branding", "Tamper-evident options", "Available in PVC, PET, and OPS"],
     buttonText: "Explore Shrink Sleeves",
     pagePath: "/products/labels/shrink-sleeves"
@@ -40,7 +40,7 @@ const PRODUCT_CATEGORIES = [
     id: "in-mold-labels",
     title: "In Mold Labels",
     description: "In-mold labels are integrated directly into the product during the manufacturing process, becoming a permanent part of the container. This results in highly durable, scratch-resistant, and visually appealing labels. They are ideal for industries that require long-lasting labeling with superior print quality and resistance to wear.permanent part of the container, which results in highly durable, scratch-resistant, and visually appealing labels ideal for long-lasting and high-quality applications.",
-    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=800",
+    image: "/images/lables/inmold-labels.webp",
     features: ["Seamless integration", "Fade and scratch resistant", "Single or multi-color printing"],
     buttonText: "View In Mold Labels",
     pagePath: "/products/labels/in-mold-labels"
@@ -62,8 +62,8 @@ export default function ProductsPage() {
     <main className="bg-white">
       <PageHero
         title="Labels"
-        // description="Explore our comprehensive range of Auto ID hardware, consumables, and software designed to streamline your business operations."
-        backgroundImage="https://images.unsplash.com/photo-1516322311718-4a1bfbfa11bb?auto=format&fit=crop&q=80&w=1920"
+         description="Premium wax, wax-resin, and resin ribbons engineered to provide crisp, dark, and long-lasting prints on a variety of label materials."
+        backgroundImage="/images/lable.png"
       />
       {/* <PageHero
         title="Welcome to Our Platform"

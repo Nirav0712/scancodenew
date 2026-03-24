@@ -6,7 +6,7 @@ const Card = () => {
     <>
     <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center">Industry-Specific 
                 <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Solutions
-                  <span className="absolute bottom-0 left-0 w-full h-3 bg-[#EF7F1A]/20 z-3 transform -rotate-1" />
+                  <span className="absolute bottom-0 left-0 w-full h-3 bg-[#EF7F1A]/20 z-3 transform" />
 
                 </span>
               </p>

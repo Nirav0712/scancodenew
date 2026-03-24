@@ -119,7 +119,7 @@ const RFIDPage = () => {
                 <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 leading-tight mb-8">
                   Unlock
                   <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default block mt-2">Efficiency and Accuracy
-                    <span className="absolute bottom-0 left-0 w-45 h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" />
+                    <span className="absolute bottom-0 left-0 w-45 h-3 bg-[#EF7F1A]/20 z-0 transform" />
                   </span>
                   <span className="text-2xl lg:text-3xl font-medium text-gray-600 block mt-4">
                     with RFID Technology
@@ -184,7 +184,7 @@ const RFIDPage = () => {
             <div className="max-w-6xl mx-auto mb-10">
               <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center">Why Choose Our
                 <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> RFID Solutions
-                  <span className="absolute bottom-0 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" />
+                  <span className="absolute bottom-0 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform" />
                 </span>?
               </p>
               <p className="text-gray-700 text-lg text-center leading-relaxed mb-6">
@@ -257,7 +257,7 @@ const RFIDPage = () => {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center ">Our
-              <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default">  RFID Solution <span className="absolute bottom-0 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" /></span>Capabilities
+              <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default">  RFID Solution <span className="absolute bottom-0 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform" /></span>Capabilities
             </p>
             <p className="text-gray-700 text-lg text-center leading-relaxed mb-10">
               At ScanCode Auto ID Technology Pvt Ltd, we provide innovative and tailored RFID solutions that enhance efficiency, accuracy, and data management for businesses. From robust hardware to seamless software integration, our offerings are designed to meet diverse industry needs and ensure optimized workflows.
@@ -306,7 +306,7 @@ const RFIDPage = () => {
           <section className="py-16 bg-gray-50">
             <div className="container mx-auto px-4">
               <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center ">Benifits of
-                <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default">  RFID Technology <span className="absolute bottom-0 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" /></span>for Your<span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default">  Business<span className="absolute bottom-0 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" /></span>
+                <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default">  RFID Technology <span className="absolute bottom-0 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform" /></span>for Your<span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default">  Business<span className="absolute bottom-0 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform" /></span>
               </p>
               <p className="text-gray-700 text-lg text-center leading-relaxed mb-10">
                 At ScanCode Auto ID Technology Pvt. Ltd., we deliver advanced and customized RFID solutions that help businesses improve operational efficiency, ensure data accuracy, and streamline asset tracking. Our comprehensive offerings combine reliable hardware with intelligent software integration to support real-time visibility and better decision-making.
@@ -377,7 +377,7 @@ const RFIDPage = () => {
           <section className="py-16 bg-gray-50">
             <div className="container mx-auto px-4">
               <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center ">Why Choose Us
-                <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default">  ScanCode Auto ID<span className="absolute bottom-0 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" /></span>?
+                <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default">  ScanCode Auto ID<span className="absolute bottom-0 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform" /></span>?
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-15 max-w-6xl mx-auto px-8">

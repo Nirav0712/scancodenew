@@ -32,7 +32,7 @@ const PRODUCT_CATEGORIES = [
     id: "barcode-scanner",
     title: "Barcode Scanners",
     description: "Barcode scanners are essential devices designed to read and decode barcodes quickly and accurately, enabling businesses to streamline operations and improve efficiency. These devices play a crucial role in modern industries by automating data entry processes, reducing human errors, and enhancing productivity.Barcode scanners are widely used in industries such as retail, logistics, healthcare, and inventory management. They help automate data entry, reduce human errors, and improve operational efficiency.",
-    image: "/images/printers/barcodescanners.png",
+    image: "/images/printers/barcodescanner.jpeg",
     hoverImage: "/barcode-printer-hover.png",
     features: ["Corded and cordless models", "Omnidirectional reading", "Ruggedized for drops"],
     buttonText: "Shop Scanners",
@@ -42,7 +42,7 @@ const PRODUCT_CATEGORIES = [
     id: "mobile-computers",
     title: "Mobile Computers & Tablets",
     description: "Explore Scancode Auto ID Technology Pvt Ltd's latest range of industrial tablets and handheld computers designed for business-critical operations. These advanced multi-functional handheld devices combine the power of a workstation with the portability of a smartphone. Engineered for the most demanding professional and industrial environments seamless wireless connectivity. From warehouse management and field service to retail and healthcare sectors, these devices empower your workforce to capture, process, and transmit data in real-time while on the move, regardless of conditions.",
-    image: "/images/printers/microphone.png",
+    image: "/images/printers/1.jpeg",
     hoverImage:"/barcode-printers-trio.png",
     features: ["Android & Windows OS", "Integrated barcode scanning", "All-day battery life"],
     buttonText: "See Mobile Computers",
@@ -65,7 +65,8 @@ export default function ProductsPage() {
     <main className="bg-white">
       <PageHero
         title="Printing & Scanning Solutions"
-        backgroundImage="https://images.unsplash.com/photo-1580983546051-fb1f2c2777df?auto=format&fit=crop&q=80&w=1920"
+         description="Premium wax, wax-resin, and resin ribbons engineered to provide crisp, dark, and long-lasting prints on a variety of label materials."
+        backgroundImage="/images/printingsolution.png"
         
       />
 
