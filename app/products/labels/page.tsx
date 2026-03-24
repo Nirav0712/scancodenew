@@ -11,8 +11,9 @@ const PRODUCT_CATEGORIES = [
   {
     id: "plain-labels",
     title: "Plain Labels",
-    description: "Versatile blank label stocks perfect for variable printing, compatible with thermal transfer, direct thermal, and laser printers.",
+    description: "Plain labels are versatile blank label stocks designed for flexible and on-demand printing. They are compatible with thermal transfer, direct thermal, and laser printers, making them ideal for various industries. These labels provide a reliable solution for businesses that require customizable information such as barcodes, pricing, and product details.making them ideal for various industries while providing a reliable solution for customizable information such as barcodes, pricing, and product details.",
     image: "https://images.unsplash.com/photo-1586075010923-2dd4570fb338?auto=format&fit=crop&q=80&w=800",
+    // hoverImage: "/barcode-printer-hover.png",
     features: ["Multiple material options", "Various adhesive strengths", "Sizes from 1\" x 1\" to 8\" x 10\""],
     buttonText: "Shop Plain Labels",
     pagePath: "/products/labels/plain-labels"
@@ -20,7 +21,7 @@ const PRODUCT_CATEGORIES = [
   {
     id: "pre-printed-labels",
     title: "Pre Printed Labels",
-    description: "Custom pre-printed labels with your logo, branding, and fixed information, ready to use with no on-site printing required.",
+    description: "Pre-printed labels are customized with your brand logo, design, and fixed information, ensuring consistency and professional presentation. They are ready to use without requiring additional printing, saving time and reducing operational effort. These labels are ideal for businesses looking to maintain brand identity while improving efficiency.professional presentation, and they are ready to use without requiring additional printing, helping save time and reduce operational effort while maintaining strong brand identity.",
     image: "https://images.unsplash.com/photo-1586339949916-3e9457bef6d3?auto=format&fit=crop&q=80&w=800",
     features: ["Full color printing", "Custom die-cut shapes", "Sequential numbering available"],
     buttonText: "View Pre Printed Labels",
@@ -29,7 +30,7 @@ const PRODUCT_CATEGORIES = [
   {
     id: "shrink-sleeves",
     title: "Shrink Sleeves",
-    description: "High-impact 360-degree shrink sleeve labels for full-surface branding on containers, bottles, and unique packaging shapes.",
+    description: "Shrink sleeves provide a high-impact 360-degree labeling solution that covers the entire surface of a product. They are perfect for enhancing product visibility and branding on bottles, containers, and uniquely shaped packaging. With vibrant print quality and durability, shrink sleeves help products stand out on shelves.making them perfect for enhancing branding and visibility on bottles, containers, and uniquely shaped packaging with vibrant print quality and durability.",
     image: "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&q=80&w=800",
     features: ["360-degree branding", "Tamper-evident options", "Available in PVC, PET, and OPS"],
     buttonText: "Explore Shrink Sleeves",
@@ -38,7 +39,7 @@ const PRODUCT_CATEGORIES = [
   {
     id: "in-mold-labels",
     title: "In Mold Labels",
-    description: "In-mold labeling (IML) solutions that become a permanent part of the container during the molding process for durable, high-quality graphics.",
+    description: "In-mold labels are integrated directly into the product during the manufacturing process, becoming a permanent part of the container. This results in highly durable, scratch-resistant, and visually appealing labels. They are ideal for industries that require long-lasting labeling with superior print quality and resistance to wear.permanent part of the container, which results in highly durable, scratch-resistant, and visually appealing labels ideal for long-lasting and high-quality applications.",
     image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=800",
     features: ["Seamless integration", "Fade and scratch resistant", "Single or multi-color printing"],
     buttonText: "View In Mold Labels",
@@ -60,8 +61,8 @@ export default function ProductsPage() {
   return (
     <main className="bg-white">
       <PageHero
-        title="Printing & Scanning Solutions"
-        description="Explore our comprehensive range of Auto ID hardware, consumables, and software designed to streamline your business operations."
+        title="Labels"
+        // description="Explore our comprehensive range of Auto ID hardware, consumables, and software designed to streamline your business operations."
         backgroundImage="https://images.unsplash.com/photo-1516322311718-4a1bfbfa11bb?auto=format&fit=crop&q=80&w=1920"
       />
       {/* <PageHero
@@ -82,120 +83,84 @@ export default function ProductsPage() {
         }}
       /> */}
 
-      <section className="py-24 max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-20">
-          <p className="section-label">{"// HARDWARE & CONSUMABLES  //"}</p>
-          <h2 className="section-heading mb-6">
-            Everything You Need to <span className="highlight">Track & Print</span>
-          </h2>
-          <p className="text-gray-600 text-lg">
-            From the warehouse floor to the retail checkout, our premium product lineup ensures accuracy, efficiency, and reliability.
-          </p>
-        </div>
-
-        <div className="space-y-32">
-          {PRODUCT_CATEGORIES.map((category, index) => (
-            <div
-              key={category.id}
-              id={category.id}
-              className={`flex flex-col gap-12 lg:gap-20 items-center scroll-mt-32 ${index % 2 !== 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'}`}
-            >
-              {/* Image Side - Clickable to navigate to the page */}
-              <div className="w-full lg:w-1/2">
-                <div
-                  onClick={() => handleCategoryClick(category.pagePath, category.title)}
-                  className="relative aspect-4/3 rounded-3xl overflow-hidden shadow-2xl group cursor-pointer"
-                >
-                  <Image
-                    src={category.image}
-                    alt={category.title}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 border-4 border-white/20 rounded-3xl z-10 pointer-events-none"></div>
-
-                  {/* Hover Overlay with "View Details" */}
-                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                    <span className="bg-white text-gray-900 px-6 py-3 rounded-full font-semibold transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                      Click to View {category.title}
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Text Side */}
-              <div className="w-full lg:w-1/2 lg:px-8">
-                <div className="inline-block px-4 py-1.5 bg-gray-100 text-gray-600 rounded-full text-sm font-bold tracking-wider mb-6">
-                  {String(index + 1).padStart(2, '0')}
-                </div>
-
-                {/* Category Title with Link */}
-                <Link
-                  href={category.pagePath}
-                  className="group inline-block"
-                >
-                  <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6 hover:text-primary transition-colors">
-                    {category.title}
-                    <span className="inline-block ml-3 opacity-0 group-hover:opacity-100 transition-all group-hover:translate-x-2 transform">
-                      <svg className="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                      </svg>
-                    </span>
-                  </h3>
-                </Link>
-
-                <p className="text-lg text-gray-600 leading-relaxed mb-8">
-                  {category.description}
-                </p>
-
-                <h4 className="font-bold text-gray-900 mb-4 uppercase tracking-wider text-sm">Key Capabilities</h4>
-                <ul className="space-y-3 mb-10">
-                  {category.features.map((feature, i) => (
-                    <li key={i} className="flex items-center gap-3 text-gray-700">
-                      <div className="w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0">
-                        <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                        </svg>
-                      </div>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-
-                {/* Dynamic Button based on category */}
-                <div className="flex flex-wrap gap-4 items-center">
-                  <Link
-                    href={category.pagePath}
-                    className="pill-btn pill-btn-dark hover:shadow-xl inline-flex group"
-                  >
-                    {category.buttonText}
-                    <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                    </svg>
-                  </Link>
-
-                  <Link
-                    href={`/contact?product=${encodeURIComponent(category.title)}`}
-                    className="text-gray-600 hover:text-primary transition-colors underline underline-offset-4"
-                  >
-                    Request Quote
-                  </Link>
-                </div>
-
-                {/* Quick Navigation Hint */}
-                <div className="mt-6 pt-6 border-t border-gray-100">
-                  <p className="text-sm text-gray-500 flex items-center gap-2">
-                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    Click on the image or title to view the complete {category.title} collection
-                  </p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+      <section className="py-20 max-w-7xl mx-auto px-6 lg:px-8">
+             <div className="text-center max-w-4xl mx-auto mb-16">
+               <h2 className="text-3 md:text-2xl font-bold text-gray-900 mb-8">
+               Durable and Customizable <span className="text-[#EF7F1A]">Labels </span> for All Industries
+               </h2>
+               <p className="text-gray-500 text-sm md:text-base leading-relaxed max-w-5xl mx-auto px-4 text-2xl">
+               Discover Scancode Auto ID Technology Pvt Ltd's diverse labeling solutions crafted to enhance product presentation, durability, and functionality across industries. Our label offerings include in-mold labels, shrink sleeves, and specialized labels that provide superior print quality and environmental resilience. Designed for seamless integration and customization, our labels help brands make a lasting impression while meeting rigorous industry standards.
+               </p>
+               <div className="mt-12 h-[1px] w-48 bg-gray-200 mx-auto"></div>
+             </div>
+     
+             <div className="space-y-16 lg:space-y-24">
+               {PRODUCT_CATEGORIES.map((category, index) => (
+                 <div
+                   key={category.id}
+                   id={category.id}
+                   className={`flex flex-col gap-12 lg:gap-20 items-center scroll-mt-32 ${index % 2 !== 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'}`}
+                 >
+                   {/* Image Side - Clickable to navigate to the page */}
+                   <div className="w-full lg:w-1/2">
+                     <div 
+                       onClick={() => handleCategoryClick(category.pagePath, category.title)}
+                       className="relative aspect-4/3 rounded-3xl overflow-hidden shadow-2xl group cursor-pointer"
+                     >
+                       <Image
+                         src={category.image}
+                         alt={category.title}
+                         fill
+                         className={`object-cover ${(category as any).hoverImage ? 'group-hover:opacity-0' : 'group-hover:scale-105'} transition-all duration-700`}
+                       />
+                       {(category as any).hoverImage && (
+                         <Image
+                           src={(category as any).hoverImage}
+                           alt={`${category.title} Hover`}
+                           fill
+                           className="object-cover opacity-0 group-hover:opacity-100 scale-110 group-hover:scale-105 transition-all duration-700"
+                         />
+                       )}
+                       
+                       {/* Hover Overlay with "View Details" */}
+                       <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                         <span className="bg-white text-gray-900 px-6 py-3 rounded-full font-semibold transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 whitespace-nowrap">
+                           Click to View {category.title}
+                         </span>
+                       </div>
+                     </div>
+                   </div>
+     
+                   {/* Text Side */}
+                   <div className="w-full lg:w-1/2 lg:px-8 text-center flex flex-col items-center">
+                     
+                     {/* Category Title with Link */}
+                     <Link 
+                       href={category.pagePath}
+                       className="group inline-block"
+                     >
+                       <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4 hover:text-gray-700 transition-colors relative inline-block pb-2">
+                         {category.title}
+                         <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gray-400 transition-all duration-300 group-hover:w-full"></span>
+                         <span className="inline-block ml-3 opacity-0 group-hover:opacity-100 transition-all group-hover:translate-x-2 transform">
+                           <svg className="w-6 h-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                           </svg>
+                         </span>
+                       </h3>
+                     </Link>
+                     
+                     <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
+                       {category.description}
+                     </p>
+     
+                     {/* Subtle finishing spacer for each card */}
+                     <div className="h-8"></div>
+                   </div>
+                 </div>
+               ))}
+             </div>
+           </section>
 
       {/* Footer CTA overlay for this specific page */}
       <section className="bg-section-bg2 py-20 mt-10">
