@@ -95,26 +95,74 @@ const PrintEnginePage = () => {
          <PageHero
             title="Print Engine"
             description="High-performance print engines designed for mission-critical automated print-and-apply systems in manufacturing and logistics."
-            backgroundImage="https://images.unsplash.com/photo-1580983546051-fb1f2c2777df?auto=format&fit=crop&q=80&w=1920"
+            backgroundImage="/images/lable-design/barcodebg.jpg"
          />
 
          <div className="min-h-screen bg-linear-to-b from-gray-50 to-white">
 
 
             {/* Introduction Section */}
-            <section className="py-16 container mx-auto px-4">
-               <div className="max-w-4xl mx-auto">
-                  <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
-                     <h2 className="text-2xl text-center md:text-3xl font-bold mb-6"><span className="text-[#ef7f1a]">Print Engine</span> for Unmatched <span className="text-[#ef7f1a]">Printing Performance</span></h2>
-                     <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                        The Print Engine is a vital component for businesses looking to enhance their printing capabilities. Designed for high-volume printing applications, our Print Engine offers exceptional speed, reliability, and print quality. Ideal for industries such as retail, logistics, and manufacturing, it seamlessly integrates into existing workflows to deliver crisp, clear labels and documents.
-                     </p>
-                     <p className="text-gray-700 text-lg leading-relaxed">
-                        With advanced features such as high-resolution printing and user-friendly controls, the Print Engine is engineered to maximize productivity while minimizing downtime. It supports various media types, including barcode labels, shipping labels, and packaging labels, making it a versatile choice for any business. By investing in our Print Engine, you’re ensuring efficient operations and high-quality outputs that meet your specific needs.
-                     </p>
+         <section className="py-20 bg-linear-to-br from-gray-50 to-white">
+          <div className="container mx-auto px-4 max-w-7xl">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+              {/* Text Content - Left Side */}
+              <div className="lg:p-14">
+                <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 leading-tight mb-8">
+                  <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default block mt-2">Print Engine
+                    <span className="absolute bottom-0 left-0 w-70 h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" />
+                  </span>for Unmatched<span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default block mt-2"> Printing Performance
+                    <span className="absolute bottom-0 left-0 w-122 h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" />
+                  </span>
+                </h2>
+              </div>
+
+              <div className="relative h-full">
+                {/* Main Image Container */}
+                <div className="relative rounded-3xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
+                  <img
+                    src="/images/lable-design/print-engine.jpg"
+                    alt="Shrink Sleeve Packaging Solutions"
+                    className="w-full h-full object-cover"
+                  />
+
+                  {/* Overlay Gradient */}
+                  <div className="absolute inset-0 bg-linear-to-t from-black/50 via-transparent to-transparent"></div>
+
+                  {/* Image Caption */}
+                  <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                    <p className="text-2xl font-bold mb-2">Complete 360° product sleeving</p>
+                    <p className="text-lg opacity-90">Capture attention from every angle.</p>
                   </div>
-               </div>
-            </section>
+                </div>
+
+                {/* Floating Feature Cards */}
+                <div className="absolute -top-6 -right-6 bg-white rounded-2xl shadow-xl p-4 max-w-50 transform rotate-3 hover:rotate-0 transition-transform">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 bg-[#EF7F1A]/10 rounded-full flex items-center justify-center">
+                      <span className="text-[#EF7F1A] text-xl">✓</span>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-800">High-End Finish</p>
+                      <p className="text-sm text-gray-600">Crisp, high-resolution print</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="space-y-2 leading-relaxed border-l-4 border-[#EF7F1A] ml-16 mt-10">
+                  <p className="text-gray-700 text-xl pl-4 text-justify">
+                   The Print Engine is a vital component for businesses looking to enhance their printing capabilities. Designed for high-volume printing applications, our Print Engine offers exceptional speed, reliability, and print quality. Ideal for industries such as retail, logistics, and manufacturing, it seamlessly integrates into existing workflows to deliver crisp, clear labels and documents.
+                  </p>
+                  <br />
+                  <p className="text-gray-700 text-xl pl-4 text-justify">
+                  With advanced features such as high-resolution printing and user-friendly controls, the Print Engine is engineered to maximize productivity while minimizing downtime. It supports various media types, including barcode labels, shipping labels, and packaging labels, making it a versatile choice for any business. By investing in our Print Engine, you’re ensuring efficient operations and high-quality outputs that meet your specific needs.
+                  </p>
+                  
+            </div>
+          </div>
+          
+        </section>
 
             {/* Benefits Grid */}
             <section className="py-16 bg-gray-50">

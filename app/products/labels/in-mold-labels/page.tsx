@@ -76,7 +76,7 @@ const InMoldPage = () => {
       <PageHero
         title="In-Mold Labels"
         description="Our in-mold labels are designed to seamlessly fuse with the container during the molding process, eliminating the risk of peeling or fading over time."
-        backgroundImage="https://images.unsplash.com/photo-1580983546051-fb1f2c2777df?auto=format&fit=crop&q=80&w=1920"
+        backgroundImage="/images/lable-design/labelsbg.jpg"
       />
 
       <div className="min-h-screen bg-linear-to-b from-gray-50 to-white">

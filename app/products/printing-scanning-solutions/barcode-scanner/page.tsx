@@ -97,40 +97,69 @@ const BarcodeScannerPage = () => {
       <PageHero
         title="Barcode Scanner"
         description="(Wired and Wireless)"
-        backgroundImage="https://images.unsplash.com/photo-1580983546051-fb1f2c2777df?auto=format&fit=crop&q=80&w=1920"
+        backgroundImage="/images/lable-design/barcodebg.jpg"
       />
 
       <div className="min-h-screen bg-linear-to-b from-gray-50 to-white">
         {/* Introduction Section */}
-        <section className="py-16 container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
-              <h2 className="text-3xl text-center md:text-3xl font-bold mb-6">
-                <span className="text-[#ef7f1a]">Barcode Scanner</span> for
-                Effortless Data Capture
-              </h2>
-              <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                The Barcode Scanner is an essential tool for businesses seeking
-                efficient and accurate data capture. Whether you opt for a wired
-                or wireless model, our barcode scanners deliver unmatched
-                reliability and performance across various applications,
-                including retail, inventory management, and logistics. Designed
-                for ease of use, these scanners feature advanced technology that
-                ensures quick and accurate scanning of barcodes, reducing manual
-                data entry errors and streamlining operations.
-              </p>
-              <p className="text-gray-700 text-lg leading-relaxed">
-                Our wired and wireless barcode scanners are equipped with
-                high-resolution sensors that can read a wide range of barcode
-                types, from traditional UPC codes to QR codes. With ergonomic
-                designs and user-friendly interfaces, they are built for comfort
-                and efficiency, allowing your staff to work more effectively.
-                Investing in Scancode Auto ID’s barcode scanners means
-                empowering your business with cutting-edge tools that enhance
-                productivity and accuracy in data management.
-              </p>
+        <section className="py-20 bg-linear-to-br from-gray-50 to-white">
+          <div className="container mx-auto px-4 max-w-7xl">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+              {/* Text Content - Left Side */}
+              <div className="lg:p-14">
+                <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 leading-tight mb-8">
+                  <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default block mt-2">Barcode Scanner
+                    <span className="absolute bottom-0 left-0 w-95 h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" />
+                  </span>for Effortless Data Capture
+                </h2>
+              </div>
+
+              {/* Image Content - Right Side */}
+              <div className="relative h-full">
+                {/* Main Image Container */}
+                <div className="relative rounded-3xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
+                  <img
+                    src="/images/lable-design/barcodeScanner.jpg"
+                    alt="Shrink Sleeve Packaging Solutions"
+                    className="w-full h-full object-cover"
+                  />
+
+                  {/* Overlay Gradient */}
+                  <div className="absolute inset-0 bg-linear-to-t from-black/50 via-transparent to-transparent"></div>
+
+                  {/* Image Caption */}
+                  <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                    <p className="text-2xl font-bold mb-2">Complete 360° product sleeving</p>
+                    <p className="text-lg opacity-90">Capture attention from every angle.</p>
+                  </div>
+                </div>
+
+                {/* Floating Feature Cards */}
+                <div className="absolute -top-6 -right-6 bg-white rounded-2xl shadow-xl p-4 max-w-50 transform rotate-3 hover:rotate-0 transition-transform">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 bg-[#EF7F1A]/10 rounded-full flex items-center justify-center">
+                      <span className="text-[#EF7F1A] text-xl">✓</span>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-800">High-End Finish</p>
+                      <p className="text-sm text-gray-600">Crisp, high-resolution print</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="space-y-2 leading-relaxed border-l-4 border-[#EF7F1A] ml-16 mt-10">
+                  <p className="text-gray-700 text-xl pl-4 text-justify">
+                   The Barcode Scanner is an essential tool for businesses seeking efficient and accurate data capture. Whether you opt for a wired or wireless model, our barcode scanners deliver unmatched reliability and performance across various applications, including retail, inventory management, and logistics. Designed for ease of use, these scanners feature advanced technology that ensures quick and accurate scanning of barcodes, reducing manual data entry errors and streamlining operations.
+                  </p>
+                  <br />
+                  <p className="text-gray-700 text-xl pl-4 text-justify">
+                  Our wired and wireless barcode scanners are equipped with high-resolution sensors that can read a wide range of barcode types, from traditional UPC codes to QR codes. With ergonomic designs and user-friendly interfaces, they are built for comfort and efficiency, allowing your staff to work more effectively. Investing in Scancode Auto ID’s barcode scanners means empowering your business with cutting-edge tools that enhance productivity and accuracy in data management.
+                  </p>
             </div>
           </div>
+          
         </section>
 
         {/* Benefits Grid */}

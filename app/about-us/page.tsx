@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 import React from "react";
 import PageHero from "../components/PageHero";
-import TeamSection from "../components/TeamSection";
+// import TeamSection from "../components/TeamSection";
 import Image from "next/image";
 import Link from "next/link";
 import styled from 'styled-components';
@@ -217,7 +217,7 @@ export default function AboutPage() {
       </section>
 
       {/* Team Section (Reused) */}
-      <TeamSection />
+      {/* <TeamSection /> */}
 
       {/* states section */}
       <section className="py-20 bg-gray-50">

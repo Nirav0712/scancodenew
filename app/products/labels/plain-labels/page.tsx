@@ -109,7 +109,7 @@ const PlainLabelsPage = () => {
       <PageHero
         title="Plain Labels"
         description="Our plain labels are available in two high-quality, versatile materials."
-        backgroundImage="https://images.unsplash.com/photo-1580983546051-fb1f2c2777df?auto=format&fit=crop&q=80&w=1920"
+        backgroundImage="/images/lable-design/labelsbg.jpg"
       />
 
       <div className="min-h-screen bg-linear-to-b from-gray-50 to-white">

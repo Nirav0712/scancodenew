@@ -134,14 +134,14 @@ const BarcodePrintersPage = () => {
       <PageHero
         title="Auto Id Solution"
         description="Reliable industrial and desktop printers from top manufacturers, built to keep your operations running smoothly with minimal downtime."
-        backgroundImage="https://images.unsplash.com/photo-1580983546051-fb1f2c2777df?auto=format&fit=crop&q=80&w=1920"
+        backgroundImage="/images/lable-design/autoidbg.jpg"
       />
 
       <div className="min-h-screen bg-linear-to-b from-gray-50 to-white">
         {/* Introduction Section */}
         <section className="py-16 container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+          <div className="max-w-9xl mx-auto text-center">
+            <div className=" p-8 md:p-12">
               <p className="text-2xl font-bold text-gray-800 leading-relaxed mb-6 text-center">
                Focused on Comprehensive <span className="text-[#EF7F1A]"> Auto ID Solutions</span>
               </p>

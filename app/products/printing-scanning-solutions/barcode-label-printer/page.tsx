@@ -104,46 +104,74 @@ const BarcodePrintersPage = () => {
       <PageHero
         title="Barcode Label Printers"
         description="Reliable industrial and desktop printers from top manufacturers, built to keep your operations running smoothly with minimal downtime."
-        backgroundImage="https://images.unsplash.com/photo-1580983546051-fb1f2c2777df?auto=format&fit=crop&q=80&w=1920"
+        backgroundImage="/images/lable-design/barcodebg.jpg"
       />
 
       <div className="min-h-screen bg-linear-to-b from-gray-50 to-white">
         {/* Introduction Section */}
-        <section className="py-16 container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
-              <p className="text-2xl font-bold text-gray-800 leading-relaxed mb-6 text-center">
-                Reliable <span className="text-[#EF7F1A]"> Barcode Label Printers </span>to Streamline Your Operations
-              </p>
-              <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                Barcode label printers are essential for businesses looking to
-                boost efficiency, improve accuracy, and reduce manual work in
-                their daily operations. Scancode Auto ID offers a range of
-                reliable barcode label printers designed to support seamless
-                product tracking, inventory management, and retail processes.
-                Our advanced printers deliver high-speed, high-quality printing
-                that helps businesses keep up with demand while ensuring every
-                label is clear, accurate, and easy to scan.
-              </p>
-              <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                Our printers are available in various models to suit any
-                business size or industry need, including thermal printers,
-                direct thermal printers, and industrial-grade barcode printers.
-                Built with durable materials and user-friendly interfaces,
-                Scancode Auto ID’s printers are engineered to reduce downtime,
-                increase productivity, and provide consistent performance across
-                high-demand settings.
-              </p>
-              <p className="text-gray-700 text-lg leading-relaxed">
-                By choosing Scancode Auto ID, you’re investing in reliable
-                printing technology that simplifies labeling processes,
-                minimizes errors, and enhances workflow. Whether you’re in
-                retail, manufacturing, healthcare, or logistics, our barcode
-                label printers offer the perfect balance of speed, accuracy, and
-                durability to keep your operations running smoothly.
-              </p>
+        <section className="py-20 bg-linear-to-br from-gray-50 to-white">
+          <div className="container mx-auto px-4 max-w-7xl">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+              {/* Text Content - Left Side */}
+              <div className="lg:p-14">
+                <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 leading-tight mb-8">
+                  Reliable 
+                  <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default block mt-2">Barcode Label Printers
+                    <span className="absolute bottom-0 left-0 w-45 h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" />
+                  </span>to Streamline Your Operations
+                </h2>
+              </div>
+
+              {/* Image Content - Right Side */}
+              <div className="relative h-full">
+                {/* Main Image Container */}
+                <div className="relative rounded-3xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
+                  <img
+                    src="/images/lable-design/barcodeLabel.jpg"
+                    alt="Shrink Sleeve Packaging Solutions"
+                    className="w-full h-full object-cover"
+                  />
+
+                  {/* Overlay Gradient */}
+                  <div className="absolute inset-0 bg-linear-to-t from-black/50 via-transparent to-transparent"></div>
+
+                  {/* Image Caption */}
+                  <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                    <p className="text-2xl font-bold mb-2">Complete 360° product sleeving</p>
+                    <p className="text-lg opacity-90">Capture attention from every angle.</p>
+                  </div>
+                </div>
+
+                {/* Floating Feature Cards */}
+                <div className="absolute -top-6 -right-6 bg-white rounded-2xl shadow-xl p-4 max-w-50 transform rotate-3 hover:rotate-0 transition-transform">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 bg-[#EF7F1A]/10 rounded-full flex items-center justify-center">
+                      <span className="text-[#EF7F1A] text-xl">✓</span>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-800">High-End Finish</p>
+                      <p className="text-sm text-gray-600">Crisp, high-resolution print</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="space-y-2 leading-relaxed border-l-4 border-[#EF7F1A] ml-16">
+                  <p className="text-gray-700 text-xl pl-4 text-justify">
+                   Barcode label printers are essential for businesses looking to boost efficiency, improve accuracy, and reduce manual work in their daily operations. Scancode Auto ID offers a range of reliable barcode label printers designed to support seamless product tracking, inventory management, and retail processes. Our advanced printers deliver high-speed, high-quality printing that helps businesses keep up with demand while ensuring every label is clear, accurate, and easy to scan.
+                  </p>
+                  <br />
+                  <p className="text-gray-700 text-xl pl-4 text-justify">
+                   Our printers are available in various models to suit any business size or industry need, including thermal printers, direct thermal printers, and industrial-grade barcode printers. Built with durable materials and user-friendly interfaces, Scancode Auto ID's printers are engineered to reduce downtime, increase productivity, and provide consistent performance across high-demand settings.
+                  </p>
+                  <br />
+                  <p className="text-gray-700 text-xl pl-4 text-justify">
+                  By choosing Scancode Auto ID, you're investing in reliable printing technology that simplifies labeling processes, minimizes errors, and enhances workflow. Whether you're in retail, manufacturing, healthcare, or logistics, our barcode label printers offer the perfect balance of speed, accuracy, and durability to keep your operations running smoothly. 
+                  </p>
             </div>
           </div>
+          
         </section>
 
         {/* Benefits Grid */}

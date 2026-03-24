@@ -104,7 +104,7 @@ const RFIDPage = () => {
       <PageHero
         title="RFID Solutions"
         description="Advanced RFID tags, readers, and software to automate your inventory tracking and improve supply chain visibility with pinpoint accuracy."
-        backgroundImage="https://images.unsplash.com/photo-1580983546051-fb1f2c2777df?auto=format&fit=crop&q=80&w=1920"
+        backgroundImage="/images/lable-design/rfidbg.jpg"
       />
 
       <div className="min-h-screen bg-linear-to-b from-gray-50 to-white">
@@ -129,6 +129,8 @@ const RFIDPage = () => {
                 <div className="space-y-6">
                   <p className="text-gray-700 text-lg leading-relaxed border-l-4 border-[#EF7F1A] pl-4">
                     At ScanCode Auto ID Technology Pvt Ltd, we specialize in delivering advanced RFID (Radio Frequency Identification) solutions that empower businesses to operate smarter and more efficiently. By leveraging the latest innovations in RFID technology, our solutions redefine operational standards with enhanced precision, real-time data access, and streamlined processes. Whether it's tracking assets, managing inventory, or ensuring compliance, our RFID systems are designed to meet the unique needs of modern industries, providing unmatched accuracy and reliability. With a focus on seamless integration, we ensure that our solutions easily adapt to existing workflows, minimizing disruptions while maximizing productivity.
+                    <br />
+                    Our RFID solutions go beyond traditional methods, offering unparalleled visibility and control over every aspect of your operations. Real-time tracking capabilities enable businesses to monitor assets and inventory effortlessly, reducing errors and improving decision-making. 
                   </p>
                 </div>
               </div>

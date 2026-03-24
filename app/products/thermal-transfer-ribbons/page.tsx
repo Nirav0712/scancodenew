@@ -91,7 +91,7 @@ const RibbonsPage = () => {
       <PageHero
         title="Thermal Transfer Ribbons"
         description="Premium wax, wax-resin, and resin ribbons engineered to provide crisp, dark, and long-lasting prints on a variety of label materials."
-        backgroundImage="https://images.unsplash.com/photo-1580983546051-fb1f2c2777df?auto=format&fit=crop&q=80&w=1920"
+        backgroundImage="/images/lable-design/thermalbg.jpg"
       />
 
       <div className="min-h-screen bg-linear-to-b from-gray-50 to-white">

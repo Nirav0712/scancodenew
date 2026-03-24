@@ -1,4 +1,3 @@
-import Header from "./components/Header";
 import HeroSection from "./components/Herosection";
 import CategoriesSection from "./components/CategoriesSection";
 import AboutSection from "./components/AboutSection";
@@ -8,10 +7,9 @@ import WhyChooseUs from "./components/WhyChooseUs";
 import FeaturesFan from "./components/FeaturesFan";
 import CustomPrintServices from "./components/CustomPrintServices";
 import PartnersSection from "./components/PartnersSection";
-import TeamSection from "./components/TeamSection";
+// import TeamSection from "./components/TeamSection";
 import TestimonialsSection from "./components/TestimonialsSection";
-import Footer from "./components/Footer";
-import Cardsscroll from "./components/Cardsscroll";
+// import Cardsscroll from "./components/Cardsscroll";
 
 export default function Home() {
   return (
@@ -25,7 +23,7 @@ export default function Home() {
       <FeaturesFan />
       <CustomPrintServices />
       <PartnersSection />
-      <TeamSection />
+      {/* <TeamSection /> */}
       <TestimonialsSection />
       {/* <Cardsscroll /> */}
     </>
