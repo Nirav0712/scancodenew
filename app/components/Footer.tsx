@@ -139,7 +139,7 @@ export default function Footer() {
                     <div className="absolute -inset-4 bg-linear-to-r from-[#1e3a5f]/20 to-[#345f8c]/20 rounded-full blur-2xl"></div>
                     <div className="relative w-full h-full">
                       <Image
-                        src="/girl.png"
+                        src="/images/whychooseusperson1.webp"
                         alt="Happy customer with prints"
                         fill
                         className="object-contain drop-shadow-2xl transform group-hover:scale-105 transition-transform duration-700"

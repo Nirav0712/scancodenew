@@ -2,34 +2,51 @@
 
 import React from "react";
 import Link from "next/link";
+import {
+  Printer,
+  Zap,
+  Shield,
+  Users,
+  ArrowRight,
+  CheckCircle,
+} from "lucide-react";
 
 interface Service {
+  icon?: React.ReactNode;
   image: string;
   title: string;
-  number: string;
+  description: string;
+  // number: string;
   imagePosition?: string;
   arrowBg: string;
 }
 
 const services: Service[] = [
   {
-    image: "https://images.unsplash.com/photo-1626285861696-9f0bf5a49c6d?auto=format&fit=crop&q=80&w=800",
-    title: "Printing Service",
-    number: "SERVICES_01",
+    icon: <Zap className="w-8 h-8 text-blue-600" />,
+    image: "/images/lables/paper-tags.webp",
+    title: "Efficient Labeling Solutions",
+    description: "Designed to boost output while conserving resources, ensuring efficient operations with minimal environmental impact.",
+    // number: "SERVICES_01",
     imagePosition: "center",
     arrowBg: "linear-gradient(135deg, #7b61ff 0%, #22d3c5 100%)",
   },
   {
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800",
-    title: "Printing Service",
-    number: "SERVICES_02",
+    icon: <Shield className="w-8 h-8 text-blue-600" />,
+    image: "/images/lables/white-polyester-labels-768x768.webp",
+    title: "Reliable and Durable Labels",
+    description: "Built to withstand harsh environments, these labels maintain performance and clarity in tough industrial settings.",
+    // number: "SERVICES_02",
     imagePosition: "center",
     arrowBg: "linear-gradient(135deg, #7b61ff 0%, #22d3c5 100%)",
   },
   {
-    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800",
-    title: "Printing Service",
-    number: "SERVICES_03",
+    icon: <Users className="w-8 h-8 text-blue-600" />,
+
+    image: "/images/lables/shrink-sleeve.webp",
+    title: "Smart ID Label Technology",
+    description: "Utilizing advanced printing and scanning to create precise, high-performance labels for modern industrial needs.",
+    // number: "SERVICES_03",
     imagePosition: "center",
     arrowBg: "linear-gradient(135deg, #7b61ff 0%, #22d3c5 100%)",
   },
@@ -46,26 +63,25 @@ export default function ServicesSection() {
 
             <h2 className="text-[42px] md:text-[56px] leading-none font-semibold text-black">
               <span className="relative inline-block">
-                Print Solutions
+                Labels That 
                 <span className="absolute left-0 bottom-1 w-full h-0.5 bg-white" />
               </span>
               <br />
-              for Every Need
+              Speak Your Brand
             </h2>
           </div>
 
           <div className="flex flex-col items-start lg:items-end gap-4">
             <p className="text-gray-500 text-base max-w-sm">
-              Custom prints, fast delivery, premium quality — tailored to your
-              needs.
+              Precision-Crafted Labels, Delivered Fast — Designed Around You
             </p>
 
-            <Link href="/services" className="relative inline-block group">
-            <span className="absolute inset-0 rounded-full border-2 border-teal-400 translate-x-2 translate-y-2 transition-all duration-300 group-hover:translate-x-0 group-hover:translate-y-0"></span>
+            <Link href="/products/labels" className="relative inline-block group">
+            <span className="absolute inset-0 -top-4 -left-4 w-40 h-16 rounded-full border-2 border-[#EF7F1A] translate-x-2 translate-y-2 transition-all duration-300"></span>
 
             {/* button */}
-            <span className="relative px-8 py-3 rounded-full text-white font-semibold bg-linear-to-r from-purple-500 to-teal-400 shadow-lg block">
-             View More
+            <span className="relative z-10 px-8 py-3 rounded-full text-white font-semibold bg-linear-to-r from-[#345f8c] to-[#EF7F1A] shadow-lg block group-hover:scale-y-130 group-hover:scale-x-113">
+              View More
             </span>
             </Link>
           </div>
@@ -96,7 +112,7 @@ export default function ServicesSection() {
                       <div
                         className="box-border flex h-16 w-16 items-center justify-center rounded-full text-white transition-all duration-300 group-hover:scale-95 group-hover:rotate-12"
                         style={{
-                          background: svc.arrowBg,
+                          background:"linear-gradient(135deg, #345f8c 0%, #6f7a7c 45%, #EF7F1A 100%)",
                         }}
                       >
                         <span className="text-[28px] font-light leading-none -mt-0.5">
@@ -112,7 +128,7 @@ export default function ServicesSection() {
                     className="mx-0 translate-y-18 opacity-0 transition-all duration-500 ease-in-out group-hover:translate-y-0 group-hover:opacity-100"
                     style={{
                       background:
-                        "linear-gradient(135deg, rgba(124,77,255,0.88) 0%, rgba(69,170,242,0.82) 45%, rgba(32,214,199,0.88) 100%)",
+                        "linear-gradient(135deg, rgba(52,95,140,0.9) 0%, rgba(120,110,110,0.85) 45%, rgba(239,127,26,0.9) 100%)",
                       borderTopLeftRadius: "22px",
                       borderTopRightRadius: "22px",
                       borderBottomLeftRadius: "28px",
@@ -121,12 +137,13 @@ export default function ServicesSection() {
                     }}
                   >
                     <div className="px-8 py-8">
-                      <p className="text-white/85 text-[15px] font-medium text-center mb-3">
-                        {svc.number}
-                      </p>
-                      <h3 className="text-white text-[24px] text-center font-semibold leading-tight">
+                      
+                      <h3 className="text-white text-[24px] text-center font-semibold leading-tight mb-3">
                         {svc.title}
                       </h3>
+                      <p className="text-white/85 text-[15px] font-medium text-center ">
+                        {svc.description}
+                      </p>
                     </div>
                   </div>
                 </div>

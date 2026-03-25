@@ -88,10 +88,8 @@ const RFIDPage = () => {
     },
   ];
   const StyledWrapper = styled.div`
-            
             .card {
-          
-              width: 250px;
+            width: 250px;
             height: 274px;
             border-radius: 30px;
             background: white;

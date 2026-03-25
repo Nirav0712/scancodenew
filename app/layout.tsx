@@ -3,6 +3,7 @@ import { Urbanist } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import StyledComponentsRegistry from "@/lib/registry";
 
 const urbanist = Urbanist({
   subsets: ["latin"],
@@ -24,9 +25,11 @@ export default function RootLayout({
     <html lang="en">
 
       <body className={`${urbanist.variable} font-sans antialiased`}>
-        <Header />
-        {children}
-        <Footer />
+        <StyledComponentsRegistry>
+          <Header />
+          {children}
+          <Footer />
+        </StyledComponentsRegistry>
       </body>
 
     </html>

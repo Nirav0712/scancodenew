@@ -115,7 +115,7 @@ export default function Newsletter() {
                 <div className="relative w-full h-full animate-float">
 
                   <Image
-                    src="/girl.png"
+                    src="/images/whychooseusperson1.webp"
                     alt="Newsletter"
                     fill
                     className="object-contain drop-shadow-2xl"

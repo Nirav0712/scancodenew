@@ -11,7 +11,7 @@ export default function AboutSection() {
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        height: "85vh"
+        height: "120vh"
       }}>
 
       <svg
@@ -140,12 +140,12 @@ export default function AboutSection() {
               href="/products/labels/plain-labels"
               className="relative inline-block group"
             >
-              <span className="absolute inset-0 rounded-full border-2 border-teal-400 translate-x-2 translate-y-2 transition-all duration-300 group-hover:translate-x-0 group-hover:translate-y-0"></span>
+              <span className="absolute inset-0 -top-4 -left-4 w-56 h-16 rounded-full border-2 border-[#EF7F1A] translate-x-2 translate-y-2 transition-all duration-300"></span>
 
-            {/* button */}
-            <span className="relative px-8 py-3 rounded-full text-white font-semibold bg-linear-to-r from-purple-500 to-teal-400 shadow-lg block">
-             Explore Labels
-            </span>
+              {/* button */}
+              <span className="relative z-10 px-8 py-3 rounded-full text-white font-semibold bg-linear-to-r from-[#345f8c] to-[#EF7F1A] shadow-lg block group-hover:scale-y-130 group-hover:scale-x-113">
+                Explore Plain Labels
+              </span>
             </Link>
           </div>
         </div>
