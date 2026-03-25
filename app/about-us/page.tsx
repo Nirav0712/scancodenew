@@ -134,7 +134,7 @@ export default function AboutPage() {
               <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default">  ScanCode Auto ID<span className="absolute bottom-0 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform " /></span>?
             </p>
             <p className="text-gray-700 text-lg text-center leading-relaxed mb-10">
-         In today’s competitive business environment, high-quality label printing plays a crucial role in product presentation and brand recognition. Advanced label printing solutions simplify the entire labeling process, ensuring every product is clearly marked with accurate and professional information. From barcode and QR code labels to fully customized packaging labels, these solutions enable businesses to enhance operational efficiency, ensure regulatory compliance, and build a strong brand presence.At Scancode Auto ID Technology Pvt Ltd, we provide premium label printing sharp print quality, and reliable performance, helping businesses achieve consistency and excellence in every label.
+         In today's competitive business environment, high-quality label printing plays a crucial role in product presentation and brand recognition. Advanced label printing solutions simplify the entire labeling process, ensuring every product is clearly marked with accurate and professional information. From barcode and QR code labels to fully customized packaging labels, these solutions enable businesses to enhance operational efficiency, ensure regulatory compliance, and build a strong brand presence.At Scancode Auto ID Technology Pvt Ltd, we provide premium label printing sharp print quality, and reliable performance, helping businesses achieve consistency and excellence in every label.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-15 max-w-6xl mx-auto px-8">
@@ -149,7 +149,7 @@ export default function AboutPage() {
                   <h3 className="text-lg font-semibold text-gray-800 mb-2 transition-all duration-300 transform group-hover:scale-90 group-hover:text-[#EF7F1A]">
                     Product Engineering
                   </h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">High-quality labels and solutions crafted with product to ensure flawless performance.</p>
+                  <p className="text-gray-500 text-sm leading-relaxed">High-quality labels and solutions crafted with precision to ensure flawless performance.</p>
                 </div>
               </div>
               {/* 2 */}
@@ -163,7 +163,7 @@ export default function AboutPage() {
                   <h3 className="text-lg font-semibold text-gray-800 mb-2 transition-all duration-300 transform group-hover:scale-90 group-hover:text-[#EF7F1A]">
                     Innovative Solutions
                   </h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">Cutting-edge auto ID technologies designed to enhance efficiency and streamline operations.</p>
+                  <p className="text-gray-500 text-sm leading-relaxed">Cutting-edge label printing technologies designed to enhance efficiency and streamline operations.</p>
                 </div>
               </div>
               {/* 3 */}
@@ -177,7 +177,7 @@ export default function AboutPage() {
                   <h3 className="text-lg font-semibold text-gray-800 mb-2 transition-all duration-300 transform group-hover:scale-90 group-hover:text-[#EF7F1A]">
                     Industry Expertise
                   </h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">Years of experience in AIDC, providing tailored solutions for diverse industries.</p>
+                  <p className="text-gray-500 text-sm leading-relaxed">Years of experience in label printing, providing customized solutions for diverse industries.</p>
                 </div>
               </div>
               {/* 4 */}
@@ -191,7 +191,7 @@ export default function AboutPage() {
                   <h3 className="text-lg font-semibold text-gray-800 mb-2 transition-all duration-300 transform group-hover:scale-90 group-hover:text-[#EF7F1A]">
                     Customer-Centric Approach
                   </h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">Collaborative service focused on understanding and exceeding client needs.</p>
+                  <p className="text-gray-500 text-sm leading-relaxed">Collaborative label printing services focused on understanding and exceeding client needs.</p>
                 </div>
               </div>
             </div>

@@ -61,7 +61,7 @@ const PlainLabelsPage = () => {
     },
     {
       name: "PET Labels",
-      img: "/images/lables/pet-labels.webp",
+      img: "/images/lables/synthetic-labels.webp",
     },
     {
       name: "PE Labels",
@@ -69,11 +69,11 @@ const PlainLabelsPage = () => {
     },
     {
       name: "Synthetic Labels",
-      img: "/images/lables/pet-labels.webp",
+      img: "/images/lables/mirror-coat-labels.webp",
     },
     {
       name: "Security Labels",
-      img: "/images/lables/pp-labels.webp",
+      img: "/images/lables/security.jpg",
     },
   ];
 

@@ -83,49 +83,49 @@ const BarcodePrintersPage = () => {
       icon: <Zap className="w-8 h-8 text-blue-600" />,
       title: "360-Degree Branding",
       description:
-        "Our sleeves cover all angles, offering full branding space for standout product visibility from every perspective.",
+        "Our labels are designed to maximize branding space, ensuring clear visibility and impactful product presentation from every angle.",
     },
     {
       icon: <Printer className="w-8 h-8 text-blue-600" />,
       title: "High-Quality Printing",
       description:
-        "Advanced printing delivers vibrant colors and crisp details, elevating your brand's appearance on every shelf.",
+        "Advanced label printing delivers vibrant colors and crisp details, elevating your brand's appearance on every product.",
     },
     {
       icon: <Users className="w-8 h-8 text-blue-600" />,
       title: "Tamper-Evident Security",
       description:
-        "Designed with tamper-evident seals, our shrink sleeves enhance security and maintain product integrity.",
+        "Designed with tamper-evident features, our labels enhance security and help maintain product integrity.",
     },
     {
       icon: <Shield className="w-8 h-8 text-blue-600" />,
       title: "Eco-Friendly Materials",
       description:
-        "We offer recyclable shrink sleeves, helping brands reduce their environmental impact without sacrificing quality.",
+        "We offer recyclable labels, helping brands reduce their environmental impact without compromising on quality.",
     },
     {
       icon: <Award className="w-8 h-8 text-blue-600" />,
       title: "Durability & Resistance",
       description:
-        "Resistant to moisture, UV, and temperature, our sleeves ensure your label stays intact through any conditions.",
+        "Resistant to moisture, UV, and temperature, our labels ensure your product information stays clear and intact in any conditions.",
     },
     {
       icon: <Cpu className="w-8 h-8 text-blue-600" />,
       title: "Tailored Custom Solutions",
       description:
-        "Our team customizes each shrink sleeve to suit your product's unique design, enhancing its shelf appeal.",
+        "Our team customizes each label to match your product’s unique design, enhancing its overall shelf appeal.",
     },
     {
       icon: <Star className="w-8 h-8 text-blue-600" />,
       title: "Flexible Application",
       description:
-        "Suitable for all container shapes—round, square, or irregular—our sleeves create a seamless product fit.",
+        "Suitable for all packaging types—round, square, or irregular—our labels ensure a seamless application on every product.",
     },
     {
       icon: <Briefcase className="w-8 h-8 text-blue-600" />,
       title: "Enhanced Shelf Appeal",
       description:
-        "Our shrink sleeves are designed to make your products stand out, boosting shelf visibility and customer interest.",
+        "Our labels are designed to make your products stand out, boosting shelf visibility and customer interest.",
     },
   ];
 

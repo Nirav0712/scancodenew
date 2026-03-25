@@ -97,7 +97,7 @@ const InMoldPage = () => {
 
                 <div className="space-y-6">
                   <p className="text-gray-700 text-lg leading-relaxed border-l-4 border-[#EF7F1A] pl-4">
-                    In-Mold Labels are a revolutionary labelling solution where the label becomes an integral part of the product’s packaging during the moulding process. This technique is most commonly used in injection moulding, blow moulding, or thermoforming processes. As the plastic product is formed, the pre-printed label is placed inside the mold and fuses with the surface, resulting in a fully integrated label that is both durable and aesthetically pleasing.
+                    In-Mold Labels are a revolutionary labelling solution where the label becomes an integral part of the product's packaging during the moulding process. This technique is most commonly used in injection moulding, blow moulding, or thermoforming processes. As the plastic product is formed, the pre-printed label is placed inside the mold and fuses with the surface, resulting in a fully integrated label that is both durable and aesthetically pleasing.
                   </p>
                 </div>
               </div>
@@ -155,7 +155,7 @@ const InMoldPage = () => {
                 </span>?
               </p>
               <p className="text-gray-700 text-lg text-center leading-relaxed mb-6">
-                At Scancode Auto ID Technology Pvt Ltd, we specialize in delivering premium In-Mold Labels (IML) that serve diverse industries, including Food & Beverages, Pharmaceuticals, Household Goods, and more. Our in-mold labels are designed to seamlessly integrate with your plastic containers during the moulding process, creating a durable, peel-proof label that feels like part of the product. This fusion not only offers a sleek and professional appearance but also adds functional resilience, making our IML solutions ideal for products that require long-lasting and vibrant branding.
+     At Scancode Auto ID Technology Pvt Ltd, we specialize in delivering premium label printing solutions that cater to a wide range of industries, including Food & Beverages, Pharmaceuticals, Retail, and Household Goods. Our labels are designed to provide strong adhesion on various packaging surfaces, ensuring they remain intact, clear, and professional over time. With high-quality materials and advanced printing techniques, we create labels that enhance product appearance while maintaining durability and reliability. This not only delivers a clean and polished look but also ensures long-lasting performance, making our label printing solutions ideal for businesses that require consistent and impactful branding.
               </p>
             </div>
 
@@ -230,10 +230,10 @@ const InMoldPage = () => {
               </span>
             </p>
             <p className="text-gray-700 text-lg leading-relaxed mb-6 text-center">
-              At Scancode Auto ID Technology Pvt Ltd, we leverage cutting-edge printing technology and high-quality materials to produce in-mold labels that offer superior durability and unmatched visual appeal. Our in-mold labels are designed to seamlessly fuse with the container during the molding process, eliminating the risk of peeling or fading over time. This results in a label that becomes a permanent part of the product, ensuring long-lasting brand visibility and a professional finish. Whether you’re in the food and beverage industry, pharmaceuticals, or consumer goods, our labels provide a seamless solution for your packaging needs.
+             At Scancode Auto ID Technology Pvt Ltd, we utilize advanced label printing technology and premium-quality materials to deliver labels that offer exceptional durability and striking visual appeal. Our label printing solutions are designed to ensure strong adhesion on various surfaces, preventing peeling, fading, or damage over time. This guarantees long-lasting brand visibility and a clean, professional finish for every product. Whether you operate in the food and beverage industry, pharmaceuticals, retail, or consumer goods, our labels provide a reliable and efficient solution for all your packaging requirements.
             </p>
             <p className="text-gray-700 text-lg leading-relaxed mb-6 text-center">
-              Beyond aesthetics, Scancode’s in-mold labels are engineered to meet the highest standards of durability. They are resistant to scratches, moisture, UV rays, and chemicals, ensuring that your products maintain their pristine appearance under various conditions. Our commitment to sustainability means that our labels are made from recyclable materials, helping businesses reduce their environmental impact. With fully customizable options to suit any shape or size of container, Scancode offers a cost-effective, eco-friendly, and high-performance labeling solution that helps elevate your brand while meeting all regulatory and consumer demands.
+              Beyond visual appeal, our labels are engineered to meet the highest standards of performance. They are resistant to moisture, heat, UV exposure, and regular handling, ensuring your products maintain a polished appearance in all conditions. We are also committed to sustainability, offering eco-friendly and recyclable label materials that help reduce environmental impact. With fully customizable options in size, shape, material, and finish, Scancode delivers cost-effective, high-quality label printing solutions that enhance your brand identity while meeting industry regulations and customer expectations.
             </p>
           </div>
         </section>

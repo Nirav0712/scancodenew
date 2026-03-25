@@ -91,7 +91,7 @@ export default function ProductsPage() {
                <p className="text-gray-500 text-sm md:text-base leading-relaxed max-w-5xl mx-auto px-4 text-2xl">
                Discover Scancode Auto ID Technology Pvt Ltd's diverse labeling solutions crafted to enhance product presentation, durability, and functionality across industries. Our label offerings include in-mold labels, shrink sleeves, and specialized labels that provide superior print quality and environmental resilience. Designed for seamless integration and customization, our labels help brands make a lasting impression while meeting rigorous industry standards.
                </p>
-               <div className="mt-12 h-[1px] w-48 bg-gray-200 mx-auto"></div>
+               <div className="mt-12 h-[px] w-48 bg-gray-200 mx-auto"></div>
              </div>
      
              <div className="space-y-16 lg:space-y-24">
