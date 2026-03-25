@@ -66,7 +66,7 @@ export default function ProductsPage() {
       <PageHero
         title="Printing & Scanning Solutions"
          description="Premium wax, wax-resin, and resin ribbons engineered to provide crisp, dark, and long-lasting prints on a variety of label materials."
-        backgroundImage="/images/printingsolution.png"
+        backgroundImage="/images/p.png"
         
       />
 
@@ -78,7 +78,7 @@ export default function ProductsPage() {
           <p className="text-base md:text-lg lg:text-xl text-gray-600 leading-relaxed w-full max-w-5xl mx-auto px-6 text-center">
             Explore Scancode Auto ID Technology Pvt Ltd&apos;s comprehensive range of Printing & Scanning Solutions designed to meet the demanding needs of modern businesses. Our solutions include high-performance printers, thermal transfer ribbons, in-mold labels, and more, all engineered for reliability and high productivity. From barcode labeling to document scanning, we offer industry-leading products that enhance efficiency and ensure accurate, high-quality results across diverse applications. Discover the perfect solution to streamline your operations today.
           </p>
-          <div className="mt-12 h-[1px] w-48 bg-gray-200 mx-auto"></div>
+          <div className="mt-12 h-[1px]w-48 bg-gray-200 mx-auto"></div>
         </div>
 
         <div className="space-y-16 lg:space-y-24">

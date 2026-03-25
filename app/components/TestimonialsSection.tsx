@@ -10,7 +10,7 @@ export default function TestimonialsSlider() {
     {
       id: 1,
       content:
-        "I recently placed a bulk order for custom T-shirt printing for our company's annual event, and I couldn't be happier with the results. From start to finish, the team was incredibly helpful through the process, suggested material and printing options, and ensured that everything was completed well before the deadline.",
+        "I recently placed a bulk order for custom label printing for our company's packaging needs, and I couldn't be happier with the results. From start to finish, the team was extremely supportive throughout the process, helping us choose the right materials, finishes, and printing options. Their expertise ensured that our barcode labels, QR code labels, and packaging labels were produced with excellent clarity and durability. Everything was delivered well before the deadline, making the entire experience smooth and reliable.",
       author: "Arlene McCoy",
       designation: "Web Designer",
       image: "/images/image.png",
@@ -18,7 +18,7 @@ export default function TestimonialsSlider() {
     {
       id: 2,
       content:
-        "Amazing experience! The prints were vibrant and the team was very helpful throughout the process.",
+        "We are extremely satisfied with the custom label printing services provided. The team was professional, responsive, and very helpful in guiding us through material selection and printing options. The quality of the barcode labels, QR code labels, and packaging labels exceeded our expectations, with excellent clarity and durability. The entire process was smooth, and the order was delivered on time. Highly recommended for reliable and high-quality label printing solutions!",
       author: "Sarah Johnson",
       designation: "Marketing Director",
       image: "/images/image.png",
@@ -61,9 +61,9 @@ export default function TestimonialsSlider() {
           </p>
 
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
-            Success Stories From <br />
-            <span className="text-[#ff6b6b] border-b-4 border-[#ff6b6b]">
-              Our Customers
+            Success Stories from Our <br />
+            <span className="text-[#EF7F1A] border-b-4 border-[#ff6b6b]">
+            Label Printing Clients
             </span>
           </h2>
         </div>
