@@ -24,7 +24,7 @@ interface Service {
 const services: Service[] = [
   {
     icon: <Zap className="w-8 h-8 text-blue-600" />,
-    image: "/images/lables/paper-tags.webp",
+    image: "/images/lable-design/Frame6.png",
     title: "Efficient Labeling Solutions",
     description: "Designed to boost output while conserving resources, ensuring efficient operations with minimal environmental impact.",
     // number: "SERVICES_01",
@@ -33,7 +33,7 @@ const services: Service[] = [
   },
   {
     icon: <Shield className="w-8 h-8 text-blue-600" />,
-    image: "/images/lables/white-polyester-labels-768x768.webp",
+    image: "/images/lable-design/1.jpeg",
     title: "Reliable and Durable Labels",
     description: "Built to withstand harsh environments, these labels maintain performance and clarity in tough industrial settings.",
     // number: "SERVICES_02",
@@ -43,7 +43,7 @@ const services: Service[] = [
   {
     icon: <Users className="w-8 h-8 text-blue-600" />,
 
-    image: "/images/lables/shrink-sleeve.webp",
+    image: "/images/lable-design/Frame7.png",
     title: "Smart ID Label Technology",
     description: "Utilizing advanced printing and scanning to create precise, high-performance labels for modern industrial needs.",
     // number: "SERVICES_03",
@@ -63,11 +63,11 @@ export default function ServicesSection() {
 
             <h2 className="text-[42px] md:text-[56px] leading-none font-semibold text-black">
               <span className="relative inline-block">
-                Labels That 
+                Labels That
                 <span className="absolute left-0 bottom-1 w-full h-0.5 bg-white" />
               </span>
               <br />
-              Speak Your Brand
+              Imprint Your Brand
             </h2>
           </div>
 
@@ -77,12 +77,12 @@ export default function ServicesSection() {
             </p>
 
             <Link href="/products/labels" className="relative inline-block group">
-            <span className="absolute inset-0 -top-4 -left-4 w-40 h-16 rounded-full border-2 border-[#EF7F1A] translate-x-2 translate-y-2 transition-all duration-300"></span>
+              <span className="absolute inset-0 -top-4 -left-4 w-40 h-16 rounded-full border-2 border-[#EF7F1A] translate-x-2 translate-y-2 transition-all duration-300"></span>
 
-            {/* button */}
-            <span className="relative z-10 px-8 py-3 rounded-full text-white font-semibold bg-linear-to-r from-[#345f8c] to-[#EF7F1A] shadow-lg block group-hover:scale-y-130 group-hover:scale-x-113">
-              View More
-            </span>
+              {/* button */}
+              <span className="relative z-10 px-8 py-3 rounded-full text-white font-semibold bg-linear-to-r from-[#345f8c] to-[#EF7F1A] shadow-lg block group-hover:scale-y-130 group-hover:scale-x-113">
+                View More
+              </span>
             </Link>
           </div>
         </div>
@@ -112,7 +112,7 @@ export default function ServicesSection() {
                       <div
                         className="box-border flex h-16 w-16 items-center justify-center rounded-full text-white transition-all duration-300 group-hover:scale-95 group-hover:rotate-12"
                         style={{
-                          background:"linear-gradient(135deg, #345f8c 0%, #6f7a7c 45%, #EF7F1A 100%)",
+                          background: "linear-gradient(135deg, #345f8c 0%, #6f7a7c 45%, #EF7F1A 100%)",
                         }}
                       >
                         <span className="text-[28px] font-light leading-none -mt-0.5">
@@ -137,7 +137,7 @@ export default function ServicesSection() {
                     }}
                   >
                     <div className="px-8 py-8">
-                      
+
                       <h3 className="text-white text-[24px] text-center font-semibold leading-tight mb-3">
                         {svc.title}
                       </h3>

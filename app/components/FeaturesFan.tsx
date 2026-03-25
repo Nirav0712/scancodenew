@@ -9,28 +9,28 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 const CARDS = [
   {
     emoji: "🖨️",
-    title: "High-Quality Printing",
-    desc: "Advanced printing technology for sharp, vibrant, durable results on every product — every time.",
+    title: "Flexo Printing",
+    desc: "High-quality flexographic printing for vibrant, durable labels on a wide range of materials.",
   },
   {
     emoji: "🚚",
-    title: "Fast & Reliable Delivery",
-    desc: "On-time shipping with real-time tracking and secure packaging, so your order arrives perfectly.",
+    title: "Digital Printing",
+    desc: "Fast and precise digital printing for small to medium runs, ideal for custom and on-demand labels.",
   },
   {
     emoji: "📦",
-    title: "Bulk Order Support",
-    desc: "Whether you're a business or event planner, we handle bulk orders efficiently and cost-effectively.",
+    title: "Gravure Printing",
+    desc: "Efficient gravure printing for large-volume production, delivering consistent color and detail at scale.",
   },
   {
     emoji: "🔒",
-    title: "Secure Online Payments",
-    desc: "Multiple secure payment methods keep every transaction safe, fast, and completely hassle-free.",
+    title: "Barcode Solution",
+    desc: "Create and integrate reliable barcodes for inventory, tracking, and product identification systems.",
   },
   {
     emoji: "🎨",
-    title: "Easy Customization",
-    desc: "Upload your design, choose a product, and customize it exactly how you want with our intuitive tools.",
+    title: "RFID Solution",
+    desc: "Advanced RFID technology for smart labeling, enabling tracking, authentication, and data automation.",
   },
 ];
 
@@ -231,7 +231,7 @@ export default function FeaturesFan() {
           <p className="section-label">{"// OUR FEATURES  //"}</p>
           <h2 className="section-heading">
             Top-Notch Tools For{" "}
-            <span className="highlight">Custom Prints</span>
+            <span className="text-[#EF7F1A]">Custom Prints</span>
           </h2>
         </div>
 
@@ -255,7 +255,7 @@ export default function FeaturesFan() {
               <path
                 d={`M 30 ${svgH} A ${radius} ${radius} 0 0 1 ${svgW - 30} ${svgH}`}
                 fill="none"
-                stroke="rgba(249,112,96,0.18)"
+                stroke="rgba(52, 95, 140, 0.18)"
                 strokeWidth="18"
                 strokeLinecap="round"
               />
@@ -263,7 +263,8 @@ export default function FeaturesFan() {
               <path
                 d={`M 30 ${svgH} A ${radius} ${radius} 0 0 1 ${svgW - 30} ${svgH}`}
                 fill="none"
-                stroke="rgba(249,112,96,0.45)"
+                // stroke="rgba(52, 95, 140, 0.45)"
+                stroke="#345f8c"
                 strokeWidth="3"
                 strokeLinecap="round"
                 strokeDasharray="8 6"
@@ -275,8 +276,8 @@ export default function FeaturesFan() {
               />
               <defs>
                 <radialGradient id="arcFill" cx="50%" cy="100%" r="100%">
-                  <stop offset="0%" stopColor="#f97060" stopOpacity="0.22" />
-                  <stop offset="100%" stopColor="#f97060" stopOpacity="0.04" />
+                  <stop offset="0%" stopColor="#345f8c" stopOpacity="100.22" />
+                  <stop offset="100%" stopColor="#345f8c" stopOpacity="0.04" />
                 </radialGradient>
               </defs>
             </svg>
@@ -288,10 +289,10 @@ export default function FeaturesFan() {
             >
               <p
                 ref={activeLabelRef}
-                className="font-bold text-center px-4 leading-tight text-coral"
+                className="font-bold text-center px-4 leading-tight text-[#EF7F1A]"
                 style={{
                   fontSize: "clamp(0.85rem, 1.4vw, 1.1rem)",
-                  color: "#f97060",
+                  color: "#EF7F1A",
                   maxWidth: "200px",
                 }}
               >
@@ -303,7 +304,7 @@ export default function FeaturesFan() {
                 <div
                   ref={progressBarRef}
                   className="h-full rounded-full transition-none"
-                  style={{ background: "#f97060", width: "0%" }}
+                  style={{ background: "#EF7F1A", width: "0%" }}
                 />
               </div>
 
@@ -329,7 +330,7 @@ export default function FeaturesFan() {
 
           {/* ── Cards orbiting the arc ─────────────────────────────────────── */}
           <div
-            className="absolute bottom-60 right-290"
+            className="absolute bottom-60 right-260"
             style={{ transform: "translateX(-50%)" }}
           >
             {CARDS.map((card, i) => (
@@ -351,11 +352,11 @@ export default function FeaturesFan() {
                     background: "rgba(255,255,255,0.95)",
                     boxShadow:
                       i === activeIdx
-                        ? "0 24px 64px rgba(249,112,96,0.25), 0 4px 16px rgba(0,0,0,0.08)"
+                        ? "0 24px 64px rgba(239, 127, 26, 0.25), 0 4px 16px rgba(0,0,0,0.08)"
                         : "0 4px 24px rgba(0,0,0,0.07)",
                     border:
                       i === activeIdx
-                        ? "2px solid #f97060"
+                        ? "2px solid #345f8c"
                         : "1px solid rgba(229,231,235,0.8)",
                     transition: "border 0.3s, box-shadow 0.3s",
                     backdropFilter: "blur(8px)",
@@ -379,7 +380,7 @@ export default function FeaturesFan() {
           className="absolute top-10 right-10 w-20 h-20 pointer-events-none rounded-full opacity-40"
           style={{
             background:
-              "radial-gradient(circle, #f97060 0%, #f97316 60%, #eab308 100%)",
+              "linear-gradient(135deg, #345f8c 0%, #6f7a7c 45%, #EF7F1A 100%)",
             animation: "blob 9s infinite",
           }}
         />
@@ -415,7 +416,7 @@ export default function FeaturesFan() {
               height: 100,
               borderRadius: "100px 100px 0 0",
               background:
-                "linear-gradient(to top, rgba(249,112,96,0.9), rgba(249,112,96,0.5))",
+                "linear-gradient(to top, #345f8c, #EF7F1A)",
             }}
           >
             <p className="font-bold text-white text-xs text-center px-3 leading-tight">
