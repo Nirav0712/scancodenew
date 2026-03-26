@@ -110,7 +110,7 @@ export default function AboutPage() {
           <div>
             <p className="section-label">{"// OUR STORY  //"}</p>
             <h2 className="section-heading mb-6">
-            Transforming Products<span className="highlight"> Through Premium Label Printing</span>
+            Transforming Products<span className="text-[#EF7F1A]"> Through Premium Label Printing</span>
             </h2>
             <div className="prose prose-lg text-gray-600 space-y-6">
               <p>

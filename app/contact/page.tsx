@@ -9,7 +9,7 @@ export default function ContactPage() {
       <PageHero
         title="Get In Touch"
         description="Whether you have a question about our printing services, need a custom quote, or want to discuss a partnership, our team is ready to help."
-        backgroundImage="https://images.unsplash.com/photo-1596524430615-b46475ddff6e?auto=format&fit=crop&q=80&w=1920" // Contact/Support themed
+        backgroundImage="/contact.png" // Contact/Support themed
       />
 
       <section className="py-24 max-w-7xl mx-auto px-6 lg:px-8">
@@ -21,7 +21,7 @@ export default function ContactPage() {
               <p className="section-label">{"// CONTACT US  //"}</p>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">Let's start a <span className="highlight">conversation</span></h2>
               <p className="text-gray-600 leading-relaxed text-lg">
-                Fill out the form and our print experts will get back to you within 24 hours. We're excited to hear about your next project.
+               Fill out the form with your requirements, and our label printing experts will get back to you within 24 hours. Whether you need custom labels, barcode solutions, or bulk printing, we're here to deliver high-quality results tailored to your business needs.
               </p>
             </div>
 
@@ -44,7 +44,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900 mb-1 text-lg">Call Us</h4>
-                  <p className="text-gray-600">+1 (555) 123-4567<br />Mon-Fri, 9am - 6pm EST</p>
+                  <p className="text-gray-600">+91 99044 61888<br />+91 99245 61888 <br />+91 99048 85999</p>
                 </div>
               </div>
 

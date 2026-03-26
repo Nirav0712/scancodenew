@@ -128,7 +128,7 @@ const PlainLabelsPage = () => {
 
                 <div className="space-y-6">
                   <p className="text-gray-700 text-lg leading-relaxed border-l-4 border-[#EF7F1A] pl-4">
-                    In-Mold Labels are a revolutionary labelling solution where the label becomes an integral part of the product’s packaging during the moulding process. This technique is most commonly used in injection moulding, blow moulding, or thermoforming processes. As the plastic product is formed, the pre-printed label is placed inside the mold and fuses with the surface, resulting in a fully integrated label that is both durable and aesthetically pleasing.
+                    In-Mold Labels are a revolutionary labelling solution where the label becomes an integral part of the product's packaging during the moulding process. This technique is most commonly used in injection moulding, blow moulding, or thermoforming processes. As the plastic product is formed, the pre-printed label is placed inside the mold and fuses with the surface, resulting in a fully integrated label that is both durable and aesthetically pleasing.
                   </p>
                 </div>
               </div>

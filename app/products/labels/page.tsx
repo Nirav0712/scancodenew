@@ -88,8 +88,19 @@ export default function ProductsPage() {
                <h2 className="text-3 md:text-2xl font-bold text-gray-900 mb-8">
                Durable and Customizable <span className="text-[#EF7F1A]">Labels </span> for All Industries
                </h2>
-               <p className="text-gray-500 text-sm md:text-base leading-relaxed max-w-5xl mx-auto px-4 text-2xl">
-               Discover Scancode Auto ID Technology Pvt Ltd's diverse labeling solutions crafted to enhance product presentation, durability, and functionality across industries. Our label offerings include in-mold labels, shrink sleeves, and specialized labels that provide superior print quality and environmental resilience. Designed for seamless integration and customization, our labels help brands make a lasting impression while meeting rigorous industry standards.
+               <p className="text-gray-500 text-sm md:text-base leading-relaxed max-w-5xl mx-auto px-4 text-2xl ">
+               At the material level, we collaborate with world-renowned suppliers like 
+Avery Dennison and UPM Raflatac to ensure quality substrates across 
+every application. Our range includes Chromo paper for its economic 
+value and reliable printability; polypropylene(PP) and polyethylene(PE) 
+f
+ilms in white, clear, and silver for both durability and elegance; PET films 
+for their resistance to chemicals and heat; and ultra-durable synthetic 
+f
+ilms suited for industrial applications. For high-security needs, we offer 
+tamper-evident, void, and ultra-destructive labels, as well as specialty 
+materials engineered for cryogenic, high-temperature, and chemical
+exposed environments.
                </p>
                <div className="mt-12 h-[px] w-48 bg-gray-200 mx-auto"></div>
              </div>

@@ -79,18 +79,19 @@ export default function AboutSection() {
 
           {/* RIGHT — Content */}
           <div>
-            <p className="section-label">{"// PLAIN LABELS  //"}</p>
+            <p className="section-label">{"// WHO WE ARE  //"}</p>
 
             <h2 className="section-heading mb-6">
-              Flexible & Reliable{" "}
-              <span className="text-[#EF7F1A]">Plain Labels</span>
+              Flexible Approach{" "}
+              <span className="text-[#EF7F1A]">Trusted Reliability</span>
             </h2>
 
             <p className="text-gray-600 text-base mb-8 leading-relaxed">
-              Scancode ID offers dependable and versatile plain labels designed to meet
-              diverse business needs. These blank labels can be customized for various
-              applications, ensuring clear, consistent, and professional printing across
-              industries.
+             Our production environment is driven by advanced Flexographic, Digital 
+             Offset, and Gravure printing systems each selected and engineered for 
+             speed, consistency, and exceptional output. These systems are bolstered by 
+             a commitment to excellence in every process, from design consultation 
+             and prototyping to full-scale commercial production and logistics. 
             </p>
 
             {/* Feature list */}
@@ -137,15 +138,15 @@ export default function AboutSection() {
             </div>
 
             <Link
-              href="/products/labels/plain-labels"
+              href="/products/labels"
               className="relative inline-block group"
             >
-              <span className="absolute inset-0 -top-4 -left-4 w-56 h-16 rounded-full border-2 border-[#EF7F1A] translate-x-2 translate-y-2 transition-all duration-300"></span>
+              <span className="absolute inset-0 -top-4 -left-4 w-46 h-16 rounded-full border-2 border-[#EF7F1A] translate-x-2 translate-y-2 transition-all duration-300"></span>
 
               {/* button */}
               <span className="relative z-10 px-8 py-3 rounded-full text-white font-semibold bg-linear-to-r from-[#345f8c] to-[#EF7F1A] shadow-lg block group-hover:scale-y-130 group-hover:scale-x-113">
-                Explore Plain Labels
-              </span>
+                Explore Labels
+              </span> 
             </Link>
           </div>
         </div>

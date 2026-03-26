@@ -7,25 +7,25 @@ const featuresLeft = [
   {
     icon: "🖨️",
     title: "Premium Print Quality",
-    desc: "We use advanced printing technology to ensure vibrant colors, sharp details.",
+    desc: "Combining advanced technology with premium print quality for stunning colors and razor-sharp details.",
   },
   {
     icon: "🔧",
-    title: "Easy Customization",
-    desc: "Upload your design, choose your product, and customize it exactly how you want.",
+    title: " innovative solutions",
+    desc: "Transform your vision into reality with smart and innovative printing solutions design,and customize effortlessly.",
   },
 ];
 
 const featuresRight = [
   {
     icon: "🚚",
-    title: "Fast & Reliable Delivery",
-    desc: "Your orders are processed quickly and delivered on time, deadline or event.",
+    title: "Reliable Delivery",
+    desc: "Reliable delivery you can trust fast processing and on-time delivery for every order and every deadline.",
   },
   {
     icon: "🤝",
-    title: "Trusted by Hundreds",
-    desc: "From individuals to businesses, our satisfied clients trust us for consistent quality.",
+    title: "Trusted by Impactful ",
+    desc: "Trusted by hundreds of individuals and businesses for unmatched quality and dependable service.",
   },
 ];
 
@@ -44,7 +44,7 @@ export default function WhyChooseUs() {
 
         <h2 className="text-4xl lg:text-5xl font-bold mt-3">
           Why Clients Love Working <br />
-          <span className="text-[#EF7F1A] underline underline-offset-8">
+          <span className="text-[#EF7F1A]">
             With Us
           </span>
         </h2>
