@@ -95,7 +95,7 @@ const PrintEnginePage = () => {
          <PageHero
             title="Print Engine"
             description="High-performance print engines designed for mission-critical automated print-and-apply systems in manufacturing and logistics."
-            backgroundImage="/images/lable-design/barcodebg.jpg"
+            backgroundImage="/images/lable-design/printenginebg.jpg"
          />
 
          <div className="min-h-screen bg-linear-to-b from-gray-50 to-white">

@@ -87,7 +87,7 @@ const PrePrintedPage = () => {
       <PageHero
         title="Pre Printed Labels"
         description="Our Pre Printed labels are produced using high-quality materials and advanced printing technologies."
-        backgroundImage="/images/lable-design/labelsbg.jpg"
+        backgroundImage="/images/lable-design/preprintedbg.jpg"
       />
 
       <div className="min-h-screen bg-linear-to-b from-gray-50 to-white">

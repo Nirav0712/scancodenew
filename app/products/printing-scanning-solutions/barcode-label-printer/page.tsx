@@ -104,7 +104,7 @@ const BarcodePrintersPage = () => {
       <PageHero
         title="Barcode Label Printers"
         description="Reliable industrial and desktop printers from top manufacturers, built to keep your operations running smoothly with minimal downtime."
-        backgroundImage="/images/lable-design/barcodebg.jpg"
+        backgroundImage="/images/lable-design/labelprinterbg.jpg"
       />
 
       <div className="min-h-screen bg-linear-to-b from-gray-50 to-white">

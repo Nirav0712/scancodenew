@@ -105,29 +105,29 @@ export default function ServicesPage() {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <p className="section-label">{"// THE PROCESS  //"}</p>
           <h2 className="section-heading mb-16">
-            How It <span className="highlight">Works</span>
+            How It <span className="text-[#EF7F1A]">Works</span>
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
                 step: "01",
-                title: "Choose & Customize",
-                desc: "Select your product and use our online tools or upload your existing designs."
+                title: "Understand & Plan",
+                desc: "We analyze your requirements and craft a customized label solution aligned with your brand."
               },
               {
                 step: "02",
-                title: "Review & Approve",
-                desc: "We provide digital proofs to ensure your design looks perfect before printing."
+                title: "Design & Print",
+                desc: "Our team creates impactful designs and produces them using advanced printing technology."
               },
               {
                 step: "03",
-                title: "Print & Deliver",
-                desc: "We print with precision and ship directly to your door with tracking."
+                title: "Quality & Delivery",
+                desc: "We ensure strict quality checks followed by timely delivery and reliable support."
               }
             ].map((step, i) => (
-              <div key={i} className="relative bg-white p-8 rounded-2xl shadow-sm text-center">
-                <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 bg-primary text-white font-bold text-xl rounded-full flex items-center justify-center border-4 border-section-bg">
+              <div key={i} className="relative bg-white p-8 rounded-2xl shadow-sm text-center hover:scale-115 transition-300">
+                <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 bg-[#EF7F1A] opacity-50 text-white font-bold text-xl rounded-full flex items-center justify-center border-4 border-section-bg">
                   {step.step}
                 </div>
                 <h3 className="mt-8 text-xl font-bold text-gray-900 mb-3">{step.title}</h3>

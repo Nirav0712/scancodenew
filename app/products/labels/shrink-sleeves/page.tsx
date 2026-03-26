@@ -76,7 +76,7 @@ const ShrinkSleevesPage = () => {
       <PageHero
         title="Shrink Sleeves"
         description="Our shrink sleeves deliver a 360-degree branding solution that wraps around your product, creating a striking, all-around display that maximizes visibility on crowded shelves."
-        backgroundImage="/images/lable-design/labelsbg.jpg"
+        backgroundImage="/images/lable-design/shrink-sleevesbg.png"
       />
 
       <div className="min-h-screen bg-linear-to-b from-gray-50 to-white">
