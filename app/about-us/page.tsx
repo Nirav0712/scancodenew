@@ -79,7 +79,7 @@ export default function AboutPage() {
       <PageHero
         title="About Us"
         description="We are a team of passionate print professionals dedicated to bringing your creative visions to life with premium quality and unmatched reliability."
-        backgroundImage="/images/aboutus.png" // Printing facility / clean workspace
+        backgroundImage="/aboutus.png" // Printing facility / clean workspace
       />
 
       {/* Origin Story Section */}
