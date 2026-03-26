@@ -113,7 +113,7 @@ const SliderLeft = styled.div`
 `;
 
 const SliderTitle = styled.h2`
-  font-size: clamp(64px, 15vw, 140px);
+  font-size: clamp(64px, 15vw, 120px);
   font-weight: 700;
   color: #fff;
   line-height: 1.15;

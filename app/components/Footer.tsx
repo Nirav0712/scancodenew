@@ -213,7 +213,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <img className="absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat -top-25 h-auto w-full" src="/images/footer/Frame4.png" alt="Frame4.png" />
+          <img className="absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat -top-45 h-auto w-full" src="/images/footer/Frame4.png" alt="Frame4.png" />
         </div>
 
         <div className="relative pt-40 pb-8 overflow-hidden text-white-800">
@@ -256,6 +256,7 @@ export default function Footer() {
                     );
                   })}
                 </div>
+
               </div>
 
               {/* Footer Columns - Updated with new content */}
@@ -307,12 +308,12 @@ export default function Footer() {
             </div>
 
             {/* Bottom */}
-            <div className="mt-16 pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div className="mt-5 pt-3 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center gap-4">
               <p className="text-gray-400 text-sm">
                 © {currentYear} SCANCODE. All rights reserved.
               </p>
 
-              <div className="flex items-center gap-3">
+              {/* <div className="flex items-center gap-3">
                 <span className="text-sm text-gray-400">We accept:</span>
                 <div className="flex gap-2">
                   {payments.map((pay, index) => (
@@ -324,7 +325,7 @@ export default function Footer() {
                     </span>
                   ))}
                 </div>
-              </div>
+              </div> */}
 
               <div className="flex gap-6 text-sm">
                 <Link href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
