@@ -76,7 +76,7 @@ export default function ServicesSection() {
               Precision-Crafted Labels, Delivered Fast — Designed Around You
             </p>
 
-            <Link href="/products/labels" className="relative inline-block group">
+            <Link href="/services" className="relative inline-block group">
               <span className="absolute inset-0 -top-4 -left-4 w-40 h-16 rounded-full border-2 border-[#EF7F1A] translate-x-2 translate-y-2 transition-all duration-300"></span>
 
               {/* button */}

@@ -56,14 +56,14 @@ export default function TestimonialsSlider() {
 
         {/* Header */}
         <div className="text-center mb-16">
-          <p className="text-sm text-blue-500 font-semibold tracking-widest mb-2">
+          <p className="text-sm text-[#345f8c] font-semibold tracking-widest mb-2">
             // CLIENT'S FEEDBACK //
           </p>
 
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
             Success Stories from Our <br />
-            <span className="text-[#EF7F1A] border-b-4 border-[#ff6b6b]">
-            Label Printing Clients
+            <span className="text-[#EF7F1A]">
+              Label Printing Clients
             </span>
           </h2>
         </div>
@@ -87,7 +87,7 @@ export default function TestimonialsSlider() {
           <div className="md:pl-2">
 
             {/* Quote */}
-            <div className="text-9xl text-pink-200  mt-4 ">
+            <div className="text-9xl text-[#EF7F1A] mt-4 opacity-20">
               &ldquo;
             </div>
 
