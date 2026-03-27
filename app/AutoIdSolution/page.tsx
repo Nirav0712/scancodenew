@@ -142,8 +142,8 @@ const BarcodePrintersPage = () => {
         <section className="py-16 container mx-auto px-4">
           <div className="max-w-9xl mx-auto text-center">
             <div className=" p-8 md:p-12">
-              <p className="text-2xl font-bold text-gray-800 leading-relaxed mb-6 text-center">
-               Focused on Comprehensive <span className="text-[#EF7F1A]"> Auto ID Solutions</span>
+              <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center">
+               Focused on Comprehensive <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Auto ID Solutions <span className="absolute -bottom-1 left-0  w-full h-3 bg-[#EF7F1A]/20 z-0 transform " /></span>
               </p>
               <p className="text-gray-700 text-lg leading-relaxed mb-6">
                Scancode Auto ID Technology Pvt Ltd focuses on redefining efficiency through innovative label printing solutions. Our expertly developed labeling systems are tailored to suit the specific needs of diverse industries, simplifying even the most complex labeling tasks into smooth and reliable processes. From pharmaceutical and automotive to FMCG and food & beverage sectors, we support businesses with premium-quality labels that ensure precision, strengthen product identification, enhance operational speed, and significantly reduce the chances of errors.
@@ -177,9 +177,9 @@ const BarcodePrintersPage = () => {
           <div className="container mx-auto px-4 relative z-10">
             {/* Section Header with animated underline */}
             <div className="max-w-4xl mx-auto">
-              <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center">Why
+              <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center">Why Choose
                 <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Auto ID Technology Matters
-                  <span className="absolute bottom-0 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform" />
+                  <span className="absolute -bottom-1 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform" />
                 </span>?
               </p>
               <p className="text-gray-700 text-lg text-center leading-relaxed mb-6">
@@ -246,7 +246,7 @@ const BarcodePrintersPage = () => {
 
         {/* Why Choose Us Section */}
         <section className="py-16 container mx-auto px-4">
-          <div className="max-w-4xl mx-auto bg-linear-to-r from-blue-600 to-blue-800 rounded-3xl shadow-2xl overflow-hidden">
+          <div className="max-w-4xl mx-auto bg-linear-to-r from-[#345f8c] to-[#EF7F1A] rounded-3xl shadow-2xl overflow-hidden">
             <div className="p-8 md:p-12 text-white">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
                 Why Choose Ransolar Label Printers?

@@ -92,9 +92,7 @@ export default function ProductsPage() {
         <div className="text-center max-w-9xl mx-auto mb-16">
           <h2 className="text-4xl md:text-2xl font-bold text-gray-900 mb-8">
             High-Quality{" "}
-            <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default">
-              Printing & Scanning Solutions
-              <span className="absolute -bottom-1 left-0  w-full h-3 bg-[#EF7F1A]/20 z-0 transform " />
+            <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Printing & Scanning Solutions<span className="absolute -bottom-1 left-0  w-full h-3 bg-[#EF7F1A]/20 z-0 transform " />
             </span>{" "}
             Tailored for Your Needs
           </h2>

@@ -100,7 +100,7 @@ const PrePrintedPage = () => {
               <div className="lg:p-14">
                 <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 leading-tight mb-8">
                   <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default block mt-2">Pre-Printed Labels
-                    <span className="absolute bottom-0 left-0 w-105 h-3 bg-[#EF7F1A]/20 z-0 transform" />
+                    <span className="absolute -bottom-1 left-0 w-103 h-3 bg-[#EF7F1A]/20 z-0 transform" />
                   </span>for Ready-to-Use Product
                 </h2>
 

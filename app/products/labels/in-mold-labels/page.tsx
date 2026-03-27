@@ -91,7 +91,7 @@ const InMoldPage = () => {
                 <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 leading-tight mb-8">
                   What Are
                   <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default block mt-2">In-Mold Labels
-                    <span className="absolute bottom-0 left-0 w-85 h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" />
+                    <span className="absolute -bottom-1 left-0 w-85 h-3 bg-[#EF7F1A]/20 z-0 transform" />
                   </span>?
                 </h2>
 
@@ -151,7 +151,7 @@ const InMoldPage = () => {
             <div className="max-w-4xl mx-auto">
               <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center">Why Choose Our
                 <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> In-Mold Labels
-                  <span className="absolute bottom-0 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" />
+                  <span className="absolute -bottom-1 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform" />
                 </span>?
               </p>
               <p className="text-gray-700 text-lg text-center leading-relaxed mb-6">
@@ -222,11 +222,11 @@ const InMoldPage = () => {
         <section className="py-16 container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
             <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center">What Makes
-              <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Scancode <span className="absolute bottom-0 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" />
+              <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Scancode <span className="absolute -bottom-1 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform" />
               </span>
               the Right Choice for
               <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> In-Mold Labels
-                <span className="absolute bottom-0 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" />
+                <span className="absolute -bottom-1 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform"/>
               </span>
             </p>
             <p className="text-gray-700 text-lg leading-relaxed mb-6 text-center">

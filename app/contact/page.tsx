@@ -69,7 +69,7 @@ export default function ContactPage() {
                   <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
                     <i className="fas fa-map-marker-alt text-primary"></i>
                   </div>
-                  <div className="text-sm sm:text-base text-gray-600 text-1xl">
+                  <div className="text-sm sm:text-base text-gray-600 text-2xl">
                     <b>Regd. Office:</b><br />
                     Gala No. C-2, Dungra Park, Plot No. 28, Survey No. 376/1/P3/P5, Mahavir Nagar,<br />
                     Nr. Mazda Colour Ltd., 100 Shed Area Gidc, Vapi, Gujarat-396195.<br /><br />
@@ -127,9 +127,9 @@ export default function ContactPage() {
                     <div>
                       <span className="text-[#EF7F1A] font-medium mb-2 block text-2xl">Our Social Channels</span>
                       <div className="flex justify-start gap-3">
-                        <SocialLink href="#" icon="fab fa-facebook-f" bgColor="#1877F2" />
-                        <SocialLink href="#" icon="fab fa-youtube" bgColor="#FF0000" />
-                        <SocialLink href="#" icon="fab fa-instagram" bgColor="radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)" />
+                        <SocialLink href="" icon="fab fa-facebook-f" bgColor="#1877F2" />
+                        <SocialLink href="www.youtube.com/@ScancodeAutoIDTechnology" icon="fab fa-youtube" bgColor="#FF0000" />
+                        <SocialLink href="https://www.instagram.com/scancodeautoid/" icon="fab fa-instagram" bgColor="radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)" />
                       </div>
                     </div>
                   </div>
@@ -141,7 +141,7 @@ export default function ContactPage() {
             <div className="lg:col-span-2">
               <div className="bg-white rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 p-6 md:p-10">
 
-                <h2 className="text-2xl sm:text-3xl font-bold text-[#EF7F1A] mb-8">
+                <h2 className="text-3xl sm:text-3xl font-bold text-[#EF7F1A] mb-8">
                   Send Message
                 </h2>
 
