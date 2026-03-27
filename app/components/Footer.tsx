@@ -140,7 +140,7 @@ export default function Footer() {
                     <div className="relative w-full h-full">
                       <Image
                         src="/images/whychooseusperson1.webp"
-                        alt="Happy customer with prints"
+                        alt="whychooseusperson1.webp"
                         fill
                         className="object-contain drop-shadow-2xl transform group-hover:scale-105 transition-transform duration-700"
                         priority
@@ -227,7 +227,7 @@ export default function Footer() {
               <div className="lg:col-span-1">
                 <Image
                   src="/images/scancode-logo.webp"
-                  alt="SCANCODE"
+                  alt="scancode-logo.webp"
                   width={160}
                   height={45}
                   className="mb-6 brightness-0 invert"

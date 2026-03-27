@@ -13,7 +13,7 @@ const categories = [
   {
     label: "Plain Labels",
     image: "/images/lable-design/plain-labels.jpg",
-      link: "/products/labels/plain-labels",
+    link: "/products/labels/plain-labels",
   },
   {
     label: "Pre-printed Labels",
@@ -23,7 +23,7 @@ const categories = [
   {
     label: "Shrink-Sleeve Labels",
     image: "/images/lable-design/shrink-label.jpg",
-    link: "/products/labels/shrink-sleeve-labels",
+    link: "/products/labels/shrink-sleeves",
   },
   {
     label: "Thermal Transfer Ribbons",
