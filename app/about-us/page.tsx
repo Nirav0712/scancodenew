@@ -131,7 +131,7 @@ export default function AboutPage() {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center ">Why Choose Us
-              <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default">  ScanCode Auto ID<span className="absolute bottom-0 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform " /></span>?
+              <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default">  ScanCode Auto ID<span className="absolute -bottom-1 left-0 ml-3 w-full h-3 bg-[#EF7F1A]/20 z-0 transform " /></span>?
             </p>
             <p className="text-gray-700 text-lg text-center leading-relaxed mb-10">
          In today's competitive business environment, high-quality label printing plays a crucial role in product presentation and brand recognition. Advanced label printing solutions simplify the entire labeling process, ensuring every product is clearly marked with accurate and professional information. From barcode and QR code labels to fully customized packaging labels, these solutions enable businesses to enhance operational efficiency, ensure regulatory compliance, and build a strong brand presence.At Scancode Auto ID Technology Pvt Ltd, we provide premium label printing sharp print quality, and reliable performance, helping businesses achieve consistency and excellence in every label.
@@ -242,7 +242,7 @@ export default function AboutPage() {
         <div className="max-w-9xl mx-auto">
           <div className="  md:p-12 text-center">
             <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center">Driving Innovation through
-              Reliable <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Advanced Manufacturing<span className="absolute bottom-0 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform" /></span>
+              Reliable <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Advanced Manufacturing<span className="absolute -bottom-1 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform" /></span>
             </p>
             <p className="text-gray-700 text-lg leading-relaxed mb-6">
               At Scancode Auto ID Technology Pvt. Ltd., our infrastructure is the cornerstone of our commitment to excellence in premium label printing solutions. We understand that leveraging top-quality raw materials and state-of-the-art label manufacturing technologies leads to exceptional products that empower businesses to enhance their brand presence and operational accuracy.
@@ -280,8 +280,8 @@ export default function AboutPage() {
             {/* Years of Industry Expertise */}
             <div className="text-center group">
               <div className="inline-block mb-4">
-                <div className="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
-                  <svg className="w-8 h-8 text-primary group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div className="w-20 h-20 bg-[#EF7F1A]/20 rounded-2xl flex items-center justify-center group-hover:bg-[#EF7F1A]/70 group-hover:scale-110 transition-all duration-300">
+                  <svg className="w-8 h-8 text-[#EF7F1A] group-hover:text-black transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
@@ -290,15 +290,15 @@ export default function AboutPage() {
                 <AnimatedCounter end={8} suffix="+" />
               </div>
               <div className="text-gray-600 font-medium">Years of Industry Expertise</div>
-              <div className="w-12 h-0.5 bg-primary/30 mx-auto mt-4 group-hover:w-20 transition-all duration-300"></div>
+              <div className="w-12 h-0.5 bg-[#EF7F1A]/50 mx-auto mt-4 group-hover:w-20 transition-all duration-300"></div>
             </div> 
             
 
             {/* Skilled Team */}
             <div className="text-center group">
               <div className="inline-block mb-4">
-                <div className="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
-                  <svg className="w-8 h-8 text-primary group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div className="w-20 h-20 bg-[#EF7F1A]/20 rounded-2xl flex items-center justify-center group-hover:bg-[#EF7F1A]/70 group-hover:scale-110 transition-all duration-300">
+                  <svg className="w-8 h-8 text-[#EF7F1A] group-hover:text-black transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                   </svg>
                 </div>
@@ -307,14 +307,14 @@ export default function AboutPage() {
                 <AnimatedCounter end={20} suffix="+" />
               </div>
               <div className="text-gray-600 font-medium">Skilled Team</div>
-              <div className="w-12 h-0.5 bg-primary/30 mx-auto mt-4 group-hover:w-20 transition-all duration-300"></div>
+              <div className="w-12 h-0.5 bg-[#EF7F1A]/50 mx-auto mt-4 group-hover:w-20 transition-all duration-300"></div>
             </div>
 
             {/* Customer Satisfaction */}
             <div className="text-center group">
               <div className="inline-block mb-4">
-                <div className="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
-                  <svg className="w-8 h-8 text-primary group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div className="w-20 h-20 bg-[#EF7F1A]/20 rounded-2xl flex items-center justify-center group-hover:bg-[#EF7F1A]/70 group-hover:scale-110 transition-all duration-300">
+                  <svg className="w-8 h-8 text-[#EF7F1A] group-hover:text-black transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" />
                   </svg>
                 </div>
@@ -323,14 +323,14 @@ export default function AboutPage() {
                 <AnimatedCounter end={100} suffix="%" />
               </div>
               <div className="text-gray-600 font-medium">Customer Satisfaction</div>
-              <div className="w-12 h-0.5 bg-primary/30 mx-auto mt-4 group-hover:w-20 transition-all duration-300"></div>
+              <div className="w-12 h-0.5 bg-[#EF7F1A]/50 mx-auto mt-4 group-hover:w-20 transition-all duration-300"></div>
             </div>
 
             {/* Clients Worldwide */}
             <div className="text-center group">
               <div className="inline-block mb-4">
-                <div className="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
-                  <svg className="w-8 h-8 text-primary group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div className="w-20 h-20 bg-[#EF7F1A]/20 rounded-2xl flex items-center justify-center group-hover:bg-[#EF7F1A]/70 group-hover:scale-110 transition-all duration-300">
+                  <svg className="w-8 h-8 text-[#EF7F1A] group-hover:text-black transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
@@ -339,7 +339,7 @@ export default function AboutPage() {
                 <AnimatedCounter end={500} suffix="+" />
               </div>
               <div className="text-gray-600 font-medium">Clients Worldwide</div>
-              <div className="w-12 h-0.5 bg-primary/30 mx-auto mt-4 group-hover:w-20 transition-all duration-300"></div>
+              <div className="w-12 h-0.5 bg-[#EF7F1A]/50 mx-auto mt-4 group-hover:w-20 transition-all duration-300"></div>
             </div>
           </div>
 

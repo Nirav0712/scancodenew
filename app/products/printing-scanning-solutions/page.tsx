@@ -71,11 +71,11 @@ export default function ProductsPage() {
       />
 
       <section className="py-20 max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="text-center max-w-4xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-2xl font-bold text-gray-900 mb-8">
-            High-Quality <span className="text-[#EF7F1A]">Printing & Scanning Solutions</span> Tailored for Your Needs
+        <div className="text-center max-w-9xl mx-auto mb-16">
+          <h2 className="text-4xl md:text-2xl font-bold text-gray-900 mb-8">
+            High-Quality <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default">Printing & Scanning Solutions<span className="absolute -bottom-1 left-0  w-full h-3 bg-[#EF7F1A]/20 z-0 transform " /></span> Tailored for Your Needs
           </h2>
-          <p className="text-base md:text-lg lg:text-xl text-gray-600 leading-relaxed w-full max-w-5xl mx-auto px-6 text-center">
+          <p className="text-base md:text-lg lg:text-xl text-gray-600 leading-relaxed w-full max-w-9xl mx-auto px-6 text-center">
             Explore Scancode Auto ID Technology Pvt Ltd&apos;s comprehensive range of Printing & Scanning Solutions designed to meet the demanding needs of modern businesses. Our solutions include high-performance printers, thermal transfer ribbons, in-mold labels, and more, all engineered for reliability and high productivity. From barcode labeling to document scanning, we offer industry-leading products that enhance efficiency and ensure accurate, high-quality results across diverse applications. Discover the perfect solution to streamline your operations today.
           </p>
           <div className="mt-12 h-[1px]w-48 bg-gray-200 mx-auto"></div>
