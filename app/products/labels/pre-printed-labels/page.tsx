@@ -46,11 +46,11 @@ const PrePrintedPage = () => {
     },
     {
       name: "FSC Certified Labels",
-      img: "/images/lables/synthetic-labels.webp",
+      img: "/images/lables/FSClable.png",
     },
     {
-      name: "FSC Certified Labels",
-      img: "/images/lables/tamper-evident-labels.webp",
+      name: "FSC Approved Labels",
+      img: "/images/lables/FSCapprove.png",
     },
 
   ];
@@ -87,7 +87,7 @@ const PrePrintedPage = () => {
       <PageHero
         title="Pre Printed Labels"
         description="Our Pre Printed labels are produced using high-quality materials and advanced printing technologies."
-        backgroundImage="/images/lable-design/preprintedbg.jpg"
+        backgroundImage="/images/lables/preprintedlable.png"
       />
 
       <div className="min-h-screen bg-linear-to-b from-gray-50 to-white">
@@ -100,7 +100,7 @@ const PrePrintedPage = () => {
               <div className="lg:p-14">
                 <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 leading-tight mb-8">
                   <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default block mt-2">Pre-Printed Labels
-                    <span className="absolute bottom-0 left-0 w-105 h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" />
+                    <span className="absolute bottom-0 left-0 w-105 h-3 bg-[#EF7F1A]/20 z-0 transform" />
                   </span>for Ready-to-Use Product
                 </h2>
 
@@ -160,7 +160,7 @@ const PrePrintedPage = () => {
             <div className="max-w-4xl mx-auto">
               <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center">Why Choose Our
                 <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Pre-Printed Labels
-                  <span className="absolute bottom-0 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" />
+                  <span className="absolute bottom-0 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform" />
                 </span>
               </p>
               <p className="text-gray-700 text-lg text-center leading-relaxed mb-6">
@@ -233,7 +233,7 @@ const PrePrintedPage = () => {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center ">Explore Our Range of
-              <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Pre-Printed Labels<span className="absolute bottom-0 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" />
+              <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Pre-Printed Labels<span className="absolute bottom-0 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform" />
               </span>
             </p>
             <p className="text-gray-700 text-lg text-center leading-relaxed mb-10">

@@ -168,7 +168,7 @@ const PrintEnginePage = () => {
             <section className="py-16 bg-gray-50">
                <div className="container mx-auto px-4">
                   <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
-                     Key Benefits of <span className="text-[#ef7f1a]">Print Engine</span>
+                     Key Benefits of <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default">Print Engine <span className="absolute -bottom-1 left-0  w-full h-3 bg-[#EF7F1A]/20 z-0 transform " /></span>
                   </h2>
                   <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
                      {benefits.map((benefit, index) => (
@@ -189,7 +189,7 @@ const PrintEnginePage = () => {
 
             {/* Why Choose Us Section */}
             <section className="py-16 container mx-auto px-4">
-               <div className="max-w-4xl mx-auto bg-linear-to-r from-blue-600 to-blue-800 rounded-3xl shadow-2xl overflow-hidden">
+               <div className="max-w-4xl mx-auto bg-linear-to-r from-[#345f8c] to-[#EF7F1A] rounded-3xl shadow-2xl overflow-hidden">
                   <div className="p-8 md:p-12 text-white">
                      <h2 className="text-3xl md:text-4xl font-bold mb-6">
                         Why Choose Ransolar Label Printers?
@@ -236,7 +236,7 @@ const PrintEnginePage = () => {
              <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center ">
-              Featuring Products fro <span className="text-[#EF7F1A]"> Renowned Brands </span>
+              Featuring Products fro <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Renowned Brands <span className="absolute -bottom-1 left-0  w-full h-3 bg-[#EF7F1A]/20 z-0 transform " /></span>
             </p>
             <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
               Partnering with industry leaders to bring you the best labeling

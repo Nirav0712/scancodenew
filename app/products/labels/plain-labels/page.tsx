@@ -46,11 +46,11 @@ const PlainLabelsPage = () => {
     },
     {
       name: "FSC Certified Labels",
-      img: "/images/lables/synthetic-labels.webp",
+      img: "/images/lables/FSClable.png",
     },
     {
-      name: "FSC Certified Labels",
-      img: "/images/lables/tamper-evident-labels.webp",
+      name: "FSC Approved Labels",
+      img: "/images/lables/FSCapprove.png",
     },
 
   ];
@@ -61,19 +61,23 @@ const PlainLabelsPage = () => {
     },
     {
       name: "PET Labels",
-      img: "/images/lables/synthetic-labels.webp",
+      img: "/images/lables/PTElable.png",
     },
     {
       name: "PE Labels",
-      img: "/images/lables/direct-thermal-labels.webp",
+      img: "/images/lables/PElable.png",
     },
     {
       name: "Synthetic Labels",
-      img: "/images/lables/mirror-coat-labels.webp",
+      img: "/images/lables/synthetic.jpeg",
     },
     {
       name: "Security Labels",
-      img: "/images/lables/security.jpg",
+      img: "/images/lables/security.jpeg",
+    },
+     {
+      name: "Anti-Tamper Labels",
+      img: "/images/lables/antilable.png",
     },
   ];
 
@@ -122,7 +126,7 @@ const PlainLabelsPage = () => {
               <div className="lg:p-14">
                 <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 leading-tight mb-8">
                   <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default block mt-2">Plain Labels
-                    <span className="absolute bottom-0 left-0 w-70 h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" />
+                    <span className="absolute bottom-0 left-0 w-70 h-3 bg-[#EF7F1A]/20 z-0 transform" />
                   </span>for Versatile Business Applications
                 </h2>
 
@@ -186,7 +190,7 @@ const PlainLabelsPage = () => {
                   <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default">
                     Plain Labels
                   </span>
-                  <span className="absolute bottom-2 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" />
+                  <span className="absolute bottom-2 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform" />
                 </span>
               </p>
               <p className="text-gray-600 text-lg max-w-2xl mx-auto">
@@ -260,7 +264,7 @@ const PlainLabelsPage = () => {
           <div className="max-w-6xl mx-auto">
             <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center">Explore Our Range of
               <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Plain Label Types
-                <span className="absolute -bottom-1 left-2 w-full h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" /></span>
+                <span className="absolute -bottom-1 left-2 w-full h-3 bg-[#EF7F1A]/20 z-0 transform" /></span>
             </p>
             <p className="text-gray-700 text-lg text-center leading-relaxed mb-6">
               Our plain labels are available in two high-quality, versatile materials: Paper Labels and Polyester Labels. Crafted to meet diverse industry needs, each label type offers unique advantages that support reliable, professional labeling for a range of applications. Whether you need cost-effective labels for everyday use or durable options that withstand challenging environments, our plain labels provide consistent performance, adaptability, and clarity across various settings.
@@ -319,7 +323,7 @@ const PlainLabelsPage = () => {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center ">Polyester<span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Labels
-              <span className="absolute -bottom-1 left-2 w-full h-3 bg-[#EF7F1A]/20 z-0 transform -rotate-1" />
+              <span className="absolute -bottom-1 left-2 w-full h-3 bg-[#EF7F1A]/20 z-0 transform" />
             </span></p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">

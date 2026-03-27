@@ -183,7 +183,7 @@ const BarcodePrintersPage = () => {
                 </span>?
               </p>
               <p className="text-gray-700 text-lg text-center leading-relaxed mb-6">
-               In today’s fast-paced business world, managing data and inventory with speed and product is crucial. Auto ID technology simplifies complex identification tasks, making data capture, tracking, and product labeling more reliable and efficient. From barcodes and RFID to QR codes, these solutions are essential for businesses aiming to improve operational accuracy, maintain compliance, and stay competitive in their industries. At Scancode, we empower organizations to leverage these technologies effectively, transforming everyday processes and driving business growth.
+               In today's fast-paced business world, managing data and inventory with speed and product is crucial. Auto ID technology simplifies complex identification tasks, making data capture, tracking, and product labeling more reliable and efficient. From barcodes and RFID to QR codes, these solutions are essential for businesses aiming to improve operational accuracy, maintain compliance, and stay competitive in their industries. At Scancode, we empower organizations to leverage these technologies effectively, transforming everyday processes and driving business growth.
               </p>
             </div>
 

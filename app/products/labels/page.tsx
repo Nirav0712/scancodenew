@@ -86,7 +86,8 @@ export default function ProductsPage() {
       <section className="py-20 max-w-7xl mx-auto px-6 lg:px-8">
              <div className="text-center max-w-4xl mx-auto mb-16">
                <h2 className="text-3 md:text-2xl font-bold text-gray-900 mb-8">
-               Durable and Customizable <span className="text-[#EF7F1A]">Labels </span> for All Industries
+               Durable and Customizable <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default">Labels<span className="absolute -bottom-1 left-0  w-18 h-3 bg-[#EF7F1A]/20 z-0 transform " /> </span> for All Industries
+               
                </h2>
                <p className="text-gray-500 text-sm md:text-base leading-relaxed max-w-5xl mx-auto px-4 text-2xl ">
                At the material level, we collaborate with world-renowned suppliers like 
