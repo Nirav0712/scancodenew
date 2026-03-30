@@ -64,22 +64,7 @@ export default function ContactPage() {
 
               <div className="space-y-6">
 
-                {/* Address */}
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
-                    <i className="fas fa-map-marker-alt text-primary"></i>
-                  </div>
-                  <div className="text-sm sm:text-base text-gray-600 text-2xl">
-                    <b>Regd. Office:</b><br />
-                    Gala No. C-2, Dungra Park, Plot No. 28, Survey No. 376/1/P3/P5, Mahavir Nagar,<br />
-                    Nr. Mazda Colour Ltd., 100 Shed Area Gidc, Vapi, Gujarat-396195.<br /><br />
-
-                    <b>Manufacturing Unit:</b><br />
-                    Plot No. 822/1, Block No. 2024/1, Rakanpur Gam Road, Nr. Leo Polymer,<br />
-                    Rakanpur, Tal. Kalol, Dist. Gandhinagar, Gujarat-382721.
-                  </div>
-                </div>
-
+                
                 {/* Phone */}
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
@@ -91,29 +76,46 @@ export default function ContactPage() {
                       <div className="bg-gray-50 p-3 rounded-lg text-sm text-1xl">
                         <b>Regd. Office</b>
                         <div className="mt-1 flex flex-col">
-                          <a href="tel:+919904461888"> +91 99044 61888</a>
+                          <a href="tel:+919904461888"> +91 9427061888</a>
                         </div>
                       </div>
 
-                      <div className="bg-gray-50 p-3 rounded-lg text-sm text-1xl">
+                      {/* <div className="bg-gray-50 p-3 rounded-lg text-sm text-1xl">
                         <b>Manufacturing Unit</b>
                         <div className="mt-1 flex flex-col">
                           <a href="tel:+919924561888"> +91 99245 61888</a>
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>
 
-                {/* Email */}
+                {/* Address */}
                 <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
+                    <i className="fas fa-map-marker-alt text-primary"></i>
+                  </div>
+                  <div className="text-sm sm:text-base text-gray-600 text-2xl">
+                    <b>Regd. Office:</b><br />
+                    Gala No. C-2, Dungra Park, Plot No. 28, Survey No. 376/1/P3/P5, Mahavir Nagar,<br />
+                    Nr. Mazda Colour Ltd., 100 Shed Area Gidc, Vapi, Gujarat-396195.<br /><br />
+
+                    {/* <b>Manufacturing Unit:</b><br />
+                    Plot No. 822/1, Block No. 2024/1, Rakanpur Gam Road, Nr. Leo Polymer,<br />
+                    Rakanpur, Tal. Kalol, Dist. Gandhinagar, Gujarat-382721. */}
+                  </div>
+                </div>
+
+
+                {/* Email */}
+                <div className="flex items-start gap-4 mt-5">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
                     <i className="fas fa-envelope text-primary"></i>
                   </div>
                   <div className="text-gray-600 text-sm sm:text-base">
                     <b> Email</b><br />
                     <a href="mailto:contact@Scancodeauto@gmail.com" className="hover:text-primary transition-colors">
-                      contact@Scancodeauto@gmail.com
+                      contact@scancodeautoid.com
                     </a>
                   </div>
                 </div>

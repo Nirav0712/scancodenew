@@ -198,9 +198,9 @@ export default function Header() {
                             <Link href="/products/labels/shrink-sleeves" className="hover:text-orange-400 cursor-pointer block transition-colors">
                               Shrink Sleeves
                             </Link>
-                            <Link href="/products/labels/in-mold-labels" className="hover:text-orange-400 cursor-pointer block transition-colors">
+                            {/* <Link href="/products/labels/in-mold-labels" className="hover:text-orange-400 cursor-pointer block transition-colors">
                               In Mold Labels
-                            </Link>
+                            </Link> */}
                           </div>
                         )}
 

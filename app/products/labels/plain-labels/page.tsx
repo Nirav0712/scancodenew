@@ -48,10 +48,10 @@ const PlainLabelsPage = () => {
       name: "FSC Certified Labels",
       img: "/images/lables/FSClable.png",
     },
-    {
-      name: "FSC Approved Labels",
-      img: "/images/lables/FSCapprove.png",
-    },
+    // {
+    //   name: "FSC Approved Labels",
+    //   img: "/images/lables/FSCapprove.png",
+    // },
 
   ];
   const polysterlabel = [
