@@ -31,14 +31,14 @@ const BarcodePrintersPage = () => {
       description: "Leading Manufacturer",
       logo: "/brands/zebra.png",
       img: "/images/brands/zebra.webp",
-      
+
     },
     {
       name: "AZTAY",
       description: "Powered On Site",
       logo: "/brands/aztay.png",
       img: "/images/brands/sato.webp",
-      
+
     },
     {
       name: "CITIZEN",
@@ -52,7 +52,7 @@ const BarcodePrintersPage = () => {
       description: "Leading Manufacturer",
       logo: "/brands/argox.png",
       img: "/images/brands/argox.webp",
-      
+
     },
     {
       name: "Honeywell",
@@ -77,7 +77,7 @@ const BarcodePrintersPage = () => {
     },
   ];
 
- 
+
   const benefits = [
     {
       icon: <Zap className="w-8 h-8 text-blue-600" />,
@@ -143,13 +143,13 @@ const BarcodePrintersPage = () => {
           <div className="max-w-9xl mx-auto text-center">
             <div className=" p-8 md:p-12">
               <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center">
-               Focused on Comprehensive <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Auto ID Solutions <span className="absolute -bottom-1 left-0  w-full h-3 bg-[#EF7F1A]/20 z-0 transform " /></span>
+                Focused on Comprehensive <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Auto ID Solutions <span className="absolute -bottom-1 left-0  w-full h-3 bg-[#EF7F1A]/20 z-0 transform " /></span>
               </p>
               <p className="text-gray-700 text-lg leading-relaxed mb-6">
-               Scancode Auto ID Technology Pvt Ltd focuses on redefining efficiency through innovative label printing solutions. Our expertly developed labeling systems are tailored to suit the specific needs of diverse industries, simplifying even the most complex labeling tasks into smooth and reliable processes. From pharmaceutical and automotive to FMCG and food & beverage sectors, we support businesses with premium-quality labels that ensure precision, strengthen product identification, enhance operational speed, and significantly reduce the chances of errors.
+                Scancode Auto ID Technology Pvt Ltd focuses on redefining efficiency through innovative label printing solutions. Our expertly developed labeling systems are tailored to suit the specific needs of diverse industries, simplifying even the most complex labeling tasks into smooth and reliable processes. From pharmaceutical and automotive to FMCG and food & beverage sectors, we support businesses with premium-quality labels that ensure precision, strengthen product identification, enhance operational speed, and significantly reduce the chances of errors.
               </p>
               <p className="text-gray-700 text-lg leading-relaxed mb-6">
-     Our team of experts collaborates closely with clients to develop label printing solutions that integrate seamlessly with existing systems, offering complete customization to meet industry-specific requirements. From barcode labeling and product packaging to compliance labels and brand identification, Scancode Auto ID delivers high-quality printing and consistent reliability, setting new benchmarks for excellence in label printing solutions.
+                Our team of experts collaborates closely with clients to develop label printing solutions that integrate seamlessly with existing systems, offering complete customization to meet industry-specific requirements. From barcode labeling and product packaging to compliance labels and brand identification, Scancode Auto ID delivers high-quality printing and consistent reliability, setting new benchmarks for excellence in label printing solutions.
 
               </p>
               {/* <p className="text-gray-700 text-lg leading-relaxed">
@@ -183,7 +183,7 @@ const BarcodePrintersPage = () => {
                 </span>?
               </p>
               <p className="text-gray-700 text-lg text-center leading-relaxed mb-6">
-               In today's fast-paced business world, managing data and inventory with speed and product is crucial. Auto ID technology simplifies complex identification tasks, making data capture, tracking, and product labeling more reliable and efficient. From barcodes and RFID to QR codes, these solutions are essential for businesses aiming to improve operational accuracy, maintain compliance, and stay competitive in their industries. At Scancode, we empower organizations to leverage these technologies effectively, transforming everyday processes and driving business growth.
+                In today's fast-paced business world, managing data and inventory with speed and product is crucial. Auto ID technology simplifies complex identification tasks, making data capture, tracking, and product labeling more reliable and efficient. From barcodes and RFID to QR codes, these solutions are essential for businesses aiming to improve operational accuracy, maintain compliance, and stay competitive in their industries. At Scancode, we empower organizations to leverage these technologies effectively, transforming everyday processes and driving business growth.
               </p>
             </div>
 
@@ -309,7 +309,7 @@ const BarcodePrintersPage = () => {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center ">
-              Featuring Products fro <span className="text-[#EF7F1A]"> Renowned Brands </span>
+              Featuring Products for <span className="text-[#EF7F1A]"> Renowned Brands </span>
             </p>
             <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
               Partnering with industry leaders to bring you the best labeling

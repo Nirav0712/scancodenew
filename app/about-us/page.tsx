@@ -124,14 +124,12 @@ export default function AboutPage() {
         </div>
       </section>
 
-
-
       <StyledWrapper>
         {/* Why Choose Us */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center ">Why Choose Us
-              <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default">  ScanCode Auto ID<span className="absolute -bottom-1 left-0 ml-3 w-full h-3 bg-[#EF7F1A]/20 z-0 transform " /></span>?
+              <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default">  Scancode Auto ID<span className="absolute -bottom-1 left-0 ml-3 w-full h-3 bg-[#EF7F1A]/20 z-0 transform " /></span>?
             </p>
             <p className="text-gray-700 text-lg text-center leading-relaxed mb-10">
          In today's competitive business environment, high-quality label printing plays a crucial role in product presentation and brand recognition. Advanced label printing solutions simplify the entire labeling process, ensuring every product is clearly marked with accurate and professional information. From barcode and QR code labels to fully customized packaging labels, these solutions enable businesses to enhance operational efficiency, ensure regulatory compliance, and build a strong brand presence.At Scancode Auto ID Technology Pvt Ltd, we provide premium label printing sharp print quality, and reliable performance, helping businesses achieve consistency and excellence in every label.

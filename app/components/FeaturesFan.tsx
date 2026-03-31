@@ -7,31 +7,36 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 // ─── Card Data ────────────────────────────────────────────────────────────────
 
 const CARDS = [
+   {
+    emoji: "🎨",
+    title: "RFID Solution",
+    desc: "Advanced RFID technology for smart labeling, enabling tracking, authentication, and data automation.",
+  },
+    {
+    emoji: "🔒",
+    title: "Barcode Solution",
+    desc: "Create and integrate reliable barcodes for inventory, tracking, and product identification systems.",
+  },
+    {
+    emoji: "📦",
+    title: "Gravure Printing",
+    desc: "Efficient gravure printing for large-volume production, delivering consistent color and detail at scale.",
+  },
+    {
+    emoji: "🚚",
+    title: "Digital Printing",
+    desc: "Fast and precise digital printing for small to medium runs, ideal for custom and on-demand labels.",
+  },
+
   {
     emoji: "🖨️",
     title: "Flexo Printing",
     desc: "High-quality flexographic printing for vibrant, durable labels on a wide range of materials.",
   },
-  {
-    emoji: "🚚",
-    title: "Digital Printing",
-    desc: "Fast and precise digital printing for small to medium runs, ideal for custom and on-demand labels.",
-  },
-  {
-    emoji: "📦",
-    title: "Gravure Printing",
-    desc: "Efficient gravure printing for large-volume production, delivering consistent color and detail at scale.",
-  },
-  {
-    emoji: "🔒",
-    title: "Barcode Solution",
-    desc: "Create and integrate reliable barcodes for inventory, tracking, and product identification systems.",
-  },
-  {
-    emoji: "🎨",
-    title: "RFID Solution",
-    desc: "Advanced RFID technology for smart labeling, enabling tracking, authentication, and data automation.",
-  },
+
+
+
+
 ];
 
 // ─── Arc Math ─────────────────────────────────────────────────────────────────
@@ -356,7 +361,7 @@ export default function FeaturesFan() {
                         : "0 4px 24px rgba(0,0,0,0.07)",
                     border:
                       i === activeIdx
-                        ? "2px solid #345f8c"
+                        ? "2px solid #EF7F1A"
                         : "1px solid rgba(229,231,235,0.8)",
                     transition: "border 0.3s, box-shadow 0.3s",
                     backdropFilter: "blur(8px)",

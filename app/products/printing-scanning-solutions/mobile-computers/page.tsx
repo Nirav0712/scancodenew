@@ -226,7 +226,7 @@ const MobileComputersPage = () => {
             <section className="py-16 bg-gray-50">
                <div className="container mx-auto px-4">
                   <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center ">
-                     Featuring Products fro <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Renowned Brands <span className="absolute -bottom-1 left-0  w-full h-3 bg-[#EF7F1A]/20 z-0 transform " /></span>
+                     Featuring Products for <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Renowned Brands <span className="absolute -bottom-1 left-0  w-full h-3 bg-[#EF7F1A]/20 z-0 transform " /></span>
                   </p>
                   <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
                      Partnering with industry leaders to bring you the best labeling

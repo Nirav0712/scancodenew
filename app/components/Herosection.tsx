@@ -61,7 +61,7 @@ export default function HeroSection() {
         />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-10 pb-32 lg:pb-36" style={{ paddingTop: '160px' }}>
 
           {/* LEFT CONTENT */}

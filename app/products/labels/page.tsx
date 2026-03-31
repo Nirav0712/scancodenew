@@ -111,7 +111,7 @@ export default function ProductsPage() {
             </span>{" "}
          
           </h2>
-          <p className="text-gray-500 text-sm md:text-base leading-relaxed max-w-5xl mx-auto px-4 text-2xl ">
+          <p className="text-gray-500 md:text-base leading-relaxed max-w-5xl mx-auto px-4 text-2xl ">
             At the material level, we collaborate with world-renowned suppliers
             like Avery Dennison and UPM Raflatac to ensure quality substrates
             across every application. Our range includes Chromo paper for its
