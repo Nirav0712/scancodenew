@@ -48,10 +48,10 @@ const PlainLabelsPage = () => {
       name: "FSC Certified Labels",
       img: "/images/lables/FSClable.png",
     },
-    // {
-    //   name: "FSC Approved Labels",
-    //   img: "/images/lables/FSCapprove.png",
-    // },
+    {
+      name: "Paper Tags",
+      img: "/images/lables/paper-tags.webp",
+    },
 
   ];
   const polysterlabel = [
@@ -75,10 +75,10 @@ const PlainLabelsPage = () => {
       name: "Security Labels",
       img: "/images/lables/security.jpeg",
     },
-     {
-      name: "Anti-Tamper Labels",
-      img: "/images/lables/antilable.png",
-    },
+    // {
+    //   name: "Anti-Tamper Labels",
+    //   img: "/images/lables/antilable.png",
+    // },
   ];
 
   const benefits = [
