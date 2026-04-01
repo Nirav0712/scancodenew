@@ -161,7 +161,7 @@ const ShrinkSleevesPage = () => {
             <div className="max-w-4xl mx-auto">
               <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center">Why Choose Our
                 <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Shrink Sleeves
-                  <span className="absolute -bottom-1 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform" />
+                  <span className="absolute ml-2 -bottom-1 left-0 w-65 h-3 bg-[#EF7F1A]/20 z-0 transform" />
                 </span>?
               </p>
               <p className="text-gray-700 text-lg text-center leading-relaxed mb-6">
@@ -239,7 +239,7 @@ const ShrinkSleevesPage = () => {
               </span>
             </p>
             <p className="text-gray-700 text-lg leading-relaxed mb-6 text-center">
-          At Scancode Auto ID Technology Pvt Ltd, we combine years of industry expertise with advanced label printing technology and a strong commitment to quality, making our solutions ideal for a wide range of business and packaging needs. Our labels are carefully designed to enhance your product's visibility with sharp print quality, vibrant colors, and precise detailing. From barcode labels and QR code labels to product and packaging labels, we ensure durability and resistance to factors like moisture, heat, and handling. This guarantees that your labels remain clear, professional, and intact throughout the entire supply chain—from production to the end customer.
+              At Scancode Auto ID Technology Pvt Ltd, we combine years of industry expertise with advanced label printing technology and a strong commitment to quality, making our solutions ideal for a wide range of business and packaging needs. Our labels are carefully designed to enhance your product's visibility with sharp print quality, vibrant colors, and precise detailing. From barcode labels and QR code labels to product and packaging labels, we ensure durability and resistance to factors like moisture, heat, and handling. This guarantees that your labels remain clear, professional, and intact throughout the entire supply chain—from production to the end customer.
             </p>
             <p className="text-gray-700 text-lg leading-relaxed mb-6 text-center">
               In addition to visual appeal and durability, we prioritize compliance with industry standards by offering advanced label printing solutions, including tamper-evident labels that enhance product safety and authenticity—especially for sectors like food, pharmaceuticals, and cosmetics. Our solutions also support eco-conscious businesses with sustainable and recyclable label materials that help reduce environmental impact. With a strong focus on customization, we work closely with each client to design labels that truly reflect their brand identity, ensuring a perfect fit for various packaging types and surfaces. Trust Scancode to deliver label printing solutions that combine strong visual appeal, durability, security, and compliance for a professional and reliable product presentation.

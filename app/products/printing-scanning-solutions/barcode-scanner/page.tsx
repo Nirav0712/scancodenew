@@ -15,35 +15,35 @@ import PageHero from "../../../components/PageHero";
 
 const BarcodeScannerPage = () => {
   const brands = [
-    {
-      name: "TSC",
-      description: "Leading Manufacturer",
-      logo: "/images/brands/tsc.webp",
-      img: "/images/brands/tsc.webp",
-    },
+    // {
+    //   name: "TSC",
+    //   description: "Leading Manufacturer",
+    //   logo: "/images/brands/tsc.webp",
+    //   img: "/images/brands/tsc.webp",
+    // },
     {
       name: "ZEBRA",
       description: "Leading Manufacturer",
       logo: "/brands/zebra.png",
       img: "/images/brands/zebra.webp",
     },
+    // {
+    //   name: "AZTAY",
+    //   description: "Powered On Site",
+    //   logo: "/brands/aztay.png",
+    //   img: "/images/brands/sato.webp",
+    // },
+    // {
+    //   name: "CITIZEN",
+    //   description: "Premium Equipment",
+    //   logo: "/brands/citizen.png",
+    //   img: "/images/brands/citizen.webp",
+    // },
     {
-      name: "AZTAY",
-      description: "Powered On Site",
-      logo: "/brands/aztay.png",
-      img: "/images/brands/sato.webp",
-    },
-    {
-      name: "CITIZEN",
-      description: "Premium Equipment",
-      logo: "/brands/citizen.png",
-      img: "/images/brands/citizen.webp",
-    },
-    {
-      name: "ARGOX",
+      name: "Newland",
       description: "Leading Manufacturer",
-      logo: "/brands/argox.png",
-      img: "/images/brands/argox.webp",
+      logo: "/images/brands/newland-n.webp",
+      img: "/images/brands/newland-n.webp",
     },
     {
       name: "Honeywell",
@@ -52,16 +52,16 @@ const BarcodeScannerPage = () => {
       img: "/images/brands/6.webp",
     },
     {
-      name: "PRINTRONIX AUTO ID",
+      name: "Cipherlab",
       description: "Enterprise Solutions",
-      logo: "/brands/printronix.png",
-      img: "/images/brands/printronix.webp",
+      logo: "/images/brands/cipher-lab-1.webp",
+      img: "/images/brands/cipher-lab-1.webp",
     },
     {
-      name: "TOSHIBA",
+      name: "Datalogic",
       description: "Leading Innovation",
-      logo: "/brands/toshiba.png",
-      img: "/images/brands/toshiba.webp",
+      logo: "/images/brands/datalogic-n.webp",
+      img: "/images/brands/datalogic-n.webp",
     },
   ];
 
@@ -150,16 +150,16 @@ const BarcodeScannerPage = () => {
               </div>
             </div>
             <div className="space-y-2 leading-relaxed border-l-4 border-[#EF7F1A] ml-16 mt-10">
-                  <p className="text-gray-700 text-xl pl-4 text-justify">
-                   The Barcode Scanner is an essential tool for businesses seeking efficient and accurate data capture. Whether you opt for a wired or wireless model, our barcode scanners deliver unmatched reliability and performance across various applications, including retail, inventory management, and logistics. Designed for ease of use, these scanners feature advanced technology that ensures quick and accurate scanning of barcodes, reducing manual data entry errors and streamlining operations.
-                  </p>
-                  <br />
-                  <p className="text-gray-700 text-xl pl-4 text-justify">
-                  Our wired and wireless barcode scanners are equipped with high-resolution sensors that can read a wide range of barcode types, from traditional UPC codes to QR codes. With ergonomic designs and user-friendly interfaces, they are built for comfort and efficiency, allowing your staff to work more effectively. Investing in Scancode Auto ID’s barcode scanners means empowering your business with cutting-edge tools that enhance productivity and accuracy in data management.
-                  </p>
+              <p className="text-gray-700 text-xl pl-4 text-justify">
+                The Barcode Scanner is an essential tool for businesses seeking efficient and accurate data capture. Whether you opt for a wired or wireless model, our barcode scanners deliver unmatched reliability and performance across various applications, including retail, inventory management, and logistics. Designed for ease of use, these scanners feature advanced technology that ensures quick and accurate scanning of barcodes, reducing manual data entry errors and streamlining operations.
+              </p>
+              <br />
+              <p className="text-gray-700 text-xl pl-4 text-justify">
+                Our wired and wireless barcode scanners are equipped with high-resolution sensors that can read a wide range of barcode types, from traditional UPC codes to QR codes. With ergonomic designs and user-friendly interfaces, they are built for comfort and efficiency, allowing your staff to work more effectively. Investing in Scancode Auto ID’s barcode scanners means empowering your business with cutting-edge tools that enhance productivity and accuracy in data management.
+              </p>
             </div>
           </div>
-          
+
         </section>
 
         {/* Benefits Grid */}
@@ -193,7 +193,7 @@ const BarcodeScannerPage = () => {
           <div className="max-w-4xl mx-auto bg-linear-to-r from-[#345f8c] to-[#EF7F1A] rounded-3xl shadow-2xl overflow-hidden">
             <div className="p-8 md:p-12 text-white">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Why Choose Ransolar Label Printers?
+                Why Choose Scancode?
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-4">
@@ -250,7 +250,7 @@ const BarcodeScannerPage = () => {
         </section>
 
         {/* Brands Section */}
-          <section className="py-16 bg-gray-50">
+        <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center ">
               Featuring Products fro <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Renowned Brands <span className="absolute -bottom-1 left-0  w-full h-3 bg-[#EF7F1A]/20 z-0 transform " /></span>
@@ -260,7 +260,7 @@ const BarcodeScannerPage = () => {
               solutions
             </p>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
               {brands.map((brand, index) => (
                 <div
                   key={index}

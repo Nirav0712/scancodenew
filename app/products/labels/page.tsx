@@ -50,20 +50,20 @@ const PRODUCT_CATEGORIES = [
     buttonText: "Explore Shrink Sleeves",
     pagePath: "/products/labels/shrink-sleeves",
   },
-  {
-    id: "in-mold-labels",
-    title: "In Mold Labels",
-    description:
-      "In-mold labels are integrated directly into the product during the manufacturing process, becoming a permanent part of the container. This results in highly durable, scratch-resistant, and visually appealing labels. They are ideal for industries that require long-lasting labeling with superior print quality and resistance to wear.permanent part of the container, which results in highly durable, scratch-resistant, and visually appealing labels ideal for long-lasting and high-quality applications.",
-    image: "/images/lables/inmold-labels.webp",
-    features: [
-      "Seamless integration",
-      "Fade and scratch resistant",
-      "Single or multi-color printing",
-    ],
-    buttonText: "View In Mold Labels",
-    pagePath: "/products/labels/in-mold-labels",
-  },
+  // {
+  //   id: "in-mold-labels",
+  //   title: "In Mold Labels",
+  //   description:
+  //     "In-mold labels are integrated directly into the product during the manufacturing process, becoming a permanent part of the container. This results in highly durable, scratch-resistant, and visually appealing labels. They are ideal for industries that require long-lasting labeling with superior print quality and resistance to wear.permanent part of the container, which results in highly durable, scratch-resistant, and visually appealing labels ideal for long-lasting and high-quality applications.",
+  //   image: "/images/lables/inmold-labels.webp",
+  //   features: [
+  //     "Seamless integration",
+  //     "Fade and scratch resistant",
+  //     "Single or multi-color printing",
+  //   ],
+  //   buttonText: "View In Mold Labels",
+  //   pagePath: "/products/labels/in-mold-labels",
+  // },
 ];
 
 export default function ProductsPage() {
@@ -109,9 +109,9 @@ export default function ProductsPage() {
             <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default">
               Labels for All Industries<span className="absolute -bottom-1 left-0  w-100 h-3 bg-[#EF7F1A]/20 z-0 transform " />{" "}
             </span>{" "}
-         
+
           </h2>
-          <p className="text-gray-500 text-sm md:text-base leading-relaxed max-w-5xl mx-auto px-4 text-2xl ">
+          <p className="text-gray-500 md:text-base leading-relaxed max-w-5xl mx-auto px-4 text-2xl ">
             At the material level, we collaborate with world-renowned suppliers
             like Avery Dennison and UPM Raflatac to ensure quality substrates
             across every application. Our range includes Chromo paper for its
@@ -214,12 +214,12 @@ export default function ProductsPage() {
             hardware, software, and consumables perfectly tailored to your
             workflow.
           </p>
-             <div className="flex justify-center">
-          <Link
-            href="/autoidsolution"
-            className="relative w-90 z-10 px-8 py-3 rounded-full text-white font-semibold bg-linear-to-r from-[#345f8c] to-[#EF7F1A] shadow-lg block align-center justify-center">
-            Explore Custom Solutions
-          </Link>
+          <div className="flex justify-center">
+            <Link
+              href="/autoidsolution"
+              className="relative w-90 z-10 px-8 py-3 rounded-full text-white font-semibold bg-linear-to-r from-[#345f8c] to-[#EF7F1A] shadow-lg block align-center justify-center">
+              Explore Custom Solutions
+            </Link>
           </div>
         </div>
       </section>

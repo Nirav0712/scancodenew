@@ -23,10 +23,10 @@ export default function Footer() {
     label: string;
     color: string;
   }[] = [
-      { icon: FaFacebookF, href: "#", label: "Facebook", color: "hover:bg-[#1877f2]" },
-      { icon: FaTwitter, href: "#", label: "Twitter", color: "hover:bg-[#1da1f2]" },
-      { icon: FaInstagram, href: "#", label: "Instagram", color: "hover:bg-[#e4405f]" },
-      { icon: FaPinterestP, href: "#", label: "Pinterest", color: "hover:bg-[#bd081c]" },
+      { icon: FaFacebookF, href: "https://www.facebook.com/scancodeautoid", label: "Facebook", color: "hover:bg-blue-500" },
+      // { icon: FaTwitter, href: "#", label: "Twitter", color: "hover:bg-[#1da1f2]" },
+      { icon: FaInstagram, href: "https://www.instagram.com/scancodeautoid/?hl=en", label: "Instagram", color: "hover:bg-red-500" },
+      // { icon: FaPinterestP, href: "#", label: "Pinterest", color: "hover:bg-[#bd081c]" },
     ];
 
   // Updated footer columns based on the image
@@ -80,10 +80,10 @@ export default function Footer() {
               <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
 
                 <div className="max-w-xl text-center lg:text-left">
-                  <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-linear-to-r from-[#1e3a5f]/10 to-[#345f8c]/10 rounded-full text-sm mb-6 border border-[#1e3a5f]/20">
+                  {/* <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-linear-to-r from-[#1e3a5f]/10 to-[#345f8c]/10 rounded-full text-sm mb-6 border border-[#1e3a5f]/20">
                     <span className="w-2 h-2 rounded-full bg-linear-to-r from-[#1e3a5f] to-[#345f8c] animate-pulse"></span>
                     <span className="text-[#1e3a5f] font-medium">📬 Newsletter</span>
-                  </span>
+                  </span> */}
 
                   <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
                     <span className="bg-linear-to-r from-[#1e3a5f] to-[#345f8c] bg-clip-text text-transparent">
@@ -111,8 +111,8 @@ export default function Footer() {
                     </div>
 
                     <button className="relative group w-full sm:w-auto">
-                      <div className="absolute -inset-0.5 bg-linear-to-r from-[#1e3a5f] to-[#345f8c] rounded-full opacity-75 group-hover:opacity-100 blur group-hover:blur-md transition duration-500"></div>
-                      <div className="relative px-8 py-4 bg-linear-to-r from-[#1e3a5f] to-[#345f8c] rounded-full font-semibold text-white hover:shadow-xl hover:shadow-[#1e3a5f]/25 transition-all duration-300 transform group-hover:scale-105 whitespace-nowrap">
+                      <div className="absolute -inset-0.5 bg-linear-to-r from-[#EF7F1A] to-[#345f8c] rounded-full opacity-75 group-hover:opacity-100 blur group-hover:blur-md transition duration-500"></div>
+                      <div className="relative px-8 py-4 bg-linear-to-r from-[#EF7F1A] to-[#345f8c] rounded-full font-semibold text-white hover:shadow-xl hover:shadow-[#1e3a5f]/25 transition-all duration-300 transform group-hover:scale-105 whitespace-nowrap">
                         Subscribe Now
                       </div>
                     </button>
@@ -138,12 +138,12 @@ export default function Footer() {
                   <div className="relative w-full h-full animate-float">
                     <div className="absolute -inset-4 bg-linear-to-r from-[#1e3a5f]/20 to-[#345f8c]/20 rounded-full blur-2xl"></div>
                     <div className="relative w-full h-full">
-                      <Image
-                        src="/images/whychooseusperson1.webp"
-                        alt="whychooseusperson1.webp"
-                        fill
+                      <img
+                        src="/images/whychoosingusimg3.png"
+                        alt="whychoosingusimg3"
                         className="object-contain drop-shadow-2xl transform group-hover:scale-105 transition-transform duration-700"
-                        priority
+                        width={800}
+                        height={900}
                       />
                     </div>
                   </div>
@@ -225,13 +225,24 @@ export default function Footer() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {/* Logo and Company Description - Updated to match image */}
               <div className="lg:col-span-1">
-                <Image
+                <div className="relative shrink-0 group mb-3 bg-white p-2 rounded-full w-fit ">
+                  <div className="absolute inset-0 bg-linear-to-r from-[#1e3a5f]/10 to-[#345f8c]/10 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+                  <Image
+                    src="/images/scancode-logo.webp"
+                    alt="PrintNest"
+                    width={200}
+                    height={80}
+                    className="relative hover:scale-105 transition-transform duration-300 drop-shadow-sm"
+                  />
+                </div>
+                {/* <Image
                   src="/images/scancode-logo.webp"
                   alt="scancode-logo.webp"
                   width={160}
                   height={45}
                   className="mb-6 brightness-0 invert"
-                />
+                /> */}
 
                 <p className="text-gray-300 mb-6 text-sm leading-relaxed">
                   Delivering product labels and innovative auto identification solutions with unmatched quality and expertise since 2016.
@@ -291,9 +302,9 @@ export default function Footer() {
 
                 <div className="space-y-4">
                   <div className="flex gap-3">
-                    <FaPhone className="text-[#6aa6e0] shrink-00" />
+                    <FaPhone className="text-[#6aa6e0] shrink-0" />
                     <a href="tel:+919427061888" className="text-gray-300 hover:text-white transition-colors duration-200">
-                      +91 9427061888
+                      +91 94270 61888
                     </a>
                   </div>
 
@@ -303,6 +314,16 @@ export default function Footer() {
                       contact@scancodeautoid.com
                     </a>
                   </div>
+
+                  <div className="flex gap-3">
+                    <FaMapMarkerAlt className="text-[#6aa6e0] shrink-0" />
+                    <a href="" className="text-gray-300 hover:text-white transition-colors duration-200">
+                      <b>Regd. Office:</b><br />
+                      Gala No. C-2, Dungra Park, Plot No. 28, Survey No. 376/1/P3/P5, Mahavir Nagar,
+                      Nr. Mazda Colour Ltd., 100 Shed Area Gidc, Vapi, Gujarat-396195.
+                    </a>
+                  </div>
+
                 </div>
               </div>
             </div>

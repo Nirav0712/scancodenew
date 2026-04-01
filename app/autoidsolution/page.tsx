@@ -19,65 +19,65 @@ import PageHero from "../components/PageHero";
 import Cardsscroll from "../components/Cardsscroll";
 
 const BarcodePrintersPage = () => {
-  const brands = [
-    {
-      name: "TSC",
-      description: "Leading Manufacturer",
-      logo: "/images/brands/tsc.webp",
-      img: "/images/brands/tsc.webp",
-    },
-    {
-      name: "ZEBRA",
-      description: "Leading Manufacturer",
-      logo: "/brands/zebra.png",
-      img: "/images/brands/zebra.webp",
-      
-    },
-    {
-      name: "AZTAY",
-      description: "Powered On Site",
-      logo: "/brands/aztay.png",
-      img: "/images/brands/sato.webp",
-      
-    },
-    {
-      name: "CITIZEN",
-      description: "Premium Equipment",
-      logo: "/brands/citizen.png",
-      img: "/images/brands/citizen.webp",
+  // const brands = [
+  //   {
+  //     name: "TSC",
+  //     description: "Leading Manufacturer",
+  //     logo: "/images/brands/tsc.webp",
+  //     img: "/images/brands/tsc.webp",
+  //   },
+  //   {
+  //     name: "ZEBRA",
+  //     description: "Leading Manufacturer",
+  //     logo: "/brands/zebra.png",
+  //     img: "/images/brands/zebra.webp",
 
-    },
-    {
-      name: "ARGOX",
-      description: "Leading Manufacturer",
-      logo: "/brands/argox.png",
-      img: "/images/brands/argox.webp",
-      
-    },
-    {
-      name: "Honeywell",
-      description: "Industrial Grade",
-      logo: "/brands/honeywell.png",
-      img: "/images/brands/6.webp",
+  //   },
+  //   {
+  //     name: "AZTAY",
+  //     description: "Powered On Site",
+  //     logo: "/brands/aztay.png",
+  //     img: "/images/brands/sato.webp",
 
-    },
-    {
-      name: "PRINTRONIX AUTO ID",
-      description: "Enterprise Solutions",
-      logo: "/brands/printronix.png",
-      img: "/images/brands/printronix.webp",
+  //   },
+  //   {
+  //     name: "CITIZEN",
+  //     description: "Premium Equipment",
+  //     logo: "/brands/citizen.png",
+  //     img: "/images/brands/citizen.webp",
 
-    },
-    {
-      name: "TOSHIBA",
-      description: "Leading Innovation",
-      logo: "/brands/toshiba.png",
-      img: "/images/brands/toshiba.webp",
+  //   },
+  //   {
+  //     name: "ARGOX",
+  //     description: "Leading Manufacturer",
+  //     logo: "/brands/argox.png",
+  //     img: "/images/brands/argox.webp",
 
-    },
-  ];
+  //   },
+  //   {
+  //     name: "Honeywell",
+  //     description: "Industrial Grade",
+  //     logo: "/brands/honeywell.png",
+  //     img: "/images/brands/6.webp",
 
- 
+  //   },
+  //   {
+  //     name: "PRINTRONIX AUTO ID",
+  //     description: "Enterprise Solutions",
+  //     logo: "/brands/printronix.png",
+  //     img: "/images/brands/printronix.webp",
+
+  //   },
+  //   {
+  //     name: "TOSHIBA",
+  //     description: "Leading Innovation",
+  //     logo: "/brands/toshiba.png",
+  //     img: "/images/brands/toshiba.webp",
+
+  //   },
+  // ];
+
+
   const benefits = [
     {
       icon: <Zap className="w-8 h-8 text-blue-600" />,
@@ -143,13 +143,13 @@ const BarcodePrintersPage = () => {
           <div className="max-w-9xl mx-auto text-center">
             <div className=" p-8 md:p-12">
               <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center">
-               Focused on Comprehensive <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Auto ID Solutions <span className="absolute -bottom-1 left-0  w-full h-3 bg-[#EF7F1A]/20 z-0 transform " /></span>
+                Focused on Comprehensive <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Auto ID Solutions <span className="absolute -bottom-1 left-0  w-full h-3 bg-[#EF7F1A]/20 z-0 transform " /></span>
               </p>
               <p className="text-gray-700 text-lg leading-relaxed mb-6">
-               Scancode Auto ID Technology Pvt Ltd focuses on redefining efficiency through innovative label printing solutions. Our expertly developed labeling systems are tailored to suit the specific needs of diverse industries, simplifying even the most complex labeling tasks into smooth and reliable processes. From pharmaceutical and automotive to FMCG and food & beverage sectors, we support businesses with premium-quality labels that ensure precision, strengthen product identification, enhance operational speed, and significantly reduce the chances of errors.
+                Scancode Auto ID Technology Pvt Ltd focuses on redefining efficiency through innovative label printing solutions. Our expertly developed labeling systems are tailored to suit the specific needs of diverse industries, simplifying even the most complex labeling tasks into smooth and reliable processes. From pharmaceutical and automotive to FMCG and food & beverage sectors, we support businesses with premium-quality labels that ensure precision, strengthen product identification, enhance operational speed, and significantly reduce the chances of errors.
               </p>
               <p className="text-gray-700 text-lg leading-relaxed mb-6">
-     Our team of experts collaborates closely with clients to develop label printing solutions that integrate seamlessly with existing systems, offering complete customization to meet industry-specific requirements. From barcode labeling and product packaging to compliance labels and brand identification, Scancode Auto ID delivers high-quality printing and consistent reliability, setting new benchmarks for excellence in label printing solutions.
+                Our team of experts collaborates closely with clients to develop label printing solutions that integrate seamlessly with existing systems, offering complete customization to meet industry-specific requirements. From barcode labeling and product packaging to compliance labels and brand identification, Scancode Auto ID delivers high-quality printing and consistent reliability, setting new benchmarks for excellence in label printing solutions.
 
               </p>
               {/* <p className="text-gray-700 text-lg leading-relaxed">
@@ -183,7 +183,7 @@ const BarcodePrintersPage = () => {
                 </span>?
               </p>
               <p className="text-gray-700 text-lg text-center leading-relaxed mb-6">
-               In today's fast-paced business world, managing data and inventory with speed and product is crucial. Auto ID technology simplifies complex identification tasks, making data capture, tracking, and product labeling more reliable and efficient. From barcodes and RFID to QR codes, these solutions are essential for businesses aiming to improve operational accuracy, maintain compliance, and stay competitive in their industries. At Scancode, we empower organizations to leverage these technologies effectively, transforming everyday processes and driving business growth.
+                In today's fast-paced business world, managing data and inventory with speed and product is crucial. Auto ID technology simplifies complex identification tasks, making data capture, tracking, and product labeling more reliable and efficient. From barcodes and RFID to QR codes, these solutions are essential for businesses aiming to improve operational accuracy, maintain compliance, and stay competitive in their industries. At Scancode, we empower organizations to leverage these technologies effectively, transforming everyday processes and driving business growth.
               </p>
             </div>
 
@@ -249,7 +249,7 @@ const BarcodePrintersPage = () => {
           <div className="max-w-4xl mx-auto bg-linear-to-r from-[#345f8c] to-[#EF7F1A] rounded-3xl shadow-2xl overflow-hidden">
             <div className="p-8 md:p-12 text-white">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Why Choose Ransolar Label Printers?
+                Why Choose Scancode?
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-4">
@@ -306,7 +306,7 @@ const BarcodePrintersPage = () => {
         </section>
 
         {/* Brands Section */}
-        <section className="py-16 bg-gray-50">
+        {/* <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center ">
               Featuring Products for <span className="text-[#EF7F1A]"> Renowned Brands </span>
@@ -323,7 +323,6 @@ const BarcodePrintersPage = () => {
                   className="group bg-white rounded-xl p-15 shadow-md hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-blue-200"
                 >
                   <div className="h-16 flex items-center justify-center mb-3">
-                    {/* Placeholder for brand logo - replace with actual Image component when you have logos */}
                     <div className="w-25 h-25 mb-4 bg-linear-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center">
                       <img
                         src={brand.img}
@@ -342,7 +341,7 @@ const BarcodePrintersPage = () => {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
     </main>
   );

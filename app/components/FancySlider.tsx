@@ -190,6 +190,7 @@ const SliderImages = styled.div`
   width: 100%;
   height: 100%;
   position: relative;
+  overflow: hidden;
 `;
 
 const SliderCursor = styled.div`
@@ -438,7 +439,7 @@ const FancySlider: React.FC = () => {
         img.height = 420;
         img.style.width = "100%";
         img.style.height = "100%";
-        img.style.objectFit = "cover";
+        img.style.objectFit = "contain";
         img.style.filter = "brightness(0.9)";
 
         div.appendChild(img);

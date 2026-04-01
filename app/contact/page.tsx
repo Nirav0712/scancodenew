@@ -37,7 +37,7 @@ export default function ContactPage() {
 
     // Construct WhatsApp message
     const whatsappMessage = `Name: ${formData.name}%0AEmail: ${formData.email}%0APhone: ${formData.phone}%0ASubject: ${formData.subject}%0AMessage: ${formData.message}`;
-    const whatsappUrl = `https://wa.me/919904461888?text=${whatsappMessage}`;
+    const whatsappUrl = `https://wa.me/919427061888?text=${whatsappMessage}`;
 
     // Open WhatsApp in new tab
     window.open(whatsappUrl, '_blank');
@@ -56,7 +56,6 @@ export default function ContactPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12">
 
-            {/* LEFT SIDE */}
             <div className="space-y-12">
               <h2 className="text-2xl sm:text-3xl font-bold text-[#EF7F1A] mb-6">
                 Contact Information
@@ -64,57 +63,46 @@ export default function ContactPage() {
 
               <div className="space-y-6">
 
+<<<<<<< HEAD
 
                 {/* Phone */}
+=======
+                {/* phone */}
+>>>>>>> 917fc259fddfd1274d1e2ac394cf693cf633175b
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
                     <i className="fas fa-phone text-primary"></i>
                   </div>
-
-                  <div className="w-full">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                      <div className="bg-gray-50 p-3 rounded-lg text-sm text-1xl">
-                        <b>Regd. Office</b>
-                        <div className="mt-1 flex flex-col">
-                          <a href="tel:+919904461888"> +91 9427061888</a>
-                        </div>
-                      </div>
-
-                      {/* <div className="bg-gray-50 p-3 rounded-lg text-sm text-1xl">
-                        <b>Manufacturing Unit</b>
-                        <div className="mt-1 flex flex-col">
-                          <a href="tel:+919924561888"> +91 99245 61888</a>
-                        </div>
-                      </div> */}
+                  <div className="bg-gray-50 text-sm sm:text-base text-gray-600 text-2xl">
+                    <b>Regd. Office</b>
+                    <div className="mt-1 flex flex-col">
+                      <a href="tel:+919427061888"> +91 94270 61888</a>
                     </div>
                   </div>
                 </div>
 
+
                 {/* Address */}
-                <div className="flex items-start gap-4">
+                <div className="flex items-start gap-4 MB-0">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
                     <i className="fas fa-map-marker-alt text-primary"></i>
                   </div>
                   <div className="text-sm sm:text-base text-gray-600 text-2xl">
                     <b>Regd. Office:</b><br />
                     Gala No. C-2, Dungra Park, Plot No. 28, Survey No. 376/1/P3/P5, Mahavir Nagar,<br />
-                    Nr. Mazda Colour Ltd., 100 Shed Area Gidc, Vapi, Gujarat-396195.<br /><br />
-
-                    {/* <b>Manufacturing Unit:</b><br />
-                    Plot No. 822/1, Block No. 2024/1, Rakanpur Gam Road, Nr. Leo Polymer,<br />
-                    Rakanpur, Tal. Kalol, Dist. Gandhinagar, Gujarat-382721. */}
+                    Nr. Mazda Colour Ltd., 100 Shed Area Gidc, Vapi, Gujarat-396195.
                   </div>
                 </div>
 
 
                 {/* Email */}
-                <div className="flex items-start gap-4 mt-5">
+                <div className="flex items-start gap-4">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
                     <i className="fas fa-envelope text-primary"></i>
                   </div>
                   <div className="text-gray-600 text-sm sm:text-base">
                     <b> Email</b><br />
-                    <a href="mailto:contact@Scancodeauto@gmail.com" className="hover:text-primary transition-colors">
+                    <a href="mailto:contact@scancodeautoid.com" className="hover:text-primary transition-colors">
                       contact@scancodeautoid.com
                     </a>
                   </div>
@@ -122,16 +110,16 @@ export default function ContactPage() {
 
                 {/* Social */}
                 <div>
-                  <h3 className="font-semibold text-gray-900 mb-3 text-2xl">
+                  <h3 className="text-2xl sm:text-3xl font-bold text-[#EF7F1A] mb-4">
                     Follow Us
                   </h3>
                   <div className="space-y-4 w-full">
                     <div>
-                      <span className="text-[#EF7F1A] font-medium mb-2 block text-2xl">Our Social Channels</span>
+                      <span className="text-gray-600 font-medium mb-2 block text-xl">Our Social Channels :</span>
                       <div className="flex justify-start gap-3">
-                        <SocialLink href="" icon="fab fa-facebook-f" bgColor="#1877F2" />
-                        <SocialLink href="www.youtube.com/@ScancodeAutoIDTechnology" icon="fab fa-youtube" bgColor="#FF0000" />
-                        <SocialLink href="https://www.instagram.com/scancodeautoid/" icon="fab fa-instagram" bgColor="radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)" />
+                        <SocialLink href="https://www.facebook.com/scancodeautoid" icon="fab fa-facebook-f" bgColor="#1877F2" />
+                        {/* <SocialLink href="www.youtube.com/@ScancodeAutoIDTechnology" icon="fab fa-youtube" bgColor="#FF0000" /> */}
+                        <SocialLink href="https://www.instagram.com/scancodeautoid/?hl=en" icon="fab fa-instagram" bgColor="radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)" />
                       </div>
                     </div>
                   </div>
@@ -158,7 +146,7 @@ export default function ContactPage() {
                         value={formData.name}
                         onChange={handleChange}
                         required
-                        className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-700 outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all font-medium"
+                        className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-700 outline-none focus:border-[#EF7F1A] focus:ring-2 focus:ring-[#EF7F1A]/20 transition-all font-medium"
                       />
                     </div>
                     <div className="space-y-2">
@@ -170,7 +158,7 @@ export default function ContactPage() {
                         value={formData.email}
                         onChange={handleChange}
                         required
-                        className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-700 outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all font-medium"
+                        className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-700 outline-none focus:border-[#EF7F1A] focus:ring-2 focus:ring-[#EF7F1A]/20 transition-all font-medium"
                       />
                     </div>
                   </div>
@@ -183,7 +171,7 @@ export default function ContactPage() {
                         placeholder="+91 00000 00000"
                         value={formData.phone}
                         onChange={handleChange}
-                        className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-700 outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all font-medium"
+                        className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-700 outline-none focus:border-[#EF7F1A] focus:ring-2 focus:ring-[#EF7F1A]/20 transition-all font-medium"
                       />
                     </div>
                     <div className="space-y-2">
@@ -193,13 +181,16 @@ export default function ContactPage() {
                         value={formData.subject}
                         onChange={handleChange}
                         required
-                        className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-700 outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all font-medium"
+                        className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-700 outline-none focus:border-[#EF7F1A] focus:ring-2 focus:ring-[#EF7F1A]/20 transition-all font-medium"
                       >
                         <option value="">Select Subject</option>
-                        {/* <option value="quote">Request a Quote</option>
-                        <option value="support">Customer Support</option>
-                        <option value="partnership">Partnership</option>
-                        <option value="other">Other Inquiry</option> */}
+                        <option value="barcode">Barcode Solutions</option>
+                        <option value="rfid">RFID Solutions</option>
+                        <option value="printing">Label & Printing Services</option>
+                        <option value="hardware">Printers & Scanners</option>
+                        {/* <option value="support">Technical Support</option> */}
+                        {/* <option value="partnership">Business Partnership</option> */}
+                        <option value="other">General Inquiry</option>
                       </select>
                     </div>
                   </div>
@@ -213,10 +204,16 @@ export default function ContactPage() {
                       value={formData.message}
                       onChange={handleChange}
                       required
-                      className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-700 outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all font-medium resize-none"
+                      className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-700 outline-none focus:border-[#EF7F1A] focus:ring-2 focus:ring-[#EF7F1A]/20 transition-all font-medium resize-none"
                     />
                   </div>
-
+                  {/* <button
+                    type="submit"
+                    className="w-full bg-[#EF7F1A] text-white py-4 rounded-xl font-bold text-lg hover:bg-[#EF7F1A] shadow-lg shadow-[#EF7F1A]/20 transition-all active:scale-[0.98] disabled:opacity-70"
+                  >
+                    <i className="fas fa-paper-plane mr-2"></i>
+                    Send Message
+                  </button> */}
                   <button
                     type="submit"
                     disabled={loading}

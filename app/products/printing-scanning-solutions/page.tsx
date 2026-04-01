@@ -88,9 +88,9 @@ export default function ProductsPage() {
         backgroundImage="/images/p.png"
       />
 
-      <section className="py-20 max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="py-20 max-w-6xl mx-auto px-6 lg:px-8">
         <div className="text-center max-w-9xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-2xl font-bold text-gray-900 mb-8">
+          <h2 className="text-4xl md:text-4xl font-bold text-gray-900 mb-8">
             High-Quality{" "}
             <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Printing & Scanning Solutions<span className="absolute -bottom-1 left-0  w-full h-3 bg-[#EF7F1A]/20 z-0 transform " />
             </span>{" "}
@@ -198,13 +198,13 @@ export default function ProductsPage() {
             workflow.
           </p>
           <div className="flex justify-center">
-          <Link
-            href="/autoidsolution"
-            className="relative w-90 z-10 px-8 py-3 rounded-full text-white font-semibold bg-linear-to-r from-[#345f8c] to-[#EF7F1A] shadow-lg block align-center justify-center"
-          >
-            {/* <span className="absolute inset-0 -top-4 -left-4 w-94 h-16 rounded-full border-2 border-[#EF7F1A] translate-x-2 translate-y-2 transition-all duration-300 group-hover:scale-y-130 group-hover:scale-x-113"/> */}
-            Explore Custom Solutions
-          </Link>
+            <Link
+              href="/autoidsolution"
+              className="relative w-90 z-10 px-8 py-3 rounded-full text-white font-semibold bg-linear-to-r from-[#345f8c] to-[#EF7F1A] shadow-lg block align-center justify-center"
+            >
+              {/* <span className="absolute inset-0 -top-4 -left-4 w-94 h-16 rounded-full border-2 border-[#EF7F1A] translate-x-2 translate-y-2 transition-all duration-300 group-hover:scale-y-130 group-hover:scale-x-113"/> */}
+              Explore Custom Solutions
+            </Link>
           </div>
         </div>
       </section>

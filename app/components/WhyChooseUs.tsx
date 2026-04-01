@@ -92,9 +92,9 @@ export default function WhyChooseUs() {
 
           {/* Glow Center */}
           <div className="absolute w-[150px] h-[100px] rounded-full bg-white/20 blur-3xl "></div>
-          <Image
+          <img
             src="/images/whychoosingusimg3.png"
-            alt="printer"
+            alt="whychoosingusimg3"
             width={800}
             height={900}
             className="relative z-10 w-137.5 lg:w-150 h-200"
