@@ -64,7 +64,7 @@ export default function ContactPage() {
 
               <div className="space-y-6">
 
-                
+
                 {/* Phone */}
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
