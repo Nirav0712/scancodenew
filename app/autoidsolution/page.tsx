@@ -179,7 +179,7 @@ const BarcodePrintersPage = () => {
             <div className="max-w-4xl mx-auto">
               <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center">Why Choose
                 <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Auto ID Technology Matters
-                  <span className="absolute -bottom-1 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform" />
+                  <span className="absolute -bottom-1  ml-3 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform" />
                 </span>?
               </p>
               <p className="text-gray-700 text-lg text-center leading-relaxed mb-6">

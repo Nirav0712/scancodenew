@@ -63,17 +63,13 @@ export default function ContactPage() {
 
               <div className="space-y-6">
 
-<<<<<<< HEAD
 
                 {/* Phone */}
-=======
-                {/* phone */}
->>>>>>> 917fc259fddfd1274d1e2ac394cf693cf633175b
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
                     <i className="fas fa-phone text-primary"></i>
                   </div>
-                  <div className="bg-gray-50 text-sm sm:text-base text-gray-600 text-2xl">
+                  <div className="bg-gray-50 text-sm sm:text-base text-gray-600">
                     <b>Regd. Office</b>
                     <div className="mt-1 flex flex-col">
                       <a href="tel:+919427061888"> +91 94270 61888</a>
@@ -87,7 +83,7 @@ export default function ContactPage() {
                   <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
                     <i className="fas fa-map-marker-alt text-primary"></i>
                   </div>
-                  <div className="text-sm sm:text-base text-gray-600 text-2xl">
+                  <div className="text-sm sm:text-base text-gray-600">
                     <b>Regd. Office:</b><br />
                     Gala No. C-2, Dungra Park, Plot No. 28, Survey No. 376/1/P3/P5, Mahavir Nagar,<br />
                     Nr. Mazda Colour Ltd., 100 Shed Area Gidc, Vapi, Gujarat-396195.

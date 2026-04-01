@@ -62,11 +62,9 @@ export default function CustomPrintServices() {
               className="relative z-20 rounded-2xl overflow-hidden shadow-2xl"
               style={{ height: "400px" }}>
               <div className="w-full h-full bg-linear-to-br from-gray-700 via-gray-800 to-gray-900 flex items-center justify-center text-8xl">
-<<<<<<< HEAD
                 <img src="/images/customeprint.png" className="h-full w-full" />
 =======
                 <img src="/images/servicesection/customeprint.png" className="h-full w-full" />
->>>>>>> 917fc259fddfd1274d1e2ac394cf693cf633175b
               </div>
             </div>
           </div>

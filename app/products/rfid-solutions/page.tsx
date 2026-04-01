@@ -25,23 +25,23 @@ const RFIDPage = () => {
   const brands = [
     {
       name: "RFID Hand Device",
-      img: "/images/lables/coated-chromo-labels.webp",
+      img: "/images/lables/rfid-hand-device.webp",
     },
     {
       name: "RFID Scanner",
-      img: "/images/lables/tt2c-labels.webp",
+      img: "/images/lables/rfid-scanner-3.webp",
     },
     {
       name: "RFID Printer",
-      img: "/images/lables/direct-thermal-labels.webp",
+      img: "/images/lables/rfid-scanner.webp",
     },
     {
       name: "RFID Software",
-      img: "/images/lables/removable-labels.webp",
+      img: "/images/lables/rfid-software.webp",
     },
     {
       name: "RFID Tags",
-      img: "/images/lables/mirror-coat-labels.webp",
+      img: "/images/lables/rfid-tags.webp",
     },
     //   {
     //     name: "Pharma Grade Labels",

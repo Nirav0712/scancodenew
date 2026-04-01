@@ -233,8 +233,8 @@ const ShrinkSleevesPage = () => {
         <section className="py-16 container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
             <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center">What Makes
-              <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Scancode <span className="absolute -bottom-1 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform" /></span>the Right Choice for<span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Shrink Sleeves
-                <span className="absolute -bottom-1 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform" />
+              <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Scancode <span className="absolute -bottom-1 left-0 ml-2 mt-3 w-full h-3 bg-[#EF7F1A]/20 z-0 transform" /></span>the Right Choice for<span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Shrink Sleeves
+                <span className="absolute -bottom-1 ml-3 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform" />
 
               </span>
             </p>

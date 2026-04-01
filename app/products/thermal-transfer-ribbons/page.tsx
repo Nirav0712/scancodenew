@@ -23,19 +23,19 @@ const RibbonsPage = () => {
   const brands = [
     {
       name: "Wax Ribbons",
-      img: "/images/lables/coated-chromo-labels.webp",
+      img: "/images/lables/wax-ribbons.webp",
     },
     {
       name: "Wax Resin Ribbons",
-      img: "/images/lables/tt2c-labels.webp",
+      img: "/images/lables/wax-resin-ribbons.webp",
     },
     {
       name: "Resin Ribbons",
-      img: "/images/lables/direct-thermal-labels.webp",
+      img: "/images/lables/Untitled-design-9.webp",
     },
     {
       name: "Wash Care Ribbons",
-      img: "/images/lables/removable-labels.webp",
+      img: "/images/lables/wax-resin-ribbons.webp",
     },
     // {
     //   name: "Mirror Coat Labels",

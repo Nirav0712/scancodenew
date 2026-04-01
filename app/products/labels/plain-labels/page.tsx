@@ -126,7 +126,7 @@ const PlainLabelsPage = () => {
               <div className="lg:p-14">
                 <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 leading-tight mb-8">
                   <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default block mt-1">Plain Labels
-                    <span className="absolute -bottom-1 left-0 w-70 h-3 bg-[#EF7F1A]/20 z-0 transform mt-0" />
+                    <span className="absolute -bottom-1 left-0 w-66 h-3 bg-[#EF7F1A]/20 z-0 transform mt-0" />
                   </span>for Versatile Business Applications
                 </h2>
 
@@ -264,7 +264,7 @@ const PlainLabelsPage = () => {
           <div className="max-w-6xl mx-auto">
             <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center">Explore Our Range of
               <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Plain Label Types
-                <span className="absolute -bottom-1 left-2 w-full h-3 bg-[#EF7F1A]/20 z-0 transform" /></span>
+                <span className="absolute -bottom-1 left-2 w-75 h-3 bg-[#EF7F1A]/20 z-0 transform" /></span>
             </p>
             <p className="text-gray-700 text-lg text-center leading-relaxed mb-6">
               Our plain labels are available in two high-quality, versatile materials: Paper Labels and Polyester Labels. Crafted to meet diverse industry needs, each label type offers unique advantages that support reliable, professional labeling for a range of applications. Whether you need cost-effective labels for everyday use or durable options that withstand challenging environments, our plain labels provide consistent performance, adaptability, and clarity across various settings.
@@ -323,7 +323,7 @@ const PlainLabelsPage = () => {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center ">Polyester<span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Labels
-              <span className="absolute -bottom-1 left-2 w-full h-3 bg-[#EF7F1A]/20 z-0 transform" />
+              <span className="absolute -bottom-1 left-2 w-26 ml-1 h-3 bg-[#EF7F1A]/20 z-0 transform" />
             </span></p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
