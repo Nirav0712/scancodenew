@@ -271,6 +271,8 @@ export default function Header() {
                   <input
                     type="text"
                     placeholder="Search products, services, and more..."
+                    spellCheck={false}
+                    suppressHydrationWarning
                     className="w-full bg-gray-50 border border-gray-200 rounded-full py-2.5 pl-5 pr-12 
                   text-gray-700 placeholder-gray-400 outline-none
                   focus:border-[#1e3a5f] focus:ring-2 focus:ring-[#1e3a5f]/20 
@@ -318,6 +320,8 @@ export default function Header() {
                 <input
                   type="text"
                   placeholder="Search..."
+                  spellCheck={false}
+                  suppressHydrationWarning
                   className="w-full bg-gray-50 border border-gray-200 rounded-full py-2.5 pl-5 pr-12"
                 />
                 <FaSearch className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400" />
@@ -326,8 +330,6 @@ export default function Header() {
           )}
         </div>
       </div>
-
-
 
     </header>
   );

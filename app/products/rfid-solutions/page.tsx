@@ -24,41 +24,41 @@ import styled from 'styled-components';
 const RFIDPage = () => {
   const brands = [
     {
-      name: "Coated Chromo Labels",
+      name: "RFID Hand Device",
       img: "/images/lables/coated-chromo-labels.webp",
     },
     {
-      name: "TT2C Labels",
+      name: "RFID Scanner",
       img: "/images/lables/tt2c-labels.webp",
     },
     {
-      name: "Direct Thermal Labels",
+      name: "RFID Printer",
       img: "/images/lables/direct-thermal-labels.webp",
     },
     {
-      name: "Removable Labels",
+      name: "RFID Software",
       img: "/images/lables/removable-labels.webp",
     },
     {
-      name: "Mirror Coat Labels",
+      name: "RFID Tags",
       img: "/images/lables/mirror-coat-labels.webp",
     },
-    {
-      name: "Pharma Grade Labels",
-      img: "/images/lables/pharma-grade-labels.webp",
-    },
-    {
-      name: "Piggy Back Labels",
-      img: "/images/lables/piggy-back-labels.webp",
-    },
-   {
-      name: "FSC Certified Labels",
-      img: "/images/lables/FSClable.png",
-    },
-    {
-      name: "FSC Approved Labels",
-      img: "/images/lables/FSCapprove.png",
-    },
+    //   {
+    //     name: "Pharma Grade Labels",
+    //     img: "/images/lables/pharma-grade-labels.webp",
+    //   },
+    //   {
+    //     name: "Piggy Back Labels",
+    //     img: "/images/lables/piggy-back-labels.webp",
+    //   },
+    //  {
+    //     name: "FSC Certified Labels",
+    //     img: "/images/lables/FSClable.png",
+    //   },
+    //   {
+    //     name: "FSC Approved Labels",
+    //     img: "/images/lables/FSCapprove.png",
+    //   },
   ];
   const benefits = [
     {
@@ -127,7 +127,7 @@ const RFIDPage = () => {
                   <p className="text-gray-700 text-lg leading-relaxed border-l-4 border-[#EF7F1A] pl-4">
                     At ScanCode Auto ID Technology Pvt Ltd, we specialize in delivering advanced RFID (Radio Frequency Identification) solutions that empower businesses to operate smarter and more efficiently. By leveraging the latest innovations in RFID technology, our solutions redefine operational standards with enhanced precision, real-time data access, and streamlined processes. Whether it's tracking assets, managing inventory, or ensuring compliance, our RFID systems are designed to meet the unique needs of modern industries, providing unmatched accuracy and reliability. With a focus on seamless integration, we ensure that our solutions easily adapt to existing workflows, minimizing disruptions while maximizing productivity.
                     <br />
-                    Our RFID solutions go beyond traditional methods, offering unparalleled visibility and control over every aspect of your operations. Real-time tracking capabilities enable businesses to monitor assets and inventory effortlessly, reducing errors and improving decision-making. 
+                    Our RFID solutions go beyond traditional methods, offering unparalleled visibility and control over every aspect of your operations. Real-time tracking capabilities enable businesses to monitor assets and inventory effortlessly, reducing errors and improving decision-making.
                   </p>
                 </div>
               </div>
@@ -254,7 +254,7 @@ const RFIDPage = () => {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center ">Our
-              <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default">  RFID Solution <span className="absolute -bottom-1 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform" /></span>Capabilities
+              <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default">  RFID Solution <span className="absolute ml-2 -bottom-1 left-0 w-60 h-3 bg-[#EF7F1A]/20 z-0 transform" /></span>Capabilities
             </p>
             <p className="text-gray-700 text-lg text-center leading-relaxed mb-10">
               At ScanCode Auto ID Technology Pvt Ltd, we provide innovative and tailored RFID solutions that enhance efficiency, accuracy, and data management for businesses. From robust hardware to seamless software integration, our offerings are designed to meet diverse industry needs and ensure optimized workflows.
@@ -303,7 +303,7 @@ const RFIDPage = () => {
           <section className="py-16 bg-gray-50">
             <div className="container mx-auto px-4">
               <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center ">Benifits of
-                <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default">  RFID Technology <span className="absolute -bottom-1 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform" /></span>for Your<span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default">  Business<span className="absolute -bottom-1 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform" /></span>
+                <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default">  RFID Technology <span className="absolute ml-2 -bottom-1 left-0 w-70 h-3 bg-[#EF7F1A]/20 z-0 transform" /></span>for Your<span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default">  Business<span className="absolute -bottom-1 ml-2 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform" /></span>
               </p>
               <p className="text-gray-700 text-lg text-center leading-relaxed mb-10">
                 At ScanCode Auto ID Technology Pvt. Ltd., we deliver advanced and customized RFID solutions that help businesses improve operational efficiency, ensure data accuracy, and streamline asset tracking. Our comprehensive offerings combine reliable hardware with intelligent software integration to support real-time visibility and better decision-making.
@@ -374,7 +374,7 @@ const RFIDPage = () => {
           <section className="py-16 bg-gray-50">
             <div className="container mx-auto px-4">
               <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center ">Why Choose Us
-                <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default">  ScanCode Auto ID<span className="absolute -bottom-1 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform" /></span>?
+                <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default">  ScanCode Auto ID<span className="absolute ml-2 -bottom-1 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform" /></span>?
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-15 max-w-6xl mx-auto px-8">

@@ -22,41 +22,41 @@ import { Activity } from "react";
 const RibbonsPage = () => {
   const brands = [
     {
-      name: "Coated Chromo Labels",
+      name: "Wax Ribbons",
       img: "/images/lables/coated-chromo-labels.webp",
     },
     {
-      name: "TT2C Labels",
+      name: "Wax Resin Ribbons",
       img: "/images/lables/tt2c-labels.webp",
     },
     {
-      name: "Direct Thermal Labels",
+      name: "Resin Ribbons",
       img: "/images/lables/direct-thermal-labels.webp",
     },
     {
-      name: "Removable Labels",
+      name: "Wash Care Ribbons",
       img: "/images/lables/removable-labels.webp",
     },
-    {
-      name: "Mirror Coat Labels",
-      img: "/images/lables/mirror-coat-labels.webp",
-    },
-    {
-      name: "Pharma Grade Labels",
-      img: "/images/lables/pharma-grade-labels.webp",
-    },
-    {
-      name: "Piggy Back Labels",
-      img: "/images/lables/piggy-back-labels.webp",
-    },
-    {
-      name: "FSC Certified Labels",
-      img: "/images/lables/synthetic-labels.webp",
-    },
-    {
-      name: "FSC Certified Labels",
-      img: "/images/lables/tamper-evident-labels.webp",
-    },
+    // {
+    //   name: "Mirror Coat Labels",
+    //   img: "/images/lables/mirror-coat-labels.webp",
+    // },
+    // {
+    //   name: "Pharma Grade Labels",
+    //   img: "/images/lables/pharma-grade-labels.webp",
+    // },
+    // {
+    //   name: "Piggy Back Labels",
+    //   img: "/images/lables/piggy-back-labels.webp",
+    // },
+    // {
+    //   name: "FSC Certified Labels",
+    //   img: "/images/lables/synthetic-labels.webp",
+    // },
+    // {
+    //   name: "FSC Certified Labels",
+    //   img: "/images/lables/tamper-evident-labels.webp",
+    // },
 
   ];
   const benefits = [
@@ -167,9 +167,9 @@ const RibbonsPage = () => {
           <div className="container mx-auto px-4 relative z-10">
             {/* Section Header with animated underline */}
             <div className="max-w-4xl mx-auto">
-              <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center w-0.5">Why Choose Our
-                <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Thermal Transfer Ribbons
-                  <span className="absolute -bottom-1 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform" />
+              <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center">Why Choose Our
+                <span className="relative z-10  text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Thermal Transfer Ribbons
+                  <span className="absolute ml-2 -bottom-1 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform" />
                 </span>?
               </p>
               <p className="text-gray-700 text-lg text-center leading-relaxed mb-6">
@@ -241,7 +241,7 @@ const RibbonsPage = () => {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center ">Types of
-              <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Ribbon Grades<span className="absolute -bottom-1 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform" /></span>
+              <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Ribbon Grades<span className="absolute ml-2 -bottom-1 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform" /></span>
             </p>
             <p className="text-gray-700 text-lg text-center leading-relaxed mb-10">
               At Scancode Auto ID Technology Pvt Ltd, we offer a variety of thermal transfer ribbons designed to meet the diverse needs of different industries. Each ribbon grade is tailored to deliver optimal performance, print quality, and durability across a wide range of applications, ensuring that you get the perfect solution for your labeling needs.

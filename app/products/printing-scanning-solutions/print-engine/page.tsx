@@ -29,41 +29,41 @@ const PrintEnginePage = () => {
       img: "/images/brands/sato.webp",
 
     },
-    {
-      name: "CITIZEN",
-      description: "Premium Equipment",
-      logo: "/brands/citizen.png",
-      img: "/images/brands/citizen.webp",
+    // {
+    //   name: "CITIZEN",
+    //   description: "Premium Equipment",
+    //   logo: "/brands/citizen.png",
+    //   img: "/images/brands/citizen.webp",
 
-    },
-    {
-      name: "ARGOX",
-      description: "Leading Manufacturer",
-      logo: "/brands/argox.png",
-      img: "/images/brands/argox.webp",
+    // },
+    // {
+    //   name: "ARGOX",
+    //   description: "Leading Manufacturer",
+    //   logo: "/brands/argox.png",
+    //   img: "/images/brands/argox.webp",
 
-    },
-    {
-      name: "Honeywell",
-      description: "Industrial Grade",
-      logo: "/brands/honeywell.png",
-      img: "/images/brands/6.webp",
+    // },
+    // {
+    //   name: "Honeywell",
+    //   description: "Industrial Grade",
+    //   logo: "/brands/honeywell.png",
+    //   img: "/images/brands/6.webp",
 
-    },
-    {
-      name: "PRINTRONIX AUTO ID",
-      description: "Enterprise Solutions",
-      logo: "/brands/printronix.png",
-      img: "/images/brands/printronix.webp",
+    // },
+    // {
+    //   name: "PRINTRONIX AUTO ID",
+    //   description: "Enterprise Solutions",
+    //   logo: "/brands/printronix.png",
+    //   img: "/images/brands/printronix.webp",
 
-    },
-    {
-      name: "TOSHIBA",
-      description: "Leading Innovation",
-      logo: "/brands/toshiba.png",
-      img: "/images/brands/toshiba.webp",
+    // },
+    // {
+    //   name: "TOSHIBA",
+    //   description: "Leading Innovation",
+    //   logo: "/brands/toshiba.png",
+    //   img: "/images/brands/toshiba.webp",
 
-    },
+    // },
   ];
 
 
@@ -192,7 +192,7 @@ const PrintEnginePage = () => {
           <div className="max-w-4xl mx-auto bg-linear-to-r from-[#345f8c] to-[#EF7F1A] rounded-3xl shadow-2xl overflow-hidden">
             <div className="p-8 md:p-12 text-white">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Why Choose Ransolar Label Printers?
+                Why Choose Scancode?
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-4">
@@ -243,7 +243,7 @@ const PrintEnginePage = () => {
               solutions
             </p>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
               {brands.map((brand, index) => (
                 <div
                   key={index}

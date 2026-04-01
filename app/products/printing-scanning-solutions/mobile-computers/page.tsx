@@ -9,35 +9,72 @@ import PageHero from "../../../components/PageHero";
 
 const MobileComputersPage = () => {
    const brands = [
-      {
-         name: "TSC",
-         description: "Leading Manufacturer",
-         logo: "/images/brands/tsc.webp",
-         img: "/images/brands/tsc.webp",
-      },
+      // {
+      //    name: "TSC",
+      //    description: "Leading Manufacturer",
+      //    logo: "/images/brands/tsc.webp",
+      //    img: "/images/brands/tsc.webp",
+      // },
       {
          name: "ZEBRA",
          description: "Leading Manufacturer",
          logo: "/brands/zebra.png",
          img: "/images/brands/zebra.webp",
       },
+      // {
+      //    name: "AZTAY",
+      //    description: "Powered On Site",
+      //    logo: "/brands/aztay.png",
+      //    img: "/images/brands/sato.webp",
+      // },
+      // {
+      //    name: "CITIZEN",
+      //    description: "Premium Equipment",
+      //    logo: "/brands/citizen.png",
+      //    img: "/images/brands/citizen.webp",
+      // },
+      // {
+      //    name: "ARGOX",
+      //    description: "Leading Manufacturer",
+      //    logo: "/brands/argox.png",
+      //    img: "/images/brands/argox.webp",
+      // },
+      // {
+      //    name: "Honeywell",
+      //    description: "Industrial Grade",
+      //    logo: "/brands/honeywell.png",
+      //    img: "/images/brands/6.webp",
+      // },
+      // {
+      //    name: "PRINTRONIX AUTO ID",
+      //    description: "Enterprise Solutions",
+      //    logo: "/brands/printronix.png",
+      //    img: "/images/brands/printronix.webp",
+      // },
+      // {
+      //    name: "TOSHIBA",
+      //    description: "Leading Innovation",
+      //    logo: "/brands/toshiba.png",
+      //    img: "/images/brands/toshiba.webp",
+      // },
+
+      // {
+      //   name: "AZTAY",
+      //   description: "Powered On Site",
+      //   logo: "/brands/aztay.png",
+      //   img: "/images/brands/sato.webp",
+      // },
+      // {
+      //   name: "CITIZEN",
+      //   description: "Premium Equipment",
+      //   logo: "/brands/citizen.png",
+      //   img: "/images/brands/citizen.webp",
+      // },
       {
-         name: "AZTAY",
-         description: "Powered On Site",
-         logo: "/brands/aztay.png",
-         img: "/images/brands/sato.webp",
-      },
-      {
-         name: "CITIZEN",
-         description: "Premium Equipment",
-         logo: "/brands/citizen.png",
-         img: "/images/brands/citizen.webp",
-      },
-      {
-         name: "ARGOX",
+         name: "Newland",
          description: "Leading Manufacturer",
-         logo: "/brands/argox.png",
-         img: "/images/brands/argox.webp",
+         logo: "/images/brands/newland-n.webp",
+         img: "/images/brands/newland-n.webp",
       },
       {
          name: "Honeywell",
@@ -46,16 +83,16 @@ const MobileComputersPage = () => {
          img: "/images/brands/6.webp",
       },
       {
-         name: "PRINTRONIX AUTO ID",
+         name: "Cipherlab",
          description: "Enterprise Solutions",
-         logo: "/brands/printronix.png",
-         img: "/images/brands/printronix.webp",
+         logo: "/images/brands/cipher-lab-1.webp",
+         img: "/images/brands/cipher-lab-1.webp",
       },
       {
-         name: "TOSHIBA",
+         name: "Datalogic",
          description: "Leading Innovation",
-         logo: "/brands/toshiba.png",
-         img: "/images/brands/toshiba.webp",
+         logo: "/images/brands/datalogic-n.webp",
+         img: "/images/brands/datalogic-n.webp",
       },
    ];
 
@@ -182,7 +219,7 @@ const MobileComputersPage = () => {
                <div className="max-w-4xl mx-auto bg-linear-to-r from-[#345f8c] to-[#EF7F1A] rounded-3xl shadow-2xl overflow-hidden">
                   <div className="p-8 md:p-12 text-white">
                      <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                        Why Choose Ransolar Label Printers?
+                        Why Choose Scancode?
                      </h2>
                      <div className="grid md:grid-cols-2 gap-6">
                         <div className="space-y-4">
@@ -233,7 +270,7 @@ const MobileComputersPage = () => {
                      solutions
                   </p>
 
-                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
                      {brands.map((brand, index) => (
                         <div
                            key={index}
