@@ -2,8 +2,9 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useEffect } from "react";
-import { ChevronRight, ChevronDown } from "lucide-react";
+import { useState, useEffect, useRef } from "react";
+import { ChevronRight, ChevronDown, Search } from "lucide-react";
+import { useRouter } from "next/navigation";
 import { FaSearch, FaShoppingCart, FaUser, FaHeart, FaBars } from "react-icons/fa";
 
 export default function Header() {
@@ -12,6 +13,40 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
   const [open, setOpen] = useState(false);
   const [activeCategory, setActiveCategory] = useState<string>('hardware');
+  const [searchQuery, setSearchQuery] = useState("");
+  const [showSuggestions, setShowSuggestions] = useState(false);
+  const router = useRouter();
+  const searchRef = useRef<HTMLDivElement>(null);
+  const mobileSearchRef = useRef<HTMLDivElement>(null);
+
+  const searchSuggestions = [
+    // { label: "Barcode Label Printer", path: "/products/printing-scanning-solutions/barcode-label-printer", category: "Hardware" },
+    // { label: "Print Engine", path: "/products/printing-scanning-solutions/print-engine", category: "Hardware" },
+    // { label: "Barcode Scanner", path: "/products/printing-scanning-solutions/barcode-scanner", category: "Hardware" },
+    // { label: "Mobile Computers", path: "/products/printing-scanning-solutions/mobile-computers", category: "Hardware" },
+    { label: "Plain Labels", path: "/products/labels/plain-labels", category: "Labels" },
+    { label: "Pre Printed Labels", path: "/products/labels/pre-printed-labels", category: "Labels" },
+    { label: "Shrink Sleeves", path: "/products/labels/shrink-sleeves", category: "Labels" },
+    { label: "RFID Solutions", path: "/products/rfid-solutions", category: "Solutions" },
+    { label: "Thermal Transfer Ribbons", path: "/products/thermal-transfer-ribbons", category: "Consumables" },
+  ];
+
+  const filteredSuggestions = searchQuery
+    ? searchSuggestions.filter(s => s.label.toLowerCase().includes(searchQuery.toLowerCase()))
+    : searchSuggestions;
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (searchRef.current && !searchRef.current.contains(event.target as Node)) {
+        setShowSuggestions(false);
+      }
+      if (mobileSearchRef.current && !mobileSearchRef.current.contains(event.target as Node)) {
+        // We don't necessarily want to hide mobile search on outside click if it's the only thing open
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   // ✅ Proper scroll listener for Next.js + TypeScript
   useEffect(() => {
@@ -265,20 +300,62 @@ export default function Header() {
               >
                 <FaHeart className="text-gray-600 text-xl" />
               </button> */}
-              {/* SEARCH DESKTOP */}
               <div className="hidden md:flex flex-1 max-w-xl mx-8">
-                <div className="relative w-full group">
+                <div className="relative w-full group" ref={searchRef}>
                   <input
                     type="text"
                     placeholder="Search products, services, and more..."
                     spellCheck={false}
                     suppressHydrationWarning
+                    value={searchQuery}
+                    onChange={(e) => {
+                      setSearchQuery(e.target.value);
+                      setShowSuggestions(true);
+                    }}
+                    onFocus={() => setShowSuggestions(true)}
                     className="w-full bg-gray-50 border border-gray-200 rounded-full py-2.5 pl-5 pr-12 
                   text-gray-700 placeholder-gray-400 outline-none
                   focus:border-[#1e3a5f] focus:ring-2 focus:ring-[#1e3a5f]/20 
                   transition-all duration-300 hover:border-gray-300
                   shadow-sm hover:shadow"
                   />
+
+                  {showSuggestions && (
+                    <div className="absolute top-full left-0 right-0 mt-2 bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden z-50 animate-fade-in-up">
+                      <div className="p-2">
+                        {filteredSuggestions.length > 0 ? (
+                          filteredSuggestions.map((suggestion, index) => (
+                            <button
+                              key={index}
+                              onClick={() => {
+                                router.push(suggestion.path);
+                                setShowSuggestions(false);
+                                setSearchQuery("");
+                              }}
+                              className="w-full flex items-center justify-between px-4 py-3 hover:bg-gray-50 rounded-xl transition-colors group text-left"
+                            >
+                              <div className="flex items-center gap-3">
+                                <Search size={16} className="text-gray-400 group-hover:text-[#1e3a5f]" />
+                                <div>
+                                  <p className="text-sm font-semibold text-gray-700 group-hover:text-[#1e3a5f]">
+                                    {suggestion.label}
+                                  </p>
+                                  <p className="text-[10px] text-gray-400 uppercase tracking-wider font-bold">
+                                    {suggestion.category}
+                                  </p>
+                                </div>
+                              </div>
+                              <ChevronRight size={14} className="text-gray-300 group-hover:text-[#1e3a5f] group-hover:translate-x-1 transition-all" />
+                            </button>
+                          ))
+                        ) : (
+                          <div className="px-4 py-8 text-center">
+                            <p className="text-gray-500 text-sm italic">No results found for "{searchQuery}"</p>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  )}
 
                   <button
                     type="button"
@@ -315,16 +392,44 @@ export default function Header() {
 
           {/* MOBILE SEARCH */}
           {isSearchOpen && (
-            <div className="md:hidden pb-4">
+            <div className="md:hidden pb-4" ref={mobileSearchRef}>
               <div className="relative w-full">
                 <input
                   type="text"
-                  placeholder="Search..."
+                  placeholder="Search products..."
                   spellCheck={false}
                   suppressHydrationWarning
-                  className="w-full bg-gray-50 border border-gray-200 rounded-full py-2.5 pl-5 pr-12"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="w-full bg-gray-50 border border-gray-200 rounded-full py-2.5 pl-5 pr-12 text-gray-700 outline-none focus:border-[#1e3a5f]"
                 />
                 <FaSearch className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400" />
+              </div>
+
+              {/* Mobile Suggestions */}
+              <div className="mt-3 bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-lg animate-fade-in">
+                <div className="p-1">
+                  {filteredSuggestions.length > 0 ? (
+                    filteredSuggestions.map((suggestion, index) => (
+                      <button
+                        key={index}
+                        onClick={() => {
+                          router.push(suggestion.path);
+                          setIsSearchOpen(false);
+                          setSearchQuery("");
+                        }}
+                        className="w-full flex items-center justify-between px-4 py-3 hover:bg-gray-50 rounded-xl transition-colors text-left"
+                      >
+                        <span className="text-sm font-medium text-gray-700">{suggestion.label}</span>
+                        <ChevronRight size={14} className="text-gray-300" />
+                      </button>
+                    ))
+                  ) : (
+                    <div className="px-4 py-4 text-center">
+                      <p className="text-gray-400 text-xs italic">No matches found</p>
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
           )}
