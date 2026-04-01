@@ -1,6 +1,5 @@
 "use client";
 
-// app/products/barcode-printers/page.tsx
 import {
   Printer,
   Zap,
@@ -17,40 +16,40 @@ import Cardsscroll from "../../../components/Cardsscroll";
 const PrePrintedPage = () => {
   const brands = [
     {
-      name: "Coated Chromo Labels",
-      img: "/images/lables/coated-chromo-labels.webp",
+      name: "Pharmaceutical Labels",
+      img: "/images/lables/pharma.png",
     },
     {
-      name: "TT2C Labels",
-      img: "/images/lables/tt2c-labels.webp",
+      name: "Healthcare Labels",
+      img: "/images/lables/pharma2.png",
     },
     {
-      name: "Direct Thermal Labels",
-      img: "/images/lables/direct-thermal-labels.webp",
+      name: "Automotive Labels",
+      img: "/images/lables/Automotive.png",
     },
     {
-      name: "Removable Labels",
-      img: "/images/lables/removable-labels.webp",
+      name: "FMCG Labels",
+      img: "/images/lables/FMCG.png",
     },
     {
-      name: "Mirror Coat Labels",
-      img: "/images/lables/mirror-coat-labels.webp",
+      name: "Food & Beverage Labels",
+      img: "/images/lables/orangesplash.png",
     },
     {
-      name: "Pharma Grade Labels",
-      img: "/images/lables/pharma-grade-labels.webp",
+      name: "Agrochemical Labels",
+      img: "/images/lables/Agrochemical.png",
     },
     {
-      name: "Piggy Back Labels",
-      img: "/images/lables/piggy-back-labels.webp",
+      name: "Chemical Labels",
+      img: "/images/lables/Chemical.png",
     },
     {
-      name: "FSC Certified Labels",
-      img: "/images/lables/FSClable.png",
+      name: "Cosmetics Labels",
+      img: "/images/lable-design/1.jpeg",
     },
     {
-      name: "FSC Approved Labels",
-      img: "/images/lables/FSCapprove.png",
+      name: "Home Care Product Labels",
+      img: "/images/lables/homecare.png",
     },
 
   ];
@@ -160,7 +159,7 @@ const PrePrintedPage = () => {
             <div className="max-w-4xl mx-auto">
               <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center">Why Choose Our
                 <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Pre-Printed Labels
-                  <span className="absolute bottom-0 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform" />
+                  <span className="absolute bottom-0 left-0 w-78 h-3 bg-[#EF7F1A]/20 z-0 transform ml-3" />
                 </span>
               </p>
               <p className="text-gray-700 text-lg text-center leading-relaxed mb-6">
@@ -233,7 +232,7 @@ const PrePrintedPage = () => {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <p className="text-4xl font-bold text-gray-800 leading-relaxed mb-6 text-center ">Explore Our Range of
-              <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Pre-Printed Labels<span className="absolute bottom-0 left-0 w-full h-3 bg-[#EF7F1A]/20 z-0 transform" />
+              <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default"> Pre-Printed Labels<span className="absolute bottom-0 left-0 w-78 h-3 bg-[#EF7F1A]/20 z-0 transform ml-3" />
               </span>
             </p>
             <p className="text-gray-700 text-lg text-center leading-relaxed mb-10">
