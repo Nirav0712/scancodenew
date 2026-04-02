@@ -2,20 +2,11 @@
 
 import React from "react";
 
-const words = [
-  "Flexo Printing",
-  "In-Mold Labels",
-  "Digital Printing",
-  "Plain Labels",
-  "Gravure Printing",
-  "Barcode Solution",
-  "Pre-Printed Labels",
-  "RFID Solution",
-];
+export default function MarqueeBanner({ dict }: { dict: any }) {
+  const categories = dict.sections.categories.items;
+  const words = Object.values(categories);
+  const text = words.join(" / ") + " / ";
 
-const text = words.join(" / ") + " / ";
-
-export default function MarqueeBanner() {
   return (
     <div className="relative overflow-hidden" style={{ margin: "100px 0", transformOrigin: "center" }}>
       {/* First banner — left to right */}
@@ -28,7 +19,7 @@ export default function MarqueeBanner() {
         <div className="flex animate-marquee whitespace-nowrap">
           {[text, text, text, text].map((t, i) => (
             <span key={i} className="text-white font-bold text-xl lg:text-2xl px-2 shrink-0">
-              {t}
+              {t as string}
             </span>
           ))}
         </div>
@@ -45,7 +36,7 @@ export default function MarqueeBanner() {
         <div className="flex animate-marquee whitespace-nowrap">
           {[text, text, text, text].map((t, i) => (
             <span key={i} className="text-white font-bold text-xl lg:text-2xl px-2 shrink-0">
-              {t}
+              {t as string}
             </span>
           ))}
         </div>

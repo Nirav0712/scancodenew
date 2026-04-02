@@ -4,47 +4,47 @@ import { link } from "fs";
 import Image from "next/image";
 import Link from "next/link";
 
-const categories = [
-  {
-    label: "In-Mold Labels",
-    image: "/images/lable-design/in-mold.jpg",
-    link: "/products/labels/in-mold-labels",
-  },
-  {
-    label: "Plain Labels",
-    image: "/images/lable-design/plain-labels.jpg",
-    link: "/products/labels/plain-labels",
-  },
-  {
-    label: "Pre-printed Labels",
-    image: "/images/lable-design/pre-printed.jpg",
-    link: "/products/labels/pre-printed-labels",
-  },
-  {
-    label: "Shrink-Sleeve Labels",
-    image: "/images/lable-design/shrink-label.jpg",
-    link: "/products/labels/shrink-sleeves",
-  },
-  {
-    label: "Thermal Transfer Ribbons",
-    image: "/images/lable-design/labelsbg.jpg",
-    link: "/products/thermal-transfer-ribbons",
-  },
-];
+export default function CategoriesSection({ dict }: { dict: any }) {
+  const d = dict.sections.categories;
 
-export default function CategoriesSection() {
+  const categories = [
+    {
+      label: d.items.in_mold,
+      image: "/images/lable-design/in-mold.jpg",
+      link: "/products/labels/in-mold-labels",
+    },
+    {
+      label: d.items.plain,
+      image: "/images/lable-design/plain-labels.jpg",
+      link: "/products/labels/plain-labels",
+    },
+    {
+      label: d.items.pre_printed,
+      image: "/images/lable-design/pre-printed.jpg",
+      link: "/products/labels/pre-printed-labels",
+    },
+    {
+      label: d.items.shrink_sleeve,
+      image: "/images/lable-design/shrink-label.jpg",
+      link: "/products/labels/shrink-sleeves",
+    },
+    {
+      label: d.items.ribbons,
+      image: "/images/lable-design/labelsbg.jpg",
+      link: "/products/thermal-transfer-ribbons",
+    },
+  ];
+
   return (
     <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Header */}
         <div className="text-center mb-16">
-          <p className="text-[#345f8c]z font-medium tracking-widest">{"// TOP CATEGORIES  //"}</p>
+          <p className="text-[#345f8c]z font-medium tracking-widest">{d.label}</p>
 
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-4">
-            Explore Our Label Print{" "}
-            <span className="relative z-10 text-[#EF7F1A] hover:text-gray-800 transition-colors duration-300 cursor-default block mt-2">Categories
-            </span>
+            {d.heading}
           </h2>
         </div>
 
@@ -97,7 +97,7 @@ export default function CategoriesSection() {
 
             {/* button */}
             <span className="relative z-10 px-8 py-3 rounded-full text-white font-semibold bg-linear-to-r from-[#345f8c] to-[#EF7F1A] shadow-lg block group-hover:scale-y-130 group-hover:scale-x-113">
-              View More
+              {d.view_more}
             </span>
 
           </Link>

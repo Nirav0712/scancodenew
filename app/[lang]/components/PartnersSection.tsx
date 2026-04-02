@@ -11,16 +11,17 @@ const partners = [
   { name: "Notion", emoji: "⬛" },
 ];
 
-export default function PartnersSection() {
+export default function PartnersSection({ dict }: { dict: any }) {
+  const d = dict.sections.partners;
   return (
     <section className="py-20" style={{ background: "#f7f9fc" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <p className="section-label">{"// OUR PARTNERS  //"}</p>
+          <p className="section-label">{d.label}</p>
           <h2 className="section-heading">
-            Trusted by 250+ Global IP Firms{" "}
+            {d.heading_main}{" "}
             <br className="hidden lg:block" />
-            <span className="highlight">and Legal Teams</span>
+            <span className="highlight">{d.heading_highlight}</span>
           </h2>
         </div>
 

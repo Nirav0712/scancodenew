@@ -21,59 +21,58 @@ interface Service {
   arrowBg: string;
 }
 
-const services: Service[] = [
-  {
-    icon: <Zap className="w-8 h-8 text-blue-600" />,
-    image: "/images/lable-design/Frame6.png",
-    title: "Efficient Labeling Solutions",
-    description: "Designed to boost output while conserving resources, ensuring efficient operations with minimal environmental impact.",
-    // number: "SERVICES_01",
-    imagePosition: "center",
-    arrowBg: "linear-gradient(135deg, #7b61ff 0%, #22d3c5 100%)",
-  },
-  {
-    icon: <Shield className="w-8 h-8 text-blue-600" />,
-    image: "/images/lable-design/1.jpeg",
-    title: "Reliable and Durable Labels",
-    description: "Built to withstand harsh environments, these labels maintain performance and clarity in tough industrial settings.",
-    // number: "SERVICES_02",
-    imagePosition: "center",
-    arrowBg: "linear-gradient(135deg, #7b61ff 0%, #22d3c5 100%)",
-  },
-  {
-    icon: <Users className="w-8 h-8 text-blue-600" />,
+export default function ServicesSection({ dict }: { dict: any }) {
+  const d = dict.sections.services;
+  
+  const services: Service[] = [
+    {
+      icon: <Zap className="w-8 h-8 text-blue-600" />,
+      image: "/images/lable-design/Frame6.png",
+      title: d.items[0].title,
+      description: d.items[0].desc,
+      imagePosition: "center",
+      arrowBg: "linear-gradient(135deg, #7b61ff 0%, #22d3c5 100%)",
+    },
+    {
+      icon: <Shield className="w-8 h-8 text-blue-600" />,
+      image: "/images/lable-design/1.jpeg",
+      title: d.items[1].title,
+      description: d.items[1].desc,
+      imagePosition: "center",
+      arrowBg: "linear-gradient(135deg, #7b61ff 0%, #22d3c5 100%)",
+    },
+    {
+      icon: <Users className="w-8 h-8 text-blue-600" />,
+      image: "/images/lable-design/Frame7.png",
+      title: d.items[2].title,
+      description: d.items[2].desc,
+      imagePosition: "center",
+      arrowBg: "linear-gradient(135deg, #7b61ff 0%, #22d3c5 100%)",
+    },
+  ];
 
-    image: "/images/lable-design/Frame7.png",
-    title: "Smart ID Label Technology",
-    description: "Utilizing advanced printing and scanning to create precise, high-performance labels for modern industrial needs.",
-    // number: "SERVICES_03",
-    imagePosition: "center",
-    arrowBg: "linear-gradient(135deg, #7b61ff 0%, #22d3c5 100%)",
-  },
-];
-
-export default function ServicesSection() {
   const newLocal = "relative isolate group-hover:translate-x-0.75 group-hover:-translate-y-0.5 transition-transform duration-500";
+  
   return (
     <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-6 mb-14">
           <div>
-            <p className="text-sm font-semibold tracking-[0.18em] text-gray-500 uppercase mb-3">{"// OUR SERVICES  //"}</p>
+            <p className="text-sm font-semibold tracking-[0.18em] text-gray-500 uppercase mb-3">{d.label}</p>
 
             <h2 className="text-[42px] md:text-[56px] leading-none font-semibold text-black">
               <span className="relative inline-block">
-                Labels That
+                {d.heading_1}
                 <span className="absolute left-0 bottom-1 w-full h-0.5 bg-white" />
               </span>
               <br />
-              Imprint Your Brand
+              {d.heading_2}
             </h2>
           </div>
 
           <div className="flex flex-col items-start lg:items-end gap-4">
             <p className="text-gray-500 text-base max-w-sm">
-              Precision-Crafted Labels, Delivered Fast — Designed Around You
+              {d.subheading}
             </p>
 
             <Link href="/services" className="relative inline-block group">
@@ -81,7 +80,7 @@ export default function ServicesSection() {
 
               {/* button */}
               <span className="relative z-10 px-8 py-3 rounded-full text-white font-semibold bg-linear-to-r from-[#345f8c] to-[#EF7F1A] shadow-lg block group-hover:scale-y-130 group-hover:scale-x-113">
-                View More
+                {d.view_more}
               </span>
             </Link>
           </div>

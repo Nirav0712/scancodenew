@@ -1,0 +1,192 @@
+{
+  "welcome": "Bienvenue chez PrintNest",
+  "description": "Élevez votre marque avec chaque impression",
+  "navigation": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "contact": "Contact",
+    "products": "Produits",
+    "services": "Services",
+    "shop": "Boutique"
+  },
+  "sections": {
+    "categories": {
+      "label": "// MEILLEURES CATÉGORIES //",
+      "heading": "Explorez nos catégories d'impression d'étiquettes",
+      "view_more": "Voir Plus",
+      "items": {
+        "in_mold": "Étiquettes In-Mold",
+        "plain": "Étiquettes Vierges",
+        "pre_printed": "Étiquettes Pré-imprimées",
+        "shrink_sleeve": "Manchons rétractables",
+        "ribbons": "Rubans de transfert thermique"
+      }
+    },
+    "about": {
+      "label": "// QUI SOMMES-NOUS //",
+      "heading_main": "Approche Flexible",
+      "heading_highlight": "Fiabilité de Confiance",
+      "description": "Notre environnement de production est piloté par des systèmes d'impression Flexographiques, Offset Numériques et Héliogravure avancés, chacun sélectionné pour sa vitesse, sa cohérence et ses résultats exceptionnels.",
+      "features": [
+        {
+          "title": "Personnalisable et Polyvalent",
+          "desc": "Facilement adaptable pour le commerce de détail, la logistique et la santé."
+        },
+        {
+          "title": "Haute Compatibilité",
+          "desc": "Assure une clarté d'impression excellente avec la plupart des imprimantes thermiques."
+        },
+        {
+          "title": "Durable et Rentable",
+          "desc": "Fabriqué avec des matériaux solides pour résister à la manipulation et au stockage."
+        },
+        {
+          "title": "Efficacité du Flux",
+          "desc": "Améliore l'organisation et la traçabilité dans tous les processus métier."
+        }
+      ],
+      "button": "Explorer"
+    },
+    "services": {
+      "label": "// NOS SERVICES //",
+      "heading_1": "Des Étiquettes Qui",
+      "heading_2": "Marquent Votre Marque",
+      "subheading": "Étiquettes de précision, livrées rapidement — conçues pour vous",
+      "view_more": "Voir Plus",
+      "items": [
+        {
+          "title": "Solutions de Étiquetage Efficaces",
+          "desc": "Conçu pour augmenter la production tout en préservant les ressources."
+        },
+        {
+          "title": "Labels Fiables et Durables",
+          "desc": "Construit pour résister aux environnements difficiles, maintenant performance et clarté."
+        },
+        {
+          "title": "Technologie ID Intelligente",
+          "desc": "Utilisant l'impression avancée pour créer des étiquettes performantes pour les besoins modernes."
+        }
+      ]
+    },
+    "why_choose_us": {
+      "label": "// POURQUOI NOUS CHOISIR //",
+      "heading_main": "Pourquoi les clients",
+      "heading_highlight": "nous font confiance",
+      "features_left": [
+        {
+          "title": "Impression Premium",
+          "desc": "Allier technologie avancée et qualité d'impression pour des détails nets."
+        },
+        {
+          "title": "Solutions Innovantes",
+          "desc": "Transformez votre vision en réalité avec des solutions intelligentes."
+        }
+      ],
+      "features_right": [
+        {
+          "title": "Livraison Fiable",
+          "desc": "Un traitement rapide et une livraison ponctuelle pour chaque commande."
+        },
+        {
+          "title": "Confiance et Impact",
+          "desc": "Approuvé par des centaines d'entreprises pour une qualité inégalée."
+        }
+      ]
+    },
+    "features_fan": {
+      "label": "// NOS CARACTÉRISTIQUES //",
+      "heading_main": "Outils de Pointe Pour",
+      "heading_highlight": "Impressions Personnalisées",
+      "items": [
+        {
+          "title": "Solution RFID",
+          "desc": "Technologie RFID avancée pour un étiquetage intelligent et automatisé."
+        },
+        {
+          "title": "Solution Code-barres",
+          "desc": "Créez et intégrez des codes-barres fiables pour le suivi des stocks."
+        },
+        {
+          "title": "Impression Hélio",
+          "desc": "Impression héliogravure efficace pour une production de gros volumes."
+        },
+        {
+          "title": "Impression Numérique",
+          "desc": "Rapide et précise pour les petites à moyennes séries."
+        },
+        {
+          "title": "Impression Flexo",
+          "desc": "Haute qualité pour des étiquettes durables sur divers supports."
+        }
+      ]
+    },
+    "custom_print": {
+      "label": "// CE QUE NOUS FAISONS //",
+      "heading_main": "Services d'Impression",
+      "heading_highlight": "Personnalisés",
+      "description": "Des solutions conçues pour répondre aux besoins uniques d'identification et de branding des entreprises modernes.",
+      "items": [
+        "Impression de Code-barres",
+        "Impression de Codes QR",
+        "Étiquettes de Produits",
+        "Stickers Autocollants",
+        "Étiquettes d'Affaires",
+        "Étiquettes d'Emballage"
+      ],
+      "button": "En Savoir Plus"
+    },
+    "testimonials": {
+      "label": "// TÉMOIGNAGES //",
+      "heading_main": "Ce Que Disent",
+      "heading_highlight": "Nos Clients",
+      "items": [
+        {
+          "content": "J'ai passé une grosse commande et je ne pourrais pas être plus satisfaite des résultats. L'équipe a été d'un grand soutien.",
+          "author": "Sarah Jenkins",
+          "designation": "Responsable Logistique"
+        },
+        {
+          "content": "Qualité d'impression incroyable. Les couleurs sont vibrantes et les codes QR scannent parfaitement.",
+          "author": "David Chen",
+          "designation": "Designer Produit"
+        }
+      ]
+    },
+    "fancy_slider": {
+      "slides": [
+        "Impression de Étiquettes",
+        "Marques de Étiquettes",
+        "Étiquettes sur Mesure",
+        "Étiquettes d'Emballage",
+        "Impression d'Autocollants",
+        "Codes-barres"
+      ],
+      "description": "SOLUTIONS D'IMPRESSION PREMIUM PAR SCAN-CODE - CONÇUES AVEC PRÉCISION.",
+      "location": "ÉLEVEZ VOTRE MARQUE AVEC CHAQUE IMPRESSION.",
+      "features": [
+        {
+          "title": "Impression Premium",
+          "desc": "Étiquettes sur mesure de haute qualité pour chaque produit."
+        },
+        {
+          "title": "Livraison Rapide",
+          "desc": "Production et livraison rapides pour votre entreprise."
+        }
+      ]
+    },
+    "newsletter": {
+      "label": "Newsletter",
+      "heading_part1": "Rejoignez-nous pour",
+      "heading_part2": "des Offres Spéciales",
+      "description": "Recevez un accès anticipé aux offres exclusives dans votre boîte mail.",
+      "placeholder": "Entrez votre adresse mail",
+      "button": "S'abonner",
+      "subscribers": "10k+ abonnés"
+    },
+    "partners": {
+      "label": "// NOS PARTENAIRES //",
+      "heading_main": "Approuvé par 250+ cabinets",
+      "heading_highlight": "de propriété intellectuelle"
+    }
+  }
+}

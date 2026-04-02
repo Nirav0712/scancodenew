@@ -7,7 +7,14 @@ import { ChevronRight, ChevronDown, Search } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { FaSearch, FaShoppingCart, FaUser, FaHeart, FaBars } from "react-icons/fa";
 
-export default function Header() {
+import { type Locale } from "@/lib/i18n-config";
+
+interface HeaderProps {
+  lang: Locale;
+  dict: any;
+}
+
+export default function Header({ lang, dict }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   const [isSearchOpen, setIsSearchOpen] = useState<boolean>(false);
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
@@ -127,12 +134,12 @@ export default function Header() {
             <nav className="hidden md:block flex-1 mx-8 pt-1">
               <div className="flex justify-center gap-10 text-[#1e3a5f] font-bold">
 
-                <Link href="/" className="nav-link hover:underline hover:text-orange-400">
-                  Home
+                <Link href={`/${lang}`} className="nav-link hover:underline hover:text-orange-400">
+                  {dict.navigation.home}
                 </Link>
 
-                <Link href="/about-us" className="nav-link hover:underline hover:text-orange-400">
-                  About Us
+                <Link href={`/${lang}/about-us`} className="nav-link hover:underline hover:text-orange-400">
+                  {dict.navigation.about}
                 </Link>
 
                 {/* PRODUCTS MEGA MENU */}
@@ -142,7 +149,7 @@ export default function Header() {
                   onMouseLeave={() => setOpen(false)}
                 >
                   <button className="nav-link flex items-center gap-1 hover:underline hover:text-orange-400">
-                    Products <ChevronDown size={16} />
+                    {dict.navigation.products} <ChevronDown size={16} />
                   </button>
 
                   {open && (
@@ -266,12 +273,12 @@ export default function Header() {
                   )}
                 </div>
 
-                <Link href="/autoidsolution" className="nav-link hover:underline hover:text-orange-400">
+                <Link href={`/${lang}/autoidsolution`} className="nav-link hover:underline hover:text-orange-400">
                   Auto ID Solutions
                 </Link>
 
-                <Link href="/contact" className="nav-link hover:underline hover:text-orange-400">
-                  Contact Us
+                <Link href={`/${lang}/contact`} className="nav-link hover:underline hover:text-orange-400">
+                  {dict.navigation.contact}
                 </Link>
 
               </div>

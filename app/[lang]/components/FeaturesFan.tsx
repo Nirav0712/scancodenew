@@ -4,73 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-// ─── Card Data ────────────────────────────────────────────────────────────────
-
-const CARDS = [
-   {
-    emoji: "🎨",
-    title: "RFID Solution",
-    desc: "Advanced RFID technology for smart labeling, enabling tracking, authentication, and data automation.",
-  },
-    {
-    emoji: "🔒",
-    title: "Barcode Solution",
-    desc: "Create and integrate reliable barcodes for inventory, tracking, and product identification systems.",
-  },
-    {
-    emoji: "📦",
-    title: "Gravure Printing",
-    desc: "Efficient gravure printing for large-volume production, delivering consistent color and detail at scale.",
-  },
-    {
-    emoji: "🚚",
-    title: "Digital Printing",
-    desc: "Fast and precise digital printing for small to medium runs, ideal for custom and on-demand labels.",
-  },
-
-  {
-    emoji: "🖨️",
-    title: "Flexo Printing",
-    desc: "High-quality flexographic printing for vibrant, durable labels on a wide range of materials.",
-  },
-
-
-
-
-];
-
-// ─── Arc Math ─────────────────────────────────────────────────────────────────
-
-/**
- * Given a progress value (0 → 1) and the number of cards,
- * compute the angle (in degrees) for each card on the arc.
- *
- * Arc spans from 165° (far left) to 15° (far right) — upper semicircle.
- * At progress=0 the first card is centered (90°); others fan out to the right.
- * Scrolling moves cards leftward → each card visits the center in turn.
- */
-const ARC_START = 195; // left tip angle (degrees)
-// const ARC_END = 15;    // right tip angle (degrees)
-const ARC_END = 15;
-const ARC_CENTER = 90; // top of arc (degrees)
-
-function getCardAngles(progress: number, numCards: number) {
-  // totalArc is the travel distance of the orbit in degrees
-  const totalArc = ARC_START - ARC_END; // 150°
-  // spacing between cards
-  const spacing = totalArc / (numCards - 1); // e.g. 37.5° for 5 cards
-
-  // At progress=0 → first card at center (90°)
-  // At progress=1 → last card at center (90°)
-  // centerOffset shifts which card is at 90° based on progress
-  const activeFloat = progress * (numCards - 1);
-
-  return CARDS.map((_, i) => {
-    const offset = i - activeFloat;
-    const angle = ARC_CENTER + offset * spacing;
-    return angle;
-  });
-}
+// --- Helpers ---
 
 function polarToXY(angleDeg: number, radius: number) {
   const rad = (angleDeg * Math.PI) / 180;
@@ -80,9 +14,57 @@ function polarToXY(angleDeg: number, radius: number) {
   };
 }
 
-// ─── Component ────────────────────────────────────────────────────────────────
+const ARC_START = 195;
+const ARC_END = 15;
+const ARC_CENTER = 90;
 
-export default function FeaturesFan() {
+function getCardAngles(progress: number, numCards: number) {
+  const totalArc = ARC_START - ARC_END;
+  const spacing = totalArc / (numCards - 1);
+  const activeFloat = progress * (numCards - 1);
+
+  const angles = [];
+  for (let i = 0; i < numCards; i++) {
+    const offset = i - activeFloat;
+    const angle = ARC_CENTER + offset * spacing;
+    angles.push(angle);
+  }
+  return angles;
+}
+
+// --- Component ---
+
+export default function FeaturesFan({ dict }: { dict: any }) {
+  const d = dict.sections.features_fan;
+
+  const CARDS = [
+    {
+      emoji: "🎨",
+      title: d.items[0].title,
+      desc: d.items[0].desc,
+    },
+    {
+      emoji: "🔒",
+      title: d.items[1].title,
+      desc: d.items[1].desc,
+    },
+    {
+      emoji: "📦",
+      title: d.items[2].title,
+      desc: d.items[2].desc,
+    },
+    {
+      emoji: "🚚",
+      title: d.items[3].title,
+      desc: d.items[3].desc,
+    },
+    {
+      emoji: "🖨️",
+      title: d.items[4].title,
+      desc: d.items[4].desc,
+    },
+  ];
+
   const wrapperRef = useRef<HTMLDivElement>(null);
   const stickyRef = useRef<HTMLDivElement>(null);
   const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
@@ -91,7 +73,7 @@ export default function FeaturesFan() {
   const [activeIdx, setActiveIdx] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
 
-  // ── Mobile detection ──────────────────────────────────────────────────────
+  // -- Mobile detection --
   useEffect(() => {
     const check = () => setIsMobile(window.innerWidth < 768);
     check();
@@ -99,9 +81,9 @@ export default function FeaturesFan() {
     return () => window.removeEventListener("resize", check);
   }, []);
 
-  // ── GSAP ScrollTrigger ─────────────────────────────────────────────────────
+  // -- GSAP ScrollTrigger --
   useEffect(() => {
-    if (isMobile) return; // mobile uses plain layout, no GSAP
+    if (isMobile) return;
 
     gsap.registerPlugin(ScrollTrigger);
 
@@ -111,14 +93,12 @@ export default function FeaturesFan() {
 
     const numCards = CARDS.length;
 
-    // Radius changes with viewport
     const getRadius = () => {
       if (window.innerWidth >= 1280) return 400;
       if (window.innerWidth >= 1024) return 340;
       return 260;
     };
 
-    // Place cards initially (progress = 0)
     const setCardPositions = (progress: number) => {
       const angles = getCardAngles(progress, numCards);
       const radius = getRadius();
@@ -127,12 +107,10 @@ export default function FeaturesFan() {
 
       setActiveIdx(activeIndex);
 
-      // Update label text directly (avoids React re-render lag)
       if (activeLabelRef.current) {
         activeLabelRef.current.textContent = CARDS[activeIndex].title;
       }
 
-      // Update progress bar
       if (progressBarRef.current) {
         progressBarRef.current.style.width = `${(progress * 100).toFixed(1)}%`;
       }
@@ -142,11 +120,8 @@ export default function FeaturesFan() {
         if (!el) return;
 
         const { x, y } = polarToXY(angle, radius);
-        // Rotate card perpendicular to arc tangent
         const cardRotation = -(angle - 90);
 
-        // Active card: full opacity, scale 1.1
-        // Adjacent cards: slightly faded, smaller
         const distFromActive = Math.abs(i - activeFloat);
         const scale = gsap.utils.clamp(0.7, 1.1, 1.1 - distFromActive * 0.12);
         const opacity = gsap.utils.clamp(0.3, 1, 1 - distFromActive * 0.22);
@@ -164,11 +139,8 @@ export default function FeaturesFan() {
       });
     };
 
-    // Initial placement
     setCardPositions(0);
-
-    // Create ScrollTrigger — pin section while scrolling through cards
-    const scrollDistance = numCards * 350; // px of scroll per card
+    const scrollDistance = numCards * 350;
 
     const st = ScrollTrigger.create({
       trigger: wrapper,
@@ -182,7 +154,6 @@ export default function FeaturesFan() {
       },
     });
 
-    // Refresh on resize
     const handleResize = () => {
       setCardPositions(st.progress);
       ScrollTrigger.refresh();
@@ -195,7 +166,7 @@ export default function FeaturesFan() {
     };
   }, [isMobile]);
 
-  // ─── Mobile scroll reveal ──────────────────────────────────────────────────
+  // -- Mobile scroll reveal --
   const [mobileProgress, setMobileProgress] = useState(0);
   const mobileRef = useRef<HTMLDivElement>(null);
 
@@ -214,38 +185,33 @@ export default function FeaturesFan() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [isMobile]);
 
-  // ─── Helpers ───────────────────────────────────────────────────────────────
   const radius = typeof window !== "undefined"
     ? window.innerWidth >= 1280 ? 400 : window.innerWidth >= 1024 ? 340 : 260
     : 340;
 
-  // Semi-circle SVG dimensions (2R wide × R tall)
   const svgW = radius * 2 + 50;
   const svgH = radius + 30;
 
   return (
     <div ref={wrapperRef}>
-      {/* ── Sticky stage (GSAP pins this on desktop) ──────────────────────── */}
+      {/* Desktop Sticky Section */}
       <div
         ref={stickyRef}
         className="hidden md:flex flex-col items-center justify-center min-h-screen overflow-hidden"
         style={{ background: "#eef1f8" }}
       >
-        {/* Section header */}
         <div className="text-center pt-10 pb-4 z-20 relative">
-          <p className="section-label">{"// OUR FEATURES  //"}</p>
+          <p className="section-label">{d.label}</p>
           <h2 className="section-heading">
-            Top-Notch Tools For{" "}
-            <span className="text-[#EF7F1A]">Custom Prints</span>
+            {d.heading_main}{" "}
+            <span className="text-[#EF7F1A]">{d.heading_highlight}</span>
           </h2>
         </div>
 
-        {/* Arc stage */}
         <div
           className="relative flex-1 w-full flex items-end justify-center"
           style={{ minHeight: `${svgH + 40}px`, paddingBottom: "0px" }}
         >
-          {/* ── Fixed semi-circle ─────────────────────────────────────────── */}
           <div
             className="absolute bottom-0 left-1/2 -translate-x-1/2 pointer-events-none"
             style={{ width: svgW, height: svgH }}
@@ -256,7 +222,6 @@ export default function FeaturesFan() {
               viewBox={`0 0 ${svgW} ${svgH}`}
               style={{ overflow: "visible" }}
             >
-              {/* Outer glow ring */}
               <path
                 d={`M 30 ${svgH} A ${radius} ${radius} 0 0 1 ${svgW - 30} ${svgH}`}
                 fill="none"
@@ -264,30 +229,26 @@ export default function FeaturesFan() {
                 strokeWidth="18"
                 strokeLinecap="round"
               />
-              {/* Main arc */}
               <path
                 d={`M 30 ${svgH} A ${radius} ${radius} 0 0 1 ${svgW - 30} ${svgH}`}
                 fill="none"
-                // stroke="rgba(52, 95, 140, 0.45)"
                 stroke="#345f8c"
                 strokeWidth="3"
                 strokeLinecap="round"
                 strokeDasharray="8 6"
               />
-              {/* Filled semi-circle shape */}
               <path
                 d={`M 30 ${svgH} A ${radius} ${radius} 0 0 1 ${svgW - 30} ${svgH} Z`}
                 fill="url(#arcFill)"
               />
               <defs>
                 <radialGradient id="arcFill" cx="50%" cy="100%" r="100%">
-                  <stop offset="0%" stopColor="#345f8c" stopOpacity="100.22" />
+                  <stop offset="0%" stopColor="#345f8c" stopOpacity="1" />
                   <stop offset="100%" stopColor="#345f8c" stopOpacity="0.04" />
                 </radialGradient>
               </defs>
             </svg>
 
-            {/* Center label + progress — inside the semi-circle */}
             <div
               className="absolute bottom-0 left-1/2 -translate-x-1/2 flex flex-col items-center justify-end pb-4"
               style={{ width: radius * 1.1, height: svgH * 0.55 }}
@@ -303,8 +264,6 @@ export default function FeaturesFan() {
               >
                 {CARDS[activeIdx].title}
               </p>
-
-              {/* Progress bar */}
               <div className="mt-3 w-32 h-1.5 bg-white/40 rounded-full overflow-hidden">
                 <div
                   ref={progressBarRef}
@@ -312,28 +271,9 @@ export default function FeaturesFan() {
                   style={{ background: "#EF7F1A", width: "0%" }}
                 />
               </div>
-
-              {/* Dot indicators */}
-              {/* <div className="flex gap-2 mt-2">
-                {CARDS.map((_, i) => (
-                  <div
-                    key={i}
-                    className="rounded-full transition-all duration-300"
-                    style={{
-                      width: activeIdx === i ? 20 : 7,
-                      height: 7,
-                      background:
-                        activeIdx === i
-                          ? "#f97060"
-                          : "rgba(249,112,96,0.35)",
-                    }}
-                  />
-                ))}
-              </div> */}
             </div>
           </div>
 
-          {/* ── Cards orbiting the arc ─────────────────────────────────────── */}
           <div
             className="absolute bottom-60 right-260"
             style={{ transform: "translateX(-50%)" }}
@@ -347,7 +287,6 @@ export default function FeaturesFan() {
                 className="absolute"
                 style={{
                   width: "clamp(150px, 20vw, 200px)",
-                  // Initial off-screen position handled by GSAP
                   willChange: "transform, opacity",
                 }}
               >
@@ -363,7 +302,6 @@ export default function FeaturesFan() {
                       i === activeIdx
                         ? "2px solid #EF7F1A"
                         : "1px solid rgba(229,231,235,0.8)",
-                    transition: "border 0.3s, box-shadow 0.3s",
                     backdropFilter: "blur(8px)",
                   }}
                 >
@@ -379,67 +317,20 @@ export default function FeaturesFan() {
             ))}
           </div>
         </div>
-
-        {/* Decorative blobs */}
-        <div
-          className="absolute top-10 right-10 w-20 h-20 pointer-events-none rounded-full opacity-40"
-          style={{
-            background:
-              "linear-gradient(135deg, #345f8c 0%, #6f7a7c 45%, #EF7F1A 100%)",
-            animation: "blob 9s infinite",
-          }}
-        />
-        <div
-          className="absolute bottom-20 left-8 w-14 h-14 pointer-events-none rounded-full opacity-25"
-          style={{
-            background: "radial-gradient(circle, #6c4fdc 0%, #3b5fe2 100%)",
-            animation: "blob 12s infinite reverse",
-          }}
-        />
       </div>
 
-      {/* ── Mobile Layout (< md) ─────────────────────────────────────────────── */}
+      {/* Mobile Layout */}
       <div
         ref={mobileRef}
         className="md:hidden py-20 px-4"
         style={{ background: "#eef1f8" }}
       >
         <div className="text-center mb-12">
-          <p className="section-label">{"// OUR FEATURES  //"}</p>
+          <p className="section-label">{d.label}</p>
           <h2 className="section-heading">
-            Top-Notch Tools For{" "}
-            <span className="highlight">Custom Prints</span>
+            {d.heading_main}{" "}
+            <span className="highlight">{d.heading_highlight}</span>
           </h2>
-        </div>
-
-        {/* Centered mini semi-circle */}
-        <div className="flex justify-center mb-10">
-          <div
-            className="flex flex-col items-center justify-end pb-4"
-            style={{
-              width: 200,
-              height: 100,
-              borderRadius: "100px 100px 0 0",
-              background:
-                "linear-gradient(to top, #345f8c, #EF7F1A)",
-            }}
-          >
-            <p className="font-bold text-white text-xs text-center px-3 leading-tight">
-              Our Features
-            </p>
-            <div className="flex gap-1.5 mt-2">
-              {CARDS.map((_, i) => (
-                <div
-                  key={i}
-                  className="h-1.5 rounded-full"
-                  style={{
-                    width: 7,
-                    background: "rgba(255,255,255,0.6)",
-                  }}
-                />
-              ))}
-            </div>
-          </div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 max-w-lg mx-auto">

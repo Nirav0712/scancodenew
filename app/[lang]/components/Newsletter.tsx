@@ -4,7 +4,8 @@ import React from "react";
 import Image from "next/image";
 import { FaEnvelope } from "react-icons/fa";
 
-export default function Newsletter() {
+export default function Newsletter({ dict }: { dict: any }) {
+  const d = dict.sections.newsletter;
   return (
     <section className="relative -mb-70 bg-white overflow-hidden">
 
@@ -39,21 +40,20 @@ export default function Newsletter() {
                 <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-linear-to-r from-[#1e3a5f]/10 to-[#345f8c]/10 rounded-full text-sm mb-6 border border-[#1e3a5f]/20">
                   <span className="w-2 h-2 rounded-full bg-linear-to-r from-[#1e3a5f] to-[#345f8c] animate-pulse"></span>
                   <span className="text-[#1e3a5f] font-medium">
-                    📬 Newsletter
+                    📬 {d.label}
                   </span>
                 </span>
 
                 <h2 className="text-3xl sm:text-4xl font-bold mb-4">
                   <span className="bg-linear-to-r from-[#1e3a5f] to-[#345f8c] bg-clip-text text-transparent">
-                    Join Now for
+                    {d.heading_part1}
                   </span>
                   <br />
-                  <span className="text-gray-800">Special Deals</span>
+                  <span className="text-gray-800">{d.heading_part2}</span>
                 </h2>
 
                 <p className="text-gray-600 mb-8 text-lg">
-                  Get early access to exclusive deals and updates delivered to
-                  your inbox.
+                  {d.description}
                 </p>
 
                 {/* EMAIL INPUT */}
@@ -69,7 +69,7 @@ export default function Newsletter() {
 
                       <input
                         type="email"
-                        placeholder="Enter your email address"
+                        placeholder={d.placeholder}
                         className="w-full px-12 py-4 rounded-full border border-gray-200 text-gray-800 outline-none focus:ring-2 focus:ring-[#1e3a5f]/30"
                       />
 
@@ -82,7 +82,7 @@ export default function Newsletter() {
                     <div className="absolute -inset-0.5 bg-linear-to-r from-[#1e3a5f] to-[#345f8c] rounded-full opacity-75 blur group-hover:opacity-100"></div>
 
                     <div className="relative px-8 py-4 bg-linear-to-r from-[#1e3a5f] to-[#345f8c] text-white font-semibold rounded-full hover:scale-105 transition">
-                      Subscribe Now
+                      {d.button}
                     </div>
 
                   </button>
@@ -100,7 +100,7 @@ export default function Newsletter() {
                   <span className="text-gray-400 text-sm">|</span>
 
                   <span className="text-gray-600 text-sm">
-                    10k+ subscribers
+                    {d.subscribers}
                   </span>
 
                 </div>

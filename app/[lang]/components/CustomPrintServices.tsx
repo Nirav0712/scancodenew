@@ -3,15 +3,9 @@
 import React from "react";
 import Link from "next/link";
 
-export default function CustomPrintServices() {
-  const services = [
-    "Barcode Label Printing",
-    "QR Code Label Printing",
-    "Product Label Printing",
-    "Custom Sticker Label Printing",
-    "Business Label Printing",
-    "Packaging Label Printing",
-  ];
+export default function CustomPrintServices({ dict }: { dict: any }) {
+  const d = dict.sections.custom_print;
+  const services = d.items;
 
 
   return (
@@ -20,16 +14,16 @@ export default function CustomPrintServices() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left — content */}
           <div>
-            <p className="section-label text-[#EF7F1A]">{"// WHAT WE DO  //"}</p>
+            <p className="section-label text-[#EF7F1A]">{d.label}</p>
             <h2 className="section-heading mb-6 ">
-              Custom Label Printing Services{" "}
-              <span className="text-[#EF7F1A]">We Offer</span>
+              {d.heading_main}{" "}
+              <span className="text-[#EF7F1A]">{d.heading_highlight}</span>
             </h2>
             <p className="text-gray-500 text-base mb-8 leading-relaxed">
-              Custom label printing solutions are designed to meet the unique identification and branding needs of modern businesses. From barcode labels and QR code labels to product and packaging labels, these solutions ensure clear, durable, and high-quality printing for various applications. With advanced printing technology and customizable materials, businesses can create labels that enhance product visibility, improve operational efficiency, and maintain compliance with industry standards.
+              {d.description}
             </p>
             <ul className="space-y-3 mb-10">
-              {services.map((svc, i) => (
+              {services.map((svc: string, i: number) => (
                 <li key={i} className="flex items-center gap-3 text-gray-700 font-medium">
                   <span
                     className="w-6 h-6 rounded-full flex items-center justify-center text-white text-xs font-bold shrink-0"
@@ -47,7 +41,7 @@ export default function CustomPrintServices() {
 
               {/* button */}
               <span className="relative z-10 px-8 py-3 rounded-full text-white font-semibold bg-linear-to-r from-[#345f8c] to-[#EF7F1A] shadow-lg block group-hover:scale-y-130 group-hover:scale-x-113">
-                Learn More
+                {d.button}
               </span>
             </Link>
           </div>

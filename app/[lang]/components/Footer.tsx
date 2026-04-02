@@ -14,7 +14,14 @@ import {
 } from "react-icons/fa";
 // import Newsletter from "./Newsletter";
 
-export default function Footer() {
+import { type Locale } from "@/lib/i18n-config";
+
+interface FooterProps {
+  lang: Locale;
+  dict: any;
+}
+
+export default function Footer({ lang, dict }: FooterProps) {
   const currentYear = new Date().getFullYear();
 
   const socials: {

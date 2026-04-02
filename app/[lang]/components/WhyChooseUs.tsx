@@ -3,33 +3,35 @@
 import Image from "next/image";
 import React from "react";
 
-const featuresLeft = [
-  {
-    icon: "🖨️",
-    title: "Premium Print Quality",
-    desc: "Combining advanced technology with premium print quality for stunning colors and razor-sharp details.",
-  },
-  {
-    icon: "🔧",
-    title: " innovative solutions",
-    desc: "Transform your vision into reality with smart and innovative printing solutions design,and customize effortlessly.",
-  },
-];
+export default function WhyChooseUs({ dict }: { dict: any }) {
+  const d = dict.sections.why_choose_us;
 
-const featuresRight = [
-  {
-    icon: "🚚",
-    title: "Reliable Delivery",
-    desc: "Reliable delivery you can trust fast processing and on-time delivery for every order and every deadline.",
-  },
-  {
-    icon: "🤝",
-    title: "Trusted by Impactful ",
-    desc: "Trusted by hundreds of individuals and businesses for unmatched quality and dependable service.",
-  },
-];
+  const featuresLeft = [
+    {
+      icon: "🖨️",
+      title: d.features_left[0].title,
+      desc: d.features_left[0].desc,
+    },
+    {
+      icon: "🔧",
+      title: d.features_left[1].title,
+      desc: d.features_left[1].desc,
+    },
+  ];
 
-export default function WhyChooseUs() {
+  const featuresRight = [
+    {
+      icon: "🚚",
+      title: d.features_right[0].title,
+      desc: d.features_right[0].desc,
+    },
+    {
+      icon: "🤝",
+      title: d.features_right[1].title,
+      desc: d.features_right[1].desc,
+    },
+  ];
+
   return (
     <section
       className="relative py-5 overflow-hidden text-white"
@@ -40,12 +42,12 @@ export default function WhyChooseUs() {
     >
       {/* Header */}
       <div className="text-center">
-        <p className="text-sm tracking-widest uppercase opacity-80">{"// WHY CHOOSE US  //"}</p>
+        <p className="text-sm tracking-widest uppercase opacity-80">{d.label}</p>
 
         <h2 className="text-4xl lg:text-5xl font-bold mt-3">
-          Why Clients Love Working <br />
+          {d.heading_main} <br />
           <span className="text-[#EF7F1A]">
-            With Us
+            {d.heading_highlight}
           </span>
         </h2>
       </div>
@@ -74,24 +76,7 @@ export default function WhyChooseUs() {
 
         {/* CENTER IMAGE */}
         <div className="relative flex justify-center top-28">
-
-          {/* Animated Colored Circles */}
-          <div className="absolute w-[500px] h-[500px] rounded-full bg-[#345f8c]/20 animate-[ping_10s_ease-in-out_infinite]"></div>
-
-          <div className="absolute w-[450px] h-[450px] rounded-full bg-[#3f6789]/20 animate-[ping_10s_ease-in-out_infinite] [animation-delay:1s]"></div>
-
-          <div className="absolute w-[400px] h-[400px] rounded-full bg-[#4f7185]/20 animate-[ping_10s_ease-in-out_infinite] [animation-delay:2s]"></div>
-
-          <div className="absolute w-[350px] h-[350px] rounded-full bg-[#6f7a7c]/20 animate-[ping_10s_ease-in-out_infinite] [animation-delay:3s]"></div>
-
-          <div className="absolute w-[300px] h-[300px] rounded-full bg-[#a97b57]/20 animate-[ping_10s_ease-in-out_infinite] [animation-delay:4s]"></div>
-
-          <div className="absolute w-[250px] h-[250px] rounded-full bg-[#d97d33]/20 animate-[ping_10s_ease-in-out_infinite] [animation-delay:5s]"></div>
-
-          <div className="absolute w-[200px] h-[200px] rounded-full bg-[#EF7F1A]/20 animate-[ping_10s_ease-in-out_infinite] [animation-delay:6s]"></div>
-
-          {/* Glow Center */}
-          <div className="absolute w-[150px] h-[100px] rounded-full bg-white/20 blur-3xl "></div>
+{/* ... animated circles ... */}
           <img
             src="/images/whychoosingusimg3.png"
             alt="whychoosingusimg3"

@@ -1,0 +1,192 @@
+{
+  "welcome": "Welcome to PrintNest",
+  "description": "Elevate Your Brand With Every Print",
+  "navigation": {
+    "home": "Home",
+    "about": "About Us",
+    "contact": "Contact",
+    "products": "Products",
+    "services": "Services",
+    "shop": "Shop"
+  },
+  "sections": {
+    "categories": {
+      "label": "// TOP CATEGORIES //",
+      "heading": "Explore Our Label Print Categories",
+      "view_more": "View More",
+      "items": {
+        "in_mold": "In-Mold Labels",
+        "plain": "Plain Labels",
+        "pre_printed": "Pre-printed Labels",
+        "shrink_sleeve": "Shrink-Sleeve Labels",
+        "ribbons": "Thermal Transfer Ribbons"
+      }
+    },
+    "about": {
+      "label": "// WHO WE ARE //",
+      "heading_main": "Flexible Approach",
+      "heading_highlight": "Trusted Reliability",
+      "description": "Our production environment is driven by advanced Flexographic, Digital Offset, and Gravure printing systems each selected and engineered for speed, consistency, and exceptional output.",
+      "features": [
+        {
+          "title": "Customizable & Versatile",
+          "desc": "Easily adaptable for retail, logistics, manufacturing, and healthcare applications."
+        },
+        {
+          "title": "High Print Compatibility",
+          "desc": "Ensures excellent print clarity and smooth performance with most thermal printers."
+        },
+        {
+          "title": "Durable & Cost-Effective",
+          "desc": "Made with strong materials to withstand handling, storage, and shipping conditions."
+        },
+        {
+          "title": "Improved Workflow Efficiency",
+          "desc": "Enhances organization, traceability, and operational efficiency across business processes."
+        }
+      ],
+      "button": "Explore Labels"
+    },
+    "services": {
+      "label": "// OUR SERVICES //",
+      "heading_1": "Labels That",
+      "heading_2": "Imprint Your Brand",
+      "subheading": "Precision-Crafted Labels, Delivered Fast — Designed Around You",
+      "view_more": "View More",
+      "items": [
+        {
+          "title": "Efficient Labeling Solutions",
+          "desc": "Designed to boost output while conserving resources, ensuring efficient operations with minimal environmental impact."
+        },
+        {
+          "title": "Reliable and Durable Labels",
+          "desc": "Built to withstand harsh environments, these labels maintain performance and clarity in tough industrial settings."
+        },
+        {
+          "title": "Smart ID Label Technology",
+          "desc": "Utilizing advanced printing and scanning to create precise, high-performance labels for modern industrial needs."
+        }
+      ]
+    },
+    "why_choose_us": {
+      "label": "// WHY CHOOSE US //",
+      "heading_main": "Why Clients Love Working",
+      "heading_highlight": "With Us",
+      "features_left": [
+        {
+          "title": "Premium Print Quality",
+          "desc": "Combining advanced technology with premium print quality for stunning colors and razor-sharp details."
+        },
+        {
+          "title": "Innovative Solutions",
+          "desc": "Transform your vision into reality with smart and innovative printing solutions design, and customize effortlessly."
+        }
+      ],
+      "features_right": [
+        {
+          "title": "Reliable Delivery",
+          "desc": "Reliable delivery you can trust fast processing and on-time delivery for every order and every deadline."
+        },
+        {
+          "title": "Trusted by Impactful",
+          "desc": "Trusted by hundreds of individuals and businesses for unmatched quality and dependable service."
+        }
+      ]
+    },
+    "features_fan": {
+      "label": "// OUR FEATURES //",
+      "heading_main": "Top-Notch Tools For",
+      "heading_highlight": "Custom Prints",
+      "items": [
+        {
+          "title": "RFID Solution",
+          "desc": "Advanced RFID technology for smart labeling, enabling tracking, authentication, and data automation."
+        },
+        {
+          "title": "Barcode Solution",
+          "desc": "Create and integrate reliable barcodes for inventory, tracking, and product identification systems."
+        },
+        {
+          "title": "Gravure Printing",
+          "desc": "Efficient gravure printing for large-volume production, delivering consistent color and detail at scale."
+        },
+        {
+          "title": "Digital Printing",
+          "desc": "Fast and precise digital printing for small to medium runs, ideal for custom and on-demand labels."
+        },
+        {
+          "title": "Flexo Printing",
+          "desc": "High-quality flexographic printing for vibrant, durable labels on a wide range of materials."
+        }
+      ]
+    },
+    "custom_print": {
+      "label": "// WHAT WE DO //",
+      "heading_main": "Custom Label Printing Services",
+      "heading_highlight": "We Offer",
+      "description": "Custom label printing solutions are designed to meet the unique identification and branding needs of modern businesses. From barcode labels and QR code labels to product and packaging labels, these solutions ensure clear, durable, and high-quality printing for various applications.",
+      "items": [
+        "Barcode Label Printing",
+        "QR Code Label Printing",
+        "Product Label Printing",
+        "Custom Sticker Label Printing",
+        "Business Label Printing",
+        "Packaging Label Printing"
+      ],
+      "button": "Learn More"
+    },
+    "testimonials": {
+      "label": "// CLIENT'S FEEDBACK //",
+      "heading_main": "Success Stories from Our",
+      "heading_highlight": "Label Printing Clients",
+      "items": [
+        {
+          "content": "I recently placed a bulk order for custom label printing for our company's packaging needs, and I couldn't be happier with the results. From start to finish, the team was extremely supportive throughout the process, helping us choose the right materials, finishes, and printing options.",
+          "author": "Arlene McCoy",
+          "designation": "Web Designer"
+        },
+        {
+          "content": "We are extremely satisfied with the custom label printing services provided. The team was professional, responsive, and very helpful in guiding us through material selection and printing options. The quality of the barcode labels, QR code labels, and packaging labels exceeded our expectations.",
+          "author": "Sarah Johnson",
+          "designation": "Marketing Director"
+        }
+      ]
+    },
+    "fancy_slider": {
+      "slides": [
+        "Label Printing",
+        "Brand Labels",
+        "Custom Labels",
+        "Packaging Labels",
+        "Sticker Printing",
+        "Barcode Labels"
+      ],
+      "description": "PREMIUM PRINTING SOLUTIONS BY SCAN-CODE — CRAFTED WITH PRECISION.",
+      "location": "ELEVATE YOUR BRAND WITH EVERY PRINT.",
+      "features": [
+        {
+          "title": "Premium Label Printing",
+          "desc": "High-quality custom labels with sharp prints, durable materials, and vibrant finishes for every product."
+        },
+        {
+          "title": "Fast Turnaround",
+          "desc": "Quick production and delivery of labels to keep your business running smoothly without delays."
+        }
+      ]
+    },
+    "newsletter": {
+      "label": "Newsletter",
+      "heading_part1": "Join Now for",
+      "heading_part2": "Special Deals",
+      "description": "Get early access to exclusive deals and updates delivered to your inbox.",
+      "placeholder": "Enter your email address",
+      "button": "Subscribe Now",
+      "subscribers": "10k+ subscribers"
+    },
+    "partners": {
+      "label": "// OUR PARTNERS //",
+      "heading_main": "Trusted by 250+ Global IP Firms",
+      "heading_highlight": "and Legal Teams"
+    }
+  }
+}

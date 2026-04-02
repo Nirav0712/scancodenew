@@ -3,24 +3,23 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-export default function TestimonialsSlider() {
+export default function TestimonialsSlider({ dict }: { dict: any }) {
+  const d = dict.sections.testimonials;
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const testimonials = [
     {
       id: 1,
-      content:
-        "I recently placed a bulk order for custom label printing for our company's packaging needs, and I couldn't be happier with the results. From start to finish, the team was extremely supportive throughout the process, helping us choose the right materials, finishes, and printing options. Their expertise ensured that our barcode labels, QR code labels, and packaging labels were produced with excellent clarity and durability. Everything was delivered well before the deadline, making the entire experience smooth and reliable.",
-      author: "Arlene McCoy",
-      designation: "Web Designer",
+      content: d.items[0].content,
+      author: d.items[0].author,
+      designation: d.items[0].designation,
       image: "/images/image.png",
     },
     {
       id: 2,
-      content:
-        "We are extremely satisfied with the custom label printing services provided. The team was professional, responsive, and very helpful in guiding us through material selection and printing options. The quality of the barcode labels, QR code labels, and packaging labels exceeded our expectations, with excellent clarity and durability. The entire process was smooth, and the order was delivered on time. Highly recommended for reliable and high-quality label printing solutions!",
-      author: "Sarah Johnson",
-      designation: "Marketing Director",
+      content: d.items[1].content,
+      author: d.items[1].author,
+      designation: d.items[1].designation,
       image: "/images/image.png",
     },
   ];
@@ -34,7 +33,7 @@ export default function TestimonialsSlider() {
     }, 4000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [testimonials.length]);
 
   const nextSlide = () => {
     setCurrentIndex((prev) =>
@@ -57,13 +56,13 @@ export default function TestimonialsSlider() {
         {/* Header */}
         <div className="text-center mb-16">
           <p className="text-sm text-[#345f8c] font-semibold tracking-widest mb-2">
-            // CLIENT'S FEEDBACK //
+            {d.label}
           </p>
 
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
-            Success Stories from Our <br />
+            {d.heading_main} <br />
             <span className="text-[#EF7F1A]">
-              Label Printing Clients
+              {d.heading_highlight}
             </span>
           </h2>
         </div>

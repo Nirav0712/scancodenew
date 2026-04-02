@@ -262,38 +262,7 @@ const SliderCursor = styled.div`
 // ];
 
 
-const SLIDES = [
-    {
-        name: "Label Printing",
-        color: "#2c3e50",
-        image: "/images/herosection/post1.jpeg",
-    },
-    {
-        name: "Brand Labels",
-        color: "#e67e22",
-        image: "/images/herosection/post2.jpeg",
-    },
-    {
-        name: "Custom Labels",
-        color: "#8e44ad",
-        image: "/images/herosection/post3.jpeg",
-    },
-    {
-        name: "Packaging Labels",
-        color: "#16a085",
-        image: "/images/herosection/post4.jpeg",
-    },
-    {
-        name: "Sticker Printing",
-        color: "#27ae60",
-        image: "/images/herosection/post5.jpeg",
-    },
-    {
-        name: "Barcode Labels",
-        color: "#c0392b",
-        image: "/images/herosection/post6.jpeg",
-    },
-];
+// SLIDES moved inside the component to use dict prop
 
 const AUTOPLAY_DELAY = 5000;
 
@@ -327,11 +296,45 @@ const debounce = (func: Function, wait: number, immediate?: boolean) => {
     };
 };
 
-const FancySlider: React.FC = () => {
+const FancySlider: React.FC<{ dict: any }> = ({ dict }) => {
+    const d = dict.sections.fancy_slider;
     const containerRef = useRef<HTMLElement>(null);
     const titleRef = useRef<HTMLHeadingElement>(null);
     const imagesRef = useRef<HTMLDivElement>(null);
     const cursorRef = useRef<HTMLDivElement>(null);
+
+    const SLIDES = [
+        {
+            name: d.slides[0],
+            color: "#2c3e50",
+            image: "/images/herosection/post1.jpeg",
+        },
+        {
+            name: d.slides[1],
+            color: "#e67e22",
+            image: "/images/herosection/post2.jpeg",
+        },
+        {
+            name: d.slides[2],
+            color: "#8e44ad",
+            image: "/images/herosection/post3.jpeg",
+        },
+        {
+            name: d.slides[3],
+            color: "#16a085",
+            image: "/images/herosection/post4.jpeg",
+        },
+        {
+            name: d.slides[4],
+            color: "#27ae60",
+            image: "/images/herosection/post5.jpeg",
+        },
+        {
+            name: d.slides[5],
+            color: "#c0392b",
+            image: "/images/herosection/post6.jpeg",
+        },
+    ];
 
     const state = useRef<{
         current: number;
@@ -730,10 +733,10 @@ const FancySlider: React.FC = () => {
                         <SliderFooter className="slider__footer">
                             <div className="slider__info">
                                 <SliderDescription className="slider__description">
-                                    PREMIUM PRINTING SOLUTIONS<br />BY SCAN-CODE — CRAFTED<br />WITH PRECISION.
+                                    {d.description}
                                 </SliderDescription>
                                 <SliderLocation className="slider__location">
-                                    ELEVATE YOUR BRAND<br />WITH EVERY PRINT.
+                                    {d.location}
                                 </SliderLocation>
                             </div>
                         </SliderFooter>
@@ -758,10 +761,10 @@ const FancySlider: React.FC = () => {
                             🏷️
                         </div>
                         <h3 className="text-[#1e3a5f] text-2xl font-bold mb-3">
-                            Premium Label Printing
+                            {d.features[0].title}
                         </h3>
                         <p className="text-[#1e3a5f]/70 text-base leading-relaxed max-w-xs font-medium">
-                            High-quality custom labels with sharp prints, durable materials, and vibrant finishes for every product.
+                            {d.features[0].desc}
                         </p>
                     </div>
 
@@ -774,10 +777,10 @@ const FancySlider: React.FC = () => {
                             ⚡
                         </div>
                         <h3 className="text-[#1e3a5f] text-2xl font-bold mb-3">
-                            Fast Turnaround
+                            {d.features[1].title}
                         </h3>
                         <p className="text-[#1e3a5f]/70 text-base leading-relaxed max-w-xs font-medium">
-                            Quick production and delivery of labels to keep your business running smoothly without delays.
+                            {d.features[1].desc}
                         </p>
                     </div>
 
