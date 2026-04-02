@@ -46,13 +46,13 @@ export default function Footer() {
         "Plain Labels",
         "Pre Printed Labels",
         "Shrink Sleeves",
-        "In-Mold Labels",
+        // "In-Mold Labels",
         "Thermal Transfer Ribbons",
       ],
     },
   ];
 
-  const payments = ["Visa", "Mastercard", "PayPal", "Apple Pay"];
+  // const payments = ["Visa", "Mastercard", "PayPal", "Apple Pay"];
 
   return (
     <>
@@ -85,19 +85,19 @@ export default function Footer() {
                     <span className="text-[#1e3a5f] font-medium">📬 Newsletter</span>
                   </span> */}
 
-                  <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+                  <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold ">
                     <span className="bg-linear-to-r from-[#1e3a5f] to-[#345f8c] bg-clip-text text-transparent">
                       Join Now for
                     </span>
                     <br />
-                    <span className="text-gray-800">Special Deals</span>
+                    <span className="text-gray-800 mb-4">Special Deals</span>
                   </h2>
 
-                  <p className="text-gray-600 mb-8 text-lg max-w-lg mx-auto lg:mx-0">
+                  <p className="text-gray-600 mb-4 mt-4 text-lg max-w-lg mx-auto lg:mx-0">
                     Get early access to exclusive deals, offers, and updates delivered straight to your inbox.
                   </p>
 
-                  <div className="flex flex-col sm:flex-row items-center gap-4 max-w-lg mx-auto lg:mx-0">
+                  {/* <div className="flex flex-col sm:flex-row items-center gap-4 max-w-lg mx-auto lg:mx-0">
                     <div className="relative w-full group">
                       <div className="absolute -inset-0.5 bg-linear-to-r from-[#1e3a5f] to-[#345f8c] rounded-full opacity-30 group-hover:opacity-50 blur transition duration-500"></div>
                       <div className="relative">
@@ -116,9 +116,9 @@ export default function Footer() {
                         Subscribe Now
                       </div>
                     </button>
-                  </div>
+                  </div> */}
 
-                  <div className="flex items-center justify-center lg:justify-start gap-6 mt-6">
+                  <div className="flex items-center justify-center lg:justify-start gap-6">
                     <div className="flex items-center gap-2">
                       <span className="text-yellow-400 text-xl">★</span>
                       <span className="text-yellow-400 text-xl">★</span>
@@ -127,8 +127,8 @@ export default function Footer() {
                       <span className="text-yellow-400 text-xl">★</span>
                       <span className="text-gray-600 text-sm ml-2">4.9/5</span>
                     </div>
-                    <span className="text-gray-400 text-sm">|</span>
-                    <span className="text-gray-600 text-sm">10k+ subscribers</span>
+                    {/* <span className="text-gray-400 text-sm">|</span> */}
+                    {/* <span className="text-gray-600 text-sm">10k+ subscribers</span> */}
                   </div>
                 </div>
 
@@ -300,9 +300,9 @@ export default function Footer() {
                   <span className="absolute -bottom-2 left-0 w-12 h-0.5 bg-linear-to-r from-[#4f8bc9] to-[#6aa6e0]"></span>
                 </h3>
 
-                <div className="space-y-4">
+                <div className="space-y-4 text-sm">
                   <div className="flex gap-3">
-                    <FaPhone className="text-[#6aa6e0] shrink-0" />
+                    <FaPhone className="text-[#6aa6e0] shrink-0 " />
                     <a href="tel:+919427061888" className="text-gray-300 hover:text-white transition-colors duration-200">
                       +91 94270 61888
                     </a>
@@ -318,7 +318,7 @@ export default function Footer() {
                   <div className="flex gap-3">
                     <FaMapMarkerAlt className="text-[#6aa6e0] shrink-0" />
                     <a href="" className="text-gray-300 hover:text-white transition-colors duration-200">
-                      <b>Regd. Office:</b><br />
+                      <span className="font-semibold">Regd. Office : </span>
                       Gala No. C-2, Dungra Park, Plot No. 28, Survey No. 376/1/P3/P5, Mahavir Nagar,
                       Nr. Mazda Colour Ltd., 100 Shed Area Gidc, Vapi, Gujarat-396195.
                     </a>
