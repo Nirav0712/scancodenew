@@ -188,5 +188,79 @@
       "heading_main": "Approuvé par 250+ cabinets",
       "heading_highlight": "de propriété intellectuelle"
     }
+  },
+  "pages": {
+    "about_us": {
+      "hero": { "title": "À Propos de Nous", "description": "Nous sommes une équipe de professionnels passionnés de l'impression, dédiés à donner vie à vos visions créatives avec une qualité premium et une fiabilité inégalée." },
+      "story": { "label": "// NOTRE HISTOIRE //", "heading_main": "Transformer les Produits", "heading_highlight": "Grâce à l'Impression d'Étiquettes Premium", "para1": "Chez Scancode Auto ID Technology Pvt Ltd, nous nous spécialisons dans la fourniture de solutions d'impression d'étiquettes de haute qualité adaptées aux besoins des entreprises modernes. Depuis notre création en 2016, nous produisons des étiquettes durables, précises et visuellement attrayantes.", "para2": "En mettant l'accent sur l'innovation, nous utilisons des technologies d'impression avancées et des matériaux premium pour garantir des performances durables et une clarté optimale." },
+      "why_choose": {
+        "heading_main": "Pourquoi Nous Choisir", "heading_highlight": "Scancode Auto ID",
+        "description": "Dans l'environnement commercial compétitif d'aujourd'hui, l'impression d'étiquettes de haute qualité joue un rôle crucial dans la présentation des produits et la reconnaissance de la marque.",
+        "cards": [
+          { "title": "Ingénierie Produit", "desc": "Étiquettes et solutions de haute qualité conçues avec précision pour garantir une performance parfaite." },
+          { "title": "Solutions Innovantes", "desc": "Technologies d'impression d'étiquettes de pointe conçues pour améliorer l'efficacité et rationaliser les opérations." },
+          { "title": "Expertise Sectorielle", "desc": "Des années d'expérience dans l'impression d'étiquettes, fournissant des solutions personnalisées pour diverses industries." },
+          { "title": "Approche Centrée Client", "desc": "Services d'impression d'étiquettes collaboratifs axés sur la compréhension et le dépassement des attentes des clients." }
+        ]
+      },
+      "manufacturing": { "heading_main": "Stimuler l'Innovation grâce à une", "heading_highlight": "Fabrication Avancée Fiable", "para1": "Chez Scancode Auto ID Technology Pvt. Ltd., notre infrastructure est la pierre angulaire de notre engagement envers l'excellence.", "para2": "En tant que fabricant leader, nous respectons des normes de qualité strictes pour garantir que chaque étiquette répond aux exigences de l'industrie.", "para3": "La plupart de nos composants d'étiquetage sont produits en interne, ce qui nous permet de maintenir un contrôle strict sur la qualité d'impression.", "para4": "En priorisant la qualité et l'avancement technologique, Scancode permet aux entreprises d'atteindre l'excellence en matière d'emballage." },
+      "stats": { "label": "// NOTRE IMPACT //", "heading_main": "Notre Histoire en", "heading_highlight": "Chiffres", "description": "Des années de dédication et d'expertise, offrant des résultats exceptionnels à nos clients dans le monde entier", "items": [{ "end": 8, "suffix": "+", "label": "Années d'Expertise Sectorielle" }, { "end": 20, "suffix": "+", "label": "Équipe Qualifiée" }, { "end": 100, "suffix": "%", "label": "Satisfaction Client" }, { "end": 500, "suffix": "+", "label": "Clients dans le Monde" }] }
+    },
+    "autoid_solution": {
+      "hero": { "title": "Solution Auto ID", "description": "Imprimantes industrielles et de bureau fiables des meilleurs fabricants, conçues pour maintenir vos opérations en douceur." },
+      "intro": { "heading_main": "Axé sur des Solutions", "heading_highlight": "Auto ID Complètes", "para1": "Scancode Auto ID Technology Pvt Ltd se concentre sur la redéfinition de l'efficacité grâce à des solutions d'impression d'étiquettes innovantes adaptées aux besoins de diverses industries.", "para2": "Notre équipe collabore étroitement avec les clients pour développer des solutions d'impression d'étiquettes qui s'intègrent parfaitement aux systèmes existants." },
+      "benefits": {
+        "heading_main": "Pourquoi Choisir la", "heading_highlight": "Technologie Auto ID",
+        "description": "Dans le monde des affaires d'aujourd'hui, gérer les données et les stocks avec rapidité et précision est crucial. La technologie Auto ID simplifie les tâches d'identification complexes.",
+        "items": [
+          { "title": "Image de Marque 360°", "desc": "Nos étiquettes maximisent l'espace de marque, garantissant une visibilité claire depuis chaque angle." },
+          { "title": "Impression Haute Qualité", "desc": "L'impression d'étiquettes avancée délivre des couleurs vibrantes et des détails nets sur chaque produit." },
+          { "title": "Sécurité Anti-Falsification", "desc": "Conçues avec des caractéristiques anti-falsification, nos étiquettes renforcent la sécurité des produits." },
+          { "title": "Matériaux Écologiques", "desc": "Nous proposons des étiquettes recyclables pour aider les marques à réduire leur impact environnemental." },
+          { "title": "Durabilité et Résistance", "desc": "Résistantes à l'humidité, aux UV et à la température, les étiquettes restent claires dans toutes les conditions." },
+          { "title": "Solutions Sur Mesure", "desc": "Chaque étiquette est personnalisée pour correspondre au design unique de votre produit." },
+          { "title": "Application Flexible", "desc": "Adaptées à tous les types d'emballages — ronds, carrés ou de formes irrégulières." },
+          { "title": "Attrait en Rayon", "desc": "Étiquettes conçues pour faire ressortir vos produits et stimuler l'intérêt des clients." }
+        ]
+      },
+      "why_choose": { "heading": "Pourquoi Choisir Scancode ?", "items": [{ "title": "Efficacité Améliorée", "desc": "Productivité maximale avec un temps d'arrêt minimal" }, { "title": "Qualité d'Impression Supérieure", "desc": "Technologies d'impression de pointe" }, { "title": "Conception Conviviale", "desc": "Facile à utiliser et à entretenir" }, { "title": "Durabilité et Fiabilité", "desc": "Conçu pour résister aux environnements difficiles" }] }
+    },
+    "contact": {
+      "hero": { "title": "Contactez-Nous", "description": "Que vous ayez une question sur nos services d'impression, besoin d'un devis personnalisé, ou souhaitiez discuter d'un partenariat, notre équipe est prête à vous aider." },
+      "info": { "heading": "Informations de Contact", "phone_label": "Bureau Enregistré", "phone": "+91 94270 61888", "address_label": "Bureau Enregistré :", "address": "Gala No. C-2, Dungra Park, Plot No. 28, Survey No. 376/1/P3/P5, Mahavir Nagar, Nr. Mazda Colour Ltd., 100 Shed Area Gidc, Vapi, Gujarat-396195.", "email_label": "E-mail", "email": "contact@scancodeautoid.com", "follow_heading": "Suivez-Nous", "social_label": "Nos Réseaux Sociaux :" },
+      "form": { "heading": "Envoyer un Message", "name_label": "Nom Complet", "name_placeholder": "Votre Nom", "email_label": "Adresse E-mail", "email_placeholder": "jane@societe.com", "phone_label": "Numéro de Téléphone", "phone_placeholder": "+91 00000 00000", "subject_label": "Sujet", "subject_placeholder": "Sélectionner un Sujet", "subject_options": [{ "value": "barcode", "label": "Solutions Code-barres" }, { "value": "rfid", "label": "Solutions RFID" }, { "value": "printing", "label": "Services d'Étiquetage et d'Impression" }, { "value": "hardware", "label": "Imprimantes et Scanners" }, { "value": "other", "label": "Demande Générale" }], "message_label": "Votre Message", "message_placeholder": "Parlez-nous de votre projet...", "button": "Envoyer via WhatsApp", "button_loading": "Préparation..." }
+    },
+    "products": {
+      "cta": { "heading": "Besoin d'un système entièrement intégré ?", "description": "Nos ingénieurs peuvent créer un package personnalisé combinant matériel, logiciel et consommables parfaitement adaptés à votre flux de travail.", "button": "Explorer les Solutions Personnalisées" },
+      "labels": {
+        "hero": { "title": "Étiquettes", "description": "Rubans de cire, cire-résine et résine premium conçus pour des impressions nettes et durables sur une variété de matériaux d'étiquettes." },
+        "heading_main": "Étiquettes Durables et Personnalisables", "heading_highlight": "pour Toutes les Industries",
+        "description": "Nous collaborons avec des fournisseurs mondialement reconnus comme Avery Dennison et UPM Raflatac pour garantir des substrats de qualité pour chaque application.",
+        "categories": [
+          { "id": "plain-labels", "title": "Étiquettes Vierges", "description": "Stocks d'étiquettes vierges polyvalents conçus pour l'impression flexible et à la demande dans toutes les industries.", "features": ["Options de matériaux multiples", "Diverses forces d'adhésif", "Tailles de 25mm x 25mm à 200mm x 250mm"], "buttonText": "Acheter des Étiquettes Vierges", "pagePath": "/products/labels/plain-labels" },
+          { "id": "pre-printed-labels", "title": "Étiquettes Pré-imprimées", "description": "Personnalisées avec votre logo et vos informations fixes, prêtes à l'emploi sans impression supplémentaire.", "features": ["Impression couleur complète", "Formes de découpe personnalisées", "Numérotation séquentielle disponible"], "buttonText": "Voir les Étiquettes Pré-imprimées", "pagePath": "/products/labels/pre-printed-labels" },
+          { "id": "shrink-sleeves", "title": "Manchons Rétractables", "description": "Solution d'étiquetage 360° haute impact, parfaite pour les bouteilles, contenants et emballages de formes uniques.", "features": ["Image de marque 360°", "Options anti-falsification", "Disponibles en PVC, PET et OPS"], "buttonText": "Explorer les Manchons Rétractables", "pagePath": "/products/labels/shrink-sleeves" }
+        ]
+      },
+      "printing_scanning": {
+        "hero": { "title": "Solutions d'Impression et de Numérisation", "description": "Rubans de cire, cire-résine et résine premium conçus pour des impressions nettes et durables." },
+        "heading_main": "Solutions de Haute Qualité", "heading_highlight": "d'Impression et de Numérisation", "heading_suffix": "Adaptées à Vos Besoins",
+        "description": "Gamme complète de solutions d'impression et de numérisation conçues pour répondre aux besoins exigeants des entreprises modernes.",
+        "categories": [
+          { "id": "barcode-label-printer", "title": "Imprimantes d'Étiquettes à Code-barres", "description": "Gamme complète d'imprimantes d'étiquettes à code-barres conçues pour la fiabilité et les performances à long terme.", "features": ["Imprimantes industrielles haute capacité", "Modèles de bureau compacts", "Options de connectivité sans fil"], "buttonText": "Explorer les Imprimantes", "pagePath": "/products/printing-scanning-solutions/barcode-label-printer" },
+          { "id": "print-engine", "title": "Moteurs d'Impression", "description": "Moteurs d'impression haute performance pour l'étiquetage automatisé critique avec une fiabilité 24h/24 et 7j/7.", "features": ["Intégration transparente", "Débit haute vitesse", "Fiabilité 24/7"], "buttonText": "Voir les Moteurs d'Impression", "pagePath": "/products/printing-scanning-solutions/print-engine" },
+          { "id": "barcode-scanner", "title": "Scanners de Code-barres", "description": "Appareils essentiels pour lire et décoder les codes-barres rapidement, permettant aux entreprises de rationaliser leurs opérations.", "features": ["Modèles avec et sans fil", "Lecture omnidirectionnelle", "Résistant aux chocs"], "buttonText": "Acheter des Scanners", "pagePath": "/products/printing-scanning-solutions/barcode-scanner" },
+          { "id": "mobile-computers", "title": "Ordinateurs Mobiles et Tablettes", "description": "Tablettes industrielles et ordinateurs portables combinant la puissance d'un poste de travail avec la portabilité d'un smartphone.", "features": ["Android et Windows OS", "Numérisation de codes-barres intégrée", "Batterie tout au long de la journée"], "buttonText": "Voir les Ordinateurs Mobiles", "pagePath": "/products/printing-scanning-solutions/mobile-computers" }
+        ]
+      },
+      "rfid": {
+        "hero": { "title": "Solutions RFID", "description": "Tags RFID avancés, lecteurs et logiciels pour automatiser le suivi de vos stocks et améliorer la visibilité de la chaîne d'approvisionnement." },
+        "intro": { "heading_main": "Libérer", "heading_highlight": "l'Efficacité et la Précision", "heading_suffix": "avec la Technologie RFID", "para1": "Chez ScanCode Auto ID Technology Pvt Ltd, nous nous spécialisons dans la fourniture de solutions RFID avancées qui permettent aux entreprises d'opérer de manière plus intelligente.", "para2": "Nos solutions RFID vont au-delà des méthodes traditionnelles, offrant une visibilité et un contrôle inégalés sur chaque aspect de vos opérations." },
+        "benefits": { "heading_main": "Pourquoi Choisir nos", "heading_highlight": "Solutions RFID", "description": "Nos solutions RFID offrent une visibilité et un contrôle inégalés, réduisant les charges de travail manuelles et améliorant la prise de décision.", "items": [{ "title": "Suivi Amélioré", "desc": "Suivez les actifs, les stocks et le personnel en temps réel pour une meilleure visibilité opérationnelle." }, { "title": "Précision Améliorée", "desc": "Réduisez les erreurs humaines et obtenez une collecte de données précise et fiable." }, { "title": "Flux de Travail Accélérés", "desc": "Automatisez la capture et le traitement des données pour rationaliser vos opérations." }, { "title": "Optimisation des Coûts", "desc": "Minimisez les besoins en main-d'œuvre et réduisez les inefficacités pour baisser les coûts." }] },
+        "capabilities": { "heading_main": "Nos", "heading_highlight": "Capacités", "heading_suffix": "en Solutions RFID", "description": "Nous fournissons des solutions RFID innovantes et sur mesure qui améliorent l'efficacité, la précision et la gestion des données.", "products": [{ "name": "Appareil Manuel RFID" }, { "name": "Scanner RFID" }, { "name": "Imprimante RFID" }, { "name": "Logiciel RFID" }, { "name": "Tags RFID" }] },
+        "rfid_benefits": { "heading_main": "Avantages de la", "heading_highlight": "Technologie RFID", "heading_suffix": "pour Votre Entreprise", "description": "Des solutions RFID avancées et personnalisées qui aident les entreprises à améliorer l'efficacité opérationnelle et à rationaliser le suivi des actifs.", "items": [{ "title": "Opérations en Temps Réel", "desc": "Surveillez les stocks et les flux de travail n'importe où, avec des mises à jour en temps réel." }, { "title": "Sécurité Avancée", "desc": "Prévenez le vol et contrôlez l'accès avec des systèmes de sécurité RFID." }, { "title": "Évolutivité des Entreprises", "desc": "Adoptez des systèmes RFID flexibles qui grandissent avec vos besoins." }, { "title": "Conformité Réglementaire", "desc": "Respectez les normes de l'industrie avec des outils de traçabilité avancés." }] },
+        "why_choose": { "heading_main": "Pourquoi Nous Choisir", "heading_highlight": "ScanCode Auto ID", "items": [{ "title": "Solutions Personnalisées", "desc": "Solutions RFID sur mesure conçues pour répondre à vos besoins uniques." }, { "title": "Support de Bout en Bout", "desc": "Assistance complète de la consultation à la mise en œuvre et au service après-vente." }, { "title": "Expertise RFID de Confiance", "desc": "Reconnu par les industries pour des solutions RFID fiables et efficaces." }, { "title": "Produits RFID Durables", "desc": "Tags, lecteurs et imprimantes RFID durables et hautes performances." }] }
+      }
+    }
   }
 }

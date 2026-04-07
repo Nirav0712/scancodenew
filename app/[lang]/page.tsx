@@ -35,7 +35,7 @@ export default async function Home({
       <WhyChooseUs dict={dict} />
       <FeaturesFan dict={dict} />
       <CustomPrintServices dict={dict} />
-      <PartnersSection dict={dict} />
+      {/* <PartnersSection dict={dict} /> */}
       {/* <TeamSection /> */}
       <TestimonialsSection dict={dict} />
       {/* <Newsletter dict={dict} /> */}

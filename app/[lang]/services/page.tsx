@@ -1,12 +1,19 @@
-"use client";
-
 import React from "react";
 import PageHero from "../components/PageHero";
 import ServicesSection from "../components/ServicesSection";
 import Link from "next/link";
 import Image from "next/image";
+import { getDictionary } from "@/lib/get-dictionary";
+import { type Locale } from "@/lib/i18n-config";
 
-export default function ServicesPage() {
+export default async function ServicesPage({
+  params,
+}: {
+  params: Promise<{ lang: Locale }>;
+}) {
+  const { lang } = await params;
+  const dict = await getDictionary(lang);
+
   return (
     <main className="bg-white">
       <PageHero
@@ -16,7 +23,7 @@ export default function ServicesPage() {
       />
 
       {/* Reusing Home Page Services */}
-      <ServicesSection />
+      <ServicesSection dict={dict} />
 
       {/* Expanded Details Section */}
       <section className="py-24 max-w-7xl mx-auto px-6 lg:px-8 border-t border-gray-100">

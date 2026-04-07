@@ -185,9 +185,17 @@ export default function FeaturesFan({ dict }: { dict: any }) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [isMobile]);
 
-  const radius = typeof window !== "undefined"
-    ? window.innerWidth >= 1280 ? 400 : window.innerWidth >= 1024 ? 340 : 260
-    : 340;
+  const [radius, setRadius] = useState(340);
+
+  useEffect(() => {
+    const updateRadius = () => {
+      const r = window.innerWidth >= 1280 ? 400 : window.innerWidth >= 1024 ? 340 : 260;
+      setRadius(r);
+    };
+    updateRadius();
+    window.addEventListener("resize", updateRadius);
+    return () => window.removeEventListener("resize", updateRadius);
+  }, []);
 
   const svgW = radius * 2 + 50;
   const svgH = radius + 30;

@@ -188,5 +188,79 @@
       "heading_main": "Trusted by 250+ Global IP Firms",
       "heading_highlight": "and Legal Teams"
     }
+  },
+  "pages": {
+    "about_us": {
+      "hero": { "title": "About Us", "description": "We are a team of passionate print professionals dedicated to bringing your creative visions to life with premium quality and unmatched reliability." },
+      "story": { "label": "// OUR STORY //", "heading_main": "Transforming Products", "heading_highlight": "Through Premium Label Printing", "para1": "At Scancode Auto ID Technology Pvt Ltd, we specialise in delivering high-quality label printing solutions tailored to meet the diverse needs of modern businesses. Since our establishment in 2016, we have been committed to producing durable, precise, and visually appealing labels.", "para2": "With a strong focus on innovation and quality, we utilise advanced printing technology and premium materials to ensure long-lasting performance and clarity. We aim to provide consistent, cost-effective solutions to clients across India and beyond." },
+      "why_choose": {
+        "heading_main": "Why Choose Us", "heading_highlight": "Scancode Auto ID",
+        "description": "In today's competitive business environment, high-quality label printing plays a crucial role in product presentation and brand recognition.",
+        "cards": [
+          { "title": "Product Engineering", "desc": "High-quality labels and solutions crafted with precision to ensure flawless performance." },
+          { "title": "Innovative Solutions", "desc": "Cutting-edge label printing technologies designed to enhance efficiency and streamline operations." },
+          { "title": "Industry Expertise", "desc": "Years of experience in label printing, providing customised solutions for diverse industries." },
+          { "title": "Customer-Centric Approach", "desc": "Collaborative label printing services focused on understanding and exceeding client needs." }
+        ]
+      },
+      "manufacturing": { "heading_main": "Driving Innovation through Reliable", "heading_highlight": "Advanced Manufacturing", "para1": "Our infrastructure is the cornerstone of our commitment to excellence in premium label printing solutions.", "para2": "As a leading manufacturer, we adhere to strict quality standards to ensure every label meets industry requirements.", "para3": "Most of our labelling components are produced in-house, maintaining tight control over print quality and turnaround times.", "para4": "By prioritising quality and technological advancement, Scancode empowers businesses with reliable label printing solutions." },
+      "stats": { "label": "// OUR IMPACT //", "heading_main": "Our Story in", "heading_highlight": "Numbers", "description": "Years of dedication and expertise, delivering exceptional results for our clients worldwide", "items": [{ "end": 8, "suffix": "+", "label": "Years of Industry Expertise" }, { "end": 20, "suffix": "+", "label": "Skilled Team" }, { "end": 100, "suffix": "%", "label": "Customer Satisfaction" }, { "end": 500, "suffix": "+", "label": "Clients Worldwide" }] }
+    },
+    "autoid_solution": {
+      "hero": { "title": "Auto Id Solution", "description": "Reliable industrial and desktop printers from top manufacturers, built to keep your operations running smoothly with minimal downtime." },
+      "intro": { "heading_main": "Focused on Comprehensive", "heading_highlight": "Auto ID Solutions", "para1": "Scancode Auto ID Technology Pvt Ltd focuses on redefining efficiency through innovative label printing solutions tailored to diverse industries.", "para2": "Our team collaborates closely with clients to develop label printing solutions that integrate seamlessly with existing systems." },
+      "benefits": {
+        "heading_main": "Why Choose", "heading_highlight": "Auto ID Technology Matters",
+        "description": "In today's fast-paced business world, managing data and inventory with speed and precision is crucial.",
+        "items": [
+          { "title": "360-Degree Branding", "desc": "Our labels maximise branding space, ensuring clear visibility from every angle." },
+          { "title": "High-Quality Printing", "desc": "Advanced label printing delivers vibrant colours and crisp details on every product." },
+          { "title": "Tamper-Evident Security", "desc": "Tamper-evident features enhance security and help maintain product integrity." },
+          { "title": "Eco-Friendly Materials", "desc": "Recyclable labels help brands reduce their environmental impact." },
+          { "title": "Durability & Resistance", "desc": "Resistant to moisture, UV, and temperature — labels stay clear in any conditions." },
+          { "title": "Tailored Custom Solutions", "desc": "Each label is customised to match your product's unique design and shelf appeal." },
+          { "title": "Flexible Application", "desc": "Suitable for all packaging types — round, square, or irregular shapes." },
+          { "title": "Enhanced Shelf Appeal", "desc": "Labels designed to make your products stand out and boost customer interest." }
+        ]
+      },
+      "why_choose": { "heading": "Why Choose Scancode?", "items": [{ "title": "Enhanced Efficiency", "desc": "Maximum productivity with minimal downtime" }, { "title": "Superior Print Quality", "desc": "State-of-the-art printing technologies" }, { "title": "User-Friendly Design", "desc": "Easy to operate and maintain" }, { "title": "Durability & Reliability", "desc": "Built to withstand harsh environments" }] }
+    },
+    "contact": {
+      "hero": { "title": "Get In Touch", "description": "Whether you have a question about our printing services, need a custom quote, or want to discuss a partnership, our team is ready to help." },
+      "info": { "heading": "Contact Information", "phone_label": "Regd. Office", "phone": "+91 94270 61888", "address_label": "Regd. Office:", "address": "Gala No. C-2, Dungra Park, Plot No. 28, Survey No. 376/1/P3/P5, Mahavir Nagar, Nr. Mazda Colour Ltd., 100 Shed Area Gidc, Vapi, Gujarat-396195.", "email_label": "Email", "email": "contact@scancodeautoid.com", "follow_heading": "Follow Us", "social_label": "Our Social Channels :" },
+      "form": { "heading": "Send Message", "name_label": "Full Name", "name_placeholder": "Your Name", "email_label": "Email Address", "email_placeholder": "jane@company.com", "phone_label": "Phone Number", "phone_placeholder": "+91 00000 00000", "subject_label": "Subject", "subject_placeholder": "Select Subject", "subject_options": [{ "value": "barcode", "label": "Barcode Solutions" }, { "value": "rfid", "label": "RFID Solutions" }, { "value": "printing", "label": "Label & Printing Services" }, { "value": "hardware", "label": "Printers & Scanners" }, { "value": "other", "label": "General Enquiry" }], "message_label": "Your Message", "message_placeholder": "Tell us about your project...", "button": "Send Message via WhatsApp", "button_loading": "Preparing..." }
+    },
+    "products": {
+      "cta": { "heading": "Need a fully integrated system?", "description": "Our solutions engineers can build a custom package combining hardware, software, and consumables perfectly tailored to your workflow.", "button": "Explore Custom Solutions" },
+      "labels": {
+        "hero": { "title": "Labels", "description": "Premium wax, wax-resin, and resin ribbons engineered to provide crisp, dark, and long-lasting prints on a variety of label materials." },
+        "heading_main": "Durable and Customisable", "heading_highlight": "Labels for All Industries",
+        "description": "We collaborate with world-renowned suppliers to ensure quality substrates across every application.",
+        "categories": [
+          { "id": "plain-labels", "title": "Plain Labels", "description": "Versatile blank label stocks designed for flexible and on-demand printing across all industries.", "features": ["Multiple material options", "Various adhesive strengths", "Sizes from 1\" x 1\" to 8\" x 10\""], "buttonText": "Shop Plain Labels", "pagePath": "/products/labels/plain-labels" },
+          { "id": "pre-printed-labels", "title": "Pre Printed Labels", "description": "Customised with your brand logo and fixed information, ready to use without requiring additional printing.", "features": ["Full colour printing", "Custom die-cut shapes", "Sequential numbering available"], "buttonText": "View Pre Printed Labels", "pagePath": "/products/labels/pre-printed-labels" },
+          { "id": "shrink-sleeves", "title": "Shrink Sleeves", "description": "High-impact 360-degree labelling solution perfect for bottles, containers, and uniquely shaped packaging.", "features": ["360-degree branding", "Tamper-evident options", "Available in PVC, PET, and OPS"], "buttonText": "Explore Shrink Sleeves", "pagePath": "/products/labels/shrink-sleeves" }
+        ]
+      },
+      "printing_scanning": {
+        "hero": { "title": "Printing & Scanning Solutions", "description": "Premium wax, wax-resin, and resin ribbons engineered to provide crisp, dark, and long-lasting prints on a variety of label materials." },
+        "heading_main": "High-Quality", "heading_highlight": "Printing & Scanning Solutions", "heading_suffix": "Tailored for Your Needs",
+        "description": "Comprehensive range of Printing & Scanning Solutions designed to meet the demanding needs of modern businesses.",
+        "categories": [
+          { "id": "barcode-label-printer", "title": "Barcode Label Printers", "description": "Comprehensive range of barcode label printers engineered for reliability and long-term performance.", "features": ["Industrial high-volume printers", "Compact desktop models", "Wireless connectivity options"], "buttonText": "Explore Printers", "pagePath": "/products/printing-scanning-solutions/barcode-label-printer" },
+          { "id": "print-engine", "title": "Print Engines", "description": "High-performance print engines for mission-critical automated labelling with 24/7 reliability.", "features": ["Seamless integration", "High-speed throughput", "24/7 reliability"], "buttonText": "View Print Engines", "pagePath": "/products/printing-scanning-solutions/print-engine" },
+          { "id": "barcode-scanner", "title": "Barcode Scanners", "description": "Essential devices for reading and decoding barcodes quickly, enabling businesses to streamline operations.", "features": ["Corded and cordless models", "Omnidirectional reading", "Ruggedised for drops"], "buttonText": "Shop Scanners", "pagePath": "/products/printing-scanning-solutions/barcode-scanner" },
+          { "id": "mobile-computers", "title": "Mobile Computers & Tablets", "description": "Industrial tablets and handheld computers combining workstation power with smartphone portability.", "features": ["Android & Windows OS", "Integrated barcode scanning", "All-day battery life"], "buttonText": "See Mobile Computers", "pagePath": "/products/printing-scanning-solutions/mobile-computers" }
+        ]
+      },
+      "rfid": {
+        "hero": { "title": "RFID Solutions", "description": "Advanced RFID tags, readers, and software to automate your inventory tracking and improve supply chain visibility with pinpoint accuracy." },
+        "intro": { "heading_main": "Unlock", "heading_highlight": "Efficiency and Accuracy", "heading_suffix": "with RFID Technology", "para1": "At ScanCode Auto ID Technology Pvt Ltd, we specialise in delivering advanced RFID solutions that empower businesses to operate smarter.", "para2": "Our RFID solutions go beyond traditional methods, offering unparalleled visibility and control over every aspect of your operations." },
+        "benefits": { "heading_main": "Why Choose Our", "heading_highlight": "RFID Solutions", "description": "Our RFID solutions offer unparalleled visibility and control, reducing manual workloads and improving decision-making.", "items": [{ "title": "Enhanced Tracking", "desc": "Track assets, inventory, and personnel in real-time for improved operational visibility." }, { "title": "Improved Accuracy", "desc": "Reduce human errors and achieve precise data collection and management." }, { "title": "Accelerated Workflows", "desc": "Automate data capture and processing to streamline your operations." }, { "title": "Cost Optimisation", "desc": "Minimise labour requirements and reduce inefficiencies to lower costs." }] },
+        "capabilities": { "heading_main": "Our", "heading_highlight": "RFID Solution", "heading_suffix": "Capabilities", "description": "Innovative and tailored RFID solutions that enhance efficiency, accuracy, and data management.", "products": [{ "name": "RFID Hand Device" }, { "name": "RFID Scanner" }, { "name": "RFID Printer" }, { "name": "RFID Software" }, { "name": "RFID Tags" }] },
+        "rfid_benefits": { "heading_main": "Benefits of", "heading_highlight": "RFID Technology", "heading_suffix": "for Your Business", "description": "Advanced and customised RFID solutions that help businesses improve operational efficiency and streamline asset tracking.", "items": [{ "title": "Real-Time Operations", "desc": "Monitor inventory and workflows anytime, anywhere, with real-time updates." }, { "title": "Advanced Security", "desc": "Prevent theft and control access with RFID-enabled security systems." }, { "title": "Business Scalability", "desc": "Adopt flexible RFID systems that grow alongside your business needs." }, { "title": "Regulatory Compliance", "desc": "Meet industry standards with advanced tracking and traceability tools." }] },
+        "why_choose": { "heading_main": "Why Choose Us", "heading_highlight": "ScanCode Auto ID", "items": [{ "title": "Customised Solutions", "desc": "Tailored RFID solutions designed to meet your unique business requirements." }, { "title": "End-to-End Support", "desc": "Complete assistance from consultation to implementation and after-sales service." }, { "title": "Trusted RFID Expertise", "desc": "Relied upon by industries for reliable, effective RFID solutions." }, { "title": "Durable RFID Products", "desc": "High-performance, durable RFID tags, readers, and printers for optimal operations." }] }
+      }
+    }
   }
 }

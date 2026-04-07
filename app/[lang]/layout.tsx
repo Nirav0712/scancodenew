@@ -23,14 +23,13 @@ export const metadata: Metadata = {
   description: "Tailored printing solutions designed to match your unique vision and creative needs. Premium quality prints, fast delivery, global shipping.",
 };
 
-export default async function RootLayout({
-  children,
-  params,
-}: {
+export default async function RootLayout(props: {
   children: React.ReactNode;
-  params: Promise<{ lang: Locale }>;
+  params: Promise<{ lang: string }>;
 }) {
-  const { lang } = await params;
+  const { children } = props;
+  const params = await props.params;
+  const lang = params.lang as Locale;
   const dict = await getDictionary(lang);
 
   return (
