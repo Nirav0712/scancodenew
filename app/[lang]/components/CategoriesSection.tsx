@@ -40,24 +40,24 @@ export default function CategoriesSection({ dict }: { dict: any }) {
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Header */}
-        <div className="text-center mb-16">
-          <p className="text-[#345f8c]z font-medium tracking-widest">{d.label}</p>
+        <div className="text-center mb-12 md:mb-16 pt-8">
+          <p className="text-[#345f8c] font-semibold tracking-widest uppercase text-sm">{d.label}</p>
 
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-4">
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mt-4 leading-tight">
             {d.heading}
           </h2>
         </div>
 
-        {/* Categories */}
-        <div className="flex flex-wrap justify-center gap-10">
+        {/* Categories Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-10 justify-items-center">
 
           {categories.map((cat, i) => (
             <Link
               key={i}
               href={cat.link}
-              className="group flex justify-center transform transition-transform duration-500 hover:scale-130"
+              className="group flex justify-center transform transition-all duration-500 hover:scale-105"
             >
-              <div className="relative w-52 h-52 rounded-full overflow-hidden cursor-pointer">
+              <div className="relative w-36 h-36 sm:w-48 sm:h-48 lg:w-52 lg:h-52 rounded-full overflow-hidden cursor-pointer shadow-md group-hover:shadow-2xl transition-shadow duration-500">
 
                 {/* Image */}
                 <Image
@@ -70,7 +70,7 @@ export default function CategoriesSection({ dict }: { dict: any }) {
                 {/* Gradient hover circle */}
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div
-                    className="w-40 h-40 rounded-full bg-linear-to-br from-[#345f8c] to-[#EF7F1A] opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col items-center justify-center text-white"
+                    className="w-full h-full bg-linear-to-br from-[#345f8c]/90 to-[#EF7F1A]/90 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col items-center justify-center text-white backdrop-blur-sm"
                   >
                     {/* Arrow */}
                     <div className="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center mb-2">
@@ -89,19 +89,20 @@ export default function CategoriesSection({ dict }: { dict: any }) {
         </div>
 
 
-        <div className="text-center mt-16">
-          <Link href="/products/labels" className="relative inline-block group  ">
+        <div className="text-center mt-12 md:mt-20">
+          <Link href="/products/labels" className="relative inline-block group">
 
             {/* offset border layer */}
-            <span className="absolute inset-0 -top-4 -left-4 w-40 h-16 rounded-full border-2 border-[#EF7F1A] translate-x-2 translate-y-2 transition-all duration-300"></span>
+            <span className="absolute inset-0 w-full h-full rounded-full border-2 border-[#EF7F1A] translate-x-1.5 translate-y-1.5 transition-all duration-300 group-hover:translate-x-0 group-hover:translate-y-0 opacity-70"></span>
 
             {/* button */}
-            <span className="relative z-10 px-8 py-3 rounded-full text-white font-semibold bg-linear-to-r from-[#345f8c] to-[#EF7F1A] shadow-lg block group-hover:scale-y-130 group-hover:scale-x-113">
+            <span className="relative z-10 px-10 py-4 rounded-full text-white font-bold bg-linear-to-r from-[#345f8c] to-[#EF7F1A] shadow-xl block transition-all duration-300 group-hover:scale-[1.02] active:scale-95">
               {d.view_more}
             </span>
 
           </Link>
-        </div>{/* Button */}
+        </div>
+{/* Button */}
       </div>
     </section>
   );

@@ -84,45 +84,59 @@ const SliderBody = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding: 0 32px 40px;
+  padding: 0 24px 60px;
   min-height: 0;
   position: relative;
+  justify-content: flex-start; /* Stack from top on mobile */
 
   @media screen and (min-width: 768px) {
-    padding: 0 56px 56px;
+    padding: 0 48px 80px;
   }
 
   @media screen and (min-width: 1024px) {
     flex-direction: row;
+    padding: 0 56px 56px;
+    justify-content: flex-start;
   }
 `;
 
 const SliderLeft = styled.div`
   display: flex;
   flex-direction: column;
-  flex: 1;
+  flex: 0 0 auto; /* Height determined by content on mobile */
   min-height: 0;
   position: relative;
-  z-index: 4;
+  z-index: 10;
+  justify-content: flex-start;
+  margin-bottom: 24px;
 
   @media screen and (min-width: 1024px) {
     width: 55%;
+    flex: 1;
     flex-shrink: 0;
-    z-index: auto;
+    margin-bottom: 0;
   }
 `;
 
 const SliderTitle = styled.h2`
-  font-size: clamp(64px, 15vw, 120px);
+  font-size: clamp(36px, 10vw, 80px); /* Slightly smaller for stacked view */
   font-weight: 700;
   color: #fff;
-  line-height: 1.15;
-  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), 0 0 40px rgba(0, 0, 0, 0.2);
+  line-height: 1.1;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   letter-spacing: -0.02em;
   overflow: hidden; 
   position: relative;
-  margin-top: 10vh; /* Move it up from center */
+  margin-top: 2vh; /* Reduced margin for stacked layout */
   margin-bottom: 0;
+  word-wrap: break-word;
+  hyphens: auto;
+
+  @media screen and (min-width: 1024px) {
+    font-size: clamp(80px, 15vw, 120px);
+    margin-top: 10vh;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), 0 0 60px rgba(0, 0, 0, 0.3);
+  }
 
   div {
     display: block;
@@ -164,25 +178,20 @@ const SliderLocation = styled.p`
 `;
 
 const SliderRight = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative; /* Changed from absolute to relative for stacked layout */
   width: 100%;
-  height: 100%;
+  height: 40vh; /* Fixed height to accommodate carousel logic on mobile */
   display: flex;
   align-items: center;
   justify-content: center;
-  pointer-events: none;
+  pointer-events: auto; /* Enable interaction for carousel */
+  z-index: 1;
 
   @media screen and (min-width: 1024px) {
     position: static;
     flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 0;
-    opacity: 1;
-    pointer-events: auto;
+    height: 100%;
+    z-index: auto;
   }
 `;
 
@@ -752,8 +761,8 @@ const FancySlider: React.FC<{ dict: any }> = ({ dict }) => {
             </SliderSection>
 
             {/* Feature Box overlapping the curved transition */}
-            <div className="absolute bottom-10 left-1/2 -translate-x-1/2 w-[calc(100%-40px)] max-w-5xl translate-y-1/2 z-20">
-                <div className="rounded-[40px] p-8 lg:p-12 flex flex-col sm:flex-row gap-10 items-center justify-center relative overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.3)] backdrop-blur-2xl bg-white/20 border border-white/30 transition-all duration-500 hover:bg-white/25">
+            <div className="absolute -bottom-10 md:bottom-10 left-1/2 -translate-x-1/2 w-[calc(100%-40px)] max-w-5xl translate-y-1/2 z-20">
+                <div className="rounded-[30px] md:rounded-[40px] p-6 lg:p-12 flex flex-col sm:flex-row gap-6 md:gap-10 items-center justify-center relative overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.3)] backdrop-blur-2xl bg-white/20 border border-white/30 transition-all duration-500 hover:bg-white/25">
 
                     {/* Feature 1 */}
                     <div className="flex-1 flex-col items-center sm:items-start text-center sm:text-left">

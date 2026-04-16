@@ -54,7 +54,7 @@ export default function TestimonialsSlider({ dict }: { dict: any }) {
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <p className="text-sm text-[#345f8c] font-semibold tracking-widest mb-2">
             {d.label}
           </p>
@@ -68,49 +68,42 @@ export default function TestimonialsSlider({ dict }: { dict: any }) {
         </div>
 
         {/* Main Layout */}
-        <div className="grid md:grid-cols-2 gap-1 items-center">
-
-          {/* LEFT IMAGE */}
-          <div className="flex justify-center md:justify-start">
-            <div className="relative w-[400px] h-[400px] rounded-full overflow-hidden">
-              <Image
-                src={current.image}
-                alt={current.author}
-                fill
-                className="object-cover border border-top-6 border-right-6 "
-              />
-            </div>
-          </div>
+        <div className="grid md:grid-cols-1 gap-1 items-center justify-center  w-full">
 
           {/* RIGHT CONTENT */}
-          <div className="md:pl-2">
+          <div className="md:pl-2 text-center justify-center">
 
             {/* Quote */}
-            <div className="text-9xl text-[#EF7F1A] mt-4 opacity-20">
+            {/* <div className="text-9xl text-[#EF7F1A] mt-4 opacity-20">
               &ldquo;
-            </div>
+            </div> */}
 
             {/* Text */}
-            <p className="text-gray-600 text-xl -mt-15 mb-8 ">
-              "{current.content}"
+            <p className="text-gray-600 text-xl   mb-10">
+              {current.content}
             </p>
+            {/*             
+            <div className="text-9xl text-[#EF7F1A] opacity-20">
+              &rdquo;
+            </div> */}
+
 
             {/* Author */}
-            <h3 className="font-bold text-gray-900 text-2xl">
+            <h3 className="font-bold text-gray-900 text-2xl text-center">
               {current.author}
             </h3>
 
-            <p className="text-gray-500 text-sm mb-10">
+            <p className="text-gray-500 text-sm mb-10 text-center">
               {current.designation}
             </p>
 
             {/* Bottom Controls */}
-            <div className="flex items-center gap-6 mt-10 max-w-[500px]">
+            <div className="flex items-center gap-6 mt-10 max-w-[500px] text-center justify-center align-center ">
 
               {/* Prev Button */}
               <button
                 onClick={prevSlide}
-                className="w-[55px] h-[55px] rounded-full border border-[#5A6FAF] flex items-center justify-center text-[#5A6FAF] text-xl hover:bg-blue-50 transition"
+                className="w-[55px] h-[55px] rounded-full cursor-pointer border border-[#5A6FAF] flex items-center justify-center text-[#5A6FAF] text-xl hover:bg-blue-50 transition"
               >
                 &#8249;
               </button>

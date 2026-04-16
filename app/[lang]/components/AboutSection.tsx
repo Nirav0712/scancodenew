@@ -15,7 +15,7 @@ export default function AboutSection({ dict }: { dict: any }) {
         backgroundRepeat: "no-repeat",
         height: "120vh"
       }}>
-{/* ... SVG ... */}
+      {/* ... SVG ... */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
@@ -53,7 +53,7 @@ export default function AboutSection({ dict }: { dict: any }) {
             </h2>
 
             <p className="text-gray-600 text-base mb-8 leading-relaxed">
-             {d.description}
+              {d.description}
             </p>
 
             {/* Feature list */}
@@ -87,7 +87,7 @@ export default function AboutSection({ dict }: { dict: any }) {
               {/* button */}
               <span className="relative z-10 px-8 py-3 rounded-full text-white font-semibold bg-linear-to-r from-[#345f8c] to-[#EF7F1A] shadow-lg block group-hover:scale-y-130 group-hover:scale-x-113">
                 {d.button}
-              </span> 
+              </span>
             </Link>
           </div>
         </div>
